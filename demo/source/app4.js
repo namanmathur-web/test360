@@ -53,8 +53,7 @@ R[54]=()=>{const g=G();const nt=T.findIndex((_,i)=>!g.a.topics.includes(i));cons
  <div class="g2"><button class="card" style="text-align:left" onclick="go(53)"><div class="eyebrow">Same topic</div><b class="sm">Level ${Math.min(5,g.a.level+1)} →</b></button><button class="card" style="text-align:left" onclick="A.buildFrom(${nt<0?0:nt})"><div class="eyebrow">Next topic</div><b class="sm">${TOPIC_SHORT[nt<0?0:nt]} →</b></button></div>
  <button class="card row" onclick="A.other(1)"><b class="sm">Differentiation</b><span class="xs mut sp" style="text-align:left">Next chapter · free test</span></button>
  <button class="card row" onclick="go(12)"><b class="sm">Physics · Kinematics</b><span class="xs mut sp" style="text-align:left">Another subject · free test</span></button>
- <div class="eyebrow" style="color:var(--mut);margin-top:6px">Writing other exams?</div>
- <div class="g2"><button class="card" style="text-align:left" onclick="go(44)"><b class="sm">BITSAT</b><div class="xs mut">Free chapter test</div></button><button class="card" style="text-align:left" onclick="go(45)"><b class="sm">NDA</b><div class="xs mut">Free chapter test</div></button></div>
+ ${A.loopDone()?`<div class="row xs" style="gap:12px;margin-top:6px"><span class="mut">Also preparing for</span><a class="link" onclick="go(44)">BITSAT</a><a class="link" onclick="go(45)">NDA</a></div>`:''}
  </div></div><div class="foot"><button class="btn" onclick="A.openTopic(${nt<0?0:nt})">Go</button></div></div>`};
 R[55]=()=>({base:R[47](),sheet:`<div class="ph"><span class="chip">Limits fixed</span><button class="x" onclick="closeOv()">×</button><h2>Next: Continuity and Differentiability</h2><p>You closed ${Object.keys(S.fixed).length||G().weak.length} of ${G().weak.length||1} weak topics. Keep the run going.</p></div><div class="pb">
  <div class="card" style="text-align:center"><b class="sm">Check where you stand</b><div class="xs mut" style="margin:4px 0 10px">A free 10-minute diagnostic for the last two topics of this chapter, with a report like this one.</div><button class="btn" onclick="A.diag()">Start the free diagnostic</button><button class="link xs" style="margin-top:8px" onclick="closeOv()">Later</button></div>
@@ -105,7 +104,8 @@ R[62]=()=>{const B=[['1st','First Test','Finish any test',S.badges.first],['3d',
 /* ===== Actions ===== */
 const A={
  ob(step,v){S.ob[step]=v;render()},
- obNext(step){if(step===0)S.grade=S.ob[0];if(step<2){S.obStep=step+1;render()}else if(step===2)go(9);else go(11)},
+ obNext(step){if(step===0)S.grade=S.ob[0];if(step<2){S.obStep=step+1;render()}else if(step===2)go(9);else go(10)},
+ loopDone(){return S.attempts.filter(a=>!a.sample).length>=2},
  examGo(){const e=S.exam;if(e==='JEE Main')go(10);else if(e==='BITSAT')go(44);else if(e==='NDA')go(45);else{toast(`Demo shows JEE Main. ${e} uses the same pages once its tests are added.`);go(10)}},
  profile(){toast(`Grade ${S.ob[0]||'12'} · ${S.exam} · English. Demo: no account needed.`)},
  other(){toast('This demo has the Limits question bank loaded. Other chapters open the same way once their question file is added.',3400)},

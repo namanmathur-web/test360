@@ -117,7 +117,7 @@ R[54]=()=>{const g=G();const lv=Math.min(5,g.a.level+1);const w=(g.weak.length?g
  ${S.bought?`<div class="card" style="background:#EAF7F1;border-color:#9FDCC2"><b class="sm">${S.bought==='pack'?'Limits chapter pack':'Complete JEE Main series'} is active</b><div class="xs mut">Your notebook, notes and clips are open.</div></div>`:`
  <div class="plan hl"><div class="row"><div class="sp"><div class="eyebrow">Built around your weak topics</div><b>Limits chapter pack</b><div class="xs mut">${g.weak.map(b=>TOPIC_SHORT[b.t]).join(', ')||'All 6 topics'} · notes · mistake notebook · teacher clips</div></div><b style="font-size:20px">${rs(PRICE.pack)}</b></div><button class="btn" style="margin-top:10px" onclick="A.checkout('pack')">Get the Limits pack</button></div>
  <div class="plan dk"><div class="row"><div class="sp"><b class="sm">Complete JEE Main series</b><div class="xs" style="opacity:.75">All ${PRICE.chapters} chapters, 5 levels each, VedAI on every test</div></div><b style="font-size:18px">${rs(PRICE.series)}</b></div><button class="link" style="color:#FF9C72;margin-top:6px" onclick="A.checkout('series')">See the series</button></div>`}
- <div class="row xs" style="gap:12px"><span class="mut">Also writing</span><a class="link" onclick="go(44)">BITSAT</a><a class="link" onclick="go(45)">NDA</a></div>
+ ${A.loopDone()?`<div class="row xs" style="gap:12px"><span class="mut">Also preparing for</span><a class="link" onclick="go(44)">BITSAT</a><a class="link" onclick="go(45)">NDA</a></div>`:''}
  </div></div></div>`};
 
 /* names in the side panel follow the 7-page flow */

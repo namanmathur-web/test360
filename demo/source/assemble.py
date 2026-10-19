@@ -1,6 +1,7 @@
-import json,base64,io,re
+import json,base64,io,re,os
 from PIL import Image
-R='/home/claude/t360/'
+HERE=os.path.dirname(os.path.abspath(__file__))
+R=os.path.dirname(os.path.dirname(HERE))+'/reference/'
 def b64(path,maxw,fmt='JPEG',q=80):
     im=Image.open(path)
     if fmt=='JPEG': im=im.convert('RGB')
@@ -14,9 +15,9 @@ for line in open(R+'01_screens/SCREEN_LIST.md',encoding='utf-8'):
     m=re.match(r'(\d+)\. (.+?) — ',line)
     if m: names.append(m.group(2))
 assert len(names)==62,len(names)
-B='/home/claude/build/'
+B=HERE+'/'
 h=open(B+'shell.html').read()
 js=''.join(open(B+f).read()+'\n' for f in ['app1.js','app2.js','app3.js','app4.js','app5.js'])
 h=h.replace('/*CSS*/',open(B+'app.css').read()).replace('/*DATA*/',open(B+'data.json').read().replace('</','<\\/')).replace('/*NAMES*/',json.dumps(names,ensure_ascii=False)).replace('/*IMG*/',json.dumps(IMG)).replace('/*JS*/',js)
-open(B+'Vedantu_Test360_demo.html','w').write(h)
+open(os.path.dirname(HERE)+'/Vedantu_Test360_demo.html','w').write(h)
 print(len(h))
