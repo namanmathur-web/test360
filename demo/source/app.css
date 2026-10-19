@@ -220,3 +220,20 @@ table.sum{width:100%;border-collapse:collapse;font-size:11.5px}table.sum td,tabl
 .fbox .katex-display{margin:.4em 0}
 .hide{display:none!important}
 .fbox .katex{font-size:.9em}.fbox .katex-display{overflow-x:auto;overflow-y:hidden}
+
+/* v3 progress grid and per-topic level picker */
+.pgrid{display:grid;gap:5px;margin-top:10px}
+.pg-head,.pg-row{display:grid;grid-template-columns:104px repeat(5,1fr);gap:5px;align-items:center}
+.pg-head{font-size:10px;font-weight:800;color:var(--mut);text-align:center}
+.pg-n{font-size:11px;font-weight:700;color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pg-row i{height:18px;border-radius:4px;background:#E6EAF5;border:1px solid transparent}
+.pg-row i.c{background:var(--grn)}
+.pg-row i.a{background:#FFF1E6;border-color:var(--org)}
+.pg-row i.n{background:#fff;border:1.5px dashed var(--navy)}
+.pg-key{display:flex;gap:11px;flex-wrap:wrap;font-size:10.5px;color:var(--mut);margin-top:9px}
+.pg-key i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+.lvmini{display:flex;gap:6px;margin-top:9px}
+.lvmini button{flex:1;height:34px;border-radius:8px;font-weight:800;font-size:12.5px;border:1.5px solid transparent;position:relative}
+.lvmini .m1{background:var(--l1);color:var(--l1d)}.lvmini .m2{background:var(--l2);color:var(--l2d)}.lvmini .m3{background:var(--l3);color:var(--l3d)}.lvmini .m4{background:var(--l4);color:var(--l4d)}.lvmini .m5{background:var(--l5);color:var(--l5d)}
+.lvmini button.on{border-color:var(--navy);box-shadow:inset 0 0 0 1px var(--navy)}
+.lvmini .rec{position:absolute;top:-6px;right:-3px;background:var(--org);color:#fff;font-size:7.5px;border-radius:4px;padding:0 3px;font-weight:800}

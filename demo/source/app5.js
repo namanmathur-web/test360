@@ -1,11 +1,11 @@
 /* ===== v2: the 7-page flow with a personal dashboard (overrides earlier versions) ===== */
 const realAtt=()=>S.attempts.filter(a=>!a.sample);
 function lastFor(t){for(let i=S.attempts.length-1;i>=0;i--){const a=S.attempts[i];if(a.topics.includes(t)){const b=grade(a).byT.find(x=>x.t===t);if(b)return{ok:b.ok,n:b.n,lost:b.lost,level:a.level,sample:a.sample}}}return null}
-const recLevel=t=>Math.min(5,S.lvl[t]+1);
+/* recLevel, nextLv, streakN and progress helpers live in app6.js */
 function weakTopics(){const r=realAtt();if(!r.length)return[];return grade(r.at(-1)).weak.map(b=>b.t)}
 function todayCard(){const r=realAtt();
  if(!r.length)return{eb:'Today · your first step',title:'Start with Algebraic Limits',sub:'A 2-minute summary, then Level 1. Your report is instant.',btn:'Open the summary',act:'A.openTopic(0)'};
- const last=r.at(-1),g=grade(last),w=g.weak[0],lv=Math.min(5,last.level+1);
+ const last=r.at(-1),g=grade(last),w=g.weak[0],lv=recLevel(w?w.t:last.topics[0]);
  if(w)return{eb:'Today · your next move',title:`Retest ${T[w.t].name} at Level ${lv}`,sub:`You lost ${w.lost} marks here last time. Target: ${Math.min(g.max,g.score+Math.ceil(g.lostTot/2))}/${g.max}.`,btn:'Start the retest',act:'go(53)'};
  const nt=T.findIndex((_,i)=>S.lvl[i]===0);
  if(nt>=0)return{eb:'Today · your next move',title:`Next topic: ${T[nt].name}`,sub:'2-minute summary, then 3 questions at Level 1.',btn:'Open the summary',act:`A.openTopic(${nt})`};
@@ -77,7 +77,7 @@ R[20]=()=>{const b=S.build;const sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0)
  <button class="btn" ${n?'':'disabled'} onclick="A.startBuild()">Start test · ${n} questions · ${mins} min</button></div></div>`};
 
 /* Page 6 — next move on the report + per-question actions */
-function nextMove(g){const w=g.weak[0];const lv=Math.min(5,g.a.level+1);
+function nextMove(g){const w=g.weak[0];const lv=nextLv(g);
  if(w)return `<div class="card" style="border:1.5px solid var(--org)"><div class="eyebrow">Your next move</div><b style="display:block;margin:3px 0">Retest ${T[w.t].name} at Level ${lv}</b><div class="xs mut">It cost you ${w.lost} marks. Target ${Math.min(g.max,g.score+Math.ceil(g.lostTot/2))}/${g.max} next time.</div><div class="g2" style="margin-top:10px"><button class="btn sm" style="width:100%" onclick="go(53)">Retest at Level ${lv}</button><button class="btn2 sm" style="width:100%" onclick="go(54)">All next steps</button></div></div>`;
  const nt=T.findIndex((_,i)=>!g.a.topics.includes(i));return `<div class="card" style="border:1.5px solid var(--grn)"><div class="eyebrow" style="color:var(--grn)">Nothing lost · your next move</div><b style="display:block;margin:3px 0">${nt>=0?`Next topic: ${T[nt].name}`:`Level ${lv}`}</b><div class="g2" style="margin-top:10px"><button class="btn sm" style="width:100%" onclick="${nt>=0?`A.openTopic(${nt})`:'go(53)'}">Go</button><button class="btn2 sm" style="width:100%" onclick="go(54)">All next steps</button></div></div>`}
 function testFromIds(ids,level){const qs=ids.map(qById);const sc=qs.filter(q=>q.ty==='sc'),nm=qs.filter(q=>q.ty==='num');const all=[...sc,...nm];const secs=[];
@@ -86,7 +86,7 @@ function testFromIds(ids,level){const qs=ids.map(qById);const sc=qs.filter(q=>q.
 Object.assign(A,{
  openChapter(){A.openTopic(chapterTarget())},
  buildFrom(ti,lv){const w=weakTopics();if(ti>=0)S.build.topics=T.map((_,i)=>i===ti||w.includes(i)?1:0);else if(w.length)S.build.topics=T.map((_,i)=>w.includes(i)?1:0);
-  const sel=S.build.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);S.build.level=lv||(ti>=0?recLevel(ti):(sel.length?Math.min(...sel.map(recLevel)):1));S.cur=null;closeSideSafe();go(20)},
+  const sel=S.build.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);S.build.lv=lv?T.map(()=>lv):null;S.cur=null;closeSideSafe();go(20)},
  similar(id){const q=qById(id);const seen=new Set(S.attempts.flatMap(a=>a.qs));const pool=Q.filter(x=>x.t===q.t&&x.id!==id);const p=pool.find(x=>x.d===q.d&&!seen.has(x.id))||pool.find(x=>!seen.has(x.id))||pool.find(x=>x.d===q.d)||pool[0];
   if(!p){toast('No other question in this topic yet');return}S.cur=testFromIds([p.id],G().a.level);S.agree=true;S.cur.running=true;S.cur.qT=Date.now();go(22)},
  reLevel(t,lv){S.cur=makeTest([t],[3,3,3,3,3,3],Math.min(5,lv+1),{retest:true});S.agree=false;go(21)},
@@ -94,7 +94,7 @@ Object.assign(A,{
 });
 function closeSideSafe(){try{closeSide()}catch(e){}}
 /* simpler: rebuild the per-question action row by marking each card */
-R[36]=(()=>{return ()=>{const g=G();S.resTab='ans';const f=S.ansFilter;const lv=Math.min(5,g.a.level+1);const rows=g.rows.filter(r=>f==='all'||(f==='ok'&&r.st==='ok')||(f==='bad'&&r.st==='bad')||(f==='skip'&&r.st==='skip'));
+R[36]=(()=>{return ()=>{const g=G();S.resTab='ans';const f=S.ansFilter;const lv=nextLv(g);const rows=g.rows.filter(r=>f==='all'||(f==='ok'&&r.st==='ok')||(f==='bad'&&r.st==='bad')||(f==='skip'&&r.st==='skip'));
  return `<div class="scr">${resTop(g)}<div class="scroll"><div class="pad stack"><div class="row" style="gap:6px;flex-wrap:wrap">${[['all','All',g.rows.length],['ok','Correct',g.ok],['bad','Incorrect',g.bad],['skip','Skipped',g.skip]].map(x=>`<button class="chip" style="background:${f===x[0]?'var(--navy)':'#fff'};color:${f===x[0]?'#fff':'var(--navy)'};border:1px solid var(--line);padding:5px 10px" onclick="S.ansFilter='${x[0]}';render()">${x[1]} (${x[2]})</button>`).join('')}</div>
  <div class="ph-note" style="border-radius:8px">Placeholder questions. Answer keys must be checked by a teacher before launch.</div>
  ${rows.map(r=>{const q=r.q;return `<div class="card"><div class="row xs"><b style="font-size:13px">Q${r.i+1}</b><span class="mut">· ${TOPIC_SHORT[q.t]}</span><span class="sp"></span><span class="tag ${r.st==='ok'?'':r.st==='bad'?'r':'n'}">${r.st==='ok'?'Correct':r.st==='bad'?'Incorrect':'Skipped'}</span></div><div class="qtext" style="font-size:14px;margin:6px 0 8px">${q.q}</div>
@@ -106,12 +106,12 @@ R[36]=(()=>{return ()=>{const g=G();S.resTab='ans';const f=S.ansFilter;const lv=
  </div></div><div class="foot"><button class="btn" onclick="go(54)">What next →</button></div></div>`}})();
 
 /* Page 7 — three equal next steps, then the paid product */
-R[54]=()=>{const g=G();const lv=Math.min(5,g.a.level+1);const w=(g.weak.length?g.weak:g.byT).slice(0,3);const target=Math.min(g.max,g.score+Math.ceil(g.lostTot/2));
+R[54]=()=>{const g=G();const lv=nextLv(g);const w=(g.weak.length?g.weak:g.byT).slice(0,3);const target=Math.min(g.max,g.score+Math.ceil(g.lostTot/2));
  const nt=(()=>{const i=T.findIndex((_,k)=>!g.a.topics.includes(k)&&S.lvl[k]<5);return i<0?T.findIndex((_,k)=>S.lvl[k]<5):i})();const ntx=nt<0?0:nt;
  const card=(n,eb,title,sub,meta,btn,act,hl)=>`<div class="card" style="${hl?'border:1.5px solid var(--org)':''}"><div class="row"><b style="flex:none;width:24px;height:24px;border-radius:50%;background:${hl?'var(--org)':'var(--navy)'};color:#fff;display:grid;place-items:center;font-size:12px">${n}</b><div class="eyebrow sp">${eb}</div><span class="xs" style="color:var(--acc);font-weight:800">${meta}</span></div><b style="display:block;margin:6px 0 2px">${title}</b><div class="xs mut">${sub}</div><button class="${hl?'btn':'btn2'}" style="margin-top:10px" onclick="${act}">${btn}</button></div>`;
  return `<div class="scr">${hdr("What next",`From your Level ${g.a.level} test: ${g.score}/${g.max}${g.a.sample?' (sample)':''}`,30)}<div class="scroll"><div class="pad stack">
- ${card(1,'Same topic, higher level',`Level ${lv} · ${w.map(b=>TOPIC_SHORT[b.t]).join(', ')}`,`Last ${g.score}/${g.max} → target ${target}/${g.max}. Questions you have seen come last.`,`+${Math.round(10*3*w.length*LEVELS[lv-1][1])} XP`,`Retest at Level ${lv}`,'go(53)',true)}
- ${card(2,'Next topic',T[ntx].name,'A 2-minute summary, then 3 questions at Level 1.','+30 XP','Open the summary',`A.openTopic(${ntx})`,false)}
+ ${card(1,'Same topic, higher level',`Level ${lv} · ${w.map(b=>TOPIC_SHORT[b.t]).join(', ')}`,`Last ${g.score}/${g.max} → target ${target}/${g.max}. Questions you have seen come last. Clearing it fills up to ${cellWord(cellsFor(w.map(b=>b.t)))}.`,`+${Math.round(10*3*w.length*LEVELS[lv-1][1])} XP`,`Retest at Level ${lv}`,'go(53)',true)}
+ ${card(2,'Next topic',T[ntx].name,`A 2-minute summary, then 3 questions at Level ${recLevel(ntx)}. Clearing it fills up to ${cellWord(cellsFor([ntx]))}.`,'+30 XP','Open the summary',`A.openTopic(${ntx})`,false)}
  ${g.weak.length?card(3,'Fix what went wrong · free',`${g.weak.length} topic${g.weak.length===1?'':'s'}, ranked by marks lost`,`Each with the exact teacher-clip minutes and a practice set. ${g.lostTot} marks to win back.`,'+10 XP each','Start fixing','go(47)',false):card(3,'Review · free','Nothing to fix this time','Look through your answers, or try a similar question on any of them.','','Review my answers','go(36)',false)}
  <div class="row" style="margin-top:6px"><div class="eyebrow sp" style="color:var(--mut)">Go further</div><span class="xs mut">Free stays free: every level, every chapter</span></div>
  ${S.bought?`<div class="card" style="background:#EAF7F1;border-color:#9FDCC2"><b class="sm">${S.bought==='pack'?'Limits chapter pack':'Complete JEE Main series'} is active</b><div class="xs mut">Your notebook, notes and clips are open.</div></div>`:`

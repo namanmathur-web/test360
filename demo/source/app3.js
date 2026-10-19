@@ -1,5 +1,5 @@
 /* ===== Screens 21–29: the test (Eklavya format) ===== */
-function ensureTest(){if(!S.cur){const b=S.build;const sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);S.cur=makeTest(sel.length?sel:[0,1,2],b.n,b.level)}return S.cur}
+function ensureTest(){if(!S.cur){const b=S.build;const sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);S.cur=makeTest(sel.length?sel:[0,1,2],b.n,buildLevels())}return S.cur}
 const fmt=s=>{s=Math.max(0,Math.round(s));return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')};
 R[21]=()=>{const t=ensureTest();const secs=t.secs.map(s=>{const q=qById(t.qs[s.from]);return [s.name,s.ty==='sc'?'Single correct':'Numerical',s.to-s.from,q.mc,q.mw]});
  return `<div class="scr"><div class="thd"><div class="sp"><b>Maths Chapter Test · Limits</b><small>${t.topics.map(i=>TOPIC_SHORT[i]).join(' · ')} · Level ${t.level}</small></div></div><div class="scroll"><div class="pad stack">
@@ -15,7 +15,7 @@ R[21]=()=>{const t=ensureTest();const secs=t.secs.map(s=>{const q=qById(t.qs[s.f
 function testWin(){const t=ensureTest();const i=t.idx;const q=qById(t.qs[i]);const sec=t.secs.find(s=>i>=s.from&&i<s.to);const sel=t.sel[i]??t.ans[i];
  const fs=[14,15.5,17][t.font+1]||15;
  return `<div class="scr"><div class="thd"><div class="sp"><b>Maths Chapter Test</b><small>Marks ${t.qs.reduce((a,id)=>a+qById(id).mc,0)} · +4 / −1</small></div><span class="timer">Time Left <span id="tmr">${fmt(t.left)}</span></span><button class="sub" onclick="A.endTap()">SUBMIT</button></div>
- <div class="ph-note">Practice test. Questions are placeholders; answer keys must be checked by a teacher before launch.</div>
+ ${t.qs.some(id=>qById(id).src==='sample')?'<div class="ph-note">Sample questions in this test are placeholders; answer keys must be checked by a teacher before launch.</div>':''}
  <div class="secs">${t.secs.map(s=>`<button class="${s===sec?'on':''}" onclick="A.jump(${s.from})">${s.name} (${s.ty==='sc'?'sc':'num'})</button>`).join('')}<span class="sp"></span><button onclick="A.formula()" style="background:#FFF1EA;color:var(--acc)">Formula sheet</button></div>
  <div class="qtype"><span>Question Type: <b>${q.ty==='sc'?'Single Choice':'Numerical'}</b></span><span><span class="mk p">+${q.mc}</span> <span class="mk n">${q.mw}</span> <button class="xs" style="margin-left:6px;font-weight:800" onclick="A.font(1)">A+</button> <button class="xs" style="font-weight:800" onclick="A.font(-1)">A−</button></span></div>
  <div class="scroll"><div class="qbody"><div class="row xs mut" style="margin-bottom:6px"><b style="color:var(--navy);font-size:13px">Q${i+1}</b><span class="sp"></span>${q.src==='sample'?'<span class="sample">Sample question</span>':`<span>${q.id}</span>`}</div>
@@ -50,7 +50,7 @@ R[29]=()=>({base:S.cur?testWin():`<div class="scr" style="background:#fff"></div
 
 /* ===== Screens 30–38: result, Ved AI, answers ===== */
 function resTop(g){return `<div class="top"><button class="bk" onclick="A.exitRes()" aria-label="Back">‹</button><div class="tt"><b>Maths Chapter Test</b><small>Limits · Level ${g.a.level} · ${g.a.sample?'<span class="sample" style="padding:0 5px">Sample attempt</span>':'Your attempt'}</small></div>${xpChip()}</div>
- <div class="utabs">${[['perf','Performance',30],['ans','Answers',36],['coach','Coach',35]].map(x=>`<button class="${S.resTab===x[0]?'on':''}" onclick="go(${x[2]})">${x[1]}</button>`).join('')}</div>`}
+ <div class="utabs">${[['perf','Performance',30],['ans','Answers',36],['coach','Ask Ved',35]].map(x=>`<button class="${S.resTab===x[0]?'on':''}" onclick="go(${x[2]})">${x[1]}</button>`).join('')}</div>`}
 function result(){const g=G();S.resTab='perf';const w=g.weak[0];const prev=g.a.prevScore;
  return `<div class="scr">${resTop(g)}<div class="scroll" id="sc"><div class="pad stack">
  <div class="score"><div class="row"><div class="sp"><div class="sm" style="opacity:.85">Hello there,</div><b style="font-size:24px;line-height:1.15">${g.acc>=70?'Great work!':'Keep<br>improving!'}</b></div><div class="dial" style="--p:${Math.max(0,g.score)/g.max*100}"><div><small>MARKS</small><b>${g.score}</b><small>out of ${g.max}</small></div></div></div>
@@ -59,8 +59,8 @@ function result(){const g=G();S.resTab='perf';const w=g.weak[0];const prev=g.a.p
    <div class="sb"><i style="width:${g.ok/g.rows.length*100}%;background:#3DD68C"></i><i style="width:${g.bad/g.rows.length*100}%;background:#FF5B5B"></i></div>
    <div class="g2 xs" style="gap:6px 12px"><div>● Correct<br><b style="font-size:16px">${g.ok}</b></div><div>● Incorrect<br><b style="font-size:16px">${g.bad}</b></div><div>● Unattempted<br><b style="font-size:16px">${g.skip}</b></div><div>Attempt accuracy<br><b style="font-size:16px">${g.acc}%</b></div></div>
    <div class="xs" style="opacity:.8;margin-top:8px">Time taken: ${fmt(g.spent)} / ${g.a.dur} mins</div></div></div>
- <div class="boost"><span class="chip">Score Boost</span><p class="sm" style="margin:8px 0">You scored ${g.score}/${g.max}. You are a <b>${g.kind}</b>: ${g.kindLine}.</p><button class="chip" style="background:rgba(255,255,255,.25);color:#fff" onclick="go(35)">Discuss with Coach</button></div>
- ${nextMove(g)}
+ <div class="boost"><span class="chip">Score Boost</span><p class="sm" style="margin:8px 0">You scored ${g.score}/${g.max}. You are a <b>${g.kind}</b>: ${g.kindLine}.</p><button class="chip" style="background:rgba(255,255,255,.25);color:#fff" onclick="go(35)">Discuss with Ved</button></div>
+ ${progressDelta(g)}${nextMove(g)}
  ${prev!==null&&prev!==undefined&&g.a.prevMax?(()=>{const p0=Math.round(Math.max(0,prev)/g.a.prevMax*100),p1=Math.round(Math.max(0,g.score)/g.max*100);return `<div class="card row"><div class="sp"><div class="eyebrow">Before → after</div><b>${prev}/${g.a.prevMax} → ${g.score}/${g.max}</b> <span class="xs mut">vs your last test</span></div><span class="tag ${p1>=p0?'':'r'}">${p1>=p0?'+':''}${p1-p0} pts</span></div>`})():''}
  <div class="card"><div class="eyebrow">${Math.min(3,g.easyLost.length)} quick actions to gain</div><b style="font-size:22px;color:var(--acc)">${g.gain} marks</b>
   <div class="sm" style="margin-top:6px"><b>Easy Kill Topics</b><div class="xs mut">You missed ${g.easyLost.length} easy or medium question${g.easyLost.length===1?'':'s'}, about ${g.gain} potential marks. Solve these first.</div></div></div>
@@ -71,12 +71,12 @@ function result(){const g=G();S.resTab='perf';const w=g.weak[0];const prev=g.a.p
   ${g.weak.length?g.weak.map(b=>`<div class="row" style="margin-top:9px"><div class="sp"><b class="sm">${T[b.t].name}</b><div class="xs" style="color:var(--acc);font-weight:700">${b.ok}/${b.n} right · ${b.lost} marks lost</div></div><button class="btn sm" onclick="A.openTopic(${b.t})">Start</button></div>`).join(''):'<div class="sm" style="margin-top:6px">Nothing lost. Try the next level.</div>'}</div>
  <div class="card"><b class="sm">Types of mistake</b>${Object.entries(g.types).map(([k,v])=>`<div class="mistake"><span>${k}</span><b>${v}</b></div><div class="bar" style="height:5px;margin-top:3px"><i style="width:${v/g.rows.length*100}%"></i></div>`).join('')}</div>
  <div class="ved"><span class="vt">Ved AI</span><b class="sm" style="display:block;margin-top:6px">Study plan, next 3 days</b><div class="xs" style="margin-top:4px;line-height:1.6">${A.plan(g)}</div></div>
- <div class="g2"><button class="btn2" onclick="A.nextTopic()">Next topic</button><button class="btn" onclick="go(53)">Same topics, Level ${Math.min(5,g.a.level+1)}</button></div>
+ <div class="g2"><button class="btn2" onclick="A.nextTopic()">Next topic</button><button class="btn" onclick="go(53)">Same topics, Level ${nextLv(g)}</button></div>
  <button class="btn" onclick="go(54)">See all my next steps →</button><button class="btn2" onclick="go(34)">How to improve</button><button class="link" style="margin:0 auto" onclick="go(36)">Review answers</button></div>
  </div></div></div>`}
 R[30]=result;R[33]=result;
 R[31]=()=>({base:result(),sheet:popPostResult(false)});
-R[32]=()=>{const tt=title(),nx=nextTitle();return {base:result(),center:`<div class="pad" style="text-align:center"><div class="badge e" style="font-size:13px">1st<br>test</div><h3 class="h" style="margin-top:10px">Badge unlocked: First Test</h3><p class="xs mut">+${lastAttempt().xp} XP · You are now <b>${tt[0]}</b>, Level ${TITLES.indexOf(tt)+1}</p>
+R[32]=()=>{const tt=title(),nx=nextTitle();return {base:result(),center:`<div class="pad" style="text-align:center"><span class="chip" style="background:#E3F6EE;color:var(--grn)">Badge earned</span><h3 class="h" style="margin-top:10px">First report</h3><p class="xs mut">+${lastAttempt().xp} XP · You are now <b>${tt[0]}</b>, Level ${TITLES.indexOf(tt)+1}</p>
  <div class="bar" style="margin:12px 0 4px"><i style="width:${nx?Math.min(100,(S.xp-tt[1])/(nx[1]-tt[1])*100):100}%"></i></div><div class="xs mut">${nx?`${nx[1]-S.xp} XP to ${nx[0]}`:'Top title reached'}</div>
  <button class="btn" style="margin-top:14px" onclick="A.afterBadge()">Keep going →</button></div>`}};
 function popPostResult(rep){const g=G();const w=g.weak[0]||{t:0};return `<div class="ph"><span class="chip">Your Limits report is ready</span><button class="x" onclick="closeOv()">×</button><h2>You can win back ${g.lostTot} marks</h2><p>Start with ${T[w.t].name.toLowerCase()}, where you lost the most. Pick how deep you want to go.</p>

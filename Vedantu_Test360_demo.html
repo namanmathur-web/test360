@@ -227,6 +227,23 @@ table.sum{width:100%;border-collapse:collapse;font-size:11.5px}table.sum td,tabl
 .fbox .katex-display{margin:.4em 0}
 .hide{display:none!important}
 .fbox .katex{font-size:.9em}.fbox .katex-display{overflow-x:auto;overflow-y:hidden}
+
+/* v3 progress grid and per-topic level picker */
+.pgrid{display:grid;gap:5px;margin-top:10px}
+.pg-head,.pg-row{display:grid;grid-template-columns:104px repeat(5,1fr);gap:5px;align-items:center}
+.pg-head{font-size:10px;font-weight:800;color:var(--mut);text-align:center}
+.pg-n{font-size:11px;font-weight:700;color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pg-row i{height:18px;border-radius:4px;background:#E6EAF5;border:1px solid transparent}
+.pg-row i.c{background:var(--grn)}
+.pg-row i.a{background:#FFF1E6;border-color:var(--org)}
+.pg-row i.n{background:#fff;border:1.5px dashed var(--navy)}
+.pg-key{display:flex;gap:11px;flex-wrap:wrap;font-size:10.5px;color:var(--mut);margin-top:9px}
+.pg-key i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+.lvmini{display:flex;gap:6px;margin-top:9px}
+.lvmini button{flex:1;height:34px;border-radius:8px;font-weight:800;font-size:12.5px;border:1.5px solid transparent;position:relative}
+.lvmini .m1{background:var(--l1);color:var(--l1d)}.lvmini .m2{background:var(--l2);color:var(--l2d)}.lvmini .m3{background:var(--l3);color:var(--l3d)}.lvmini .m4{background:var(--l4);color:var(--l4d)}.lvmini .m5{background:var(--l5);color:var(--l5d)}
+.lvmini button.on{border-color:var(--navy);box-shadow:inset 0 0 0 1px var(--navy)}
+.lvmini .rec{position:absolute;top:-6px;right:-3px;background:var(--org);color:#fff;font-size:7.5px;border-radius:4px;padding:0 3px;font-weight:800}
 </style></head>
 <body>
 <div class="stage">
@@ -264,9 +281,9 @@ const CHAPTERS={
  Chemistry:['Mole Concept','Atomic Structure','Chemical Bonding','Thermodynamics','Chemical Equilibrium','Ionic Equilibrium','Redox Reactions','Electrochemistry','Chemical Kinetics','Solutions','Periodic Table','p-Block Elements','d and f Block Elements','Coordination Compounds','General Organic Chemistry','Hydrocarbons','Haloalkanes and Haloarenes','Alcohols, Phenols and Ethers','Aldehydes, Ketones and Acids','Amines and Biomolecules']};
 const CH_TOPICS={Maths:[6,8,5,4,4,3,3,4,5,4,4,3,6,5]};
 
-function fresh(){return{scr:1,grade:null,ob:[null,null,null,'English'],obStep:0,exam:'JEE Main',subj:'Maths',xp:0,streak:4,
+function fresh(){return{scr:1,grade:null,ob:[null,null,'English'],obStep:0,exam:'JEE Main',subj:'Maths',xp:0,goal:3,lastRes:{},
  lvl:[0,0,0,0,0,0],read:{},got:{},open:-1,sumTopic:0,sumOpen:{},sumFull:{},
- build:{topics:[1,1,1,0,0,0],n:[3,3,3,3,3,3],level:3},cur:null,attempts:[],resTab:'perf',ansFilter:'all',
+ build:{topics:[1,1,1,0,0,0],n:[3,3,3,3,3,3],lv:null},cur:null,attempts:[],resTab:'perf',ansFilter:'all',
  bought:null,fixed:{},nbFixed:{},nbTab:'all',seen:{},badges:{},chat:[],pay:{item:'pack',method:'upi'},lastSample:false}}
 let S=fresh();
 function save(){try{const c=Object.assign({},S);localStorage.setItem('t360',JSON.stringify(c))}catch(e){}}
@@ -281,7 +298,7 @@ function ladder(n){let h='<div class="ladder">';for(let i=1;i<=5;i++)h+=`<i clas
 function ring(p,label){return `<div class="ring" style="--p:${p}"><b>${label??p+'%'}</b></div>`}
 function xpChip(){return `<span class="chip xp">⚡ ${S.xp} XP</span>`}
 function hdr(t,s,back,right){return `<div class="top">${back!==undefined&&back!==null?`<button class="bk" onclick="go(${back})" aria-label="Back">‹</button>`:''}<div class="tt"><b>${t}</b>${s?`<small>${s}</small>`:''}</div>${right??xpChip()}</div>`}
-function bnav(on){const it=[['Home',10],['All exams',11],['Progress',57],['Profile',58]];
+function bnav(on){const it=[['Home',10],['Notebook',46],['Progress',57],['Profile',58]];
  return `<div class="bnav">${it.map(([l,n])=>`<button class="${on===l?'on':''}" onclick="${n==='prof'?'A.profile()':'go('+n+')'}"><i></i>${l}</button>`).join('')}</div>`}
 function toast(msg,ms=2600){const p=document.getElementById('phone');const old=p.querySelector('.toast');if(old)old.remove();const d=document.createElement('div');d.className='toast';d.textContent=msg;p.appendChild(d);setTimeout(()=>d.remove(),ms)}
 function addXP(n,why){S.xp+=n;if(why)toast(`+${n} XP · ${why}`);save()}
@@ -296,12 +313,13 @@ function pick(topic,n,level,seed){const r=rng(seed+topic*97+level*13);const seen
 function avail(t){return Q.filter(q=>q.t===t).length}
 
 /* ---- build a test ---- */
-function makeTest(topics,nper,level,opts={}){const seed=(S.attempts.length+1)*7919;
- let qs=[];topics.forEach(t=>qs.push(...pick(t,Math.min(nper[t],avail(t)),level,seed)));
+function makeTest(topics,nper,levelIn,opts={}){const seed=(S.attempts.length+1)*7919;
+ const lvOf=t=>typeof levelIn==='object'?(levelIn[t]||1):levelIn;const level=typeof levelIn==='object'?Math.max(1,Math.min(5,Math.round(topics.reduce((s,t)=>s+lvOf(t),0)/(topics.length||1)))):levelIn;const levels={};topics.forEach(t=>levels[t]=lvOf(t));
+ let qs=[];topics.forEach(t=>qs.push(...pick(t,Math.min(nper[t],avail(t)),lvOf(t),seed)));
  const sc=qs.filter(q=>q.ty==='sc'),nm=qs.filter(q=>q.ty==='num');qs=[...sc,...nm];
  const secs=[];if(sc.length)secs.push({name:'MAT SEC 1',ty:'sc',from:0,to:sc.length});if(nm.length)secs.push({name:'MAT SEC 2',ty:'num',from:sc.length,to:qs.length});
  const dur=Math.max(5,Math.ceil(qs.reduce((a,q)=>a+q.tt,0)/60));
- return{qs:qs.map(q=>q.id),secs,topics,level,dur,left:dur*60,idx:0,ans:{},sel:{},mark:{},vis:{0:1},time:{},t0:Date.now(),answered:0,nudged:false,retest:!!opts.retest,sample:!!opts.sample,font:0}}
+ return{qs:qs.map(q=>q.id),secs,topics,level,levels,dur,left:dur*60,idx:0,ans:{},sel:{},mark:{},vis:{0:1},time:{},t0:Date.now(),answered:0,nudged:false,retest:!!opts.retest,sample:!!opts.sample,font:0}}
 
 /* ---- scoring and the rule-based "Ved AI" ---- */
 function grade(test){const rows=test.qs.map((id,i)=>{const q=qById(id);const a=test.ans[i];const t=Math.round(test.time[i]||0);
@@ -330,8 +348,8 @@ function sampleAttempt(){const t=makeTest([0,1,2],[3,3,3,3,3,3],3,{sample:true})
  finishAttempt(t,true)}
 function finishAttempt(t,silent){const g=grade(t);const mult=LEVELS[t.level-1][1];const xp=Math.round((g.ok*10*mult)+20);
  const prev=S.attempts.length?S.attempts[S.attempts.length-1]:null;
- S.attempts.push({qs:t.qs,ans:t.ans,time:t.time,topics:t.topics,level:t.level,dur:t.dur,secs:t.secs,sample:t.sample,xp,when:Date.now(),prevScore:prev?prev.score:null,prevMax:prev?prev.max:null,score:g.score,max:g.max});
- if(!silent)g.byT.forEach(b=>{if(b.ok/b.n>=0.6)S.lvl[b.t]=Math.max(S.lvl[b.t],t.level)});
+ S.attempts.push({qs:t.qs,ans:t.ans,time:t.time,topics:t.topics,level:t.level,levels:t.levels,dur:t.dur,secs:t.secs,sample:t.sample,xp,when:Date.now(),prevScore:prev?prev.score:null,prevMax:prev?prev.max:null,score:g.score,max:g.max});
+ const c0=cellsN();if(!silent){g.byT.forEach(b=>{const lv=(t.levels&&t.levels[b.t])||t.level;if(b.ok/b.n>=0.6)S.lvl[b.t]=Math.max(S.lvl[b.t],lv);S.lastRes[b.t]={lv,ok:b.ok,n:b.n}});S.build.lv=null;const at=S.attempts[S.attempts.length-1];at.cells0=c0;at.cells1=cellsN()}
  S.lastSample=t.sample;
  if(!silent){S.xp+=xp;S.badges.first=1;if(S.attempts.filter(a=>!a.sample).length>=2)S.badges.score5=1}else{S.badges.first=1}
  S.cur=null;S.chat=[];S.seen.res=0;S.seen.ans=0;save();return g}
@@ -344,7 +362,7 @@ function landing(){
  const ch=s=>CHAPTERS[s];const all=[...ch('Physics').slice(0,4),...ch('Chemistry').slice(0,3),...ch('Maths').slice(0,3)];
  const faqs=[['Can I try before paying?','Yes. Every chapter starts with a free test and a VedAI summary. No card, no sign-up.'],
   [`What is the difference between the ${rs(PRICE.pack)} pack and the series?`,`The pack opens everything for one chapter. The series opens all ${PRICE.chapters} chapters, with the full VedAI report on every test.`],
-  ['In which languages are the tests?','Tests are in English, as in the JEE Main paper.'],
+  ['In which languages are the tests?','Questions are in English, exactly as in the JEE Main paper. Choose Hindi, Tamil or Telugu and explanations appear alongside the English.'],
   ['When do tests open?','Now. Every chapter and all 5 levels are open, with no daily cap.'],
   ['Is there a refund?','[Refund policy to be confirmed before launch.]'],
   ['What is VedAI and does it cost extra?','VedAI reads your test like a teacher would and tells you which topics cost you marks. The summary is free with every test.']];
@@ -367,7 +385,7 @@ function landing(){
   <div class="stack" style="margin-top:10px">${[['Your score, instantly','Marks, accuracy, attempts and time per question, the moment you submit.'],['Ved ScoreBooster','The quickest marks to win back.'],['Easy Kill Topics','High-weight topics you missed, each with a Start button for the lesson.'],['Ask Ved','"Why did I lose marks in Chemistry?" Answered from your own test.']].map((x,i)=>`<div class="card step"><b style="background:var(--ved)">${i+1}</b><div><b>${x[0]}</b><div class="xs mut">${x[1]}</div></div></div>`).join('')}</div>
   <button class="btn" style="margin-top:12px" onclick="go(8)">Take a free chapter test and see your VedAI report</button></section>
  <section id="s4"><div class="eyebrow">Chapter-wise tests</div><h2 class="h">${PRICE.chapters} chapters. Every one starts free.</h2>
-  <p class="mut sm">Take the free test in any chapter. Unlock that chapter's pack for ${rs(PRICE.pack)}, or all ${PRICE.chapters} with the series.</p>
+  <p class="mut sm">Take the free test in any chapter. Get that chapter's pack for ${rs(PRICE.pack)}, or all ${PRICE.chapters} with the series.</p>
   <div class="tabs" style="margin:10px 0"><button class="on">All · ${PRICE.chapters}</button><button>Phy · 20</button><button>Chem · 20</button><button>Maths · 14</button></div>
   <div class="stack" style="gap:6px">${all.map(c=>`<div class="card row" style="padding:9px 12px"><b class="sm sp">${c}</b><span class="tag">Free test</span></div>`).join('')}</div>
   <div class="xs mut" style="margin-top:6px">Chapter list is sample data: confirm the final ${PRICE.chapters}.</div></section>
@@ -378,7 +396,7 @@ function landing(){
  <section id="s6"><div class="eyebrow">Plans</div><h2 class="h">Pay only for what you need.</h2><div class="stack">
   <div class="plan"><div class="eyebrow">Start</div><b>Free chapter test · ₹0</b><div class="xs mut" style="margin:4px 0 10px">One test in every chapter · Score and marks lost by topic · VedAI summary · Retest after you fix a topic</div><button class="btn2" onclick="go(8)">Take a free test</button></div>
   <div class="plan hl"><div class="eyebrow">One chapter</div><b>Chapter pack · ${rs(PRICE.pack)} per chapter</b><div class="xs mut" style="margin:4px 0 10px">All tests in the chapter you pick · Mistake notebook for every wrong answer · Full VedAI report on each test · Retest after every fix</div><button class="btn2" onclick="go(10)">Pick a chapter</button></div>
-  <div class="plan dk"><div class="eyebrow" style="color:#FF9C72">Best value · whole syllabus</div><b>JEE Main series · ${rs(PRICE.series)} one time</b><div class="xs" style="margin:4px 0 10px;opacity:.8">All ${PRICE.chapters} chapters unlocked · 93 topic tests · Full VedAI: ScoreBooster, Easy Kill Topics, Ask Ved · Retest after every fix</div><button class="btn" onclick="A.checkout('series')">Buy the series</button></div></div></section>
+  <div class="plan dk"><div class="eyebrow" style="color:#FF9C72">Best value · whole syllabus</div><b>JEE Main series · ${rs(PRICE.series)} one time</b><div class="xs" style="margin:4px 0 10px;opacity:.8">All ${PRICE.chapters} chapters included · Full VedAI: ScoreBooster, Easy Kill Topics, Ask Ved · Retest after every fix</div><button class="btn" onclick="A.checkout('series')">Buy the series</button></div></div></section>
  <section id="s7"><h2 class="h">Questions students ask</h2><div class="stack">${faqs.map((f,i)=>`<div class="faq" onclick="this.classList.toggle('open')"><div class="row"><span class="sp">${f[0]}</span><b>+</b></div><div class="a">${f[1]}</div></div>`).join('')}</div>
   <div class="card" style="background:var(--navy);color:#fff;margin-top:14px;padding:16px;border:0"><h3 class="h" style="font-size:19px">Start with one free chapter test.</h3><p class="xs" style="opacity:.8;margin:4px 0 12px">See where you stand in 15 minutes, with your own VedAI report. No payment.</p><button class="btn" onclick="go(8)">Take a free chapter test</button></div>
   <p class="xs mut" style="text-align:center;margin-top:10px">Vedantu Test360 · Test. Analyse. Improve.</p></section>
@@ -386,14 +404,14 @@ function landing(){
 for(let i=1;i<=7;i++)R[i]=landing;
 
 /* onboarding */
-const OB=[['Which grade are you in?',['10','11','12','Dropper']],['When is your JEE Main?',['January 2027','April 2027','2028']],['Which subject feels hardest?',['Physics','Chemistry','Maths']],['How would you like to learn?',['English']]];
+const OB=[['Which class are you in?',['11','12','Dropper']],['How many tests a week do you want to take?',['2','3','5']],['Which language should explanations use?',['English','Hindi + English','Tamil + English','Telugu + English']]];
 function onboard(step){const [q,opts]=OB[step];const val=S.ob[step];
  const grid=step===0?'g2':'stack';
- return {base:landing(),center:`<div class="pad"><div class="xs mut" style="font-weight:700">Question ${step+1} of 4</div><div class="bar" style="height:4px;margin:6px 0 12px"><i style="width:${(step+1)*25}%;background:var(--navy)"></i></div>
- <h3 class="h" style="margin-bottom:12px">${q}</h3><div class="${grid}" style="gap:8px">${opts.map(o=>`<button class="opt ${val===o?'on':''}" style="${step===0?'text-align:center':''}" onclick="A.ob(${step},'${o}')">${o}${step===3?'<small>Questions, solutions and VedAI in English, as in the JEE Main paper</small>':''}</button>`).join('')}</div>
- <button class="btn" style="margin-top:14px" ${val?'':'disabled'} onclick="A.obNext(${step})">Continue</button></div>`}}
+ return {base:landing(),center:`<div class="pad"><div class="xs mut" style="font-weight:700">Question ${step+1} of 3</div><div class="bar" style="height:4px;margin:6px 0 12px"><i style="width:${(step+1)*33.3}%;background:var(--navy)"></i></div>
+ <h3 class="h" style="margin-bottom:12px">${q}</h3><div class="${grid}" style="gap:8px">${opts.map(o=>`<button class="opt ${val===o?'on':''}" style="${step===0?'text-align:center':''}" onclick="A.ob(${step},'${o}')">${o}${step===2?`<small>${o==='English'?'Questions, solutions and VedAI in English, as in the JEE Main paper':'Explanations alongside English. Questions stay in English, as in the exam'}</small>`:''}</button>`).join('')}</div>
+ <button class="btn" style="margin-top:14px" ${val?'':'disabled'} onclick="A.obNext(${step})">Continue</button><button class="link xs" style="margin:8px auto 0;display:block" onclick="A.obSkip(${step})">Skip</button></div>`}}
 R[8]=()=>onboard(S.obStep>=3?0:S.obStep);
-R[9]=()=>onboard(3);
+R[9]=()=>onboard(2);
 
 /* home */
 function home(subj){S.subj=subj;const list=CHAPTERS[subj];const last=S.attempts.length?S.attempts[S.attempts.length-1]:null;const ct=last?last.topics[0]:0;
@@ -482,7 +500,7 @@ R[20]=()=>{const b=S.build;const sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0)
 function pickTime(t,n,level){return pick(t,n,level,(S.attempts.length+1)*7919).reduce((a,q)=>a+q.tt,0)}
 
 /* ===== Screens 21–29: the test (Eklavya format) ===== */
-function ensureTest(){if(!S.cur){const b=S.build;const sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);S.cur=makeTest(sel.length?sel:[0,1,2],b.n,b.level)}return S.cur}
+function ensureTest(){if(!S.cur){const b=S.build;const sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);S.cur=makeTest(sel.length?sel:[0,1,2],b.n,buildLevels())}return S.cur}
 const fmt=s=>{s=Math.max(0,Math.round(s));return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')};
 R[21]=()=>{const t=ensureTest();const secs=t.secs.map(s=>{const q=qById(t.qs[s.from]);return [s.name,s.ty==='sc'?'Single correct':'Numerical',s.to-s.from,q.mc,q.mw]});
  return `<div class="scr"><div class="thd"><div class="sp"><b>Maths Chapter Test · Limits</b><small>${t.topics.map(i=>TOPIC_SHORT[i]).join(' · ')} · Level ${t.level}</small></div></div><div class="scroll"><div class="pad stack">
@@ -498,7 +516,7 @@ R[21]=()=>{const t=ensureTest();const secs=t.secs.map(s=>{const q=qById(t.qs[s.f
 function testWin(){const t=ensureTest();const i=t.idx;const q=qById(t.qs[i]);const sec=t.secs.find(s=>i>=s.from&&i<s.to);const sel=t.sel[i]??t.ans[i];
  const fs=[14,15.5,17][t.font+1]||15;
  return `<div class="scr"><div class="thd"><div class="sp"><b>Maths Chapter Test</b><small>Marks ${t.qs.reduce((a,id)=>a+qById(id).mc,0)} · +4 / −1</small></div><span class="timer">Time Left <span id="tmr">${fmt(t.left)}</span></span><button class="sub" onclick="A.endTap()">SUBMIT</button></div>
- <div class="ph-note">Practice test. Questions are placeholders; answer keys must be checked by a teacher before launch.</div>
+ ${t.qs.some(id=>qById(id).src==='sample')?'<div class="ph-note">Sample questions in this test are placeholders; answer keys must be checked by a teacher before launch.</div>':''}
  <div class="secs">${t.secs.map(s=>`<button class="${s===sec?'on':''}" onclick="A.jump(${s.from})">${s.name} (${s.ty==='sc'?'sc':'num'})</button>`).join('')}<span class="sp"></span><button onclick="A.formula()" style="background:#FFF1EA;color:var(--acc)">Formula sheet</button></div>
  <div class="qtype"><span>Question Type: <b>${q.ty==='sc'?'Single Choice':'Numerical'}</b></span><span><span class="mk p">+${q.mc}</span> <span class="mk n">${q.mw}</span> <button class="xs" style="margin-left:6px;font-weight:800" onclick="A.font(1)">A+</button> <button class="xs" style="font-weight:800" onclick="A.font(-1)">A−</button></span></div>
  <div class="scroll"><div class="qbody"><div class="row xs mut" style="margin-bottom:6px"><b style="color:var(--navy);font-size:13px">Q${i+1}</b><span class="sp"></span>${q.src==='sample'?'<span class="sample">Sample question</span>':`<span>${q.id}</span>`}</div>
@@ -533,7 +551,7 @@ R[29]=()=>({base:S.cur?testWin():`<div class="scr" style="background:#fff"></div
 
 /* ===== Screens 30–38: result, Ved AI, answers ===== */
 function resTop(g){return `<div class="top"><button class="bk" onclick="A.exitRes()" aria-label="Back">‹</button><div class="tt"><b>Maths Chapter Test</b><small>Limits · Level ${g.a.level} · ${g.a.sample?'<span class="sample" style="padding:0 5px">Sample attempt</span>':'Your attempt'}</small></div>${xpChip()}</div>
- <div class="utabs">${[['perf','Performance',30],['ans','Answers',36],['coach','Coach',35]].map(x=>`<button class="${S.resTab===x[0]?'on':''}" onclick="go(${x[2]})">${x[1]}</button>`).join('')}</div>`}
+ <div class="utabs">${[['perf','Performance',30],['ans','Answers',36],['coach','Ask Ved',35]].map(x=>`<button class="${S.resTab===x[0]?'on':''}" onclick="go(${x[2]})">${x[1]}</button>`).join('')}</div>`}
 function result(){const g=G();S.resTab='perf';const w=g.weak[0];const prev=g.a.prevScore;
  return `<div class="scr">${resTop(g)}<div class="scroll" id="sc"><div class="pad stack">
  <div class="score"><div class="row"><div class="sp"><div class="sm" style="opacity:.85">Hello there,</div><b style="font-size:24px;line-height:1.15">${g.acc>=70?'Great work!':'Keep<br>improving!'}</b></div><div class="dial" style="--p:${Math.max(0,g.score)/g.max*100}"><div><small>MARKS</small><b>${g.score}</b><small>out of ${g.max}</small></div></div></div>
@@ -542,8 +560,8 @@ function result(){const g=G();S.resTab='perf';const w=g.weak[0];const prev=g.a.p
    <div class="sb"><i style="width:${g.ok/g.rows.length*100}%;background:#3DD68C"></i><i style="width:${g.bad/g.rows.length*100}%;background:#FF5B5B"></i></div>
    <div class="g2 xs" style="gap:6px 12px"><div>● Correct<br><b style="font-size:16px">${g.ok}</b></div><div>● Incorrect<br><b style="font-size:16px">${g.bad}</b></div><div>● Unattempted<br><b style="font-size:16px">${g.skip}</b></div><div>Attempt accuracy<br><b style="font-size:16px">${g.acc}%</b></div></div>
    <div class="xs" style="opacity:.8;margin-top:8px">Time taken: ${fmt(g.spent)} / ${g.a.dur} mins</div></div></div>
- <div class="boost"><span class="chip">Score Boost</span><p class="sm" style="margin:8px 0">You scored ${g.score}/${g.max}. You are a <b>${g.kind}</b>: ${g.kindLine}.</p><button class="chip" style="background:rgba(255,255,255,.25);color:#fff" onclick="go(35)">Discuss with Coach</button></div>
- ${nextMove(g)}
+ <div class="boost"><span class="chip">Score Boost</span><p class="sm" style="margin:8px 0">You scored ${g.score}/${g.max}. You are a <b>${g.kind}</b>: ${g.kindLine}.</p><button class="chip" style="background:rgba(255,255,255,.25);color:#fff" onclick="go(35)">Discuss with Ved</button></div>
+ ${progressDelta(g)}${nextMove(g)}
  ${prev!==null&&prev!==undefined&&g.a.prevMax?(()=>{const p0=Math.round(Math.max(0,prev)/g.a.prevMax*100),p1=Math.round(Math.max(0,g.score)/g.max*100);return `<div class="card row"><div class="sp"><div class="eyebrow">Before → after</div><b>${prev}/${g.a.prevMax} → ${g.score}/${g.max}</b> <span class="xs mut">vs your last test</span></div><span class="tag ${p1>=p0?'':'r'}">${p1>=p0?'+':''}${p1-p0} pts</span></div>`})():''}
  <div class="card"><div class="eyebrow">${Math.min(3,g.easyLost.length)} quick actions to gain</div><b style="font-size:22px;color:var(--acc)">${g.gain} marks</b>
   <div class="sm" style="margin-top:6px"><b>Easy Kill Topics</b><div class="xs mut">You missed ${g.easyLost.length} easy or medium question${g.easyLost.length===1?'':'s'}, about ${g.gain} potential marks. Solve these first.</div></div></div>
@@ -554,12 +572,12 @@ function result(){const g=G();S.resTab='perf';const w=g.weak[0];const prev=g.a.p
   ${g.weak.length?g.weak.map(b=>`<div class="row" style="margin-top:9px"><div class="sp"><b class="sm">${T[b.t].name}</b><div class="xs" style="color:var(--acc);font-weight:700">${b.ok}/${b.n} right · ${b.lost} marks lost</div></div><button class="btn sm" onclick="A.openTopic(${b.t})">Start</button></div>`).join(''):'<div class="sm" style="margin-top:6px">Nothing lost. Try the next level.</div>'}</div>
  <div class="card"><b class="sm">Types of mistake</b>${Object.entries(g.types).map(([k,v])=>`<div class="mistake"><span>${k}</span><b>${v}</b></div><div class="bar" style="height:5px;margin-top:3px"><i style="width:${v/g.rows.length*100}%"></i></div>`).join('')}</div>
  <div class="ved"><span class="vt">Ved AI</span><b class="sm" style="display:block;margin-top:6px">Study plan, next 3 days</b><div class="xs" style="margin-top:4px;line-height:1.6">${A.plan(g)}</div></div>
- <div class="g2"><button class="btn2" onclick="A.nextTopic()">Next topic</button><button class="btn" onclick="go(53)">Same topics, Level ${Math.min(5,g.a.level+1)}</button></div>
+ <div class="g2"><button class="btn2" onclick="A.nextTopic()">Next topic</button><button class="btn" onclick="go(53)">Same topics, Level ${nextLv(g)}</button></div>
  <button class="btn" onclick="go(54)">See all my next steps →</button><button class="btn2" onclick="go(34)">How to improve</button><button class="link" style="margin:0 auto" onclick="go(36)">Review answers</button></div>
  </div></div></div>`}
 R[30]=result;R[33]=result;
 R[31]=()=>({base:result(),sheet:popPostResult(false)});
-R[32]=()=>{const tt=title(),nx=nextTitle();return {base:result(),center:`<div class="pad" style="text-align:center"><div class="badge e" style="font-size:13px">1st<br>test</div><h3 class="h" style="margin-top:10px">Badge unlocked: First Test</h3><p class="xs mut">+${lastAttempt().xp} XP · You are now <b>${tt[0]}</b>, Level ${TITLES.indexOf(tt)+1}</p>
+R[32]=()=>{const tt=title(),nx=nextTitle();return {base:result(),center:`<div class="pad" style="text-align:center"><span class="chip" style="background:#E3F6EE;color:var(--grn)">Badge earned</span><h3 class="h" style="margin-top:10px">First report</h3><p class="xs mut">+${lastAttempt().xp} XP · You are now <b>${tt[0]}</b>, Level ${TITLES.indexOf(tt)+1}</p>
  <div class="bar" style="margin:12px 0 4px"><i style="width:${nx?Math.min(100,(S.xp-tt[1])/(nx[1]-tt[1])*100):100}%"></i></div><div class="xs mut">${nx?`${nx[1]-S.xp} XP to ${nx[0]}`:'Top title reached'}</div>
  <button class="btn" style="margin-top:14px" onclick="A.afterBadge()">Keep going →</button></div>`}};
 function popPostResult(rep){const g=G();const w=g.weak[0]||{t:0};return `<div class="ph"><span class="chip">Your Limits report is ready</span><button class="x" onclick="closeOv()">×</button><h2>You can win back ${g.lostTot} marks</h2><p>Start with ${T[w.t].name.toLowerCase()}, where you lost the most. Pick how deep you want to go.</p>
@@ -671,20 +689,20 @@ function checkout(){const it=S.pay.item;const amt=it==='pack'?PRICE.pack:it==='u
 R[49]=()=>{S.pay.item='pack';return checkout()};R[50]=()=>{if(S.pay.item==='pack')S.pay.item='series';return checkout()};
 R[51]=()=>`<div class="scr">${hdr('Purchase','',48,'')}<div class="scroll"><div class="pad"><div class="card" style="text-align:center;margin-top:120px"><b style="color:var(--red)">Payment did not go through</b><div class="xs mut" style="margin-top:4px">No money was taken. Retry, or save it for later.</div></div></div></div>
  <div class="foot"><button class="btn" onclick="go(S.pay.item==='pack'?49:50)">Retry payment</button><button class="btn2" onclick="toast('Saved for later');go(48)">Save for later</button></div></div>`;
-R[52]=()=>{const ser=S.bought==='series'||S.bought==='upgrade';return {base:R[48](),sheet:`<div class="ph"><div style="width:38px;height:38px;border-radius:50%;background:#fff;color:var(--grn);display:grid;place-items:center;font-weight:800;font-size:18px">✓</div><button class="x" onclick="go(57)">×</button><h2>${ser?'Complete JEE Main series unlocked':'Limits chapter pack unlocked'}</h2><p>${ser?`All ${PRICE.chapters} chapters are open on your account.`:'Everything for this chapter is open on your account.'} (Demo: no payment was taken.)</p></div><div class="pb">
+R[52]=()=>{const ser=S.bought==='series'||S.bought==='upgrade';return {base:R[48](),sheet:`<div class="ph"><div style="width:38px;height:38px;border-radius:50%;background:#fff;color:var(--grn);display:grid;place-items:center;font-weight:800;font-size:18px">✓</div><button class="x" onclick="go(57)">×</button><h2>${ser?'Complete JEE Main series is active':'Limits chapter pack is active'}</h2><p>${ser?`All ${PRICE.chapters} chapters are open on your account.`:'Everything for this chapter is open on your account.'} (Demo: no payment was taken.)</p></div><div class="pb">
  <div class="card"><b class="sm">Start here</b>${[`Chapter-wise test: ${T[(G().weak[0]||{t:0}).t].name.toLowerCase()}`,'Quick revision notes','Mistake notebook and teacher lesson clips'].map(f=>`<div class="row sm" style="margin-top:6px"><b style="flex:none;width:17px;height:17px;border-radius:50%;background:var(--grn);color:#fff;display:grid;place-items:center;font-size:10px">✓</b>${f}</div>`).join('')}<button class="btn" style="margin-top:10px" onclick="go(53)">Start the first test</button></div>
  ${ser?'':`<div class="card" style="border:1.5px solid #E8A0B4"><span class="tag n">All ${PRICE.chapters} chapters</span><b style="display:block;margin-top:6px">Add the rest of the syllabus</b><div class="xs mut">Upgrade to the Complete JEE Main series and pay only the difference.</div><div style="margin:6px 0"><b style="font-size:22px">${rs(PRICE.upgrade)}</b> <s class="xs mut">${rs(PRICE.series)}</s></div><button class="btn" onclick="A.checkout('upgrade')">Upgrade (demo)</button></div>`}
  <button class="link" style="margin:0 auto;color:var(--mut)" onclick="go(57)">Close</button></div>`}};
-R[53]=()=>{const g=G();const lv=Math.min(5,g.a.level+1);const w=(g.weak.length?g.weak:g.byT).slice(0,3);const target=Math.min(g.max,g.score+Math.ceil(g.lostTot/2));
+R[53]=()=>{const g=G();const lv=nextLv(g);const w=(g.weak.length?g.weak:g.byT).slice(0,3);const target=Math.min(g.max,g.score+Math.ceil(g.lostTot/2));
  return `<div class="scr">${hdr(`Level ${lv}`,'Retest and beat your score',30)}<div class="scroll"><div class="pad stack">
  <div class="card row" style="justify-content:space-around;text-align:center"><div><div class="xs mut" style="font-weight:800">LAST SCORE</div><b style="font-size:24px">${g.score}/${g.max}</b></div><b style="color:var(--org);font-size:22px">→</b><div><div class="xs mut" style="font-weight:800">TARGET</div><b style="font-size:24px;color:var(--acc)">${target}/${g.max}</b></div></div>
- ${w.map(b=>`<div class="card"><div class="eyebrow">Level ${lv} · next up</div><b class="sm">${T[b.t].name}</b><div class="xs mut">3 new questions · about ${Math.ceil(pickTime(b.t,3,lv)/60)} min · +${Math.round(30*LEVELS[lv-1][1])} XP (${LEVELS[lv-1][1]}×)</div></div>`).join('')}
+ ${w.map(b=>`<div class="card"><div class="eyebrow">Level ${recLevel(b.t)} · next up</div><b class="sm">${T[b.t].name}</b><div class="xs mut">3 new questions · about ${Math.ceil(pickTime(b.t,3,recLevel(b.t))/60)} min · +${Math.round(30*LEVELS[recLevel(b.t)-1][1])} XP (${LEVELS[recLevel(b.t)-1][1]}×)</div></div>`).join('')}
  <div class="xs mut">Same topics, one level higher. Questions you have seen are picked last.</div></div></div>
  <div class="foot"><button class="btn" onclick="A.retest(${lv})">Start retest</button></div></div>`};
 R[54]=()=>{const g=G();const nt=T.findIndex((_,i)=>!g.a.topics.includes(i));const ct=g.a.topics[0];
  return `<div class="scr">${hdr("What's next",'',30)}<div class="scroll"><div class="pad stack">
  <button class="card" style="text-align:left;background:#FFF7F2;border-color:#FFC2A6" onclick="A.openTopic(${nt<0?0:nt})"><div class="eyebrow">Continue</div><b>${T[nt<0?0:nt].name} · Level 1</b><div class="xs mut">2-minute summary, then 3 questions.</div></button>
- <div class="g2"><button class="card" style="text-align:left" onclick="go(53)"><div class="eyebrow">Same topic</div><b class="sm">Level ${Math.min(5,g.a.level+1)} →</b></button><button class="card" style="text-align:left" onclick="A.buildFrom(${nt<0?0:nt})"><div class="eyebrow">Next topic</div><b class="sm">${TOPIC_SHORT[nt<0?0:nt]} →</b></button></div>
+ <div class="g2"><button class="card" style="text-align:left" onclick="go(53)"><div class="eyebrow">Same topic</div><b class="sm">Level ${nextLv(g)} →</b></button><button class="card" style="text-align:left" onclick="A.buildFrom(${nt<0?0:nt})"><div class="eyebrow">Next topic</div><b class="sm">${TOPIC_SHORT[nt<0?0:nt]} →</b></button></div>
  <button class="card row" onclick="A.other(1)"><b class="sm">Differentiation</b><span class="xs mut sp" style="text-align:left">Next chapter · free test</span></button>
  <button class="card row" onclick="go(12)"><b class="sm">Physics · Kinematics</b><span class="xs mut sp" style="text-align:left">Another subject · free test</span></button>
  ${A.loopDone()?`<div class="row xs" style="gap:12px;margin-top:6px"><span class="mut">Also preparing for</span><a class="link" onclick="go(44)">BITSAT</a><a class="link" onclick="go(45)">NDA</a></div>`:''}
@@ -693,9 +711,9 @@ R[55]=()=>({base:R[47](),sheet:`<div class="ph"><span class="chip">Limits fixed<
  <div class="card" style="text-align:center"><b class="sm">Check where you stand</b><div class="xs mut" style="margin:4px 0 10px">A free 10-minute diagnostic for the last two topics of this chapter, with a report like this one.</div><button class="btn" onclick="A.diag()">Start the free diagnostic</button><button class="link xs" style="margin-top:8px" onclick="closeOv()">Later</button></div>
  <div class="card" style="border:1.5px solid #E8A0B4"><span class="tag n">Everything</span><b style="display:block;margin-top:6px">Open all remaining chapters</b><div class="xs mut">All ${PRICE.chapters} JEE Main chapters at 5 levels, with VedAI on every test.</div><b style="font-size:22px;display:block;margin:6px 0">${rs(PRICE.series)}</b><button class="btn" onclick="A.checkout('series')">Get the full series</button></div>
  <button class="link" style="margin:0 auto;color:var(--mut)" onclick="closeOv()">Not now</button></div>`});
-R[56]=()=>({base:R[54](),center:`<div class="pad" style="text-align:center"><div class="eyebrow">Streak</div><b style="font-size:30px;display:block;color:var(--acc)">${S.streak+1}-day streak</b>
- <div class="streak">${['M','T','W','T','F','S','S'].map((d,i)=>`<span class="${i<=S.streak?'d':''}">${i<=S.streak?'✓':d}</span>`).join('')}</div>
- <div class="xs mut">Test tomorrow to make it ${S.streak+2}. A streak gives bonus XP.</div><button class="btn" style="margin-top:12px" onclick="toast('Demo: reminder set for tomorrow');closeOv()">Take tomorrow's test →</button><button class="link xs" style="margin-top:8px" onclick="closeOv()">Remind me</button></div>`});
+R[56]=()=>({base:R[54](),center:`<div class="pad" style="text-align:center"><div class="eyebrow">Streak</div><b style="font-size:30px;display:block;color:var(--acc)">${streakN()}-day streak</b>
+ <div class="streak">${weekDots()}</div>
+ <div class="xs mut">Test tomorrow to make it ${streakN()+1}. A streak gives bonus XP.</div><button class="btn" style="margin-top:12px" onclick="toast('Demo: reminder set for tomorrow');closeOv()">Take tomorrow's test →</button><button class="link xs" style="margin-top:8px" onclick="closeOv()">Remind me</button></div>`});
 function progTabs(on){return `<div class="tabs" style="margin-bottom:2px">${[['Chapter',57],['Trend',59],['Syllabus',60],['Badges',62]].map(x=>`<button class="${on===x[1]?'on':''}" onclick="go(${x[1]})">${x[0]}</button>`).join('')}</div>`}
 R[57]=()=>{const p=chapPct();return `<div class="scr">${hdr('My progress','Limits, Continuity and Differentiability',null)}<div class="scroll"><div class="pad stack">${progTabs(57)}
  <div class="card row">${`<div class="ring" style="--p:${p};width:74px;height:74px"><b style="width:58px;height:58px;font-size:16px">${p}%</b></div>`}<div class="sp"><b>Limit Learner</b><div class="xs mut">100% = Level 5 in all 6 topics</div><div class="xs" style="margin-top:4px;color:var(--acc);font-weight:700">${title()[0]} · ${S.xp} XP</div></div></div>
@@ -703,7 +721,7 @@ R[57]=()=>{const p=chapPct();return `<div class="scr">${hdr('My progress','Limit
  <button class="link" onclick="go(61)">Preview: chapter at 100%</button></div></div>
  <div class="foot"><button class="btn" onclick="A.buildFrom(-1)">Continue Level ${Math.min(5,Math.min(...S.lvl)+1)}</button></div>${bnav('Progress')}</div>`};
 R[58]=()=>{const nb=wrongRows().length;const w=S.attempts.length?G().weak[0]:null;return `<div class="scr"><div class="top"><div class="logo"><i>Vedantu</i> Test360</div><span class="sp"></span><span class="xs mut">Test Series · Explore · My Learning</span></div><div class="scroll"><div class="pad stack">
- <h2 class="h" style="margin:0">My Learning</h2><div class="xs mut" style="margin-top:-8px">Grade ${S.ob[0]||'12'} · JEE · English</div>
+ <h2 class="h" style="margin:0">My Learning</h2><div class="xs mut" style="margin-top:-8px">Class ${S.ob[0]||'12'} · JEE · ${S.ob[2]||'English'}</div>
  <div class="tabs"><button class="on">Overview</button><button onclick="go(59)">Tests</button><button onclick="go(46)">Mistakes</button><button onclick="go(33)">Planner</button></div>
  <div class="card" style="border:1.5px solid #FFC2A6"><div class="eyebrow">Recommended next step</div><b>${w?`Retest ${T[w.t].name}`:'Take your first free test'}</b><div class="xs mut">${w?`Fix ${w.lost} marks from ${TOPIC_SHORT[w.t].toLowerCase()}.`:'Pick any topic. Level 1 takes about 5 minutes.'}</div><button class="btn" style="margin-top:8px" onclick="${w?'go(53)':'go(20)'}">${w?'Start the retest':'Build my test'}</button></div>
  <b class="sm">Limits, topic by topic</b><div class="g2">${T.map((t,i)=>`<button class="card" style="text-align:left;padding:10px" onclick="A.openTopic(${i})"><b class="xs">${t.name}</b><div class="xs mut">${S.lvl[i]?`Level ${S.lvl[i]} cleared`:'Not tested'}</div></button>`).join('')}</div>
@@ -715,7 +733,7 @@ R[59]=()=>{const real=S.attempts.filter(a=>!a.sample);const pts=real.length>=2?r
  <div class="card"><div class="row"><div class="eyebrow sp">Score trend</div>${smp?'<span class="sample">Sample data</span>':''}</div>
   <div class="chart">${pts.map((p,i)=>`<div class="${i===pts.length-1?'last':''}">${p[0]}<i style="height:${Math.max(4,p[0]/mx*100)}%"></i></div>`).join('')}</div>
   <div class="xs" style="color:var(--grn);font-weight:800;margin-top:8px">${pts[pts.length-1][0]-pts[0][0]>=0?'+':''}${pts[pts.length-1][0]-pts[0][0]} marks · ${accs}% accuracy</div></div>
- <div class="g2"><div class="card" style="text-align:center"><div class="eyebrow" style="color:var(--mut)">Streak</div><b style="font-size:24px">${S.streak}</b><div class="xs mut">days</div></div><div class="card" style="text-align:center"><div class="eyebrow" style="color:var(--mut)">Level</div><b style="font-size:20px">${title()[0]}</b><div class="xs mut">${S.xp} XP</div></div></div>
+ <div class="g2"><div class="card" style="text-align:center"><div class="eyebrow" style="color:var(--mut)">Streak</div><b style="font-size:24px">${streakN()}</b><div class="xs mut">days</div></div><div class="card" style="text-align:center"><div class="eyebrow" style="color:var(--mut)">Level</div><b style="font-size:20px">${title()[0]}</b><div class="xs mut">${S.xp} XP</div></div></div>
  <div class="card"><div class="eyebrow">This week's missions · ${[Object.keys(S.got).length>=2,real.length>0,real.some(a=>a.score/a.max>=.6)].filter(Boolean).length}/3</div>
   ${[['Read 2 summary sections',Object.keys(S.got).length>=2],['Finish a test',real.length>0],['Score 60%+',real.some(a=>a.score/a.max>=.6)]].map(m=>`<div class="row sm" style="margin-top:6px"><span class="cb ${m[1]?'on':''}" style="width:17px;height:17px">${m[1]?'✓':''}</span>${m[0]}</div>`).join('')}<div class="xs mut" style="margin-top:6px">Missions are a bonus, not a cap.</div></div>
  </div></div>${bnav('Progress')}</div>`};
@@ -738,10 +756,11 @@ R[62]=()=>{const B=[['1st','First Test','Finish any test',S.badges.first],['3d',
 /* ===== Actions ===== */
 const A={
  ob(step,v){S.ob[step]=v;render()},
- obNext(step){if(step===0)S.grade=S.ob[0];if(step<2){S.obStep=step+1;render()}else if(step===2)go(9);else go(10)},
+ obNext(step){if(step===0)S.grade=S.ob[0];if(step===1)S.goal=parseInt(S.ob[1])||3;if(step<2){S.obStep=step+1;render()}else{if(S.ob[2]&&S.ob[2]!=='English')toast('Saved: '+S.ob[2]+'. This demo shows English only.',3200);go(10)}},
+ obSkip(step){if(!S.ob[step])S.ob[step]=['12','3','English'][step];A.obNext(step)},
  loopDone(){return S.attempts.filter(a=>!a.sample).length>=2},
  examGo(){const e=S.exam;if(e==='JEE Main')go(10);else if(e==='BITSAT')go(44);else if(e==='NDA')go(45);else{toast(`Demo shows JEE Main. ${e} uses the same pages once its tests are added.`);go(10)}},
- profile(){toast(`Grade ${S.ob[0]||'12'} · ${S.exam} · English. Demo: no account needed.`)},
+ profile(){toast(`Class ${S.ob[0]||'12'} · ${S.exam} · ${S.ob[2]||'English'}. Demo: no account needed.`)},
  other(){toast('This demo has the Limits question bank loaded. Other chapters open the same way once their question file is added.',3400)},
  openTopic(i){S.sumTopic=i;R16reset=true;go(16)},
  zoom(i){S.open=i;go(i<0?14:15)},
@@ -755,7 +774,7 @@ const A={
  clearTopics(){S.build.topics=[0,0,0,0,0,0];render()},
  tgl(i){S.build.topics[i]=S.build.topics[i]?0:1;render()},
  step(i,d){S.build.n[i]=Math.max(1,Math.min(Math.min(10,avail(i)),S.build.n[i]+d));render()},
- startBuild(){const b=S.build;const sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);S.cur=makeTest(sel,b.n,b.level);S.agree=false;go(21)},
+ startBuild(){const b=S.build;const sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);S.cur=makeTest(sel,b.n,buildLevels());S.agree=false;go(21)},
  begin(){S.cur.running=true;S.cur.qT=Date.now();S.nudge=0;go(22)},
  leaveQ(){const t=S.cur;if(!t||!t.qT)return;t.time[t.idx]=(t.time[t.idx]||0)+(Date.now()-t.qT)/1000;t.qT=Date.now()},
  sel(L){S.cur.sel[S.cur.idx]=L;render()},
@@ -775,7 +794,7 @@ const A={
  viewResult(){S.resTab='perf';if(S.firstReal){S.firstReal=false;go(32)}else go(31)},
  afterBadge(){go(31)},
  exitRes(){go(38)},
- plan(g){const w=g.weak;const n1=w[0]?T[w[0].t].name:T[g.a.topics[0]].name;const n2=w[1]?T[w[1].t].name:n1;const lv=Math.min(5,g.a.level+1);
+ plan(g){const w=g.weak;const n1=w[0]?T[w[0].t].name:T[g.a.topics[0]].name;const n2=w[1]?T[w[1].t].name:n1;const lv=nextLv(g);
   return `<b>Day 1:</b> redo the ${w[0]?w[0].bad+w[0].skip:0} questions you lost in ${n1}, then read its usual slips. <b>Day 2:</b> ${w[1]?`same for ${n2}`:`watch the teacher clip for ${n1}`}; read each solution first. <b>Day 3:</b> retest at Level ${lv} and beat ${g.score}.`},
  ved(k,g){const w=g.weak[0];const rs2=g.rows.filter(r=>r.st==='bad'&&r.why==='Rushed');const slow=g.rows.filter(r=>r.t>r.q.tt*1.3);
   if(k==='why'||k==='first'){if(!w)return 'You did not lose marks in this test. Move one level up.';return `You lost ${g.lostTot} marks. ${w.lost} came from <b>${T[w.t].name}</b>: ${w.bad} wrong and ${w.skip} skipped.${g.weak[1]?` Next is ${T[g.weak[1].t].name} with ${g.weak[1].lost}.`:''} ${g.types['Rushed']?`${g.types['Rushed']} of your wrong answers were rushed, under 40% of the expected time.`:''}`}
@@ -790,7 +809,7 @@ const A={
  checkout(it){S.pay.item=it;go(it==='pack'?49:50)},
  pay(){S.bought=S.pay.item;addXP(0);S.badges.buyer=1;save();go(52)},
  fix(t){S.fixed[t]=1;addXP(10,'topic fixed');const g=G();if(g.weak.every(b=>S.fixed[b.t]))go(55);else render()},
- retest(lv){const g=G();const w=(g.weak.length?g.weak:g.byT).slice(0,3).map(b=>b.t);const n=[3,3,3,3,3,3];S.cur=makeTest(w,n,lv,{retest:true});S.agree=false;go(21)},
+ retest(lv){const g=G();const w=(g.weak.length?g.weak:g.byT).slice(0,3).map(b=>b.t);const n=[3,3,3,3,3,3];S.cur=makeTest(w,n,Object.fromEntries(w.map(t=>[t,recLevel(t)])),{retest:true});S.agree=false;go(21)},
  retestWrong(){const ts=[...new Set(wrongRows().filter(r=>!S.nbFixed[r.key]).map(r=>r.q.t))];S.cur=makeTest(ts.length?ts:[0],[3,3,3,3,3,3],G().a.level,{retest:true});S.agree=false;go(21)},
  diag(){S.cur=makeTest([4,5],[3,3,3,3,3,3],1);S.agree=false;go(21)}
 };
@@ -841,11 +860,11 @@ window.addEventListener('DOMContentLoaded',()=>{load();document.getElementById('
 /* ===== v2: the 7-page flow with a personal dashboard (overrides earlier versions) ===== */
 const realAtt=()=>S.attempts.filter(a=>!a.sample);
 function lastFor(t){for(let i=S.attempts.length-1;i>=0;i--){const a=S.attempts[i];if(a.topics.includes(t)){const b=grade(a).byT.find(x=>x.t===t);if(b)return{ok:b.ok,n:b.n,lost:b.lost,level:a.level,sample:a.sample}}}return null}
-const recLevel=t=>Math.min(5,S.lvl[t]+1);
+/* recLevel, nextLv, streakN and progress helpers live in app6.js */
 function weakTopics(){const r=realAtt();if(!r.length)return[];return grade(r.at(-1)).weak.map(b=>b.t)}
 function todayCard(){const r=realAtt();
  if(!r.length)return{eb:'Today · your first step',title:'Start with Algebraic Limits',sub:'A 2-minute summary, then Level 1. Your report is instant.',btn:'Open the summary',act:'A.openTopic(0)'};
- const last=r.at(-1),g=grade(last),w=g.weak[0],lv=Math.min(5,last.level+1);
+ const last=r.at(-1),g=grade(last),w=g.weak[0],lv=recLevel(w?w.t:last.topics[0]);
  if(w)return{eb:'Today · your next move',title:`Retest ${T[w.t].name} at Level ${lv}`,sub:`You lost ${w.lost} marks here last time. Target: ${Math.min(g.max,g.score+Math.ceil(g.lostTot/2))}/${g.max}.`,btn:'Start the retest',act:'go(53)'};
  const nt=T.findIndex((_,i)=>S.lvl[i]===0);
  if(nt>=0)return{eb:'Today · your next move',title:`Next topic: ${T[nt].name}`,sub:'2-minute summary, then 3 questions at Level 1.',btn:'Open the summary',act:`A.openTopic(${nt})`};
@@ -917,7 +936,7 @@ R[20]=()=>{const b=S.build;const sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0)
  <button class="btn" ${n?'':'disabled'} onclick="A.startBuild()">Start test · ${n} questions · ${mins} min</button></div></div>`};
 
 /* Page 6 — next move on the report + per-question actions */
-function nextMove(g){const w=g.weak[0];const lv=Math.min(5,g.a.level+1);
+function nextMove(g){const w=g.weak[0];const lv=nextLv(g);
  if(w)return `<div class="card" style="border:1.5px solid var(--org)"><div class="eyebrow">Your next move</div><b style="display:block;margin:3px 0">Retest ${T[w.t].name} at Level ${lv}</b><div class="xs mut">It cost you ${w.lost} marks. Target ${Math.min(g.max,g.score+Math.ceil(g.lostTot/2))}/${g.max} next time.</div><div class="g2" style="margin-top:10px"><button class="btn sm" style="width:100%" onclick="go(53)">Retest at Level ${lv}</button><button class="btn2 sm" style="width:100%" onclick="go(54)">All next steps</button></div></div>`;
  const nt=T.findIndex((_,i)=>!g.a.topics.includes(i));return `<div class="card" style="border:1.5px solid var(--grn)"><div class="eyebrow" style="color:var(--grn)">Nothing lost · your next move</div><b style="display:block;margin:3px 0">${nt>=0?`Next topic: ${T[nt].name}`:`Level ${lv}`}</b><div class="g2" style="margin-top:10px"><button class="btn sm" style="width:100%" onclick="${nt>=0?`A.openTopic(${nt})`:'go(53)'}">Go</button><button class="btn2 sm" style="width:100%" onclick="go(54)">All next steps</button></div></div>`}
 function testFromIds(ids,level){const qs=ids.map(qById);const sc=qs.filter(q=>q.ty==='sc'),nm=qs.filter(q=>q.ty==='num');const all=[...sc,...nm];const secs=[];
@@ -926,7 +945,7 @@ function testFromIds(ids,level){const qs=ids.map(qById);const sc=qs.filter(q=>q.
 Object.assign(A,{
  openChapter(){A.openTopic(chapterTarget())},
  buildFrom(ti,lv){const w=weakTopics();if(ti>=0)S.build.topics=T.map((_,i)=>i===ti||w.includes(i)?1:0);else if(w.length)S.build.topics=T.map((_,i)=>w.includes(i)?1:0);
-  const sel=S.build.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);S.build.level=lv||(ti>=0?recLevel(ti):(sel.length?Math.min(...sel.map(recLevel)):1));S.cur=null;closeSideSafe();go(20)},
+  const sel=S.build.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);S.build.lv=lv?T.map(()=>lv):null;S.cur=null;closeSideSafe();go(20)},
  similar(id){const q=qById(id);const seen=new Set(S.attempts.flatMap(a=>a.qs));const pool=Q.filter(x=>x.t===q.t&&x.id!==id);const p=pool.find(x=>x.d===q.d&&!seen.has(x.id))||pool.find(x=>!seen.has(x.id))||pool.find(x=>x.d===q.d)||pool[0];
   if(!p){toast('No other question in this topic yet');return}S.cur=testFromIds([p.id],G().a.level);S.agree=true;S.cur.running=true;S.cur.qT=Date.now();go(22)},
  reLevel(t,lv){S.cur=makeTest([t],[3,3,3,3,3,3],Math.min(5,lv+1),{retest:true});S.agree=false;go(21)},
@@ -934,7 +953,7 @@ Object.assign(A,{
 });
 function closeSideSafe(){try{closeSide()}catch(e){}}
 /* simpler: rebuild the per-question action row by marking each card */
-R[36]=(()=>{return ()=>{const g=G();S.resTab='ans';const f=S.ansFilter;const lv=Math.min(5,g.a.level+1);const rows=g.rows.filter(r=>f==='all'||(f==='ok'&&r.st==='ok')||(f==='bad'&&r.st==='bad')||(f==='skip'&&r.st==='skip'));
+R[36]=(()=>{return ()=>{const g=G();S.resTab='ans';const f=S.ansFilter;const lv=nextLv(g);const rows=g.rows.filter(r=>f==='all'||(f==='ok'&&r.st==='ok')||(f==='bad'&&r.st==='bad')||(f==='skip'&&r.st==='skip'));
  return `<div class="scr">${resTop(g)}<div class="scroll"><div class="pad stack"><div class="row" style="gap:6px;flex-wrap:wrap">${[['all','All',g.rows.length],['ok','Correct',g.ok],['bad','Incorrect',g.bad],['skip','Skipped',g.skip]].map(x=>`<button class="chip" style="background:${f===x[0]?'var(--navy)':'#fff'};color:${f===x[0]?'#fff':'var(--navy)'};border:1px solid var(--line);padding:5px 10px" onclick="S.ansFilter='${x[0]}';render()">${x[1]} (${x[2]})</button>`).join('')}</div>
  <div class="ph-note" style="border-radius:8px">Placeholder questions. Answer keys must be checked by a teacher before launch.</div>
  ${rows.map(r=>{const q=r.q;return `<div class="card"><div class="row xs"><b style="font-size:13px">Q${r.i+1}</b><span class="mut">· ${TOPIC_SHORT[q.t]}</span><span class="sp"></span><span class="tag ${r.st==='ok'?'':r.st==='bad'?'r':'n'}">${r.st==='ok'?'Correct':r.st==='bad'?'Incorrect':'Skipped'}</span></div><div class="qtext" style="font-size:14px;margin:6px 0 8px">${q.q}</div>
@@ -946,12 +965,12 @@ R[36]=(()=>{return ()=>{const g=G();S.resTab='ans';const f=S.ansFilter;const lv=
  </div></div><div class="foot"><button class="btn" onclick="go(54)">What next →</button></div></div>`}})();
 
 /* Page 7 — three equal next steps, then the paid product */
-R[54]=()=>{const g=G();const lv=Math.min(5,g.a.level+1);const w=(g.weak.length?g.weak:g.byT).slice(0,3);const target=Math.min(g.max,g.score+Math.ceil(g.lostTot/2));
+R[54]=()=>{const g=G();const lv=nextLv(g);const w=(g.weak.length?g.weak:g.byT).slice(0,3);const target=Math.min(g.max,g.score+Math.ceil(g.lostTot/2));
  const nt=(()=>{const i=T.findIndex((_,k)=>!g.a.topics.includes(k)&&S.lvl[k]<5);return i<0?T.findIndex((_,k)=>S.lvl[k]<5):i})();const ntx=nt<0?0:nt;
  const card=(n,eb,title,sub,meta,btn,act,hl)=>`<div class="card" style="${hl?'border:1.5px solid var(--org)':''}"><div class="row"><b style="flex:none;width:24px;height:24px;border-radius:50%;background:${hl?'var(--org)':'var(--navy)'};color:#fff;display:grid;place-items:center;font-size:12px">${n}</b><div class="eyebrow sp">${eb}</div><span class="xs" style="color:var(--acc);font-weight:800">${meta}</span></div><b style="display:block;margin:6px 0 2px">${title}</b><div class="xs mut">${sub}</div><button class="${hl?'btn':'btn2'}" style="margin-top:10px" onclick="${act}">${btn}</button></div>`;
  return `<div class="scr">${hdr("What next",`From your Level ${g.a.level} test: ${g.score}/${g.max}${g.a.sample?' (sample)':''}`,30)}<div class="scroll"><div class="pad stack">
- ${card(1,'Same topic, higher level',`Level ${lv} · ${w.map(b=>TOPIC_SHORT[b.t]).join(', ')}`,`Last ${g.score}/${g.max} → target ${target}/${g.max}. Questions you have seen come last.`,`+${Math.round(10*3*w.length*LEVELS[lv-1][1])} XP`,`Retest at Level ${lv}`,'go(53)',true)}
- ${card(2,'Next topic',T[ntx].name,'A 2-minute summary, then 3 questions at Level 1.','+30 XP','Open the summary',`A.openTopic(${ntx})`,false)}
+ ${card(1,'Same topic, higher level',`Level ${lv} · ${w.map(b=>TOPIC_SHORT[b.t]).join(', ')}`,`Last ${g.score}/${g.max} → target ${target}/${g.max}. Questions you have seen come last. Clearing it fills up to ${cellWord(cellsFor(w.map(b=>b.t)))}.`,`+${Math.round(10*3*w.length*LEVELS[lv-1][1])} XP`,`Retest at Level ${lv}`,'go(53)',true)}
+ ${card(2,'Next topic',T[ntx].name,`A 2-minute summary, then 3 questions at Level ${recLevel(ntx)}. Clearing it fills up to ${cellWord(cellsFor([ntx]))}.`,'+30 XP','Open the summary',`A.openTopic(${ntx})`,false)}
  ${g.weak.length?card(3,'Fix what went wrong · free',`${g.weak.length} topic${g.weak.length===1?'':'s'}, ranked by marks lost`,`Each with the exact teacher-clip minutes and a practice set. ${g.lostTot} marks to win back.`,'+10 XP each','Start fixing','go(47)',false):card(3,'Review · free','Nothing to fix this time','Look through your answers, or try a similar question on any of them.','','Review my answers','go(36)',false)}
  <div class="row" style="margin-top:6px"><div class="eyebrow sp" style="color:var(--mut)">Go further</div><span class="xs mut">Free stays free: every level, every chapter</span></div>
  ${S.bought?`<div class="card" style="background:#EAF7F1;border-color:#9FDCC2"><b class="sm">${S.bought==='pack'?'Limits chapter pack':'Complete JEE Main series'} is active</b><div class="xs mut">Your notebook, notes and clips are open.</div></div>`:`
@@ -964,6 +983,136 @@ R[54]=()=>{const g=G();const lv=Math.min(5,g.a.level+1);const w=(g.weak.length?g
 NAMES[9]='Your dashboard · Today card, missions, Maths';NAMES[11]='Dashboard · Physics';NAMES[12]='Dashboard · Chemistry';
 NAMES[15]='Topic summary · topic strip + short notes';NAMES[16]='Topic summary · full detail';NAMES[19]='Pick topics and level · smart defaults';
 NAMES[29]='Result · your report + next move';NAMES[35]='Answers · try similar / reattempt / clip';NAMES[53]='What next · 3 next steps, then the pack';
+
+/* ===== v3: progress model (chapter grid, milestones, badges), per-topic levels, real streak, personal Home ===== */
+
+/* ---- progress model: a chapter is 6 topics x 5 levels = 30 cells; a cell fills when that level is cleared (60%+) ---- */
+const cellsN=()=>S.lvl.reduce((a,b)=>a+b,0);
+const lvOfAtt=(a,t)=>(a.levels&&a.levels[t])||a.level;
+/* the level a topic remembers: one above the last cleared level, or the same level again if the last try fell short */
+function recLevel(t){const r=S.lastRes[t];if(!r)return Math.min(5,S.lvl[t]+1);return r.ok/r.n>=0.6?Math.min(5,r.lv+1):r.lv}
+function nextLv(g){const w=g.weak&&g.weak[0];return recLevel(w?w.t:g.a.topics[0])}
+const levelOf=i=>(S.build.lv&&S.build.lv[i])||recLevel(i);
+function buildLevels(){const o={};T.forEach((_,i)=>o[i]=levelOf(i));return o}
+const cellsFor=ts=>ts.reduce((s,t)=>s+Math.max(0,recLevel(t)-S.lvl[t]),0);
+
+const MILESTONES=[[25,'Foundation set','A quarter of the chapter cleared'],[50,'Halfway there','Half of the chapter cleared'],[75,'Exam-ready zone','Three quarters cleared'],[90,'Final stretch','Only a few cells left'],[100,'Chapter cleared','Every topic cleared at Level 5']];
+const msCells=p=>Math.ceil(p*30/100);
+function nextMilestone(c=cellsN()){const m=MILESTONES.find(x=>c<msCells(x[0]));return m?{p:m[0],name:m[1],need:msCells(m[0])-c}:null}
+const cellWord=n=>n===1?'1 cell':n+' cells';
+
+/* ---- real streak and week, from the dates of real tests ---- */
+const dayKey=d=>{const x=new Date(d);return x.getFullYear()*10000+(x.getMonth()+1)*100+x.getDate()};
+const testDays=()=>new Set(realAtt().map(a=>dayKey(a.when)));
+function streakN(){const ds=testDays();if(!ds.size)return 0;const d=new Date();if(!ds.has(dayKey(d)))d.setDate(d.getDate()-1);let n=0;while(ds.has(dayKey(d))){n++;d.setDate(d.getDate()-1)}return n}
+function weekStart(){const n=new Date();const m=new Date(n.getFullYear(),n.getMonth(),n.getDate()-((n.getDay()+6)%7));return m}
+function weekDone(){const ds=testDays();const m=weekStart();return[0,1,2,3,4,5,6].map(i=>ds.has(dayKey(new Date(m.getFullYear(),m.getMonth(),m.getDate()+i))))}
+const weekTests=()=>realAtt().filter(a=>a.when>=weekStart().getTime()).length;
+function weekDots(small){const done=weekDone();const sz=small?'width:14px;height:14px;font-size:8px;':'';const today=(new Date().getDay()+6)%7;return['M','T','W','T','F','S','S'].map((d,i)=>`<span class="${done[i]?'d':''}" style="${sz}${i===today&&!done[i]?'outline:2px solid var(--org)':''}">${done[i]?'✓':d}</span>`).join('')}
+function ago(ts){const m=Math.round((Date.now()-ts)/60000);if(m<2)return 'just now';if(m<60)return m+' min ago';const h=Math.round(m/60);if(h<24)return h+' h ago';const d=Math.round(h/24);return d===1?'yesterday':d+' days ago'}
+
+/* ---- badges: plain records of something the student actually did ---- */
+function badgesEarned(){const r=realAtt();const out=[];
+ if(r.length)out.push({k:'first',n:'First report',p:'Finished your first test'});
+ const last={};
+ r.forEach(a=>{grade(a).byT.forEach(b=>{const pct=b.ok/b.n;if(last[b.t]!==undefined&&last[b.t]<.6&&pct>=.6&&!out.some(x=>x.k==='fix'+b.t))out.push({k:'fix'+b.t,n:'Fixed it · '+TOPIC_SHORT[b.t],p:`${TOPIC_SHORT[b.t]} went from ${Math.round(last[b.t]*100)}% to ${Math.round(pct*100)}%`});last[b.t]=pct})});
+ let pp=null;r.forEach(a=>{const p=Math.max(0,a.score)/a.max*100;if(pp!==null&&p-pp>=20&&!out.some(x=>x.k==='comeback'))out.push({k:'comeback',n:'Comeback',p:`Up ${Math.round(p-pp)} points on your previous test`});pp=p});
+ r.forEach(a=>{const g=grade(a);if(g.att>=3&&g.acc>=80&&g.spent<=a.dur*60&&!out.some(x=>x.k==='sharp'))out.push({k:'sharp',n:'Sharp',p:`${g.acc}% accuracy inside the time limit`})});
+ const wk=Date.now()-7*864e5;if(new Set(r.filter(a=>a.when>=wk).map(a=>dayKey(a.when))).size>=3)out.push({k:'steady',n:'Steady',p:'Tests on 3 different days this week'});
+ MILESTONES.forEach(m=>{if(cellsN()>=msCells(m[0]))out.push({k:'ms'+m[0],n:m[1],p:`${m[2]} · ${msCells(m[0])} of 30 cells`})});
+ return out}
+function badgeHints(){const out=[];const nm=nextMilestone();if(nm)out.push([nm.name,`${cellWord(nm.need)} to go`]);
+ const d=new Set(realAtt().filter(a=>a.when>=Date.now()-7*864e5).map(a=>dayKey(a.when))).size;if(d<3)out.push(['Steady',`${d} of 3 test days this week`]);
+ if(!realAtt().length)out.push(['First report','Finish your first test']);return out}
+
+/* ---- the chapter grid ---- */
+function triedSet(){const s=new Set();realAtt().forEach(a=>a.topics.forEach(t=>s.add(t+'-'+lvOfAtt(a,t))));return s}
+function gridHtml(){const tr=triedSet();
+ return `<div class="pgrid"><div class="pg-head"><span></span>${[1,2,3,4,5].map(l=>`<span>L${l}</span>`).join('')}</div>${T.map((t,i)=>`<div class="pg-row"><span class="pg-n">${TOPIC_SHORT[i]}</span>${[1,2,3,4,5].map(l=>`<i class="${l<=S.lvl[i]?'c':tr.has(i+'-'+l)?'a':l===S.lvl[i]+1?'n':''}" title="${TOPIC_SHORT[i]} Level ${l}"></i>`).join('')}</div>`).join('')}</div>
+ <div class="pg-key"><span><i style="background:var(--grn)"></i>Cleared</span><span><i style="background:#FFF1E6;border:1px solid var(--org)"></i>Tried, not yet 60%</span><span><i style="background:#fff;border:1.5px dashed var(--navy)"></i>Next</span></div>`}
+function progressCard(){const c=cellsN(),p=Math.round(c/30*100),nm=nextMilestone();
+ return `<button class="card" style="text-align:left;padding:13px" onclick="go(57)"><div class="row"><div class="sp"><div class="eyebrow" style="color:var(--mut)">Limits, Continuity &amp; Differentiability</div><div style="margin-top:2px"><b style="font-size:24px">${p}%</b> <span class="xs mut">${c} of 30 cells cleared</span></div></div><span class="link xs">My progress ›</span></div>
+ <div class="bar" style="height:6px;margin:8px 0 2px"><i style="width:${p}%"></i></div>
+ ${gridHtml()}
+ <div class="xs" style="margin-top:9px;background:#F1F3FA;border-radius:8px;padding:7px 9px">${nm?`<b>${cellWord(nm.need)}</b> to <b>${nm.name}</b> (${nm.p}%)`:'<b>Chapter cleared.</b> Every topic at Level 5.'}</div></button>`}
+
+/* ---- Home: personal to the last test ---- */
+function lastTestStrip(){const r=realAtt();if(!r.length)return '';const a=r.at(-1);const pct=Math.round(Math.max(0,a.score)/a.max*100);const prev=r.length>1?r.at(-2):null;const dl=prev?pct-Math.round(Math.max(0,prev.score)/prev.max*100):null;
+ const lv=[...new Set(a.topics.map(t=>lvOfAtt(a,t)))];const lvTxt=lv.length===1?`Level ${lv[0]}`:`Levels ${lv.join(' · ')}`;
+ return `<button class="card" style="text-align:left;padding:11px 13px" onclick="go(30)"><div class="row"><div class="eyebrow sp" style="color:var(--mut)">Your last test · ${ago(a.when)}</div><span class="link xs">View report ›</span></div>
+ <div class="row" style="margin-top:6px"><div class="sp"><b style="font-size:21px">${a.score}/${a.max}</b> <span class="xs mut">${pct}%${dl!==null?` · <b style="color:${dl>=0?'var(--grn)':'var(--red)'}">${dl>=0?'+':''}${dl} pts vs the one before</b>`:''}</span><div class="xs mut" style="margin-top:2px">${a.topics.map(t=>TOPIC_SHORT[t]).join(', ')} · ${lvTxt}</div></div>${ring(pct,pct+'%')}</div></button>`}
+function baselineTile(){const ba=beforeAfter();const r=realAtt();
+ if(ba)return `<b class="sm">${ba[0]} → ${ba[1]}</b><div class="xs" style="color:${ba[2]>=0?'var(--grn)':'var(--red)'};font-weight:800;font-size:10px">${ba[2]>=0?'+':''}${ba[2]} pts · score %</div>`;
+ if(r.length)return `<b class="sm">${Math.round(Math.max(0,r[0].score)/r[0].max*100)}% first</b><div class="xs mut" style="font-size:10px;margin-top:2px">Retest to see your change</div>`;
+ return `<div class="xs mut" style="font-size:10px;margin-top:3px">Shows after your 2nd test</div>`}
+function home(subj){S.subj=subj;const list=CHAPTERS[subj];const tc=todayCard();const ms=missions();const tt=title(),nx=nextTitle();
+ const r=realAtt();const tested=r.length>0;const wk=weakTopics();const lim=tested?grade(r.at(-1)):null;const sn=streakN();
+ const subPct={Maths:Math.round(chapPct()/14),Physics:0,Chemistry:0};
+ return `<div class="scr"><div class="top"><div class="tt"><div class="logo"><i>Vedantu</i> Test360</div><small>${tested?'Your JEE Main dashboard':'Free JEE Main tests'}</small></div>${sn?`<span class="chip" style="background:#FFF1E6;color:var(--acc);border:1px solid #FFD3B8">${sn}-day streak</span>`:''}${xpChip()}</div>
+ <div class="scroll"><div class="pad stack">
+ ${lastTestStrip()}
+ <div class="card" style="border:1.5px solid var(--org);padding:15px;background:linear-gradient(180deg,#FFF6F1,#fff 70%)"><div class="eyebrow">${tc.eb}</div><b style="font-size:18px;display:block;line-height:1.25;margin:4px 0 3px">${tc.title}</b><div class="xs mut">${tc.sub}</div><button class="btn" style="margin-top:12px" onclick="${tc.act}">${tc.btn}</button></div>
+ ${subj==='Maths'?progressCard():''}
+ <div class="g2" style="grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) minmax(0,1fr);gap:6px">
+  <div class="card" style="padding:9px;text-align:center"><div class="xs mut" style="font-weight:700">Title</div><b class="sm">${tt[0]}</b><div class="bar" style="height:4px;margin-top:5px"><i style="width:${nx?Math.min(100,(S.xp-tt[1])/(nx[1]-tt[1])*100):100}%"></i></div><div class="xs mut" style="font-size:10px;margin-top:2px">${nx?`${nx[1]-S.xp} XP to ${nx[0]}`:'Top title'}</div></div>
+  <div class="card" style="padding:9px;text-align:center"><div class="xs mut" style="font-weight:700">This week</div><div class="streak" style="margin:5px 0 0;gap:3px">${weekDots(true)}</div><div class="xs mut" style="font-size:10px;margin-top:4px">${weekTests()} of ${S.goal} tests</div></div>
+  <div class="card" style="padding:9px;text-align:center"><div class="xs mut" style="font-weight:700">Before → after</div>${baselineTile()}</div></div>
+ <div class="card" style="padding:10px 12px"><div class="row"><b class="sm sp">Today's missions · ${ms.filter(m=>m[1]).length}/3</b><span class="xs mut">bonus, not a cap</span></div>
+  <div class="row" style="gap:6px;margin-top:7px;flex-wrap:wrap">${ms.map(m=>`<span class="chip" style="background:${m[1]?'#E3F6EE':'#F1F3FA'};color:${m[1]?'var(--grn)':'var(--mut)'};font-weight:700">${m[1]?'✓ ':''}${m[0]}</span>`).join('')}</div></div>
+ <div class="tabs">${['Physics','Chemistry','Maths'].map(s=>`<button class="${s===subj?'on':''}" onclick="go(${s==='Maths'?10:s==='Physics'?12:13})">${s} <span style="opacity:.7;font-size:11px">${subPct[s]}%</span></button>`).join('')}</div>
+ ${list.map((c,i)=>{const isL=subj==='Maths'&&i===0;const p=isL?chapPct():0;const nt=(CH_TOPICS[subj]||[])[i]||[5,6,4,5][i%4];
+  let status='<span class="tag n">Not started</span>';if(isL&&tested)status=wk.length?`<span class="tag o">${wk.length} topic${wk.length>1?'s':''} to fix</span>`:`<span class="tag">Level ${Math.max(...S.lvl)} cleared</span>`;
+  const lv=isL?Math.round(S.lvl.reduce((a,b)=>a+b,0)/6):0;
+  return `<button class="chap" onclick="${isL?'A.openChapter()':`A.other(${i})`}"><div class="row"><b class="sp">${c}</b><span class="pct">${p}%</span></div>
+   <div class="row xs mut" style="margin:3px 0 7px;gap:6px;flex-wrap:wrap">${isL&&lim?`<b style="color:var(--navy)">Last: ${lim.score}/${lim.max}</b>`:`${nt} topics · 5 levels`}${status}<span class="tag">Free</span>${isL&&tested&&!S.bought?`<span class="tag n" style="background:#FFF1EA;color:var(--acc)">Pack ${rs(PRICE.pack)}</span>`:''}</div>${ladder(lv)}</button>`}).join('')}
+ </div></div>${bnav('Home')}</div>`}
+R[10]=()=>home('Maths');R[12]=()=>home('Physics');R[13]=()=>home('Chemistry');
+
+/* ---- Page 4: each topic has its own level, and remembers it ---- */
+R[20]=()=>{const b=S.build;const sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);const k=i=>Math.min(b.n[i],avail(i));const n=sel.reduce((a,i)=>a+k(i),0);
+ const mins=Math.max(5,Math.ceil(sel.reduce((a,i)=>a+pickTime(i,k(i),levelOf(i)),0)/60));const xp=Math.round(sel.reduce((a,i)=>a+k(i)*10*LEVELS[levelOf(i)-1][1],0));
+ const r=realAtt();const prev=[...r].reverse().find(a=>a.topics.some(t=>sel.includes(t)));const custom=!!b.lv;
+ return `<div class="scr">${hdr('Test yourself','Limits, Continuity and Differentiability',16)}<div class="scroll"><div class="pad stack">
+ ${prev?`<div class="card row" style="background:#FFF7F2;border-color:#FFC2A6"><div class="sp"><div class="eyebrow">Beat your last score</div><b>${prev.score}/${prev.max}</b> <span class="xs mut">on ${prev.topics.map(t=>TOPIC_SHORT[t]).join(', ')}</span></div><span class="tag o">Target ${Math.min(prev.max,prev.score+Math.ceil((prev.max-prev.score)/2))}</span></div>`:''}
+ <div class="row"><b class="sm sp">Choose topics and levels</b><button class="link" onclick="A.clearTopics()">Clear all</button></div>
+ ${T.map((t,i)=>{const lf=lastFor(i);const L=levelOf(i);const rec=recLevel(i);return `<div class="card" style="padding:10px 12px"><div class="row"><button class="cb ${b.topics[i]?'on':''}" onclick="A.tgl(${i})">${b.topics[i]?'✓':''}</button><div class="sp" onclick="A.tgl(${i})"><b class="sm">${t.name}</b><div class="xs mut">${lf?`Last time ${lf.ok}/${lf.n} at Level ${lf.level}`:'Not tested yet'}${S.lvl[i]?` · cleared up to L${S.lvl[i]}`:''}${Q.some(q=>q.t===i&&q.src==='sample')?' · sample questions':''}</div></div>
+  <div class="stepper"><button onclick="A.step(${i},-1)">−</button><b>${b.n[i]}</b><button onclick="A.step(${i},1)">+</button></div></div>
+  <div class="lvmini">${LEVELS.map((l,j)=>`<button class="m${j+1} ${L===j+1?'on':''}" onclick="A.setLv(${i},${j+1})" aria-label="Level ${j+1} ${l[0]}">${j+1}${rec===j+1?'<span class="rec">REC</span>':''}</button>`).join('')}</div>
+  <div class="xs mut" style="margin-top:5px">Level ${L} · ${LEVELS[L-1][0]} · ${LEVELS[L-1][1]}× XP${L===rec?` · ${S.lastRes[i]?(S.lastRes[i].ok/S.lastRes[i].n>=.6?'one above your last cleared level':'same level again, you were close'):'a good place to start'}`:''}</div></div>`}).join('')}
+ <div class="row xs" style="gap:6px;flex-wrap:wrap"><span class="mut">Set every topic to</span>${[1,2,3,4,5].map(l=>`<button class="chip" style="background:#fff;border:1px solid var(--line);color:var(--navy)" onclick="A.setAllLv(${l})">L${l}</button>`).join('')}${custom?`<button class="link xs" onclick="A.resetLv()">Back to recommended</button>`:''}</div>
+ <div class="xs mut">All levels are open. Each topic remembers where you left off, and moves up when you clear 60%.</div>
+ <div class="xs" style="background:#FFF8DB;border-radius:8px;padding:7px 9px;color:#6B5400">Honest note: until questions carry Level 1–5 tags, levels re-order questions by difficulty.</div>
+ </div></div><div class="foot"><div class="row xs mut"><span class="sp">${sel.length} topics · ${n} questions</span><span>about ${mins} min · +${xp} XP</span></div>
+ <button class="btn" ${n?'':'disabled'} onclick="A.startBuild()">Start test · ${n} questions · ${mins} min</button></div></div>`};
+Object.assign(A,{
+ setLv(i,l){if(!S.build.lv)S.build.lv=T.map((_,k)=>recLevel(k));S.build.lv[i]=l;render()},
+ setAllLv(l){S.build.lv=T.map(()=>l);render()},
+ resetLv(){S.build.lv=null;render()}
+});
+
+/* ---- Page 6: what this test did to your progress ---- */
+function progressDelta(g){const a=g.a;if(a.sample||a.cells1===undefined)return '';const d=a.cells1-a.cells0;const p0=Math.round(a.cells0/30*100),p1=Math.round(a.cells1/30*100);const nm=nextMilestone(a.cells1);
+ const done=g.byT.filter(b=>b.ok/b.n>=.6).map(b=>`${TOPIC_SHORT[b.t]} · Level ${lvOfAtt(a,b.t)}`);
+ const near=g.byT.filter(b=>b.ok/b.n<.6).map(b=>{const need=Math.ceil(.6*b.n)-b.ok;return `${TOPIC_SHORT[b.t]}: ${need} more correct answer${need>1?'s':''} would have cleared Level ${lvOfAtt(a,b.t)}`});
+ return `<div class="card" style="border:1.5px solid var(--grn)"><div class="eyebrow" style="color:var(--grn)">Your progress</div>
+ <div class="row" style="margin:4px 0 2px"><b style="font-size:19px" class="sp">${d>0?`+${cellWord(d)} cleared`:'No new cells this time'}</b><span class="xs mut">Chapter ${p0}% → <b style="color:var(--navy)">${p1}%</b></span></div>
+ ${done.length?`<div class="xs" style="margin-top:4px">Cleared: ${done.join(' · ')}</div>`:''}${near.map(x=>`<div class="xs mut" style="margin-top:3px">${x}</div>`).join('')}
+ <div class="xs" style="margin-top:8px;background:#F1F3FA;border-radius:8px;padding:7px 9px">${nm?`<b>${cellWord(nm.need)}</b> to <b>${nm.name}</b>`:'<b>Chapter cleared.</b>'} · <a class="link" onclick="go(57)">See my grid</a></div></div>`}
+
+/* ---- Progress hub and badges ---- */
+R[57]=()=>{const c=cellsN(),p=Math.round(c/30*100),nm=nextMilestone();const earned=badgesEarned();
+ return `<div class="scr">${hdr('My progress','Limits, Continuity and Differentiability',null)}<div class="scroll"><div class="pad stack">${progTabs(57)}
+ <div class="card"><div class="row"><div class="sp"><div class="eyebrow">Chapter progress</div><b style="font-size:28px">${p}%</b> <span class="xs mut">${c} of 30 cells</span></div>${ring(p)}</div>${gridHtml()}</div>
+ <div class="card"><b class="sm">Milestones</b>${MILESTONES.map(m=>{const ok=c>=msCells(m[0]);return `<div class="row" style="margin-top:8px"><span class="cb ${ok?'on':''}" style="width:18px;height:18px;flex:none">${ok?'✓':''}</span><div class="sp"><b class="sm">${m[1]}</b><div class="xs mut">${m[0]}% · ${m[2]}</div></div><span class="xs mut">${ok?'Done':cellWord(msCells(m[0])-c)+' to go'}</span></div>`}).join('')}</div>
+ <div class="g2"><div class="card" style="text-align:center"><div class="eyebrow" style="color:var(--mut)">Streak</div><b style="font-size:24px">${streakN()}</b><div class="xs mut">${streakN()===1?'day':'days'} in a row</div></div><div class="card" style="text-align:center"><div class="eyebrow" style="color:var(--mut)">This week</div><b style="font-size:24px">${weekTests()}/${S.goal}</b><div class="xs mut">tests</div></div></div>
+ <button class="card row" style="text-align:left" onclick="go(62)"><div class="sp"><b class="sm">Badges</b><div class="xs mut">${earned.length?`${earned.length} earned · latest: ${earned.at(-1).n}`:'Finish a test to earn your first'}</div></div><span class="link xs">View ›</span></button>
+ </div></div><div class="foot"><button class="btn" onclick="A.buildFrom(-1)">${nm?`Continue · ${cellWord(nm.need)} to ${nm.name}`:'Keep your edge sharp'}</button></div>${bnav('Progress')}</div>`};
+R[62]=()=>{const earned=badgesEarned();const hints=badgeHints();
+ return `<div class="scr">${hdr('My progress','Badges',null)}<div class="scroll"><div class="pad stack">${progTabs(62)}
+ <div class="xs mut">Badges are records of what you did. Nothing to collect for its own sake.</div>
+ ${earned.length?earned.map(b=>`<div class="card row"><span class="chip" style="background:#E3F6EE;color:var(--grn);flex:none">Earned</span><div class="sp"><b class="sm">${b.n}</b><div class="xs mut">${b.p}</div></div></div>`).join(''):'<div class="card xs mut">No badges yet. Your first report earns the first one.</div>'}
+ ${hints.length?`<div class="eyebrow" style="color:var(--mut);margin-top:6px">Next up</div>${hints.map(h=>`<div class="card row"><span class="chip" style="background:#F1F3FA;color:var(--mut);flex:none">Next</span><div class="sp"><b class="sm">${h[0]}</b><div class="xs mut">${h[1]}</div></div></div>`).join('')}`:''}
+ </div></div>${bnav('Progress')}</div>`};
 
 </script>
 </body></html>

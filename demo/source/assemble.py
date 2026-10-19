@@ -17,7 +17,7 @@ for line in open(R+'01_screens/SCREEN_LIST.md',encoding='utf-8'):
 assert len(names)==62,len(names)
 B=HERE+'/'
 h=open(B+'shell.html').read()
-js=''.join(open(B+f).read()+'\n' for f in ['app1.js','app2.js','app3.js','app4.js','app5.js'])
+js=''.join(open(B+f).read()+'\n' for f in ['app1.js','app2.js','app3.js','app4.js','app5.js','app6.js'])
 h=h.replace('/*CSS*/',open(B+'app.css').read()).replace('/*DATA*/',open(B+'data.json').read().replace('</','<\\/')).replace('/*NAMES*/',json.dumps(names,ensure_ascii=False)).replace('/*IMG*/',json.dumps(IMG)).replace('/*JS*/',js)
 open(os.path.dirname(HERE)+'/Vedantu_Test360_demo.html','w').write(h)
 print(len(h))

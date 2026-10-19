@@ -21,9 +21,9 @@ const CHAPTERS={
  Chemistry:['Mole Concept','Atomic Structure','Chemical Bonding','Thermodynamics','Chemical Equilibrium','Ionic Equilibrium','Redox Reactions','Electrochemistry','Chemical Kinetics','Solutions','Periodic Table','p-Block Elements','d and f Block Elements','Coordination Compounds','General Organic Chemistry','Hydrocarbons','Haloalkanes and Haloarenes','Alcohols, Phenols and Ethers','Aldehydes, Ketones and Acids','Amines and Biomolecules']};
 const CH_TOPICS={Maths:[6,8,5,4,4,3,3,4,5,4,4,3,6,5]};
 
-function fresh(){return{scr:1,grade:null,ob:[null,null,null,'English'],obStep:0,exam:'JEE Main',subj:'Maths',xp:0,streak:4,
+function fresh(){return{scr:1,grade:null,ob:[null,null,'English'],obStep:0,exam:'JEE Main',subj:'Maths',xp:0,goal:3,lastRes:{},
  lvl:[0,0,0,0,0,0],read:{},got:{},open:-1,sumTopic:0,sumOpen:{},sumFull:{},
- build:{topics:[1,1,1,0,0,0],n:[3,3,3,3,3,3],level:3},cur:null,attempts:[],resTab:'perf',ansFilter:'all',
+ build:{topics:[1,1,1,0,0,0],n:[3,3,3,3,3,3],lv:null},cur:null,attempts:[],resTab:'perf',ansFilter:'all',
  bought:null,fixed:{},nbFixed:{},nbTab:'all',seen:{},badges:{},chat:[],pay:{item:'pack',method:'upi'},lastSample:false}}
 let S=fresh();
 function save(){try{const c=Object.assign({},S);localStorage.setItem('t360',JSON.stringify(c))}catch(e){}}
@@ -38,7 +38,7 @@ function ladder(n){let h='<div class="ladder">';for(let i=1;i<=5;i++)h+=`<i clas
 function ring(p,label){return `<div class="ring" style="--p:${p}"><b>${label??p+'%'}</b></div>`}
 function xpChip(){return `<span class="chip xp">⚡ ${S.xp} XP</span>`}
 function hdr(t,s,back,right){return `<div class="top">${back!==undefined&&back!==null?`<button class="bk" onclick="go(${back})" aria-label="Back">‹</button>`:''}<div class="tt"><b>${t}</b>${s?`<small>${s}</small>`:''}</div>${right??xpChip()}</div>`}
-function bnav(on){const it=[['Home',10],['All exams',11],['Progress',57],['Profile',58]];
+function bnav(on){const it=[['Home',10],['Notebook',46],['Progress',57],['Profile',58]];
  return `<div class="bnav">${it.map(([l,n])=>`<button class="${on===l?'on':''}" onclick="${n==='prof'?'A.profile()':'go('+n+')'}"><i></i>${l}</button>`).join('')}</div>`}
 function toast(msg,ms=2600){const p=document.getElementById('phone');const old=p.querySelector('.toast');if(old)old.remove();const d=document.createElement('div');d.className='toast';d.textContent=msg;p.appendChild(d);setTimeout(()=>d.remove(),ms)}
 function addXP(n,why){S.xp+=n;if(why)toast(`+${n} XP · ${why}`);save()}
@@ -53,12 +53,13 @@ function pick(topic,n,level,seed){const r=rng(seed+topic*97+level*13);const seen
 function avail(t){return Q.filter(q=>q.t===t).length}
 
 /* ---- build a test ---- */
-function makeTest(topics,nper,level,opts={}){const seed=(S.attempts.length+1)*7919;
- let qs=[];topics.forEach(t=>qs.push(...pick(t,Math.min(nper[t],avail(t)),level,seed)));
+function makeTest(topics,nper,levelIn,opts={}){const seed=(S.attempts.length+1)*7919;
+ const lvOf=t=>typeof levelIn==='object'?(levelIn[t]||1):levelIn;const level=typeof levelIn==='object'?Math.max(1,Math.min(5,Math.round(topics.reduce((s,t)=>s+lvOf(t),0)/(topics.length||1)))):levelIn;const levels={};topics.forEach(t=>levels[t]=lvOf(t));
+ let qs=[];topics.forEach(t=>qs.push(...pick(t,Math.min(nper[t],avail(t)),lvOf(t),seed)));
  const sc=qs.filter(q=>q.ty==='sc'),nm=qs.filter(q=>q.ty==='num');qs=[...sc,...nm];
  const secs=[];if(sc.length)secs.push({name:'MAT SEC 1',ty:'sc',from:0,to:sc.length});if(nm.length)secs.push({name:'MAT SEC 2',ty:'num',from:sc.length,to:qs.length});
  const dur=Math.max(5,Math.ceil(qs.reduce((a,q)=>a+q.tt,0)/60));
- return{qs:qs.map(q=>q.id),secs,topics,level,dur,left:dur*60,idx:0,ans:{},sel:{},mark:{},vis:{0:1},time:{},t0:Date.now(),answered:0,nudged:false,retest:!!opts.retest,sample:!!opts.sample,font:0}}
+ return{qs:qs.map(q=>q.id),secs,topics,level,levels,dur,left:dur*60,idx:0,ans:{},sel:{},mark:{},vis:{0:1},time:{},t0:Date.now(),answered:0,nudged:false,retest:!!opts.retest,sample:!!opts.sample,font:0}}
 
 /* ---- scoring and the rule-based "Ved AI" ---- */
 function grade(test){const rows=test.qs.map((id,i)=>{const q=qById(id);const a=test.ans[i];const t=Math.round(test.time[i]||0);
@@ -87,8 +88,8 @@ function sampleAttempt(){const t=makeTest([0,1,2],[3,3,3,3,3,3],3,{sample:true})
  finishAttempt(t,true)}
 function finishAttempt(t,silent){const g=grade(t);const mult=LEVELS[t.level-1][1];const xp=Math.round((g.ok*10*mult)+20);
  const prev=S.attempts.length?S.attempts[S.attempts.length-1]:null;
- S.attempts.push({qs:t.qs,ans:t.ans,time:t.time,topics:t.topics,level:t.level,dur:t.dur,secs:t.secs,sample:t.sample,xp,when:Date.now(),prevScore:prev?prev.score:null,prevMax:prev?prev.max:null,score:g.score,max:g.max});
- if(!silent)g.byT.forEach(b=>{if(b.ok/b.n>=0.6)S.lvl[b.t]=Math.max(S.lvl[b.t],t.level)});
+ S.attempts.push({qs:t.qs,ans:t.ans,time:t.time,topics:t.topics,level:t.level,levels:t.levels,dur:t.dur,secs:t.secs,sample:t.sample,xp,when:Date.now(),prevScore:prev?prev.score:null,prevMax:prev?prev.max:null,score:g.score,max:g.max});
+ const c0=cellsN();if(!silent){g.byT.forEach(b=>{const lv=(t.levels&&t.levels[b.t])||t.level;if(b.ok/b.n>=0.6)S.lvl[b.t]=Math.max(S.lvl[b.t],lv);S.lastRes[b.t]={lv,ok:b.ok,n:b.n}});S.build.lv=null;const at=S.attempts[S.attempts.length-1];at.cells0=c0;at.cells1=cellsN()}
  S.lastSample=t.sample;
  if(!silent){S.xp+=xp;S.badges.first=1;if(S.attempts.filter(a=>!a.sample).length>=2)S.badges.score5=1}else{S.badges.first=1}
  S.cur=null;S.chat=[];S.seen.res=0;S.seen.ans=0;save();return g}

@@ -5,7 +5,7 @@ function landing(){
  const ch=s=>CHAPTERS[s];const all=[...ch('Physics').slice(0,4),...ch('Chemistry').slice(0,3),...ch('Maths').slice(0,3)];
  const faqs=[['Can I try before paying?','Yes. Every chapter starts with a free test and a VedAI summary. No card, no sign-up.'],
   [`What is the difference between the ${rs(PRICE.pack)} pack and the series?`,`The pack opens everything for one chapter. The series opens all ${PRICE.chapters} chapters, with the full VedAI report on every test.`],
-  ['In which languages are the tests?','Tests are in English, as in the JEE Main paper.'],
+  ['In which languages are the tests?','Questions are in English, exactly as in the JEE Main paper. Choose Hindi, Tamil or Telugu and explanations appear alongside the English.'],
   ['When do tests open?','Now. Every chapter and all 5 levels are open, with no daily cap.'],
   ['Is there a refund?','[Refund policy to be confirmed before launch.]'],
   ['What is VedAI and does it cost extra?','VedAI reads your test like a teacher would and tells you which topics cost you marks. The summary is free with every test.']];
@@ -28,7 +28,7 @@ function landing(){
   <div class="stack" style="margin-top:10px">${[['Your score, instantly','Marks, accuracy, attempts and time per question, the moment you submit.'],['Ved ScoreBooster','The quickest marks to win back.'],['Easy Kill Topics','High-weight topics you missed, each with a Start button for the lesson.'],['Ask Ved','"Why did I lose marks in Chemistry?" Answered from your own test.']].map((x,i)=>`<div class="card step"><b style="background:var(--ved)">${i+1}</b><div><b>${x[0]}</b><div class="xs mut">${x[1]}</div></div></div>`).join('')}</div>
   <button class="btn" style="margin-top:12px" onclick="go(8)">Take a free chapter test and see your VedAI report</button></section>
  <section id="s4"><div class="eyebrow">Chapter-wise tests</div><h2 class="h">${PRICE.chapters} chapters. Every one starts free.</h2>
-  <p class="mut sm">Take the free test in any chapter. Unlock that chapter's pack for ${rs(PRICE.pack)}, or all ${PRICE.chapters} with the series.</p>
+  <p class="mut sm">Take the free test in any chapter. Get that chapter's pack for ${rs(PRICE.pack)}, or all ${PRICE.chapters} with the series.</p>
   <div class="tabs" style="margin:10px 0"><button class="on">All · ${PRICE.chapters}</button><button>Phy · 20</button><button>Chem · 20</button><button>Maths · 14</button></div>
   <div class="stack" style="gap:6px">${all.map(c=>`<div class="card row" style="padding:9px 12px"><b class="sm sp">${c}</b><span class="tag">Free test</span></div>`).join('')}</div>
   <div class="xs mut" style="margin-top:6px">Chapter list is sample data: confirm the final ${PRICE.chapters}.</div></section>
@@ -39,7 +39,7 @@ function landing(){
  <section id="s6"><div class="eyebrow">Plans</div><h2 class="h">Pay only for what you need.</h2><div class="stack">
   <div class="plan"><div class="eyebrow">Start</div><b>Free chapter test · ₹0</b><div class="xs mut" style="margin:4px 0 10px">One test in every chapter · Score and marks lost by topic · VedAI summary · Retest after you fix a topic</div><button class="btn2" onclick="go(8)">Take a free test</button></div>
   <div class="plan hl"><div class="eyebrow">One chapter</div><b>Chapter pack · ${rs(PRICE.pack)} per chapter</b><div class="xs mut" style="margin:4px 0 10px">All tests in the chapter you pick · Mistake notebook for every wrong answer · Full VedAI report on each test · Retest after every fix</div><button class="btn2" onclick="go(10)">Pick a chapter</button></div>
-  <div class="plan dk"><div class="eyebrow" style="color:#FF9C72">Best value · whole syllabus</div><b>JEE Main series · ${rs(PRICE.series)} one time</b><div class="xs" style="margin:4px 0 10px;opacity:.8">All ${PRICE.chapters} chapters unlocked · 93 topic tests · Full VedAI: ScoreBooster, Easy Kill Topics, Ask Ved · Retest after every fix</div><button class="btn" onclick="A.checkout('series')">Buy the series</button></div></div></section>
+  <div class="plan dk"><div class="eyebrow" style="color:#FF9C72">Best value · whole syllabus</div><b>JEE Main series · ${rs(PRICE.series)} one time</b><div class="xs" style="margin:4px 0 10px;opacity:.8">All ${PRICE.chapters} chapters included · Full VedAI: ScoreBooster, Easy Kill Topics, Ask Ved · Retest after every fix</div><button class="btn" onclick="A.checkout('series')">Buy the series</button></div></div></section>
  <section id="s7"><h2 class="h">Questions students ask</h2><div class="stack">${faqs.map((f,i)=>`<div class="faq" onclick="this.classList.toggle('open')"><div class="row"><span class="sp">${f[0]}</span><b>+</b></div><div class="a">${f[1]}</div></div>`).join('')}</div>
   <div class="card" style="background:var(--navy);color:#fff;margin-top:14px;padding:16px;border:0"><h3 class="h" style="font-size:19px">Start with one free chapter test.</h3><p class="xs" style="opacity:.8;margin:4px 0 12px">See where you stand in 15 minutes, with your own VedAI report. No payment.</p><button class="btn" onclick="go(8)">Take a free chapter test</button></div>
   <p class="xs mut" style="text-align:center;margin-top:10px">Vedantu Test360 · Test. Analyse. Improve.</p></section>
@@ -47,14 +47,14 @@ function landing(){
 for(let i=1;i<=7;i++)R[i]=landing;
 
 /* onboarding */
-const OB=[['Which grade are you in?',['10','11','12','Dropper']],['When is your JEE Main?',['January 2027','April 2027','2028']],['Which subject feels hardest?',['Physics','Chemistry','Maths']],['How would you like to learn?',['English']]];
+const OB=[['Which class are you in?',['11','12','Dropper']],['How many tests a week do you want to take?',['2','3','5']],['Which language should explanations use?',['English','Hindi + English','Tamil + English','Telugu + English']]];
 function onboard(step){const [q,opts]=OB[step];const val=S.ob[step];
  const grid=step===0?'g2':'stack';
- return {base:landing(),center:`<div class="pad"><div class="xs mut" style="font-weight:700">Question ${step+1} of 4</div><div class="bar" style="height:4px;margin:6px 0 12px"><i style="width:${(step+1)*25}%;background:var(--navy)"></i></div>
- <h3 class="h" style="margin-bottom:12px">${q}</h3><div class="${grid}" style="gap:8px">${opts.map(o=>`<button class="opt ${val===o?'on':''}" style="${step===0?'text-align:center':''}" onclick="A.ob(${step},'${o}')">${o}${step===3?'<small>Questions, solutions and VedAI in English, as in the JEE Main paper</small>':''}</button>`).join('')}</div>
- <button class="btn" style="margin-top:14px" ${val?'':'disabled'} onclick="A.obNext(${step})">Continue</button></div>`}}
+ return {base:landing(),center:`<div class="pad"><div class="xs mut" style="font-weight:700">Question ${step+1} of 3</div><div class="bar" style="height:4px;margin:6px 0 12px"><i style="width:${(step+1)*33.3}%;background:var(--navy)"></i></div>
+ <h3 class="h" style="margin-bottom:12px">${q}</h3><div class="${grid}" style="gap:8px">${opts.map(o=>`<button class="opt ${val===o?'on':''}" style="${step===0?'text-align:center':''}" onclick="A.ob(${step},'${o}')">${o}${step===2?`<small>${o==='English'?'Questions, solutions and VedAI in English, as in the JEE Main paper':'Explanations alongside English. Questions stay in English, as in the exam'}</small>`:''}</button>`).join('')}</div>
+ <button class="btn" style="margin-top:14px" ${val?'':'disabled'} onclick="A.obNext(${step})">Continue</button><button class="link xs" style="margin:8px auto 0;display:block" onclick="A.obSkip(${step})">Skip</button></div>`}}
 R[8]=()=>onboard(S.obStep>=3?0:S.obStep);
-R[9]=()=>onboard(3);
+R[9]=()=>onboard(2);
 
 /* home */
 function home(subj){S.subj=subj;const list=CHAPTERS[subj];const last=S.attempts.length?S.attempts[S.attempts.length-1]:null;const ct=last?last.topics[0]:0;
