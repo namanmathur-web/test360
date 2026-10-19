@@ -49,7 +49,7 @@
   "c": "Vedantu JEE Main bank · Maths ch07 · JEE-P1-MATHEM-07-03",
   "d": "medium",
   "ty": "num",
-  "q": "Let p(x) = x^3 + a x^2 + b x - 6, where a and b are real constants. It is given that the limit of p(x)/(x - 1) as x tends to 1 exists and equals 4. Find the value of p(3).",
+  "q": "Let $p(x) = x^3 + a x^2 + b x - 6$, where $a$ and $b$ are real constants. It is given that $\\lim_{x \\to 1} \\dfrac{p(x)}{x - 1}$ exists and equals $4$. Find the value of $p(3)$.",
   "o": [],
   "a": "12",
   "mc": 4,
@@ -66,12 +66,12 @@
   "c": "Vedantu JEE Main bank · Maths ch07 · JEE-P1-MATHEM-07-04",
   "d": "medium",
   "ty": "sc",
-  "q": "Consider the rational function f(x) = (x^3 - 2x^2 - 5x + 6)/(x^2 - 4x + 3), taken over the real numbers. Which one of the following statements is correct?",
+  "q": "Consider the rational function $f(x) = \\dfrac{x^3 - 2x^2 - 5x + 6}{x^2 - 4x + 3}$, taken over the real numbers. Which one of the following statements is correct?",
   "o": [
-   "The domain of f is R and f(x) = x + 2 for every real x",
-   "The domain of f is R \\ {3} and f(x) = x + 2 there",
-   "The domain of f is R \\ {1, 3} and f(x) = x + 2 there",
-   "The domain of f is R \\ {1, 3} and f(x) = x - 2 there"
+   "The domain of $f$ is $\\mathbb{R}$ and $f(x) = x + 2$ for every real $x$",
+   "The domain of $f$ is $\\mathbb{R} \\setminus \\{3\\}$ and $f(x) = x + 2$ there",
+   "The domain of $f$ is $\\mathbb{R} \\setminus \\{1, 3\\}$ and $f(x) = x + 2$ there",
+   "The domain of $f$ is $\\mathbb{R} \\setminus \\{1, 3\\}$ and $f(x) = x - 2$ there"
   ],
   "a": "c",
   "mc": 4,
@@ -171,12 +171,12 @@
   "c": "Vedantu JEE Main bank · Maths ch07 · JEE-P1-MATHEM-07-09",
   "d": "easy",
   "ty": "sc",
-  "q": "For x near 0 with x not 0 and tan 5x not 0, consider the quotient (sin 7x - sin 3x)/(tan 5x). The value of its limit as x tends to 0 is",
+  "q": "For $x$ near $0$ with $x \\neq 0$ and $\\tan 5x \\neq 0$, consider the quotient $\\dfrac{\\sin 7x - \\sin 3x}{\\tan 5x}$. The value of its limit as $x \\to 0$ is",
   "o": [
-   "2",
-   "4/5",
-   "21/5",
-   "4"
+   "$2$",
+   "$\\dfrac{4}{5}$",
+   "$\\dfrac{21}{5}$",
+   "$4$"
   ],
   "a": "b",
   "mc": 4,
@@ -193,12 +193,12 @@
   "c": "Vedantu JEE Main bank · Maths ch07 · JEE-P1-MATHEM-07-09",
   "d": "hard",
   "ty": "sc",
-  "q": "For x near 0 and x not 0, consider F(x) = ((1 + 3 sin x)/(1 - 2 sin x))^(1/x). The limit of F(x) as x tends to 0 is",
+  "q": "For $x$ near $0$ and $x \\neq 0$, consider $F(x) = \\left(\\dfrac{1 + 3\\sin x}{1 - 2\\sin x}\\right)^{1/x}$. The limit of $F(x)$ as $x \\to 0$ is",
   "o": [
-   "e^5",
-   "e",
-   "e^6",
-   "e^-5"
+   "$e^{5}$",
+   "$e$",
+   "$e^{6}$",
+   "$e^{-5}$"
   ],
   "a": "a",
   "mc": 4,
@@ -215,7 +215,7 @@
   "c": "Vedantu JEE Main bank · Maths ch07 · JEE-P1-MATHEM-07-09",
   "d": "hard",
   "ty": "num",
-  "q": "For x near 0 with x not 0 and 1 + 3x > 0, let L be the limit, as x tends to 0, of [ln(1 + 3x) - 3x + (9/2) x^2] / x^3, where ln denotes the natural logarithm. Find the value of L.",
+  "q": "For $x$ near $0$ with $x \\neq 0$ and $1 + 3x > 0$, let $L$ be the limit, as $x \\to 0$, of $\\dfrac{\\ln(1 + 3x) - 3x + \\frac{9}{2}x^2}{x^3}$, where $\\ln$ denotes the natural logarithm. Find the value of $L$.",
   "o": [],
   "a": "9",
   "mc": 4,
@@ -232,12 +232,12 @@
   "c": "Vedantu JEE Main bank · Maths ch07 · JEE-P1-MATHEM-07-10",
   "d": "medium",
   "ty": "sc",
-  "q": "Let f be defined on R by f(x) = (sqrt(1 + 4x) - 1)/x for x not 0, and f(0) = k, where k is a real constant and x is restricted to x > -1/4 so that the square root is real. The value of k for which f is continuous at x = 0 is",
+  "q": "Let $f(x) = \\dfrac{\\sqrt{1 + 4x} - 1}{x}$ for $x \\neq 0$ and $f(0) = k$, where $k$ is a real constant and $x > -\\tfrac{1}{4}$ so that the square root is real. The value of $k$ for which $f$ is continuous at $x = 0$ is",
   "o": [
-   "4",
-   "1/2",
-   "2",
-   "0"
+   "$4$",
+   "$\\dfrac{1}{2}$",
+   "$2$",
+   "$0$"
   ],
   "a": "c",
   "mc": 4,
@@ -254,12 +254,12 @@
   "c": "Vedantu JEE Main bank · Maths ch07 · JEE-P1-MATHEM-07-10",
   "d": "medium",
   "ty": "sc",
-  "q": "Let f(x) = |x^2 - 7x + 10| for every real x. Which one of the following statements about f at the two points x = 2 and x = 5 is correct?",
+  "q": "Let $f(x) = |x^2 - 7x + 10|$ for every real $x$. Which one of the following statements about $f$ at the two points $x = 2$ and $x = 5$ is correct?",
   "o": [
-   "f is continuous at x = 2 and x = 5 but differentiable at neither",
-   "f is differentiable at x = 2 and x = 5, with f'(2) = -3, f'(5) = 3",
-   "f is discontinuous at x = 2 and x = 5, and differentiable at neither",
-   "f is continuous and differentiable at every real number x"
+   "$f$ is continuous at $x = 2$ and $x = 5$ but differentiable at neither",
+   "$f$ is differentiable at $x = 2$ and $x = 5$, with $f'(2) = -3$, $f'(5) = 3$",
+   "$f$ is discontinuous at $x = 2$ and $x = 5$, and differentiable at neither",
+   "$f$ is continuous and differentiable at every real number $x$"
   ],
   "a": "a",
   "mc": 4,
@@ -276,12 +276,12 @@
   "c": "Vedantu JEE Main bank · Maths ch07 · JEE-P1-MATHEM-07-10",
   "d": "hard",
   "ty": "sc",
-  "q": "Let a and b be real constants and let f be defined on R by f(x) = a x^2 + b x + 1 for x <= 1 and f(x) = 3 ln x + 2x for x > 1, where ln denotes the natural logarithm. If f is differentiable at x = 1, then the ordered pair (a, b) is",
+  "q": "Let $a$ and $b$ be real constants and let $f$ be defined on $\\mathbb{R}$ by $f(x) = ax^2 + bx + 1$ for $x \\le 1$ and $f(x) = 3\\ln x + 2x$ for $x > 1$, where $\\ln$ denotes the natural logarithm. If $f$ is differentiable at $x = 1$, then the ordered pair $(a, b)$ is",
   "o": [
-   "(-3, 4)",
-   "(4, -3)",
-   "(2, -1)",
-   "(1, 0)"
+   "$(-3, 4)$",
+   "$(4, -3)$",
+   "$(2, -1)$",
+   "$(1, 0)$"
   ],
   "a": "b",
   "mc": 4,

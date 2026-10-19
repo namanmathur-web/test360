@@ -122,7 +122,7 @@ const A={
  clearTopics(){S.build.topics=[0,0,0,0,0,0];render()},
  tgl(i){S.build.topics[i]=S.build.topics[i]?0:1;render()},
  step(i,d){S.build.n[i]=Math.max(1,Math.min(Math.min(10,avail(i)),S.build.n[i]+d));render()},
- startBuild(){const b=S.build;const sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);S.cur=makeTest(sel,b.n,buildLevels());S.agree=false;go(21)},
+ startBuild(){S.build.adv=false;const b=S.build;const sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);S.cur=makeTest(sel,b.n,buildLevels());S.agree=false;go(21)},
  begin(){S.cur.running=true;S.cur.qT=Date.now();S.nudge=0;go(22)},
  leaveQ(){const t=S.cur;if(!t||!t.qT)return;t.time[t.idx]=(t.time[t.idx]||0)+(Date.now()-t.qT)/1000;t.qT=Date.now()},
  sel(L){S.cur.sel[S.cur.idx]=L;render()},
@@ -141,7 +141,7 @@ const A={
   const first=!S.attempts.some(a=>!a.sample);finishAttempt(t);S.firstReal=first;S.verified=false;S.nudge=0;if(auto)toast('Time is up. Your test was submitted.');go(29)},
  viewResult(){S.resTab='perf';if(S.firstReal){S.firstReal=false;go(32)}else go(31)},
  afterBadge(){go(31)},
- exitRes(){go(38)},
+ exitRes(){go(10)},
  plan(g){const w=g.weak;const n1=w[0]?T[w[0].t].name:T[g.a.topics[0]].name;const n2=w[1]?T[w[1].t].name:n1;const lv=nextLv(g);
   return `<b>Day 1:</b> redo the ${w[0]?w[0].bad+w[0].skip:0} questions you lost in ${n1}, then read its usual slips. <b>Day 2:</b> ${w[1]?`same for ${n2}`:`watch the teacher clip for ${n1}`}; read each solution first. <b>Day 3:</b> retest at Level ${lv} and beat ${g.score}.`},
  ved(k,g){const w=g.weak[0];const rs2=g.rows.filter(r=>r.st==='bad'&&r.why==='Rushed');const slow=g.rows.filter(r=>r.t>r.q.tt*1.3);

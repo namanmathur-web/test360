@@ -89,7 +89,7 @@ function sampleAttempt(){const t=makeTest([0,1,2],[3,3,3,3,3,3],3,{sample:true})
 function finishAttempt(t,silent){const g=grade(t);const mult=LEVELS[t.level-1][1];const xp=Math.round((g.ok*10*mult)+20);
  const prev=S.attempts.length?S.attempts[S.attempts.length-1]:null;
  S.attempts.push({qs:t.qs,ans:t.ans,time:t.time,topics:t.topics,level:t.level,levels:t.levels,dur:t.dur,secs:t.secs,sample:t.sample,xp,when:Date.now(),prevScore:prev?prev.score:null,prevMax:prev?prev.max:null,score:g.score,max:g.max});
- const c0=cellsN();if(!silent){g.byT.forEach(b=>{const lv=(t.levels&&t.levels[b.t])||t.level;if(b.ok/b.n>=0.6)S.lvl[b.t]=Math.max(S.lvl[b.t],lv);S.lastRes[b.t]={lv,ok:b.ok,n:b.n}});S.build.lv=null;const at=S.attempts[S.attempts.length-1];at.cells0=c0;at.cells1=cellsN()}
+ const c0=cellsN();if(!silent){g.byT.forEach(b=>{const lv=(t.levels&&t.levels[b.t])||t.level;if(b.ok/b.n>=0.6)S.lvl[b.t]=Math.max(S.lvl[b.t],lv);S.lastRes[b.t]={lv,ok:b.ok,n:b.n}});S.build.lv=null;S.build.adv=false;const at=S.attempts[S.attempts.length-1];at.cells0=c0;at.cells1=cellsN()}
  S.lastSample=t.sample;
  if(!silent){S.xp+=xp;S.badges.first=1;if(S.attempts.filter(a=>!a.sample).length>=2)S.badges.score5=1}else{S.badges.first=1}
  S.cur=null;S.chat=[];S.seen.res=0;S.seen.ans=0;save();return g}

@@ -8,7 +8,7 @@ def b64(path,maxw,fmt='JPEG',q=80):
     if im.width>maxw: im=im.resize((maxw,round(im.height*maxw/im.width)),Image.LANCZOS)
     b=io.BytesIO();im.save(b,fmt,quality=q) if fmt=='JPEG' else im.save(b,fmt,optimize=True)
     return f'data:image/{fmt.lower()};base64,'+base64.b64encode(b.getvalue()).decode()
-IMG=dict(hero=b64(R+'01_screens/board/real/hero.jpg',720),results=b64(R+'01_screens/board/real/results_jee.jpg',400),
+IMG=dict(hero=b64(R+'01_screens/board/real/hero_v2.jpg',760),results=b64(R+'01_screens/board/real/results_jee.jpg',400),
  bitsat=b64(R+'02_banners/img/BITSAT_exam_tile.png',240,'PNG'),nda=b64(R+'02_banners/img/NDA_exam_tile.png',297))
 names=[]
 for line in open(R+'01_screens/SCREEN_LIST.md',encoding='utf-8'):

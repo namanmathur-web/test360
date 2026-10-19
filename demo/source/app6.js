@@ -65,6 +65,7 @@ function home(subj){S.subj=subj;const list=CHAPTERS[subj];const tc=todayCard();c
  return `<div class="scr"><div class="top"><div class="tt"><div class="logo"><i>Vedantu</i> Test360</div><small>${tested?'Your JEE Main dashboard':'Free JEE Main tests'}</small></div>${sn?`<span class="chip" style="background:#FFF1E6;color:var(--acc);border:1px solid #FFD3B8">${sn}-day streak</span>`:''}${xpChip()}</div>
  <div class="scroll"><div class="pad stack">
  ${lastTestStrip()}
+ ${setupCard()}
  <div class="card" style="border:1.5px solid var(--org);padding:15px;background:linear-gradient(180deg,#FFF6F1,#fff 70%)"><div class="eyebrow">${tc.eb}</div><b style="font-size:18px;display:block;line-height:1.25;margin:4px 0 3px">${tc.title}</b><div class="xs mut">${tc.sub}</div><button class="btn" style="margin-top:12px" onclick="${tc.act}">${tc.btn}</button></div>
  ${subj==='Maths'?progressCard():''}
  <div class="g2" style="grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) minmax(0,1fr);gap:6px">
@@ -83,10 +84,10 @@ function home(subj){S.subj=subj;const list=CHAPTERS[subj];const tc=todayCard();c
 R[10]=()=>home('Maths');R[12]=()=>home('Physics');R[13]=()=>home('Chemistry');
 
 /* ---- Page 4: each topic has its own level, and remembers it ---- */
-R[20]=()=>{const b=S.build;const sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);const k=i=>Math.min(b.n[i],avail(i));const n=sel.reduce((a,i)=>a+k(i),0);
+function buildAdv(){const b=S.build;const sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);const k=i=>Math.min(b.n[i],avail(i));const n=sel.reduce((a,i)=>a+k(i),0);
  const mins=Math.max(5,Math.ceil(sel.reduce((a,i)=>a+pickTime(i,k(i),levelOf(i)),0)/60));const xp=Math.round(sel.reduce((a,i)=>a+k(i)*10*LEVELS[levelOf(i)-1][1],0));
  const r=realAtt();const prev=[...r].reverse().find(a=>a.topics.some(t=>sel.includes(t)));const custom=!!b.lv;
- return `<div class="scr">${hdr('Test yourself','Limits, Continuity and Differentiability',16)}<div class="scroll"><div class="pad stack">
+ return `<div class="scr"><div class="top"><button class="bk" onclick="A.advClose()" aria-label="Back">‹</button><div class="tt"><b>Change your test</b><small>Pick topics and a level for each</small></div>${xpChip()}</div><div class="scroll"><div class="pad stack">
  ${prev?`<div class="card row" style="background:#FFF7F2;border-color:#FFC2A6"><div class="sp"><div class="eyebrow">Beat your last score</div><b>${prev.score}/${prev.max}</b> <span class="xs mut">on ${prev.topics.map(t=>TOPIC_SHORT[t]).join(', ')}</span></div><span class="tag o">Target ${Math.min(prev.max,prev.score+Math.ceil((prev.max-prev.score)/2))}</span></div>`:''}
  <div class="row"><b class="sm sp">Choose topics and levels</b><button class="link" onclick="A.clearTopics()">Clear all</button></div>
  ${T.map((t,i)=>{const lf=lastFor(i);const L=levelOf(i);const rec=recLevel(i);return `<div class="card" style="padding:10px 12px"><div class="row"><button class="cb ${b.topics[i]?'on':''}" onclick="A.tgl(${i})">${b.topics[i]?'✓':''}</button><div class="sp" onclick="A.tgl(${i})"><b class="sm">${t.name}</b><div class="xs mut">${lf?`Last time ${lf.ok}/${lf.n} at Level ${lf.level}`:'Not tested yet'}${S.lvl[i]?` · cleared up to L${S.lvl[i]}`:''}${Q.some(q=>q.t===i&&q.src==='sample')?' · sample questions':''}</div></div>
@@ -97,8 +98,19 @@ R[20]=()=>{const b=S.build;const sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0)
  <div class="xs mut">All levels are open. Each topic remembers where you left off, and moves up when you clear 60%.</div>
  <div class="xs" style="background:#FFF8DB;border-radius:8px;padding:7px 9px;color:#6B5400">Honest note: until questions carry Level 1–5 tags, levels re-order questions by difficulty.</div>
  </div></div><div class="foot"><div class="row xs mut"><span class="sp">${sel.length} topics · ${n} questions</span><span>about ${mins} min · +${xp} XP</span></div>
- <button class="btn" ${n?'':'disabled'} onclick="A.startBuild()">Start test · ${n} questions · ${mins} min</button></div></div>`};
+ <button class="btn" ${n?'':'disabled'} onclick="A.startBuild()">Start test · ${n} questions · ${mins} min</button><button class="link xs" style="margin:8px auto 0;display:block" onclick="A.advClose()">Done</button></div></div>`}
+function buildSimple(){const b=S.build;let sel=b.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);if(!sel.length){b.topics=[1,1,1,0,0,0];sel=[0,1,2]}
+ const k=i=>Math.min(b.n[i],avail(i));const n=sel.reduce((a,i)=>a+k(i),0);const mins=Math.max(5,Math.ceil(sel.reduce((a,i)=>a+pickTime(i,k(i),levelOf(i)),0)/60));
+ const r=realAtt();const prev=[...r].reverse().find(a=>a.topics.some(t=>sel.includes(t)));
+ return `<div class="scr">${hdr('Your next test','Limits, Continuity and Differentiability',10)}<div class="scroll"><div class="pad stack">
+ <div class="card" style="border:1.5px solid var(--org);background:linear-gradient(180deg,#FFF6F1,#fff 70%);padding:15px"><div class="eyebrow">Ready when you are</div><b style="font-size:22px;display:block;margin:4px 0 2px">${n} questions · about ${mins} min</b><div class="xs mut">Picked for you from your last test. Change it only if you want to.</div>
+  <div class="stack" style="gap:7px;margin-top:12px">${sel.map(i=>`<div class="row" style="background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 10px"><div class="sp"><b class="sm">${T[i].name}</b><div class="xs mut">${k(i)} questions</div></div><span class="chip" style="background:#E8EDFB;color:var(--navy)">Level ${levelOf(i)}</span></div>`).join('')}</div></div>
+ ${prev?`<div class="card row" style="background:#FFF7F2;border-color:#FFC2A6"><div class="sp"><div class="eyebrow">Beat your last score</div><b>${prev.score}/${prev.max}</b></div><span class="tag o">Target ${Math.min(prev.max,prev.score+Math.ceil((prev.max-prev.score)/2))}</span></div>`:''}
+ <button class="btn2" onclick="A.advOpen()">Change topics or levels</button>
+ </div></div><div class="foot"><button class="btn" onclick="A.startBuild()">Start test</button></div></div>`}
+R[20]=()=>S.build.adv?buildAdv():buildSimple();
 Object.assign(A,{
+ advOpen(){S.build.adv=true;render()},advClose(){S.build.adv=false;render()},
  setLv(i,l){if(!S.build.lv)S.build.lv=T.map((_,k)=>recLevel(k));S.build.lv[i]=l;render()},
  setAllLv(l){S.build.lv=T.map(()=>l);render()},
  resetLv(){S.build.lv=null;render()}
@@ -127,3 +139,18 @@ R[62]=()=>{const earned=badgesEarned();const hints=badgeHints();
  ${earned.length?earned.map(b=>`<div class="card row"><span class="chip" style="background:#E3F6EE;color:var(--grn);flex:none">Earned</span><div class="sp"><b class="sm">${b.n}</b><div class="xs mut">${b.p}</div></div></div>`).join(''):'<div class="card xs mut">No badges yet. Your first report earns the first one.</div>'}
  ${hints.length?`<div class="eyebrow" style="color:var(--mut);margin-top:6px">Next up</div>${hints.map(h=>`<div class="card row"><span class="chip" style="background:#F1F3FA;color:var(--mut);flex:none">Next</span><div class="sp"><b class="sm">${h[0]}</b><div class="xs mut">${h[1]}</div></div></div>`).join('')}`:''}
  </div></div>${bnav('Progress')}</div>`};
+
+/* ---- ease of use: straight into a test, save and resume, report capture, first-run note ---- */
+function firstRunNote(t){return !realAtt().length&&t.idx===0?'<div class="ph-note" style="background:#E8EDFB;border-color:#C9D3F0;color:var(--navy)">Timed like JEE Main. Correct +4, wrong −1 (numerical: no negative). Tap Save &amp; Next to continue. The ‹ at top-left saves and exits.</div>':''}
+function saveCard(){if(S.saved)return '<div class="card xs mut">✓ Report saved. It will arrive on your WhatsApp. (Demo: nothing is sent.)</div>';
+ return `<div class="card"><b class="sm">Keep this report</b><div class="xs mut" style="margin:3px 0 8px">We send it to your WhatsApp so you can open it any time.</div><div class="row" style="gap:8px"><input id="wa" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number" style="flex:1;min-width:0;border:1px solid var(--line);border-radius:10px;padding:10px;font:inherit"><button class="btn" style="width:auto;padding:10px 16px" onclick="A.saveReport()">Send</button></div><div class="xs mut" style="margin-top:6px">Demo: nothing is sent.</div></div>`}
+function setupCard(){if(!realAtt().length||S.setupDone)return '';const row=(i,q,opts)=>`<div class="xs mut" style="margin-top:8px;font-weight:700">${q}</div><div class="row" style="gap:6px;flex-wrap:wrap;margin-top:4px">${opts.map(o=>`<button class="chip" style="background:${S.ob[i]===o?'var(--navy)':'#fff'};color:${S.ob[i]===o?'#fff':'var(--navy)'};border:1px solid var(--line)" onclick="A.setup(${i},'${o}')">${o}</button>`).join('')}</div>`;
+ return `<div class="card"><div class="row"><b class="sm sp">Make it yours</b><button class="link xs" onclick="A.setupFinish()">Skip</button></div><div class="xs mut">Two taps. Your tests and goals will fit you.</div>${row(0,'Your class',['11','12','Dropper'])}${row(1,'Tests a week',['2','3','5'])}${row(2,'Explanations in',['English','Hindi + English','Tamil + English','Telugu + English'])}<button class="btn2" style="margin-top:10px" onclick="A.setupFinish()">Done</button></div>`}
+Object.assign(A,{
+ quickStart(level){S.cur=makeTest([0,1,2],{0:2,1:2,2:2},level);S.agree=true;S.cur.running=true;S.cur.qT=Date.now();S.build.adv=false;closeSideSafe();go(22)},
+ leaveTest(){if(S.cur){S.cur.running=false;S.cur.paused=true}save();go(10);toast('Test saved. Resume it from Home.')},
+ resume(){if(S.cur){S.cur.paused=false}go(22)},
+ saveReport(){const v=(document.getElementById('wa')||{}).value||'';if(!/^\d{10}$/.test(v)){toast('Enter a 10-digit mobile number');return}S.saved=1;save();render()},
+ setup(i,v){S.ob[i]=v;if(i===0)S.grade=v;if(i===1)S.goal=parseInt(v)||3;save();render()},
+ setupFinish(){S.setupDone=true;save();render()}
+});

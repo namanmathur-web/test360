@@ -1,6 +1,6 @@
 /* ===== Screens 1–20: landing, onboarding, home, chapter, notes, build-your-test ===== */
 const R={};
-function landHead(){return `<div class="top"><div class="logo"><i>Vedantu</i> Test360</div><div class="sp"></div><div class="nav"><a onclick="go(2)">Results</a><a onclick="go(3)">VedAI</a><a onclick="go(6)">Plans</a><a onclick="go(7)">FAQ</a></div></div>`}
+function landHead(){return `<div class="top lt"><div class="logo"><i>Vedantu</i> Test360</div><div class="sp"></div><div class="nav"><a onclick="go(2)">Results</a><a onclick="go(3)">VedAI</a><a onclick="go(6)">Plans</a><a onclick="go(7)">FAQ</a></div></div>`}
 function landing(){
  const ch=s=>CHAPTERS[s];const all=[...ch('Physics').slice(0,4),...ch('Chemistry').slice(0,3),...ch('Maths').slice(0,3)];
  const faqs=[['Can I try before paying?','Yes. Every chapter starts with a free test and a VedAI summary. No card, no sign-up.'],
@@ -11,37 +11,40 @@ function landing(){
   ['What is VedAI and does it cost extra?','VedAI reads your test like a teacher would and tells you which topics cost you marks. The summary is free with every test.']];
  return `<div class="scr">${landHead()}<div class="scroll land" id="sc">
  <section id="s1"><div class="eyebrow">Free chapter test · JEE Main · ${PRICE.chapters} chapters</div>
-  <h2 class="h">Fix JEE Main one chapter at a time.</h2><p class="mut">Every chapter starts with a free test. VedAI then shows exactly which topics cost you marks and what to fix next.</p>
-  <img class="hero-img" src="${IMG.hero}" alt="Student planning her JEE prep">
+  <h2 class="h big">Fix JEE Main <span class="grad">one chapter</span> at a time.</h2><p class="mut">Every chapter starts with a free test. VedAI then shows exactly which topics cost you marks and what to fix next.</p>
+  <div class="herowrap"><img class="hero-img" src="${IMG.hero}" alt="Sample VedAI report with ScoreBooster"><span class="sample" style="position:absolute;top:22px;right:10px">Sample</span></div>
   <div class="card"><div class="row"><div class="logo" style="font-size:13px"><i>Vedantu</i> Test360</div><div class="sp"></div><span class="sample">Sample report</span></div>
    <h3 class="h" style="font-size:19px;margin-top:8px">Limits · Topic Test 1 (JEE Main)</h3><div class="xs mut">Marks: 24 · Time: 15:00</div>
    <div class="utabs" style="padding:0;margin-top:6px"><button class="on">Performance</button><button>Answers</button></div>
    <div class="score" style="--p:25;margin-top:10px;padding:12px"><div class="row"><div class="sp"><div class="xs" style="opacity:.8">Hello there,</div><b style="font-size:17px">Keep improving!</b></div><div class="dial" style="--p:25;width:64px;height:64px"><div style="width:52px;height:52px"><b style="font-size:19px">6</b><small>of 24</small></div></div></div></div></div>
   <div class="card" style="margin-top:10px;background:#FFF7F2;border-color:#FFD3B8;font-weight:700;font-size:12.5px">2200+ Vedantu students qualified for JEE Advanced 2026</div>
-  <div class="stack" style="margin-top:12px"><button class="btn" onclick="go(8)">Take a free chapter test</button><button class="btn2" onclick="go(6)">See the ${rs(PRICE.series)} series</button></div></section>
+  <div class="stack" style="margin-top:12px"><button class="btn" onclick="A.quickStart(2)">Take a free chapter test</button>
+   <div class="xs mut" style="text-align:center">6 questions · about 12 minutes · no sign-up</div></div>
+  <div class="eyebrow" style="color:var(--mut);margin-top:16px">Or start from where you are in Limits</div>
+  <div class="stack" style="gap:7px;margin-top:6px">${[[1,'I have just started this chapter','Gentle start · Level 1'],[2,'I have studied it and want to check','Core questions · Level 2'],[3,'I am revising before the exam','Mixed, exam-style · Level 3']].map(x=>`<button class="card row" style="text-align:left;padding:11px 13px" onclick="A.quickStart(${x[0]})"><div class="sp"><b class="sm">${x[1]}</b><div class="xs mut">${x[2]}</div></div><span class="link xs">Start ›</span></button>`).join('')}</div></section>
  <section id="s2"><div class="eyebrow">Results 2026</div><h2 class="h">Our students deliver. Every year.</h2>
   <img class="hero-img" src="${IMG.results}" alt="Vedantu JEE Main 2026 results">
   <div class="g2"><div class="stat"><b>27</b><span class="xs mut">ranks in top 1000</span></div><div class="stat"><b>2200+</b><span class="xs mut">JEE Advanced qualifiers</span></div><div class="stat"><b>${PRICE.chapters}</b><span class="xs mut">JEE Main chapters, each with a free test</span></div><div class="stat"><b>93</b><span class="xs mut">topic tests across Physics, Chemistry and Maths</span></div></div>
-  <button class="btn" style="margin-top:12px" onclick="go(8)">Take a free chapter test</button></section>
+  <button class="btn" style="margin-top:12px" onclick="A.quickStart(2)">Take a free chapter test</button></section>
  <section id="s3"><div class="eyebrow">Only on Test360 · VedAI</div><h2 class="h">Every test comes back with a tutor's read.</h2>
   <p class="mut sm">VedAI reads your chapter test the way a teacher would, finds the topics that cost you marks, and answers questions about your own paper.</p>
   <div class="stack" style="margin-top:10px">${[['Your score, instantly','Marks, accuracy, attempts and time per question, the moment you submit.'],['Ved ScoreBooster','The quickest marks to win back.'],['Easy Kill Topics','High-weight topics you missed, each with a Start button for the lesson.'],['Ask Ved','"Why did I lose marks in Chemistry?" Answered from your own test.']].map((x,i)=>`<div class="card step"><b style="background:var(--ved)">${i+1}</b><div><b>${x[0]}</b><div class="xs mut">${x[1]}</div></div></div>`).join('')}</div>
-  <button class="btn" style="margin-top:12px" onclick="go(8)">Take a free chapter test and see your VedAI report</button></section>
+  <button class="btn" style="margin-top:12px" onclick="A.quickStart(2)">Take a free chapter test and see your VedAI report</button></section>
  <section id="s4"><div class="eyebrow">Chapter-wise tests</div><h2 class="h">${PRICE.chapters} chapters. Every one starts free.</h2>
   <p class="mut sm">Take the free test in any chapter. Get that chapter's pack for ${rs(PRICE.pack)}, or all ${PRICE.chapters} with the series.</p>
   <div class="tabs" style="margin:10px 0"><button class="on">All · ${PRICE.chapters}</button><button>Phy · 20</button><button>Chem · 20</button><button>Maths · 14</button></div>
   <div class="stack" style="gap:6px">${all.map(c=>`<div class="card row" style="padding:9px 12px"><b class="sm sp">${c}</b><span class="tag">Free test</span></div>`).join('')}</div>
   <div class="xs mut" style="margin-top:6px">Chapter list is sample data: confirm the final ${PRICE.chapters}.</div></section>
- <section id="s5"><div class="eyebrow">What happens after every test</div><h2 class="h">The test is where the work starts.</h2>
-  <div class="stack">${[['Take the chapter test','Timed, in the JEE Main pattern.'],['See what cost you marks','Topic by topic, with the reason.'],['Learn it from a teacher','A Vedantu lesson for that exact topic.'],['Retest and see the gain','Compare with your last attempt.']].map((x,i)=>`<div class="step"><b>${i+1}</b><div><b class="sm">${x[0]}</b><div class="xs mut">${x[1]}</div></div></div>`).join('')}</div>
+ <section id="s5"><div class="eyebrow">Start from where you are</div><h2 class="h">Already studied it? Test first, then fix.</h2>
+  <div class="stack">${[['Tell us where you are','Just started, studied, or revising. We pick the level.'],['Take a short test','6 questions in the JEE Main pattern, about 12 minutes.'],['See what cost you marks','Topic by topic, with the reason, and the fix.'],['Retest and watch your grid fill','Each cleared level fills a cell. You always see how far you have come.']].map((x,i)=>`<div class="step"><b>${i+1}</b><div><b class="sm">${x[0]}</b><div class="xs mut">${x[1]}</div></div></div>`).join('')}</div>
   <h3 class="h" style="margin:16px 0 8px">A score is not a plan.</h3>
   <table class="cmp"><tr><th></th><th>Typical series</th><th>Test360</th></tr>${[['Organised by chapter','Mixed papers','Every chapter'],['Free test before you pay','Rare','Every chapter'],['Marks lost, by topic','Score only','Every test'],['AI reads your paper','No','VedAI'],['Lesson for weak topic','Separate course','Built in'],['Retest after the fix','Next paper','Same chapter']].map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</table></section>
  <section id="s6"><div class="eyebrow">Plans</div><h2 class="h">Pay only for what you need.</h2><div class="stack">
-  <div class="plan"><div class="eyebrow">Start</div><b>Free chapter test · ₹0</b><div class="xs mut" style="margin:4px 0 10px">One test in every chapter · Score and marks lost by topic · VedAI summary · Retest after you fix a topic</div><button class="btn2" onclick="go(8)">Take a free test</button></div>
+  <div class="plan"><div class="eyebrow">Start</div><b>Free chapter test · ₹0</b><div class="xs mut" style="margin:4px 0 10px">One test in every chapter · Score and marks lost by topic · VedAI summary · Retest after you fix a topic</div><button class="btn2" onclick="A.quickStart(2)">Take a free test</button></div>
   <div class="plan hl"><div class="eyebrow">One chapter</div><b>Chapter pack · ${rs(PRICE.pack)} per chapter</b><div class="xs mut" style="margin:4px 0 10px">All tests in the chapter you pick · Mistake notebook for every wrong answer · Full VedAI report on each test · Retest after every fix</div><button class="btn2" onclick="go(10)">Pick a chapter</button></div>
   <div class="plan dk"><div class="eyebrow" style="color:#FF9C72">Best value · whole syllabus</div><b>JEE Main series · ${rs(PRICE.series)} one time</b><div class="xs" style="margin:4px 0 10px;opacity:.8">All ${PRICE.chapters} chapters included · Full VedAI: ScoreBooster, Easy Kill Topics, Ask Ved · Retest after every fix</div><button class="btn" onclick="A.checkout('series')">Buy the series</button></div></div></section>
  <section id="s7"><h2 class="h">Questions students ask</h2><div class="stack">${faqs.map((f,i)=>`<div class="faq" onclick="this.classList.toggle('open')"><div class="row"><span class="sp">${f[0]}</span><b>+</b></div><div class="a">${f[1]}</div></div>`).join('')}</div>
-  <div class="card" style="background:var(--navy);color:#fff;margin-top:14px;padding:16px;border:0"><h3 class="h" style="font-size:19px">Start with one free chapter test.</h3><p class="xs" style="opacity:.8;margin:4px 0 12px">See where you stand in 15 minutes, with your own VedAI report. No payment.</p><button class="btn" onclick="go(8)">Take a free chapter test</button></div>
+  <div class="card" style="background:var(--navy);color:#fff;margin-top:14px;padding:16px;border:0"><h3 class="h" style="font-size:19px">Start with one free chapter test.</h3><p class="xs" style="opacity:.8;margin:4px 0 12px">See where you stand in 15 minutes, with your own VedAI report. No payment.</p><button class="btn" onclick="A.quickStart(2)">Take a free chapter test</button></div>
   <p class="xs mut" style="text-align:center;margin-top:10px">Vedantu Test360 · Test. Analyse. Improve.</p></section>
  </div></div>`}
 for(let i=1;i<=7;i++)R[i]=landing;

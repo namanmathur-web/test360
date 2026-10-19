@@ -4,6 +4,7 @@ function lastFor(t){for(let i=S.attempts.length-1;i>=0;i--){const a=S.attempts[i
 /* recLevel, nextLv, streakN and progress helpers live in app6.js */
 function weakTopics(){const r=realAtt();if(!r.length)return[];return grade(r.at(-1)).weak.map(b=>b.t)}
 function todayCard(){const r=realAtt();
+ if(S.cur&&S.cur.paused)return{eb:'Pick up where you left off',title:'Resume your test',sub:`${S.cur.answered||0} of ${S.cur.qs.length} answered · ${Math.ceil(S.cur.left/60)} min left`,btn:'Resume',act:'A.resume()'};
  if(!r.length)return{eb:'Today · your first step',title:'Start with Algebraic Limits',sub:'A 2-minute summary, then Level 1. Your report is instant.',btn:'Open the summary',act:'A.openTopic(0)'};
  const last=r.at(-1),g=grade(last),w=g.weak[0],lv=recLevel(w?w.t:last.topics[0]);
  if(w)return{eb:'Today · your next move',title:`Retest ${T[w.t].name} at Level ${lv}`,sub:`You lost ${w.lost} marks here last time. Target: ${Math.min(g.max,g.score+Math.ceil(g.lostTot/2))}/${g.max}.`,btn:'Start the retest',act:'go(53)'};
@@ -86,7 +87,7 @@ function testFromIds(ids,level){const qs=ids.map(qById);const sc=qs.filter(q=>q.
 Object.assign(A,{
  openChapter(){A.openTopic(chapterTarget())},
  buildFrom(ti,lv){const w=weakTopics();if(ti>=0)S.build.topics=T.map((_,i)=>i===ti||w.includes(i)?1:0);else if(w.length)S.build.topics=T.map((_,i)=>w.includes(i)?1:0);
-  const sel=S.build.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);S.build.lv=lv?T.map(()=>lv):null;S.cur=null;closeSideSafe();go(20)},
+  const sel=S.build.topics.map((x,i)=>x?i:-1).filter(i=>i>=0);S.build.lv=lv?T.map(()=>lv):null;S.build.adv=false;S.cur=null;closeSideSafe();go(20)},
  similar(id){const q=qById(id);const seen=new Set(S.attempts.flatMap(a=>a.qs));const pool=Q.filter(x=>x.t===q.t&&x.id!==id);const p=pool.find(x=>x.d===q.d&&!seen.has(x.id))||pool.find(x=>!seen.has(x.id))||pool.find(x=>x.d===q.d)||pool[0];
   if(!p){toast('No other question in this topic yet');return}S.cur=testFromIds([p.id],G().a.level);S.agree=true;S.cur.running=true;S.cur.qT=Date.now();go(22)},
  reLevel(t,lv){S.cur=makeTest([t],[3,3,3,3,3,3],Math.min(5,lv+1),{retest:true});S.agree=false;go(21)},
@@ -96,7 +97,7 @@ function closeSideSafe(){try{closeSide()}catch(e){}}
 /* simpler: rebuild the per-question action row by marking each card */
 R[36]=(()=>{return ()=>{const g=G();S.resTab='ans';const f=S.ansFilter;const lv=nextLv(g);const rows=g.rows.filter(r=>f==='all'||(f==='ok'&&r.st==='ok')||(f==='bad'&&r.st==='bad')||(f==='skip'&&r.st==='skip'));
  return `<div class="scr">${resTop(g)}<div class="scroll"><div class="pad stack"><div class="row" style="gap:6px;flex-wrap:wrap">${[['all','All',g.rows.length],['ok','Correct',g.ok],['bad','Incorrect',g.bad],['skip','Skipped',g.skip]].map(x=>`<button class="chip" style="background:${f===x[0]?'var(--navy)':'#fff'};color:${f===x[0]?'#fff':'var(--navy)'};border:1px solid var(--line);padding:5px 10px" onclick="S.ansFilter='${x[0]}';render()">${x[1]} (${x[2]})</button>`).join('')}</div>
- <div class="ph-note" style="border-radius:8px">Placeholder questions. Answer keys must be checked by a teacher before launch.</div>
+ <div class="ph-note" style="border-radius:8px">Sample questions in this test are placeholders; answer keys must be checked by a teacher before launch.</div>
  ${rows.map(r=>{const q=r.q;return `<div class="card"><div class="row xs"><b style="font-size:13px">Q${r.i+1}</b><span class="mut">· ${TOPIC_SHORT[q.t]}</span><span class="sp"></span><span class="tag ${r.st==='ok'?'':r.st==='bad'?'r':'n'}">${r.st==='ok'?'Correct':r.st==='bad'?'Incorrect':'Skipped'}</span></div><div class="qtext" style="font-size:14px;margin:6px 0 8px">${q.q}</div>
   ${q.ty==='sc'?q.o.map((o,k)=>{const L='abcd'[k];const c=L===q.a?'ok':L===r.a?'bad':'';return `<div class="optn ${c}" style="padding:8px 10px"><b class="xs" style="width:20px">${L.toUpperCase()}</b><span class="sp">${o}</span>${L===r.a?`<b class="xs" style="color:${c==='ok'?'var(--grn)':'var(--red)'}">Your answer</b>`:L===q.a?'<b class="xs" style="color:var(--grn)">Correct</b>':''}</div>`}).join('')
    :`<div class="sm">Your answer: <b style="color:${r.st==='ok'?'var(--grn)':'var(--red)'}">${r.a??'—'}</b> · Correct: <b style="color:var(--grn)">${q.a}</b></div>`}
