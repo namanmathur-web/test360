@@ -1,0 +1,2674 @@
+{
+ "creationTime": 1791719895708,
+ "createdBy": "4102629666221199",
+ "lastUpdated": 1791719902002,
+ "lastUpdatedBy": "4102629666221199",
+ "entityState": "ACTIVE",
+ "adminTags": [],
+ "id": "6acb79d74bd32f698a38c3d5",
+ "testId": "68ce421859b7f00d1a7c8bfb",
+ "contentInfoId": "6981297bb87d500b113dc09d",
+ "contentInfoType": "OBJECTIVE",
+ "studentId": "4102629666221199",
+ "evaluatedTime": 1791719901983,
+ "attemptState": "EVALUATE_COMPLETE",
+ "subjects": [
+  "Physics"
+ ],
+ "totalMarks": 100,
+ "marksAcheived": 5,
+ "timeTakenByStudent": 6246,
+ "duration": 3600000,
+ "startTime": 1791719895708,
+ "endTime": 1791723495708,
+ "startedAt": 1791719895708,
+ "endedAt": 1791719901954,
+ "testEndType": "AUTOMATIC",
+ "resultEntries": [
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd068",
+   "duration": 8000,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": 4,
+   "evaluatedTime": 1791719901970,
+   "correctness": "CORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd069",
+   "duration": 8937,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "4"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719901970,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd06a",
+   "duration": 9874,
+   "answerGiven": [
+    "4"
+   ],
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719901970,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd06b",
+   "duration": 10811,
+   "answerGiven": [
+    "2"
+   ],
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719901970,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd06c",
+   "duration": 0,
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": 0,
+   "evaluatedTime": 1791719901970,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_ATTEMPTED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd06d",
+   "duration": 12685,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": 4,
+   "evaluatedTime": 1791719901970,
+   "correctness": "CORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd06e",
+   "duration": 13622,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719901970,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd06f",
+   "duration": 14559,
+   "answerGiven": [
+    "3"
+   ],
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719901970,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd070",
+   "duration": 15496,
+   "answerGiven": [
+    "4"
+   ],
+   "correctAnswer": [
+    "4"
+   ],
+   "marksGiven": 4,
+   "evaluatedTime": 1791719901970,
+   "correctness": "CORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd071",
+   "duration": 0,
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": 0,
+   "evaluatedTime": 1791719901970,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_ATTEMPTED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd072",
+   "duration": 17370,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719901970,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd073",
+   "duration": 18307,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719901970,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd074",
+   "duration": 19244,
+   "answerGiven": [
+    "2"
+   ],
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": 4,
+   "evaluatedTime": 1791719901970,
+   "correctness": "CORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd075",
+   "duration": 20181,
+   "answerGiven": [
+    "3"
+   ],
+   "correctAnswer": [
+    "3"
+   ],
+   "marksGiven": 4,
+   "evaluatedTime": 1791719901970,
+   "correctness": "CORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd076",
+   "duration": 0,
+   "correctAnswer": [
+    "3"
+   ],
+   "marksGiven": 0,
+   "evaluatedTime": 1791719901970,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_ATTEMPTED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd077",
+   "duration": 22055,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719901970,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd078",
+   "duration": 22992,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719901970,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd079",
+   "duration": 23929,
+   "answerGiven": [
+    "4"
+   ],
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719901970,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd07a",
+   "duration": 24866,
+   "answerGiven": [
+    "2"
+   ],
+   "correctAnswer": [
+    "4"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719901970,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd07b",
+   "duration": 0,
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": 0,
+   "evaluatedTime": 1791719901970,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_ATTEMPTED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd07c",
+   "duration": 26740,
+   "answerGiven": [
+    "7"
+   ],
+   "correctAnswer": [
+    "14.0"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719901970,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "NUMERIC"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd07d",
+   "duration": 27677,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "7.00"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719901970,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "NUMERIC"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd07e",
+   "duration": 28614,
+   "answerGiven": [
+    "2"
+   ],
+   "correctAnswer": [
+    "9"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719901970,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "NUMERIC"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd07f",
+   "duration": 29551,
+   "answerGiven": [
+    "3"
+   ],
+   "correctAnswer": [
+    "5.00"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719901970,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "NUMERIC"
+  },
+  {
+   "questionId": "68c7c1d57c7f915b7b3bd080",
+   "duration": 0,
+   "correctAnswer": [
+    "5.00"
+   ],
+   "marksGiven": 0,
+   "evaluatedTime": 1791719901970,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_ATTEMPTED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "NUMERIC"
+  }
+ ],
+ "categoryAnalyticsList": [
+  {
+   "name": "PHY SEC 1",
+   "categoryType": "SECTION",
+   "customEvaluation": false,
+   "marks": 9,
+   "attempted": 16,
+   "unattempted": 4,
+   "correct": 5,
+   "incorrect": 11,
+   "partiallyCorrect": 0,
+   "maxMarks": 80,
+   "duration": 262928
+  },
+  {
+   "name": "PHY SEC 2",
+   "categoryType": "SECTION",
+   "customEvaluation": false,
+   "marks": -4,
+   "attempted": 4,
+   "unattempted": 1,
+   "correct": 0,
+   "incorrect": 4,
+   "partiallyCorrect": 0,
+   "maxMarks": 20,
+   "duration": 112582
+  },
+  {
+   "name": "Subject:Overall_Difficulty:MODERATE",
+   "subject": "Overall",
+   "difficulty": "MODERATE",
+   "categoryType": "DIFFICULTY",
+   "customEvaluation": false,
+   "marks": 5,
+   "attempted": 20,
+   "unattempted": 5,
+   "correct": 5,
+   "incorrect": 15,
+   "partiallyCorrect": 0,
+   "maxMarks": 100,
+   "duration": 375510
+  },
+  {
+   "name": "Subject:Physics_Difficulty:MODERATE",
+   "subject": "Physics",
+   "difficulty": "MODERATE",
+   "categoryType": "DIFFICULTY",
+   "customEvaluation": false,
+   "marks": 5,
+   "attempted": 20,
+   "unattempted": 5,
+   "correct": 5,
+   "incorrect": 15,
+   "partiallyCorrect": 0,
+   "maxMarks": 100,
+   "duration": 375510
+  },
+  {
+   "name": "Subject:Overall_Type:NUMERIC",
+   "subject": "Overall",
+   "questionType": "NUMERIC",
+   "categoryType": "QUESTION_TYPE",
+   "customEvaluation": false,
+   "marks": -4,
+   "attempted": 4,
+   "unattempted": 1,
+   "correct": 0,
+   "incorrect": 4,
+   "partiallyCorrect": 0,
+   "maxMarks": 20,
+   "duration": 112582
+  },
+  {
+   "name": "Subject:Overall_Type:SCQ",
+   "subject": "Overall",
+   "questionType": "SCQ",
+   "categoryType": "QUESTION_TYPE",
+   "customEvaluation": false,
+   "marks": 9,
+   "attempted": 16,
+   "unattempted": 4,
+   "correct": 5,
+   "incorrect": 11,
+   "partiallyCorrect": 0,
+   "maxMarks": 80,
+   "duration": 262928
+  },
+  {
+   "name": "Subject:Physics_Type:NUMERIC",
+   "subject": "Physics",
+   "questionType": "NUMERIC",
+   "categoryType": "QUESTION_TYPE",
+   "customEvaluation": false,
+   "marks": -4,
+   "attempted": 4,
+   "unattempted": 1,
+   "correct": 0,
+   "incorrect": 4,
+   "partiallyCorrect": 0,
+   "maxMarks": 20,
+   "duration": 112582
+  },
+  {
+   "name": "Subject:Physics_Type:SCQ",
+   "subject": "Physics",
+   "questionType": "SCQ",
+   "categoryType": "QUESTION_TYPE",
+   "customEvaluation": false,
+   "marks": 9,
+   "attempted": 16,
+   "unattempted": 4,
+   "correct": 5,
+   "incorrect": 11,
+   "partiallyCorrect": 0,
+   "maxMarks": 80,
+   "duration": 262928
+  },
+  {
+   "name": "Subject:Overall",
+   "subject": "Overall",
+   "categoryType": "SUBJECT",
+   "customEvaluation": false,
+   "marks": 5,
+   "attempted": 20,
+   "unattempted": 5,
+   "correct": 5,
+   "incorrect": 15,
+   "partiallyCorrect": 0,
+   "maxMarks": 100,
+   "duration": 375510
+  },
+  {
+   "name": "Subject:Physics",
+   "subject": "Physics",
+   "categoryType": "SUBJECT",
+   "customEvaluation": false,
+   "marks": 5,
+   "attempted": 20,
+   "unattempted": 5,
+   "correct": 5,
+   "incorrect": 15,
+   "partiallyCorrect": 0,
+   "maxMarks": 100,
+   "duration": 375510
+  }
+ ],
+ "attempted": 20,
+ "unattempted": 5,
+ "correct": 5,
+ "incorrect": 15,
+ "partiallyCorrect": 0,
+ "attemptMarksPercent": 0,
+ "testPercentile": 0,
+ "doNotShowResultsTill": 1759347000000,
+ "attemptIndex": 1,
+ "reevaluationNumber": 0,
+ "parentFeedback": [],
+ "omrTest": false,
+ "aitsTestPercentile": 0,
+ "currentTime": 1791719905100,
+ "testName": "Physics Highweightage Test-1",
+ "categories": [
+  {
+   "category": "PHY SEC 1",
+   "questions": [
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd068",
+     "questionText": " A car travels the first third of a distance with a speed of $10 \\mathrm{~km} / \\mathrm{h}$, the second third with a speed of $20 \\mathrm{~km} / \\mathrm{h}$, and the last third with a speed of $60 \\mathrm{~km} / \\mathrm{h}$. The average speed of the car for the whole journey is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": "$18 \\mathrm{~km} / \\mathrm{h}$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": "$24 \\mathrm{~km} / \\mathrm{h}$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": "$30 \\mathrm{~km} / \\mathrm{h}$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": "$36 \\mathrm{~km} / \\mathrm{h}$"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Average and instantaneous speed"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 1,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [
+        "$18 \\mathrm{~km} / \\mathrm{h}$",
+        "$24 \\mathrm{~km} / \\mathrm{h}$",
+        "$30 \\mathrm{~km} / \\mathrm{h}$",
+        "$36 \\mathrm{~km} / \\mathrm{h}$"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Let the total distance be $3 x$. The time taken for each part is $\tt_{1}=\\frac{x}{10}, t_{2}=\\frac{x}{20}$, and $t_{3}=\\frac{x}{60}$. The average speed is the total distance divided by the total time.<br>$$<br>\\begin{gathered}<br>v_{a v g}=\\frac{\\text { Total Distance }}{\\text { Total Time }}=\\frac{3 x}{t_{1}+t_{2}+t_{3}}=\\frac{3 x}{\\frac{x}{10}+\\frac{x}{20}+\\frac{x}{60}} \\\\<br>v_{a v g}=\\frac{3}{\\frac{6+3+1}{60}}=\\frac{3 \\times 60}{10}=18 \\mathrm{~km} / \\mathrm{h}<br>\\end{gathered}<br>$$",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 8000,
+     "analysisTags": [
+      "Average and instantaneous speed"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd069",
+     "questionText": " A particle moves along a straight line such that its displacement $x$ at any time $t$ is given by $x=\\left(t^{3}-6 t^{2}+3 t+4\\right)$ meters. The velocity when the acceleration is zero is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " $3 \\mathrm{~m} / \\mathrm{s}$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " $-12 \\mathrm{~m} / \\mathrm{s}$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " $42 \\mathrm{~m} / \\mathrm{s}$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " $-9 \\mathrm{~m} / \\mathrm{s}$"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Average and instantaneous acceleration"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 2,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) $3 \\mathrm{~m} / \\mathrm{s}$",
+        "(b) $-12 \\mathrm{~m} / \\mathrm{s}$",
+        "(c) $42 \\mathrm{~m} / \\mathrm{s}$",
+        "(d) $-9 \\mathrm{~m} / \\mathrm{s}$"
+       ],
+       "newOptions": [
+        " $3 \\mathrm{~m} / \\mathrm{s}$",
+        " $-12 \\mathrm{~m} / \\mathrm{s}$",
+        " $42 \\mathrm{~m} / \\mathrm{s}$",
+        " $-9 \\mathrm{~m} / \\mathrm{s}$"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Velocity ( $v$ ) and acceleration ( $a$ ) are found by differentiating displacement ( $x$ ).<br>$$<br>v=\\frac{d x}{d t}=3 t^{2}-12 t+3<br>$$<br>$$<br>a=\\frac{d v}{d t}=6 t-12<br>$$<br>Set acceleration to zero: $6 t-12=0 \\Longrightarrow t=2 s$. Substitute this time into the velocity equation:<br>$$<br>v(t=2)=3(2)^{2}-12(2)+3=12-24+3=-9 \\mathrm{~m} / \\mathrm{s}<br>$$",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "4"
+      ]
+     },
+     "duration": 8937,
+     "analysisTags": [
+      "Average and instantaneous acceleration"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd06a",
+     "questionText": " The position of a particle is given by $\\vec{r}=\\left(3 t \\hat{i}-2 t^{2} \\hat{j}+4 \\hat{k}\\right) \\mathrm{m}$ where $t$ is in seconds. The magnitude of the velocity of the particle at $t=2 \\mathrm{~s}$ is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " $\\sqrt{73} \\mathrm{~m} / \\mathrm{s}$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " $\\sqrt{53} \\mathrm{~m} / \\mathrm{s}$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " $\\sqrt{37} \\mathrm{~m} / \\mathrm{s}$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " $5 \\mathrm{~m} / \\mathrm{s}$"
+      }
+     ],
+     "answerGiven": [
+      "4"
+     ],
+     "topics": [
+      "Average and instantaneous velocity"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 3,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) $\\sqrt{73} \\mathrm{~m} / \\mathrm{s}$",
+        "(b) $\\sqrt{53} \\mathrm{~m} / \\mathrm{s}$",
+        "(c) $\\sqrt{37} \\mathrm{~m} / \\mathrm{s}$",
+        "(d) $5 \\mathrm{~m} / \\mathrm{s}$"
+       ],
+       "newOptions": [
+        " $\\sqrt{73} \\mathrm{~m} / \\mathrm{s}$",
+        " $\\sqrt{53} \\mathrm{~m} / \\mathrm{s}$",
+        " $\\sqrt{37} \\mathrm{~m} / \\mathrm{s}$",
+        " $5 \\mathrm{~m} / \\mathrm{s}$"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " The velocity vector $\\vec{v}$ is the derivative of the position vector $\\vec{r}$.<br>$$<br>\\vec{v}=\\frac{d \\vec{r}}{d t}=3 \\hat{i}-4 t \\hat{j}<br>$$<br>At $t=2 \\mathrm{~s}$, the velocity vector is: $\\vec{v}(t=2)=3 \\hat{i}-4(2) \\hat{j}=3 \\hat{i}-8 \\hat{j}$. <br>The magnitude is: $|\\vec{v}|=\\sqrt{(3)^{2}+(-8)^{2}}=\\sqrt{9+64}=\\sqrt{73} \\mathrm{~m} / \\mathrm{s}$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 9874,
+     "analysisTags": [
+      "Average and instantaneous velocity"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd06b",
+     "questionText": " A body starting from rest moves with uniform acceleration. The ratio of the distance covered in the 4 th second to the distance covered in the 3rd second is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " $7 / 5$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " $5 / 7$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " $4 / 3$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " $3 / 4$"
+      }
+     ],
+     "answerGiven": [
+      "2"
+     ],
+     "topics": [
+      "Kinematic Equations for Uniformly Accelerated Motion"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 4,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) $7 / 5$",
+        "(b) $5 / 7$",
+        "(c) $4 / 3$",
+        "(d) $3 / 4$"
+       ],
+       "newOptions": [
+        " $7 / 5$",
+        " $5 / 7$",
+        " $4 / 3$",
+        " $3 / 4$"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Distance covered in the $n^{\\text {th }}$ second ( $u=0$ ) is $S_{n}=\\frac{a}{2}(2 n-1)$.<br>$$<br>\\frac{S_{4}}{S_{3}}=\\frac{\\frac{a}{2}(2(4)-1)}{\\frac{a}{2}(2(3)-1)}=\\frac{7}{5}<br>$$",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 10811,
+     "analysisTags": [
+      "Kinematic Equations for Uniformly Accelerated Motion"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd06c",
+     "questionText": " The relation between time $t$ and distance $x$ is $t=a x^{2}+b x$, where $a$ and $b$ are constants. The acceleration is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " $-2 a v^{3}$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " $2 b v^{2}$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " $2 a v^{2}$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " $-2 b v^{3}$"
+      }
+     ],
+     "topics": [
+      "Application of differentiation in physics"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 5,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) $-2 a v^{3}$",
+        "(b) $2 b v^{2}$",
+        "(c) $2 a v^{2}$",
+        "(d) $-2 b v^{3}$"
+       ],
+       "newOptions": [
+        " $-2 a v^{3}$",
+        " $2 b v^{2}$",
+        " $2 a v^{2}$",
+        " $-2 b v^{3}$"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Differentiate $t=a x^{2}+b x$ with respect to $t$ :<br>$$<br>1=2 a x \\frac{d x}{d t}+b \\frac{d x}{d t} \\Longrightarrow 1=v(2 a x+b) \\Longrightarrow v=\\frac{1}{2 a x+b}<br>$$<br>Differentiate $v$ with respect to $t$ to find acceleration:<br>$$<br>a_{a c c}=\\frac{d v}{d t}=\\frac{-1}{(2 a x+b)^{2}} \\cdot\\left(2 a \\frac{d x}{d t}\\right)=-(2 a v) \\cdot v^{2}=-2 a v^{3}<br>$$",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Application of differentiation in physics"
+     ]
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd06d",
+     "questionText": " A ball is thrown vertically upward. It has a speed of $10 \\mathrm{~m} / \\mathrm{s}$ when it has reached one-half of its maximum height. What is the maximum height reached? (Use $g=10 \\mathrm{~m} / \\mathrm{s}^{2}$ )",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 10 m"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 15 m"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 20 m"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 5 m"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Vertical motion under gravity"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 6,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 10 m",
+        "(b) 15 m",
+        "(c) 20 m",
+        "(d) 5 m"
+       ],
+       "newOptions": [
+        " 10 m",
+        " 15 m",
+        " 20 m",
+        " 5 m"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Let max height be $H$. At $H$, final velocity is $0.0^{2}=u^{2}-2 g H \\Longrightarrow u^{2}=2 g H$. At $H / 2$, speed is $10 \\mathrm{~m} / \\mathrm{s} .10^{2}=u^{2}-2 g(H / 2) \\Longrightarrow 100=u^{2}-g H$. <br>Substituting $u^{2}: 100=2 g H-g H= g H \\Longrightarrow H=100 / 10=10 \\mathrm{~m}$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 12685,
+     "analysisTags": [
+      "Vertical motion under gravity"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd06e",
+     "questionText": " Refer to the figure. What is the ratio of speed in the first two seconds to the speed in the next four seconds?<br/><img src=\"https://cmds-test.vedantu.com/prod/question-sets/1bfd99b5-b9ce-437a-81a6-a7a05135eba3857795530578325427.png\"/><br/>",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": "$1: 2$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": "$2: 1$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": "$\\sqrt{2}: 1$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": "$3: 1$"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Average and instantaneous speed"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 7,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [
+        "$1: 2$",
+        "$2: 1$",
+        "$\\sqrt{2}: 1$",
+        "$3: 1$"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Speed is the magnitude of the slope of the displacement-time (S-t) graph.<br/>- Speed in the first 2 seconds $\\left(v_{1}\\right)$ : The graph is a line from $(0,0)$ to $(2, \\mathrm{~s})$.<br/>$$<br/>v_{1}=\\frac{\\Delta S}{\\Delta t}=\\frac{s-0}{2-0}=\\frac{s}{2}<br/>$$<br/>- Speed in the next 4 seconds $\\left(v_{2}\\right)$ : The graph is a line from $(2, \\mathrm{~s})$ to $(6,0)$. The time interval is from $\\mathrm{t}=2 \\mathrm{~s}$ to $\\mathrm{t}=6 \\mathrm{~s}$.<br/>$$<br/>\\text { velocity }=\\frac{\\Delta S}{\\Delta t}=\\frac{0-s}{6-2}=-\\frac{s}{4}<br/>$$<br/>Speed is the magnitude of velocity, so $v_{2}=\\left|-\\frac{s}{4}\\right|=\\frac{s}{4}$.<br/>section*{- Ratio of speeds:}<br/>$$<br/>\\frac{v_{1}}{v_{2}}=\\frac{s / 2}{s / 4}=\\frac{s}{2} \\times \\frac{4}{s}=\\frac{4}{2}=2<br/>$$<br/>The ratio $v_{1}: v_{2}$ is $2: 1$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 13622,
+     "analysisTags": [
+      "Average and instantaneous speed"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd06f",
+     "questionText": " A train moving at $30 \\mathrm{~m} / \\mathrm{s}$ reduces its speed to $10 \\mathrm{~m} / \\mathrm{s}$ while covering a distance of 100 m . If the retardation is constant, how much further will it travel before coming to rest?",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 12.5 m"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 25 m"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 50 m"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 10 m"
+      }
+     ],
+     "answerGiven": [
+      "3"
+     ],
+     "topics": [
+      "Kinematic Equations for Uniformly Accelerated Motion"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 8,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 12.5 m",
+        "(b) 25 m",
+        "(c) 50 m",
+        "(d) 10 m"
+       ],
+       "newOptions": [
+        " 12.5 m",
+        " 25 m",
+        " 50 m",
+        " 10 m"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " First, find acceleration $a: 10^{2}=30^{2}+2 a(100) \\Longrightarrow 100=900+200 a \\Longrightarrow a=-4 \\mathrm{~m} / \\mathrm{s}^{2}$. Now, find the further distance $s^{\\prime}$ from $10 \\mathrm{~m} / \\mathrm{s}$ to rest ( $v=0$ ):<br>$$<br>0^{2}=10^{2}+2(-4) s^{\\prime} \\Longrightarrow 8 s^{\\prime}=100 \\Longrightarrow s^{\\prime}=12.5 \\mathrm{~m}<br>$$",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 14559,
+     "analysisTags": [
+      "Kinematic Equations for Uniformly Accelerated Motion"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd070",
+     "questionText": " The displacement $x$ of a particle varies with time $t$ as $x=a e^{-\\alpha t}+b e^{\\beta t}$, where $a, b, \\alpha, \\beta$ are positive constants. The velocity of the particle will: [Given (\u00a0\u00a0<!--StartFragment-->$b{\\beta} &gt;\u00a0a{\\alpha}$ ) ]<div><br/></div>",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": "be independent of $\\alpha$ and $\\beta$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": "drop to zero when $\\alpha=\\beta$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": "go on decreasing with time"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": "go on increasing with time"
+      }
+     ],
+     "answerGiven": [
+      "4"
+     ],
+     "topics": [
+      "Average and instantaneous acceleration"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 9,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [
+        "be independent of $\\alpha$ and $\\beta$",
+        "drop to zero when $\\alpha=\\beta$",
+        "go on decreasing with time",
+        "go on increasing with time"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " $v=\\frac{d x}{d t}=-a \\alpha e^{-\\alpha t}+b \\beta e^{\\beta t}$. As $t$ increases, the first term ( $e^{-\\alpha t}$ ) approaches zero while the second term ( $e^{\\beta t}$ ) increases exponentially. Thus, the velocity will increase with time.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "4"
+      ]
+     },
+     "duration": 15496,
+     "analysisTags": [
+      "Average and instantaneous acceleration"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd071",
+     "questionText": " A particle moves in a straight line with a constant acceleration. It changes its velocity from $10 \\mathrm{~m} / \\mathrm{s}$ to $20 \\mathrm{~m} / \\mathrm{s}$ while passing through a distance of 135 m in $t$ seconds. The value of $t$ is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 12"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 9"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 10"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 1.8"
+      }
+     ],
+     "topics": [
+      "Three standard equation of motion"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 10,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 12",
+        "(b) 9",
+        "(c) 10",
+        "(d) 1.8"
+       ],
+       "newOptions": [
+        " 12",
+        " 9",
+        " 10",
+        " 1.8"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Using $s=\\left(\\frac{u+v}{2}\\right) t$ :<br>$$<br>135=\\left(\\frac{10+20}{2}\\right) t \\Longrightarrow 135=15 t \\Longrightarrow t=9 \\mathrm{~s}<br>$$",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Three standard equation of motion"
+     ]
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd072",
+     "questionText": " A particle is moving such that its position coordinate ( $x$ ) varies with time ( $t$ ) as $x=2 t-5 t^{2}$. The average velocity of the particle in the time interval 0 to 2 seconds is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " $-6 \\mathrm{~m} / \\mathrm{s}$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " $-8 \\mathrm{~m} / \\mathrm{s}$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " $5 \\mathrm{~m} / \\mathrm{s}$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " $-3 \\mathrm{~m} / \\mathrm{s}$"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Average and instantaneous velocity"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 11,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) $-6 \\mathrm{~m} / \\mathrm{s}$",
+        "(b) $-8 \\mathrm{~m} / \\mathrm{s}$",
+        "(c) $5 \\mathrm{~m} / \\mathrm{s}$",
+        "(d) $-3 \\mathrm{~m} / \\mathrm{s}$"
+       ],
+       "newOptions": [
+        " $-6 \\mathrm{~m} / \\mathrm{s}$",
+        " $-8 \\mathrm{~m} / \\mathrm{s}$",
+        " $5 \\mathrm{~m} / \\mathrm{s}$",
+        " $-3 \\mathrm{~m} / \\mathrm{s}$"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " $x(0)=0 m . x(2)=2(2)-5(2)^{2}=4-20=-16 m$.<br>$$<br>v_{a v g}=\\frac{\\Delta x}{\\Delta t}=\\frac{x(2)-x(0)}{2-0}=\\frac{-16-0}{2}=-8 \\mathrm{~m} / \\mathrm{s}<br>$$",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 17370,
+     "analysisTags": [
+      "Average and instantaneous velocity"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd073",
+     "questionText": " A train moves from one station to another in 2 hours time. Its speed-time graph during this motion is shown in the figure. The maximum acceleration during the journey is<br/><img src=\"https://cmds-test.vedantu.com/prod/questions/714c3924-4c5b-42a8-bd57-7e5f2c48590e\"/>",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": "$140 \\mathrm{~km} \\mathrm{~h}^{-2}$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": "$160 \\mathrm{~km} \\mathrm{~h}^{-2}$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": "$100 \\mathrm{~km} \\mathrm{~h}^{-2}$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": "$120 \\mathrm{~km} \\mathrm{~h}^{2}$"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Graphs of motion in a straight line"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 12,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [
+        "$140 \\mathrm{~km} \\mathrm{~h}^{-2}$",
+        "$160 \\mathrm{~km} \\mathrm{~h}^{-2}$",
+        "$100 \\mathrm{~km} \\mathrm{~h}^{-2}$",
+        "$120 \\mathrm{~km} \\mathrm{~h}^{2}$"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Acceleration is the slope of the speed-time graph. We need to find the steepest positive slope.<br>- Segment AB ( $\\mathbf{t}=\\mathbf{0}$ to $\\mathbf{0 . 7 5 h}$ ): $a_{A B}=\\frac{20-0}{0.75-0}=\\frac{20}{3 / 4} \\approx 26.67 \\mathrm{~km} \\mathrm{~h}^{-2}$.<br>- Segment BC ( $\\mathbf{t}=\\mathbf{0 . 7 5}$ to $\\mathbf{1 . 0 0 h}$ ): The speed is constant, so the slope is $a_{B C}=0$.<br>- Segment CD ( $\\mathbf{t}=\\mathbf{1 . 0 0}$ to 1.25h): The speed increases from 20 to $60 \\mathrm{~km} / \\mathrm{h}$.<br>$$<br>a_{C D}=\\frac{60-20}{1.25-1.00}=\\frac{40}{0.25}=160 \\mathrm{~km} \\mathrm{~h}^{-2}<br>$$<br>- Segment DE ( $\\mathbf{t}=\\mathbf{1 . 2 5}$ to $\\mathbf{2 . 0 0 h}$ ): The speed decreases (deceleration). The slope is negative.<br>The maximum acceleration occurs during the interval CD and is $160 \\mathrm{~km} \\mathrm{~h}^{-2}$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 18307,
+     "analysisTags": [
+      "Graphs of motion in a straight line"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd074",
+     "questionText": " Two cars A and B are moving in the same direction with velocities $30 \\mathrm{~m} / \\mathrm{s}$ and $20 \\mathrm{~m} / \\mathrm{s}$. When car A is at a distance $d$ behind car B, the driver of car A applies the brake producing a uniform retardation of $2 \\mathrm{~m} / \\mathrm{s}^{2}$. There will be no collision when:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " $d<25 m$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " $d>25 m$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " $d=25 \\mathrm{~m}$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " $d<12.5 \\mathrm{~m}$"
+      }
+     ],
+     "answerGiven": [
+      "2"
+     ],
+     "topics": [
+      "Relative motion in one dimension"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 13,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) $d<25 m$",
+        "(b) $d>25 m$",
+        "(c) $d=25 \\mathrm{~m}$",
+        "(d) $d<12.5 \\mathrm{~m}$"
+       ],
+       "newOptions": [
+        " $d<25 m$",
+        " $d>25 m$",
+        " $d=25 \\mathrm{~m}$",
+        " $d<12.5 \\mathrm{~m}$"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Relative velocity $u_{\\text {rel }}=30-20=10 \\mathrm{~m} / \\mathrm{s}$. Relative acceleration $a_{\\text {rel }}=-2-0=-2 \\mathrm{~m} / \\mathrm{s}^{2}$. For no collision, the relative separation covered before relative velocity becomes zero must be less than $d . v_{\\text {rel }}^{2}=u_{\\text {rel }}^{2}+2 a_{\\text {rel }} s_{\\text {rel }} \\Longrightarrow 0^{2}=10^{2}+2(-2) s_{\\text {rel }} \\Longrightarrow s_{\\text {rel }}=25 \\mathrm{~m}$. Thus, for no collision, the initial separation must be $d>25 \\mathrm{~m}$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 19244,
+     "analysisTags": [
+      "Relative motion in one dimension"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd075",
+     "questionText": " The velocity of a particle is $v=v_{0}+g t+f t^{2}$. If its position is $x=0$ at $t=0$, then its displacement after unit time ( $t=1$ ) is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " $v_{0}+g / 2+f$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " $v_{0}+g+f$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " $v_{0}+g / 2+f / 3$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " $v_{0}+2 g+3 f$"
+      }
+     ],
+     "answerGiven": [
+      "3"
+     ],
+     "topics": [
+      "Application of integration in physics"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 14,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) $v_{0}+g / 2+f$",
+        "(b) $v_{0}+g+f$",
+        "(c) $v_{0}+g / 2+f / 3$",
+        "(d) $v_{0}+2 g+3 f$"
+       ],
+       "newOptions": [
+        " $v_{0}+g / 2+f$",
+        " $v_{0}+g+f$",
+        " $v_{0}+g / 2+f / 3$",
+        " $v_{0}+2 g+3 f$"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " $x=\\int v d t=\\int\\left(v_{0}+g t+f t^{2}\\right) d t=v_{0} t+\\frac{1}{2} g t^{2}+\\frac{1}{3} f t^{3}+C$. Given $x(0)=0 \\Longrightarrow C=0$. At $t=1$, $x(1)=v_{0}(1)+\\frac{g}{2}(1)^{2}+\\frac{f}{3}(1)^{3}=v_{0}+g / 2+f / 3$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "3"
+      ]
+     },
+     "duration": 20181,
+     "analysisTags": [
+      "Application of integration in physics"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd076",
+     "questionText": " A body travels for 15 seconds starting from rest with constant acceleration. If it travels distances $S_{1}, S_{2}$, and $S_{3}$ in the first five seconds, second five seconds and next five seconds respectively, the relation between $S_{1}, S_{2}$, and $S_{3}$ is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " $S_{1}=S_{2}=S_{3}$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " $5 S_{1}=3 S_{2}=S_{3}$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " $S_{1}=\\frac{1}{3} S_{2}=\\frac{1}{5} S_{3}$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " $S_{1}=\\frac{1}{5} S_{2}=\\frac{1}{3} S_{3}$"
+      }
+     ],
+     "topics": [
+      "Three standard equation of motion"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 15,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) $S_{1}=S_{2}=S_{3}$",
+        "(b) $5 S_{1}=3 S_{2}=S_{3}$",
+        "(c) $S_{1}=\\frac{1}{3} S_{2}=\\frac{1}{5} S_{3}$",
+        "(d) $S_{1}=\\frac{1}{5} S_{2}=\\frac{1}{3} S_{3}$"
+       ],
+       "newOptions": [
+        " $S_{1}=S_{2}=S_{3}$",
+        " $5 S_{1}=3 S_{2}=S_{3}$",
+        " $S_{1}=\\frac{1}{3} S_{2}=\\frac{1}{5} S_{3}$",
+        " $S_{1}=\\frac{1}{5} S_{2}=\\frac{1}{3} S_{3}$"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " The ratio of distances covered in successive equal time intervals is $1: 3: 5$. Thus, $S_{1}: S_{2}: S_{3}= 1: 3: 5$, which means $S_{1}=S_{2} / 3=S_{3} / 5$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "3"
+      ]
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Three standard equation of motion"
+     ]
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd077",
+     "questionText": " The velocity $v$ versus $t$ graph of a body in a straight line is as shown in figure The displacement of the body in 5 sec is<div><br/><img src=\"https://cmds-test.vedantu.com/prod/questions/689860fc-0d61-4d45-b91a-6efebfc3e0c0\" style=\"width: 25%;\"/></div>",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": "2 m"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": "3 m"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": "4 m"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": "5 m"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Graphs of motion in a straight line"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 16,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [
+        "2 m",
+        "3 m",
+        "4 m",
+        "5 m"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Displacement is the net area under the velocity-time graph.<br>- Area $1(\\mathbf{t}=\\mathbf{0}$ to $\\mathbf{3 s})$ : Triangle above the axis. Base $=3 \\mathrm{~s}$, Height $=2 \\mathrm{~m} / \\mathrm{s}$.<br>$$<br>A_{1}=\\frac{1}{2} \\times \\text { base } \\times \\text { height }=\\frac{1}{2} \\times 3 \\times 2=3 \\mathrm{~m}<br>$$<br>- Area 2 ( $\\mathbf{t}=\\mathbf{3}$ to $\\mathbf{4 s}$ ): Triangle below the axis. Base $=1 \\mathrm{~s}$, Height $=-2 \\mathrm{~m} / \\mathrm{s}$.<br>$$<br>A_{2}=\\frac{1}{2} \\times 1 \\times(-2)=-1 \\mathrm{~m}<br>$$<br>- Area $3(t=4$ to 5 s$)$ : Rectangle above the axis. Base $=1 \\mathrm{~s}$, Height $=1 \\mathrm{~m} / \\mathrm{s}$.<br>$$<br>A_{3}=1 \\times 1=1 \\mathrm{~m}<br>$$<br>Total displacement $\\Delta x=A_{1}+A_{2}+A_{3}=3+(-1)+1=3 \\mathrm{~m}$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 22055,
+     "analysisTags": [
+      "Graphs of motion in a straight line"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd078",
+     "questionText": " The diagram shows the displacement-time graph for a particle moving in a straight line. The average velocity for the interval $t=0$ to $t=5$ is<br/><img src=\"https://cmds-test.vedantu.com/prod/questions/6056a2f5-47ee-4bda-bf88-b071e9fd52be\"/>",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": "2 m"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": "-2 m"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": "4 m"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": "5 m"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Graphs of motion in a straight line"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 17,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [
+        "2 m",
+        "-2 m",
+        "4 m",
+        "5 m"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Average velocity is defined as total displacement divided by total time.<br>$$<br>v_{\\text {avg }}=\\frac{\\Delta x}{\\Delta t}=\\frac{x_{\\text {final }}-x_{\\text {initial }}}{t_{\\text {final }}-t_{\\text {initial }}}<br>$$<br>From the graph:<br>- Initial position at $t=0$ is $x_{\\text {initial }}=0 \\mathrm{~m}$.<br>- Final position at $t=5$ is $x_{\\text {final }}=-10 \\mathrm{~m}$.<br>- The time interval is $\\Delta t=5-0=5 \\mathrm{~s}$.<br>$$<br>v_{a v g}=\\frac{-10-0}{5-0}=\\frac{-10}{5}=-2 \\mathrm{~m} / \\mathrm{s}<br>$$",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 22992,
+     "analysisTags": [
+      "Graphs of motion in a straight line"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd079",
+     "questionText": " The motion of a particle is described by the equation $x=a+b t^{2}$ where $a=15 \\mathrm{~cm}$ and $b=3 \\mathrm{~cm} / \\mathrm{s}^{2}$. Its instantaneous velocity at time $t=3 \\mathrm{~s}$ will be:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " $36 \\mathrm{~cm} / \\mathrm{s}$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " $18 \\mathrm{~cm} / \\mathrm{s}$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " $16 \\mathrm{~cm} / \\mathrm{s}$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " $32 \\mathrm{~cm} / \\mathrm{s}$"
+      }
+     ],
+     "answerGiven": [
+      "4"
+     ],
+     "topics": [
+      "Average and instantaneous velocity"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 18,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) $36 \\mathrm{~cm} / \\mathrm{s}$",
+        "(b) $18 \\mathrm{~cm} / \\mathrm{s}$",
+        "(c) $16 \\mathrm{~cm} / \\mathrm{s}$",
+        "(d) $32 \\mathrm{~cm} / \\mathrm{s}$"
+       ],
+       "newOptions": [
+        " $36 \\mathrm{~cm} / \\mathrm{s}$",
+        " $18 \\mathrm{~cm} / \\mathrm{s}$",
+        " $16 \\mathrm{~cm} / \\mathrm{s}$",
+        " $32 \\mathrm{~cm} / \\mathrm{s}$"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " $v=\\frac{d x}{d t}=2 b t$. At $t=3 s, v=2(3)(3)=18 \\mathrm{~cm} / \\mathrm{s}$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 23929,
+     "analysisTags": [
+      "Average and instantaneous velocity"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd07a",
+     "questionText": " If a car at rest accelerates uniformly to a speed of $144 \\mathrm{~km} / \\mathrm{h}$ in 20 s , it covers a distance of:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 1440 m"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 2880 m"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 20 m"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 400 m"
+      }
+     ],
+     "answerGiven": [
+      "2"
+     ],
+     "topics": [
+      "Three standard equation of motion"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 19,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 1440 m",
+        "(b) 2880 m",
+        "(c) 20 m",
+        "(d) 400 m"
+       ],
+       "newOptions": [
+        " 1440 m",
+        " 2880 m",
+        " 20 m",
+        " 400 m"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " $v=144 \\mathrm{~km} / \\mathrm{h} \\times \\frac{5}{18}=40 \\mathrm{~m} / \\mathrm{s} . u=0 . s=\\left(\\frac{u+v}{2}\\right) t=\\left(\\frac{0+40}{2}\\right) \\times 20=400 \\mathrm{~m}$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "4"
+      ]
+     },
+     "duration": 24866,
+     "analysisTags": [
+      "Three standard equation of motion"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd07b",
+     "questionText": " A particle moves along a path such that its displacement is given by $x^{2}=t^{2}+1$. Its acceleration is given by:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " $1 / x^{3}$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " $1 / x-1 / x^{2}$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " $-t / x^{3}$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " $t^{2} / x^{3}$"
+      }
+     ],
+     "topics": [
+      "Application of differentiation in physics"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 20,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) $1 / x^{3}$",
+        "(b) $1 / x-1 / x^{2}$",
+        "(c) $-t / x^{3}$",
+        "(d) $t^{2} / x^{3}$"
+       ],
+       "newOptions": [
+        " $1 / x^{3}$",
+        " $1 / x-1 / x^{2}$",
+        " $-t / x^{3}$",
+        " $t^{2} / x^{3}$"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Differentiating $x^{2}=t^{2}+1$ w.r.t. time: $2 x \\frac{d x}{d t}=2 t \\Longrightarrow x v=t$. Differentiating again: $v \\cdot v+x \\cdot a=1 \\Longrightarrow v^{2}+x a=1$. $a=\\frac{1-v^{2}}{x}$. Substitute $v=t / x$ : $a=\\frac{1-(t / x)^{2}}{x}=\\frac{x^{2}-t^{2}}{x^{3}}$. From the original equation, $x^{2}-t^{2}=1$, so $a=\\frac{1}{x^{3}}$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Application of differentiation in physics"
+     ]
+    }
+   ]
+  },
+  {
+   "category": "PHY SEC 2",
+   "questions": [
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd07c",
+     "questionText": " A person travelling on a straight line moves with a uniform velocity $v_{1}$ for some time and with a uniform velocity $v_{2}$ for the next equal time. The average velocity is $10 \\mathrm{~m} / \\mathrm{s}$. If $v_{1}=6 \\mathrm{~m} / \\mathrm{s}$, then $v_{2}$ is_______\u00a0 \u00a0 \u00a0$$\\left( {{\\text{in}}\\,m/s} \\right)$$.",
+     "options": [],
+     "answerGiven": [
+      "7"
+     ],
+     "topics": [
+      "Average and instantaneous velocity"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 1,
+     "questionType": "NUMERIC",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [],
+       "optionOrder": [],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": "  For equal time intervals, $v_{a v g}=\\frac{v_{1}+v_{2}}{2}$.<br>$$<br>10=\\frac{6+v_{2}}{2} \\Longrightarrow 20=6+v_{2} \\Longrightarrow v_{2}=14 \\mathrm{~m} / \\mathrm{s}<br>$$",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "14.0"
+      ]
+     },
+     "duration": 26740,
+     "analysisTags": [
+      "Average and instantaneous velocity"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd07d",
+     "questionText": " The position of a particle along the x -axis is given by $x=t^{3}-6 t^{2}+5 t$. The magnitude of velocity of the particle when its acceleration becomes zero is______$\\qquad$(in $\\mathrm{m} / \\mathrm{s}$).",
+     "options": [],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Average and instantaneous acceleration"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 2,
+     "questionType": "NUMERIC",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [],
+       "optionOrder": [],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " $v=\\frac{d x}{d t}=3 t^{2}-12 t+5 . \\quad a=\\frac{d v}{d t}=6 t-12$. Set $a=0 \\Longrightarrow \\quad 6 t-12=0 \\Longrightarrow t=2 s$. $v(2)=3(2)^{2}-12(2)+5=12-24+5=-7 \\mathrm{~m} / \\mathrm{s}$. The magnitude is $|-7|=7 \\mathrm{~m} / \\mathrm{s}$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "7.00"
+      ]
+     },
+     "duration": 27677,
+     "analysisTags": [
+      "Average and instantaneous acceleration"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd07e",
+     "questionText": " The velocity of a particle moving on the x -axis is given by $v=3 \\sqrt{x}$. The acceleration of the particle is $\\alpha$ $ m / s^{2}$.Find value of 2<!--StartFragment-->$\\alpha$.<!--EndFragment-->\u00a0\u00a0\u00a0(Assume particle starts from $x&gt;0$ )",
+     "options": [],
+     "answerGiven": [
+      "2"
+     ],
+     "topics": [
+      "Average and instantaneous acceleration"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 3,
+     "questionType": "NUMERIC",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [],
+       "optionOrder": [],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": "  Use\u00a0\u00a0<!-StartFragment->$ a\u00a0 =v \\frac{d v}{d x}$. Given $v=3 x^{1 / 2}$. $\\frac{d v}{d x}=3 \\times \\frac{1}{2} x^{-1 / 2}=\\frac{1.5}{\\sqrt{x}} . a=(3 \\sqrt{x})\\left(\\frac{1.5}{\\sqrt{x}}\\right)=4.5 \\mathrm{~m} / \\mathrm{s}^{2}$. 2&#10;&#10;<!-StartFragment->$\\alpha$\u00a0= 2 x 4.5 = 9$\\mathrm{~m} / \\mathrm{s}^{2}$<!-EndFragment-><!-EndFragment-><!-EndFragment->",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "9"
+      ]
+     },
+     "duration": 28614,
+     "analysisTags": [
+      "Average and instantaneous acceleration"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd07f",
+     "questionText": " A car moving with a speed of $54 \\mathrm{~km} / \\mathrm{h}$ is brought to rest in a distance of 22.5 m . The uniform retardation is________ $$({\\text{in}}\\quad \\;\\;\\;m/{s^2})$$.",
+     "options": [],
+     "answerGiven": [
+      "3"
+     ],
+     "topics": [
+      "Three standard equation of motion"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 4,
+     "questionType": "NUMERIC",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [],
+       "optionOrder": [],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " $u=54 \\mathrm{~km} / \\mathrm{h}=15 \\mathrm{~m} / \\mathrm{s} . v=0, s=22.5 \\mathrm{~m}$. Using $v^{2}=u^{2}+2 a s \\Longrightarrow 0=15^{2}+2 a(22.5) \\Longrightarrow 0=225+45$ a. $a=-5 \\mathrm{~m} / \\mathrm{s}^{2}$. Retardation is $5 \\mathrm{~m} / \\mathrm{s}^{2}$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "5.00"
+      ]
+     },
+     "duration": 29551,
+     "analysisTags": [
+      "Three standard equation of motion"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68c7c1d57c7f915b7b3bd080",
+     "questionText": " A stone is dropped from a tower of height 125 m . The time taken to reach the ground is__________ $$({\\text{in}}\\quad \\;\\;\\;s)$$. (Use $g=10 \\mathrm{~m} / \\mathrm{s}^{2}$ )",
+     "options": [],
+     "topics": [
+      "Vertical motion under gravity"
+     ],
+     "mainTags": [
+      "Different forms of energy",
+      "12",
+      "Dynamics",
+      "Work, energy and power",
+      "JEE_Main-12",
+      "JEE_Main",
+      "Physics"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 5,
+     "questionType": "NUMERIC",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [],
+       "optionOrder": [],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Using $s=u t+\\frac{1}{2} a t^{2}$. $125=0 \\cdot t+\\frac{1}{2}(10) t^{2} \\Longrightarrow 125=5 t^{2} \\Longrightarrow t^{2}=25 \\Longrightarrow t=5 \\mathrm{~s}$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "5.00"
+      ]
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Vertical motion under gravity"
+     ]
+    }
+   ]
+  }
+ ],
+ "maxStartTime": 1759343400000,
+ "totalSubjectAnalyticsMarks": 0,
+ "rdata": {}
+}

@@ -1,0 +1,63 @@
+{
+ "insights": {
+  "creationTime": 1791719916737,
+  "createdBy": "SYSTEM",
+  "lastUpdated": 1791719916737,
+  "lastUpdatedBy": "SYSTEM",
+  "entityState": "ACTIVE",
+  "adminTags": [],
+  "id": "6acb79ecd2152942b1645699",
+  "attemptId": "6acb79e64bd32f698a38c564",
+  "totalMarks": 100,
+  "marksScored": 10,
+  "examType": "JEE_MAINS",
+  "insightMetricsId": "6916e8261fb9bf4cf2712ba9",
+  "testAttemptInsightsSummary": {
+   "possibleMarksGain": 44,
+   "attemptPercentile": 80,
+   "attemptAccuracy": 30,
+   "totalImprovePercentile": 44
+  },
+  "hshwTopicsInsight": {
+   "topicIds": [
+    "67c6e58f254dd91d821ee156"
+   ],
+   "accuracy": 25,
+   "missedQuestionCount": 2,
+   "incorrectQuestionCount": 6,
+   "totalQuestionCount": 10,
+   "possibleMarksGain": 32
+  },
+  "eaqInsight": {
+   "topicIds": [
+    "67c6e58f254dd91d821ee156"
+   ],
+   "attemptPercentile": 66,
+   "accuracyPercentile": 0,
+   "possibleMarksGain": 12,
+   "totalQuestionCount": 3,
+   "attemptQuestionCount": 2,
+   "missedQuestionCount": 1,
+   "incorrectQuestionCount": 2,
+   "correctQuestionCount": 0,
+   "averageEAQCohortAccuracy": 81
+  },
+  "pyqInsight": {
+   "topicIds": [
+    "67c6e58e254dd91d821ee155",
+    "67c6e58f254dd91d821ee156",
+    "67c6e590254dd91d821ee158",
+    "67c6e590254dd91d821ee157"
+   ]
+  },
+  "insightVersion": "V1"
+ },
+ "hshwTopicDetails": [
+  {
+   "topicId": "67c6e58f254dd91d821ee156",
+   "topicName": "Sum of terms in A.P.",
+   "chapterName": "Sequence and Series",
+   "subjectName": "Math"
+  }
+ ]
+}

@@ -1,0 +1,2740 @@
+{
+ "creationTime": 1791719910332,
+ "createdBy": "4102629666221199",
+ "lastUpdated": 1791719916650,
+ "lastUpdatedBy": "4102629666221199",
+ "entityState": "ACTIVE",
+ "adminTags": [],
+ "id": "6acb79e64bd32f698a38c564",
+ "testId": "68ce405c59b7f00d1a7c8556",
+ "contentInfoId": "6981297bb87d500b113dc09c",
+ "contentInfoType": "OBJECTIVE",
+ "studentId": "4102629666221199",
+ "evaluatedTime": 1791719916629,
+ "attemptState": "EVALUATE_COMPLETE",
+ "subjects": [
+  "Mathematics"
+ ],
+ "totalMarks": 100,
+ "marksAcheived": 10,
+ "timeTakenByStudent": 6263,
+ "duration": 3600000,
+ "startTime": 1791719910332,
+ "endTime": 1791723510332,
+ "startedAt": 1791719910332,
+ "endedAt": 1791719916595,
+ "testEndType": "AUTOMATIC",
+ "resultEntries": [
+  {
+   "questionId": "68ca969448941b2c13d7cb86",
+   "duration": 8000,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": 4,
+   "evaluatedTime": 1791719916608,
+   "correctness": "CORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb87",
+   "duration": 8937,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": 4,
+   "evaluatedTime": 1791719916608,
+   "correctness": "CORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb88",
+   "duration": 9874,
+   "answerGiven": [
+    "4"
+   ],
+   "correctAnswer": [
+    "3"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719916608,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb89",
+   "duration": 10811,
+   "answerGiven": [
+    "2"
+   ],
+   "correctAnswer": [
+    "3"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719916608,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb8a",
+   "duration": 0,
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": 0,
+   "evaluatedTime": 1791719916608,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_ATTEMPTED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb8b",
+   "duration": 12685,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": 4,
+   "evaluatedTime": 1791719916608,
+   "correctness": "CORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb8c",
+   "duration": 13622,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719916608,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb8d",
+   "duration": 14559,
+   "answerGiven": [
+    "3"
+   ],
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719916608,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb8e",
+   "duration": 15496,
+   "answerGiven": [
+    "4"
+   ],
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719916608,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb8f",
+   "duration": 0,
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": 0,
+   "evaluatedTime": 1791719916608,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_ATTEMPTED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb90",
+   "duration": 17370,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": 4,
+   "evaluatedTime": 1791719916608,
+   "correctness": "CORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb91",
+   "duration": 18307,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "3"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719916608,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb92",
+   "duration": 19244,
+   "answerGiven": [
+    "2"
+   ],
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": 4,
+   "evaluatedTime": 1791719916608,
+   "correctness": "CORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb93",
+   "duration": 20181,
+   "answerGiven": [
+    "3"
+   ],
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719916608,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb94",
+   "duration": 0,
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": 0,
+   "evaluatedTime": 1791719916608,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_ATTEMPTED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb95",
+   "duration": 22055,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": 4,
+   "evaluatedTime": 1791719916608,
+   "correctness": "CORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb96",
+   "duration": 22992,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719916608,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb97",
+   "duration": 23929,
+   "answerGiven": [
+    "4"
+   ],
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719916608,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb98",
+   "duration": 24866,
+   "answerGiven": [
+    "2"
+   ],
+   "correctAnswer": [
+    "1"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719916608,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb99",
+   "duration": 0,
+   "correctAnswer": [
+    "2"
+   ],
+   "marksGiven": 0,
+   "evaluatedTime": 1791719916608,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_ATTEMPTED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb9a",
+   "duration": 26740,
+   "answerGiven": [
+    "7"
+   ],
+   "correctAnswer": [
+    "10.00"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719916608,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "NUMERIC"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb9b",
+   "duration": 27677,
+   "answerGiven": [
+    "1"
+   ],
+   "correctAnswer": [
+    "24.00"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719916608,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "NUMERIC"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb9c",
+   "duration": 28614,
+   "answerGiven": [
+    "2"
+   ],
+   "correctAnswer": [
+    "3059.00"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719916608,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "NUMERIC"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb9d",
+   "duration": 29551,
+   "answerGiven": [
+    "3"
+   ],
+   "correctAnswer": [
+    "110.00"
+   ],
+   "marksGiven": -1,
+   "evaluatedTime": 1791719916608,
+   "correctness": "INCORRECT",
+   "questionAttemptState": "EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "NUMERIC"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb9e",
+   "duration": 0,
+   "correctAnswer": [
+    "125.00"
+   ],
+   "marksGiven": 0,
+   "evaluatedTime": 1791719916608,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_ATTEMPTED",
+   "maxMarks": 4,
+   "questionIndex": 0,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "NUMERIC"
+  }
+ ],
+ "categoryAnalyticsList": [
+  {
+   "name": "MATH SEC 1",
+   "categoryType": "SECTION",
+   "customEvaluation": false,
+   "marks": 14,
+   "attempted": 16,
+   "unattempted": 4,
+   "correct": 6,
+   "incorrect": 10,
+   "partiallyCorrect": 0,
+   "maxMarks": 80,
+   "duration": 262928
+  },
+  {
+   "name": "MATH SEC 2",
+   "categoryType": "SECTION",
+   "customEvaluation": false,
+   "marks": -4,
+   "attempted": 4,
+   "unattempted": 1,
+   "correct": 0,
+   "incorrect": 4,
+   "partiallyCorrect": 0,
+   "maxMarks": 20,
+   "duration": 112582
+  },
+  {
+   "name": "Subject:Overall_Topic:Arithmetic progression",
+   "subject": "Overall",
+   "topic": "Arithmetic progression",
+   "categoryType": "TOPIC",
+   "customEvaluation": false,
+   "marks": 5,
+   "attempted": 10,
+   "unattempted": 3,
+   "correct": 3,
+   "incorrect": 7,
+   "partiallyCorrect": 0,
+   "maxMarks": 52,
+   "duration": 184944
+  },
+  {
+   "name": "Subject:Maths_Topic:Arithmetic progression",
+   "subject": "Maths",
+   "topic": "Arithmetic progression",
+   "categoryType": "TOPIC",
+   "customEvaluation": false,
+   "marks": 5,
+   "attempted": 10,
+   "unattempted": 3,
+   "correct": 3,
+   "incorrect": 7,
+   "partiallyCorrect": 0,
+   "maxMarks": 52,
+   "duration": 184944
+  },
+  {
+   "name": "Subject:Overall_Difficulty:MODERATE",
+   "subject": "Overall",
+   "difficulty": "MODERATE",
+   "categoryType": "DIFFICULTY",
+   "customEvaluation": false,
+   "marks": 10,
+   "attempted": 20,
+   "unattempted": 5,
+   "correct": 6,
+   "incorrect": 14,
+   "partiallyCorrect": 0,
+   "maxMarks": 100,
+   "duration": 375510
+  },
+  {
+   "name": "Subject:Maths_Difficulty:MODERATE",
+   "subject": "Maths",
+   "difficulty": "MODERATE",
+   "categoryType": "DIFFICULTY",
+   "customEvaluation": false,
+   "marks": 10,
+   "attempted": 20,
+   "unattempted": 5,
+   "correct": 6,
+   "incorrect": 14,
+   "partiallyCorrect": 0,
+   "maxMarks": 100,
+   "duration": 375510
+  },
+  {
+   "name": "Subject:Overall_Type:NUMERIC",
+   "subject": "Overall",
+   "questionType": "NUMERIC",
+   "categoryType": "QUESTION_TYPE",
+   "customEvaluation": false,
+   "marks": -4,
+   "attempted": 4,
+   "unattempted": 1,
+   "correct": 0,
+   "incorrect": 4,
+   "partiallyCorrect": 0,
+   "maxMarks": 20,
+   "duration": 112582
+  },
+  {
+   "name": "Subject:Overall_Type:SCQ",
+   "subject": "Overall",
+   "questionType": "SCQ",
+   "categoryType": "QUESTION_TYPE",
+   "customEvaluation": false,
+   "marks": 14,
+   "attempted": 16,
+   "unattempted": 4,
+   "correct": 6,
+   "incorrect": 10,
+   "partiallyCorrect": 0,
+   "maxMarks": 80,
+   "duration": 262928
+  },
+  {
+   "name": "Subject:Maths_Type:NUMERIC",
+   "subject": "Maths",
+   "questionType": "NUMERIC",
+   "categoryType": "QUESTION_TYPE",
+   "customEvaluation": false,
+   "marks": -4,
+   "attempted": 4,
+   "unattempted": 1,
+   "correct": 0,
+   "incorrect": 4,
+   "partiallyCorrect": 0,
+   "maxMarks": 20,
+   "duration": 112582
+  },
+  {
+   "name": "Subject:Maths_Type:SCQ",
+   "subject": "Maths",
+   "questionType": "SCQ",
+   "categoryType": "QUESTION_TYPE",
+   "customEvaluation": false,
+   "marks": 14,
+   "attempted": 16,
+   "unattempted": 4,
+   "correct": 6,
+   "incorrect": 10,
+   "partiallyCorrect": 0,
+   "maxMarks": 80,
+   "duration": 262928
+  },
+  {
+   "name": "Subject:Overall",
+   "subject": "Overall",
+   "categoryType": "SUBJECT",
+   "customEvaluation": false,
+   "marks": 10,
+   "attempted": 20,
+   "unattempted": 5,
+   "correct": 6,
+   "incorrect": 14,
+   "partiallyCorrect": 0,
+   "maxMarks": 100,
+   "duration": 375510
+  },
+  {
+   "name": "Subject:Maths",
+   "subject": "Maths",
+   "categoryType": "SUBJECT",
+   "customEvaluation": false,
+   "marks": 10,
+   "attempted": 20,
+   "unattempted": 5,
+   "correct": 6,
+   "incorrect": 14,
+   "partiallyCorrect": 0,
+   "maxMarks": 100,
+   "duration": 375510
+  }
+ ],
+ "attempted": 20,
+ "unattempted": 5,
+ "correct": 6,
+ "incorrect": 14,
+ "partiallyCorrect": 0,
+ "attemptMarksPercent": 0,
+ "testPercentile": 0,
+ "doNotShowResultsTill": 1759347000000,
+ "attemptIndex": 1,
+ "reevaluationNumber": 0,
+ "parentFeedback": [],
+ "omrTest": false,
+ "aitsTestPercentile": 0,
+ "currentTime": 1791719919756,
+ "testName": "Maths Highweightage Test-1",
+ "categories": [
+  {
+   "category": "MATH SEC 1",
+   "questions": [
+    {
+     "questionId": "68ca969448941b2c13d7cb86",
+     "questionText": "<b> </b>The ratio of the sum of the first $n$ terms of two different A.P.s is given by $\\frac{S_n}{S'_n} = \\frac{3n+8}{7n+15}$. The ratio of their $9^{th}$ terms is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " $\\frac{59}{134}$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " $\\frac{7}{16}$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " $\\frac{35}{97}$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " $\\frac{61}{135}$"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 1,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) $\\frac{59}{134}$",
+        "(b) $\\frac{7}{16}$",
+        "(c) $\\frac{35}{97}$",
+        "(d) $\\frac{61}{135}$"
+       ],
+       "newOptions": [
+        " $\\frac{59}{134}$",
+        " $\\frac{7}{16}$",
+        " $\\frac{35}{97}$",
+        " $\\frac{61}{135}$"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " To find the ratio of the $m^{th}$ terms, substitute $n = 2m-1$. For the $9^{th}$ term, we use $n=17$.<br>$$ \\frac{a_9}{a'_9} = \\frac{3(17)+8}{7(17)+15} = \\frac{59}{134} $$",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 8000,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb87",
+     "questionText": "<b> </b>Three distinct numbers are in G.P. If the middle term is doubled, the new numbers are in A.P. The common ratio of the G.P. can be:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " $2 + \\sqrt{3}$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " $2 - \\sqrt{2}$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " $3 + \\sqrt{2}$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " $3 - \\sqrt{3}$"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Geometric progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 2,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) $2 + \\sqrt{3}$",
+        "(b) $2 - \\sqrt{2}$",
+        "(c) $3 + \\sqrt{2}$",
+        "(d) $3 - \\sqrt{3}$"
+       ],
+       "newOptions": [
+        " $2 + \\sqrt{3}$",
+        " $2 - \\sqrt{2}$",
+        " $3 + \\sqrt{2}$",
+        " $3 - \\sqrt{3}$"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Let the numbers in G.P. be $a, ar, ar^2$. The new numbers are $a, 2ar, ar^2$.<br>The A.P. condition is $2 \\cdot (2ar) = a + ar^2$, which simplifies to $r^2-4r+1=0$.<br>The solutions are $r = 2 \\pm \\sqrt{3}$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 8937,
+     "analysisTags": [
+      "Geometric progression"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb88",
+     "questionText": "<b> </b>A function $f: \\mathbb{N} \\to \\mathbb{R}$ satisfies $f(xy) = f(x)+f(y)$ for all $x,y \\in \\mathbb{N}$ and $f(2)=1$. The terms $a_k = f(2^k)$ form an A.P. The sum of the first 20 terms of this A.P. is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 190"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 200"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 210"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 400"
+      }
+     ],
+     "answerGiven": [
+      "4"
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 3,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 190",
+        "(b) 200",
+        "(c) 210",
+        "(d) 400"
+       ],
+       "newOptions": [
+        " 190",
+        " 200",
+        " 210",
+        " 400"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " From the functional equation, $a_k = f(2^k) = k \\cdot f(2) = k$.<br>The A.P. is the sequence of natural numbers $1, 2, 3, \\dots$.<br>The sum of the first 20 terms is $S_{20} = \\frac{20(21)}{2} = 210$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "3"
+      ]
+     },
+     "duration": 9874,
+     "analysisTags": [
+      "Arithmetic progression"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb89",
+     "questionText": "<b> </b>The roots of the cubic equation $x^3 - 12x^2 + kx - 48 = 0$ are in A.P. The value of $k$ is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 36"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 40"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 44"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 48"
+      }
+     ],
+     "answerGiven": [
+      "2"
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 4,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 36",
+        "(b) 40",
+        "(c) 44",
+        "(d) 48"
+       ],
+       "newOptions": [
+        " 36",
+        " 40",
+        " 44",
+        " 48"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Let the roots be $a-d, a, a+d$.<br>Sum of roots: $3a = 12 \\implies a=4$.<br>Product of roots: $a(a^2-d^2) = 48 \\implies 4(16-d^2)=48 \\implies d^2=4$.<br>The sum of the products of the roots taken two at a time is $k = 3a^2-d^2 = 3(4^2)-4 = 44$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "3"
+      ]
+     },
+     "duration": 10811,
+     "analysisTags": [
+      "Arithmetic progression"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb8a",
+     "questionText": "<b> </b>If the sum of the first $2n$ terms of the A.P. $2, 5, 8, \\dots$ is equal to the sum of the first $n$ terms of the A.P. $57, 59, 61, \\dots$, then $n$ is equal to:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 10"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 11"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 12"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 13"
+      }
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 5,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 10",
+        "(b) 11",
+        "(c) 12",
+        "(d) 13"
+       ],
+       "newOptions": [
+        " 10",
+        " 11",
+        " 12",
+        " 13"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " For the first A.P. ($a=2, d=3$), $S_{2n} = n(6n+1)$.<br>For the second A.P. ($a'=57, d'=2$), $S'_n = n(56+n)$.<br>Equating the sums and dividing by $n$ (for $n \\neq 0$): $6n+1=56+n \\implies 5n=55 \\implies n=11$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb8b",
+     "questionText": "<b> </b>The sum of four consecutive numbers in an A.P. is 32 and the ratio of the product of the first and the last term to the product of the two middle terms is 7:15. The smallest of these numbers is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 2"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 4"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 6"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 8"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 6,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 2",
+        "(b) 4",
+        "(c) 6",
+        "(d) 8"
+       ],
+       "newOptions": [
+        " 2",
+        " 4",
+        " 6",
+        " 8"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Let the terms be $a-3d, a-d, a+d, a+3d$. Sum: $4a=32 \\implies a=8$.<br>Ratio: $\\frac{a^2-9d^2}{a^2-d^2} = \\frac{64-9d^2}{64-d^2} = \\frac{7}{15}$.<br>Solving gives $8 \\cdot 64 = 128d^2 \\implies d^2=4 \\implies d=\\pm2$.<br>The numbers are 2, 6, 10, 14. The smallest is 2.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 12685,
+     "analysisTags": [
+      "Arithmetic progression"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb8c",
+     "questionText": "<b> </b>Let $a_n$ be an A.P. of positive terms. Let $A_k = a_1^2 - a_2^2 + a_3^2 - a_4^2 + \\dots + a_{2k-1}^2 - a_{2k}^2$. If the common difference is $d=3$ and $A_4 = -300$, find the first term $a_1$.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 1"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 2"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 3"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 4"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 7,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 1",
+        "(b) 2",
+        "(c) 3",
+        "(d) 4"
+       ],
+       "newOptions": [
+        " 1",
+        " 2",
+        " 3",
+        " 4"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " The sum can be simplified as $A_k = -d S_{2k} = -dk(2a_1+(2k-1)d)$.<br>Given $d=3, k=4, A_4=-300$:<br>$-3(4)(2a_1+(8-1)3) = -300 \\implies -12(2a_1+21) = -300$.<br>$2a_1+21 = \\frac{300}{12} = 25 \\implies 2a_1=4 \\implies a_1=2$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 13622,
+     "analysisTags": [
+      "Arithmetic progression"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb8d",
+     "questionText": "<b> </b>The sum of the first 20 terms of an A.P. is equal to the sum of the first 30 terms. The sum of the first 50 terms is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 0"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 100"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " -100"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 50"
+      }
+     ],
+     "answerGiven": [
+      "3"
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 8,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 0",
+        "(b) 100",
+        "(c) -100",
+        "(d) 50"
+       ],
+       "newOptions": [
+        " 0",
+        " 100",
+        " -100",
+        " 50"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Given $S_{20}=S_{30}$, which implies $S_{30}-S_{20}=0$. The sum of terms $a_{21}$ through $a_{30}$ is zero, which implies $a_{25.5}=0$, or $a+24.5d=0$.<br>$S_{50} = \\frac{50}{2}(2a+49d) = 25(2(-24.5d)+49d) = 25(-49d+49d)=0$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 14559,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb8e",
+     "questionText": "<b> </b>Let $a_1, a_2, \\dots$ be an A.P. If $a_1+a_5+a_{10}+a_{15}+a_{20}+a_{24} = 225$, find the sum of the first 24 terms of the A.P.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 600"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 900"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 1200"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 1800"
+      }
+     ],
+     "answerGiven": [
+      "4"
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 9,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 600",
+        "(b) 900",
+        "(c) 1200",
+        "(d) 1800"
+       ],
+       "newOptions": [
+        " 600",
+        " 900",
+        " 1200",
+        " 1800"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " We pair the terms: $(a_1+a_{24}) + (a_5+a_{20}) + (a_{10}+a_{15}) = 225$.<br>Since $1+24=5+20=10+15=25$, each pair is equal to $(a_1+a_{24})$.<br>$3(a_1+a_{24}) = 225 \\implies a_1+a_{24} = 75$.<br>The sum of the first 24 terms is $S_{24} = \\frac{24}{2}(a_1+a_{24}) = 12(75) = 900$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 15496,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb8f",
+     "questionText": "<b> </b>Let $a, b, c, d, e$ be five numbers in A.P. such that their sum is 25 and their product is 2520. If the common difference is positive, find the value of the largest term, $e$.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 5"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 7"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 9"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 11"
+      }
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 10,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 5",
+        "(b) 7",
+        "(c) 9",
+        "(d) 11"
+       ],
+       "newOptions": [
+        " 5",
+        " 7",
+        " 9",
+        " 11"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Let the terms be $x-2d, x-d, x, x+d, x+2d$.<br>Sum: $5x=25 \\implies x=5$.<br>Product: $5(25-d^2)(25-4d^2)=2520 \\implies (25-d^2)(25-4d^2)=504$.<br>Let $y=d^2$. This gives $4y^2 - 125y + 121 = 0$, whose roots are $y=1$ and $y=121/4$.<br>For simple integer terms, we test $d^2=1 \\implies d=1$.<br>The terms are $3,4,5,6,7$. This works. The largest term is 7.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb90",
+     "questionText": "<b> </b>Three numbers whose sum is 21 are in A.P. If 2, 3, and 9 are added to them respectively, the resulting numbers are in G.P. The product of the original increasing A.P. numbers is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 231"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 105"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 315"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " -504"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 11,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 231",
+        "(b) 105",
+        "(c) 315",
+        "(d) -504"
+       ],
+       "newOptions": [
+        " 231",
+        " 105",
+        " 315",
+        " -504"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Let the numbers be $a-d, a, a+d$. Sum $3a=21 \\implies a=7$.<br>The numbers are $7-d, 7, 7+d$.<br>The new numbers are $9-d, 10, 16+d$.<br>They are in G.P., so $10^2=(9-d)(16+d)$.<br>$100 = 144 - 7d - d^2 \\implies d^2+7d-44=0 \\implies (d+11)(d-4)=0$.<br>For an increasing sequence, $d=4$.<br>The original numbers are $3, 7, 11$.<br>Their product is 231.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 17370,
+     "analysisTags": [
+      "Arithmetic progression"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb91",
+     "questionText": "<b> </b>Between two numbers whose sum is $\\frac{13}{6}$, an even number of arithmetic means are inserted. If the sum of these means exceeds their number by unity, find the number of means inserted.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 8"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 10"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 12"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 14"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Arithmetic mean"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 12,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 8",
+        "(b) 10",
+        "(c) 12",
+        "(d) 14"
+       ],
+       "newOptions": [
+        " 8",
+        " 10",
+        " 12",
+        " 14"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Let the numbers be $A, B$ and $2n$ means be inserted. $A+B=13/6$.<br>Sum of means $= 2n \\times \\frac{A+B}{2} = n(A+B) = \\frac{13n}{6}$.<br>Given: sum of means = number of means + 1.<br>$\\frac{13n}{6} = 2n+1 \\implies 13n = 12n+6 \\implies n=6$.<br>The number of inserted means is $2n = 12$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "3"
+      ]
+     },
+     "duration": 18307,
+     "analysisTags": [
+      "Arithmetic mean"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb92",
+     "questionText": "<b> </b>The sum of the first 4 terms of an A.P. is 56. The sum of the last 4 terms is 112. If the first term is 11, the number of terms is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 10"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 11"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 12"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 13"
+      }
+     ],
+     "answerGiven": [
+      "2"
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 13,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 10",
+        "(b) 11",
+        "(c) 12",
+        "(d) 13"
+       ],
+       "newOptions": [
+        " 10",
+        " 11",
+        " 12",
+        " 13"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Let $a=11$. $S_4=56 \\implies \\frac{4}{2}(2(11)+3d)=56 \\implies d=2$.<br>Let the last term be $l = 11+(n-1)2 = 9+2n$.<br>The sum of the last 4 terms is $\\frac{4}{2}(l+l-3d) = 4l-12=112 \\implies l=31$.<br>$9+2n=31 \\implies n=11$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 19244,
+     "analysisTags": [
+      "Arithmetic progression"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb93",
+     "questionText": "<b> </b>Let $a_1, a_2, ..., a_{16}$ be in A.P. If $a_1+a_4+a_7+a_{10}+a_{13}+a_{16} = 147$, then the value of $a_1+a_6+a_{11}+a_{16}$ is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 98"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 102"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 112"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 147"
+      }
+     ],
+     "answerGiven": [
+      "3"
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 14,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 98",
+        "(b) 102",
+        "(c) 112",
+        "(d) 147"
+       ],
+       "newOptions": [
+        " 98",
+        " 102",
+        " 112",
+        " 147"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " The given sum has 6 terms which are in an A.P.<br>Their sum is $\\frac{6}{2}(a_1+a_{16}) = 147 \\implies a_1+a_{16}=49$.<br>The required sum is $a_1+a_6+a_{11}+a_{16}$.<br>By the property of A.P., $a_6+a_{11} = a_1+a_{16} = 49$.<br>The required sum is $(a_1+a_{16}) + (a_6+a_{11}) = 49+49=98$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 20181,
+     "analysisTags": [
+      "Arithmetic progression"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb94",
+     "questionText": "<b> </b>Consider two sets A and B, each containing three numbers in A.P. The sum of elements for each set is 36. Let the products of their elements be $p$ and $q$ respectively. Let their common differences be $d$ and $D$, where $D=d+3$ and $d>0$. If $\\frac{p+q}{p-q}=\\frac{19}{5}$, then $p-q$ is equal to:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 540"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 600"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 630"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 450"
+      }
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 15,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 540",
+        "(b) 600",
+        "(c) 630",
+        "(d) 450"
+       ],
+       "newOptions": [
+        " 540",
+        " 600",
+        " 630",
+        " 450"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " For both sets, the middle term is $36/3=12$.<br>Set A: $12-d, 12, 12+d$. Product $p=12(144-d^2)$.<br>Set B: $12-D, 12, 12+D$. Product $q=12(144-D^2)=12(144-(d+3)^2)$.<br>$\\frac{p+q}{p-q} = \\frac{288-d^2-(d+3)^2}{(d+3)^2-d^2} = \\frac{279-2d^2-6d}{6d+9}=\\frac{19}{5}$.<br>Solving this gives the quadratic $5d^2+72d-612=0$.<br>The positive root is $d=6$. Then $D=9$.<br>$p=12(144-36)=1296$. $q=12(144-81)=756$.<br>$p-q=1296-756=540$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb95",
+     "questionText": "<b> </b>In an A.P. of 10 terms, the sum of terms at odd positions is 25 and the sum of terms at even positions is 35. Find the value of $\\sum_{1 \\le i < j \\le 10} a_i a_j$.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 1455"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 1245"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 2910"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 3600"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 16,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 1455",
+        "(b) 1245",
+        "(c) 2910",
+        "(d) 3600"
+       ],
+       "newOptions": [
+        " 1455",
+        " 1245",
+        " 2910",
+        " 3600"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Sum of odd terms: $S_{odd} = a_1+a_3+\\dots+a_9 = \\frac{5}{2}(a_1+a_9)=25 \\implies a_1+a_9=10$.<br>Sum of even terms: $S_{even} = a_2+a_4+\\dots+a_{10} = \\frac{5}{2}(a_2+a_{10})=35 \\implies a_2+a_{10}=14$.<br>From these, $10+2d=14 \\implies d=2$, and $2a_1+8d=10 \\implies 2a_1+16=10 \\implies a_1=-3$.<br>The sum of all terms is $\\sum a_i = S_{10} = S_{odd}+S_{even}=60$.<br>The sum of squares is $\\sum a_i^2 = \\sum_{i=1}^{10} (2i-5)^2 = 690$.<br>The required sum is $\\frac{1}{2}\\left[ \\left(\\sum a_i\\right)^2 - \\sum a_i^2 \\right] = \\frac{1}{2}[60^2 - 690] = \\frac{3600-690}{2}=1455$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 22055,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb96",
+     "questionText": "<b> </b>Let $a_n$ be the $n^{th}$ term of an A.P. If the sum of its first $n$ terms is 700, its $6^{th}$ term is 7, and the sum of its first 7 terms is 7, find the value of $a_n$.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 56"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 64"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 68"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 72"
+      }
+     ],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 17,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 56",
+        "(b) 64",
+        "(c) 68",
+        "(d) 72"
+       ],
+       "newOptions": [
+        " 56",
+        " 64",
+        " 68",
+        " 72"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " We are given three conditions:<br>1) $a_6 = a+5d=7$<br>2) $S_7 = \\frac{7}{2}(2a+6d) = 7(a+3d)=7 \\implies a+3d=1$<br>3) $S_n = \\frac{n}{2}(2a+(n-1)d)=700$<br><br>From (1) and (2), we solve the system of equations. Subtracting (2) from (1) gives $2d=6 \\implies d=3$.<br>Substituting $d=3$ into (2) gives $a+3(3)=1 \\implies a=-8$.<br><br>Now, we use the third condition to find $n$:<br>$$ \\frac{n}{2}(2(-8)+(n-1)3)=700 \\implies n(3n-19)=1400 $$<br>$$ 3n^2 - 19n - 1400 = 0 $$<br>Solving this quadratic equation for $n$ gives $n=\\frac{19 \\pm \\sqrt{17161}}{6} = \\frac{19 \\pm 131}{6}$.<br>Since $n$ must be positive, we take $n = \\frac{150}{6}=25$.<br>The question asks for the value of $a_n$, which is $a_{25}$.<br>$$ a_{25} = a+24d = -8+24(3) = -8+72 = 64 $$",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 22992,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb97",
+     "questionText": "<b> </b>The side lengths of a right-angled triangle are in an A.P. If its area is 54, find the length of the hypotenuse.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 12"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 15"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 18"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 21"
+      }
+     ],
+     "answerGiven": [
+      "4"
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 18,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 12",
+        "(b) 15",
+        "(c) 18",
+        "(d) 21"
+       ],
+       "newOptions": [
+        " 12",
+        " 15",
+        " 18",
+        " 21"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " The sides of a right-angled triangle in A.P. must be in the ratio $3:4:5$. Let the sides be $3k, 4k, 5k$.<br>Area $= \\frac{1}{2}(3k)(4k) = 6k^2 = 54 \\implies k^2=9 \\implies k=3$.<br>The sides are 9, 12, 15. The hypotenuse is 15.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 23929,
+     "analysisTags": [
+      "Arithmetic progression"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb98",
+     "questionText": "<b> </b>Let $S_n$ denote the sum of the first $n$ terms of an A.P. with first term 5 and common difference 8. A sequence $T_n$ is defined for $n \\ge 1$ as $T_n = \\frac{S_{n+1}}{n+1} - \\frac{S_n}{n}$. The value of $T_{20}$ is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 4"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 5"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 8"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 20"
+      }
+     ],
+     "answerGiven": [
+      "2"
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 19,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 4",
+        "(b) 5",
+        "(c) 8",
+        "(d) 20"
+       ],
+       "newOptions": [
+        " 4",
+        " 5",
+        " 8",
+        " 20"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " The term $\\frac{S_k}{k}$ represents the average of the first $k$ terms of an A.P., which is given by the formula $\\frac{S_k}{k} = a + \\frac{(k-1)d}{2}$.<br>Substituting this into the definition of $T_n$:<br>$$ T_n = \\left(a + \\frac{(n+1-1)d}{2}\\right) - \\left(a + \\frac{(n-1)d}{2}\\right) $$<br>$$ T_n = \\left(a + \\frac{nd}{2}\\right) - \\left(a + \\frac{nd}{2} - \\frac{d}{2}\\right) = \\frac{d}{2} $$<br>The value of $T_n$ is constant for all $n$ and depends only on the common difference $d$.<br>Given $d=8$, the value is $T_{20} = \\frac{8}{2} = 4$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "1"
+      ]
+     },
+     "duration": 24866,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb99",
+     "questionText": "<b> </b>The ratio of the sum of the first 10 terms of an A.P. to the sum of the first 20 terms is $1/4$. If the $5^{th}$ term is 9, find the $10^{th}$ term.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 17"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 19"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 21"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 23"
+      }
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 20,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [
+        " ",
+        "(a) 17",
+        "(b) 19",
+        "(c) 21",
+        "(d) 23"
+       ],
+       "newOptions": [
+        " 17",
+        " 19",
+        " 21",
+        " 23"
+       ],
+       "optionOrder": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+       ],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Given $4S_{10}=S_{20} \\implies 4 \\cdot \\frac{10}{2}(2a+9d) = \\frac{20}{2}(2a+19d)$.<br>This simplifies to $2(2a+9d) = 2a+19d \\implies 2a=d$.<br>Also given $a_5=a+4d=9$.<br>Substituting $d=2a$ gives $a+4(2a)=9 \\implies 9a=9 \\implies a=1$.<br>Then $d=2a=2$. The $10^{th}$ term is $a_{10} = a+9d = 1+9(2)=19$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "2"
+      ]
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ]
+    }
+   ]
+  },
+  {
+   "category": "MATH SEC 2",
+   "questions": [
+    {
+     "questionId": "68ca969448941b2c13d7cb9a",
+     "questionText": "<b> </b>Let $S_n$ be the sum of first n terms of an A.P. with $a=2, d=4$. If $\\frac{1}{n(n+1)(n+2)} \\sum_{k=1}^{n} \\frac{S_k}{k} = \\frac{1}{12}$, find the value of $n$.",
+     "options": [],
+     "answerGiven": [
+      "7"
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 1,
+     "questionType": "NUMERIC",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [],
+       "optionOrder": [],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " First, $S_k = \\frac{k}{2}[2(2) + (k-1)4] = 2k^2$. Then, $\\frac{S_k}{k} = 2k$.<br>The summation is $\\sum_{k=1}^{n} 2k = n(n+1)$.<br>The equation becomes $\\frac{n(n+1)}{n(n+1)(n+2)} = \\frac{1}{n+2} = \\frac{1}{12}$. Thus, $n=10$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "10.00"
+      ]
+     },
+     "duration": 26740,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb9b",
+     "questionText": "<b> </b>Two arithmetic progressions are $a_n=2n+3$ and $b_n=3n+2$. If the sum of their first $k$ common terms is 1776, find the value of $k$.",
+     "options": [],
+     "answerGiven": [
+      "1"
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 2,
+     "questionType": "NUMERIC",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [],
+       "optionOrder": [],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " The A.P.s are 5, 7, 9, ... and 5, 8, 11, ... The first common term is 5.<br/>The new common difference is $d=\\text{LCM}(2,3)=6$.<br/>The A.P. of common terms is 5, 11, 17, ...<br/>$S_k = \\frac{k}{2}[2(5)+(k-1)6] = 3k^2+2k$.<br/>Given $3k^2+2k = 1776 \\implies 3k^2+2k-1776=0$.<br/>The positive integer root is $k=24$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "24.00"
+      ]
+     },
+     "duration": 27677,
+     "analysisTags": [
+      "Arithmetic progression"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb9c",
+     "questionText": "<b> </b>The natural numbers are grouped as follows: $(1), (2,3,4), (5,6,7,8,9), \\dots$, where the $k^{th}$ group has $2k-1$ terms. Find the sum of all numbers in the $12^{th}$ group.",
+     "options": [],
+     "answerGiven": [
+      "2"
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 3,
+     "questionType": "NUMERIC",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [],
+       "optionOrder": [],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " The first term of the $n^{th}$ group is $(n-1)^2+1$. For the $12^{th}$ group, the first term is $11^2+1=122$.<br>The number of terms in the $12^{th}$ group is $2(12)-1=23$.<br>The group is an A.P. with $a=122, d=1, n=23$.<br>Sum $= \\frac{23}{2}[2(122) + (22)1] = \\frac{23}{2}[244+22] = 23 \\cdot 133 = 3059$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "3059.00"
+      ]
+     },
+     "duration": 28614,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb9d",
+     "questionText": "<b> </b>The terms of an A.P. are distinct integers. The sum of the first four terms is 20, and their product is 384. Find the sum of the first 10 terms of the increasing A.P.",
+     "options": [],
+     "answerGiven": [
+      "3"
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 4,
+     "questionType": "NUMERIC",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [],
+       "optionOrder": [],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " Let the terms be $a-3d, a-d, a+d, a+3d$.<br>Sum: $4a=20 \\implies a=5$.<br>Product: $(a^2-9d^2)(a^2-d^2)=384 \\implies (25-9d^2)(25-d^2)=384$.<br>This gives $d^2=1$ (since terms are integers), so for an increasing A.P., $d=1$.<br>The terms are 2, 4, 6, 8. The A.P. is $a_1=2, d=2$.<br>$S_{10} = \\frac{10}{2}[2(2)+9(2)] = 5(22)=110$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "110.00"
+      ]
+     },
+     "duration": 29551,
+     "analysisTags": [
+      "Arithmetic progression"
+     ],
+     "attemptStateOfQuestion": "ANSWERED"
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb9e",
+     "questionText": "<b> </b>An A.P. with first term 1 and common difference 2 is arranged in a $5 \\times 5$ grid, filling rows sequentially. Find the sum of elements on the main diagonal.",
+     "options": [],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 5,
+     "questionType": "NUMERIC",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "solution": {
+      "optionBody": {
+       "uuidImages": [],
+       "originalOptions": [],
+       "newOptions": [],
+       "optionOrder": [],
+       "fibOptions": {}
+      },
+      "solutions": [
+       {
+        "uuidImages": [],
+        "newText": " The term at position $(i, j)$ in the grid is the $(5(i-1)+j)^{th}$ term of the A.P.<br>The diagonal elements are at positions $(i,i)$, so their positions in the A.P. are $k = 6i-5$ for $i=1..5$.<br>The terms are $a_1, a_7, a_{13}, a_{19}, a_{25}$.<br>These 5 terms form an A.P.<br>The first is $a_1=1$ and the last is $a_{25}=1+(24)2=49$.<br>Their sum is $S_5 = \\frac{5}{2}(a_1+a_{25}) = \\frac{5}{2}(1+49) = 125$.",
+        "videos": [],
+        "aiGenerated": false
+       }
+      ],
+      "answer": [
+       "125.00"
+      ]
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    }
+   ]
+  }
+ ],
+ "maxStartTime": 1759343400000,
+ "totalSubjectAnalyticsMarks": 0,
+ "rdata": {}
+}

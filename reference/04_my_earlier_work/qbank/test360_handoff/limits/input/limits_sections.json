@@ -1,0 +1,1711 @@
+[
+ {
+  "no": "1.1",
+  "title": "Indeterminate Forms and Why Limits Need Techniques",
+  "id": "main-c0-k1",
+  "clip_s": 214,
+  "key_idea": null,
+  "one_line": "The four indeterminate forms — 0/0, ∞/∞, ∞−∞, 0×∞ — are the signal that a limit needs a technique, and the first, second and fourth are really the same form in disguise.",
+  "traps": [
+   "Treating 0/0 as if it equals 0, or ∞/∞ as if it equals 1. These are indeterminate, not equal to anything. The symbol only tells you that direct substitution has failed; the actual answer comes from the technique you apply.",
+   "Relying on plugging in 9.9999 or 10.0001 as your actual method. Use it only to understand what a left and right hand limit mean. For solving, use factorization, rationalization or the ∞/∞ method — in every question you cannot put such a value.",
+   "Trying to attack ∞ − ∞ with the same reciprocal trick as 0 × ∞. Leave the middle one aside for now. It does not reduce the same way, and it gets its own handling later."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.2",
+  "title": "Factorization Method for 0/0",
+  "id": "main-c0-k2",
+  "clip_s": 188,
+  "key_idea": null,
+  "one_line": "When direct substitution gives 0/0, factorize the top and the bottom, cancel the common factor — it is a tiny non-zero quantity, not a zero — and then substitute.",
+  "traps": [
+   "Saying \"0 cancels from top and bottom\". Never. 0 = 0 × 5 and 0 = 0 × 7 would then give 5 = 7. What you cancel is (x − 3), the identical non-zero quantity approaching 0 on both sides.",
+   "Substituting x = 3 at the start and writing the answer as 0/0. 0/0 is not an answer, it is a signal. It only tells you to factorize and cancel first; substitute only after the common factor is gone.",
+   "Factorizing x⁴ − 81 only up to (x² − 9)(x² + 9) and then giving up because no (x − 3) is visible. Split x² − 9 into (x − 3)(x + 3). The factor you need is always there when the form is 0/0."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.3",
+  "title": "Rationalization Method for 0/0",
+  "id": "main-c0-k3",
+  "clip_s": 165,
+  "key_idea": "Factorization fails the moment you see a root sign — there is nothing to factorize. So we do the next best thing: we make the root disappear.",
+  "one_line": "When a 0/0 limit has square roots, multiply by the conjugate so the surd turns into a²−b², the (x−a) factor cancels, and you can put the value in.",
+  "traps": [
+   "Multiplying only the numerator by its conjugate and not writing that same factor in the denominator. You are multiplying by (a+b)/(a+b), which is 1. The plus-version must appear above and below; only then is the value unchanged.",
+   "Cancelling or putting x = 2 before the (x − 2) factors have appeared on both sides. Finish both conjugate multiplications first. Only when you can see (x − 2) above and (x − 2) below do you cancel, and only after cancelling do you substitute.",
+   "Writing the top as x + 3 − √5 instead of x + 3 − 5. (√5)² = 5, not √5. Both terms get squared when you use a² − b²."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.4",
+  "title": "Finding a and b When the Limit Value Is Given",
+  "id": "main-c0-k4",
+  "clip_s": 510,
+  "key_idea": "You are given the answer of the limit and asked to find a and b. Two unknowns, and at first it looks like you have only one equation — so where does the second one hide?",
+  "one_line": "If the denominator goes to 0 and the limit is a finite number, the numerator must also go to 0 — that gives you one equation, and the cancelled limit gives you the second.",
+  "traps": [
+   "Thinking constant/0 is an indeterminate form, so any value of the numerator could somehow give 5. Only 0/0 and ∞/∞ are indeterminate. ½ upon 0, 1 upon 0, π upon 0 — all of them tend to infinity. That is exactly why the numerator has no choice but to go to 0.",
+   "Writing only 9 + 3a + b = 0 and stopping, then trying to guess a and b from one equation. Two unknowns need two equations. The second one is the given limit value itself — cancel the common factor, put x = 3, and set it equal to 5.",
+   "Trying to factorise x² + ax + b while both a and b are still sitting there. First use the root condition to eliminate one letter. With b replaced, the (x − 3) factor appears by itself."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.5",
+  "title": "Practice: Factorization and Rationalization Limits",
+  "id": "main-c0-k5",
+  "clip_s": 224,
+  "key_idea": "Two 0/0 limits to work through: one clears by rationalisation, the other uses the given limit value to pin down the unknown. Together they show that 0/0 has no fixed value of its own.",
+  "one_line": "Two board-level 0/0 limits done by your own pen: one by rationalization, one where the given limit 5 fixes a = 24 — proof that 0/0 has no fixed value.",
+  "traps": [
+   "Writing 0/0 = 0, or 0/0 = 1, and closing the question. 0/0 is an indeterminate form. It is a signal to simplify, not an answer. Here the very same 0/0 equals 5 when a = 24 — that is the proof it has no fixed value.",
+   "Trying to find a by substituting x = 3 straight into the original expression. You will only get 0 = 0, which is true for every a and tells you nothing. Cancel (x − 3) first, then substitute, then compare with 5.",
+   "Reading the solution, nodding, and never putting it on paper. Do both questions with your own pen before you look. Understanding does not convert into marks on its own."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.6",
+  "title": "The ∞/∞ Form: Divide by the Highest Power",
+  "id": "main-c0-k6",
+  "clip_s": 321,
+  "key_idea": null,
+  "one_line": "For the ∞/∞ form, divide the numerator and the denominator by the highest power of x — every leftover term with x underneath dies to 0, and what survives is your answer.",
+  "traps": [
+   "Treating ∞/∞ as 1, or cancelling the x terms directly. ∞/∞ is an indeterminate form — it has no value on its own. You must divide by the highest power and then take the limit.",
+   "Jumping straight to the ratio of the highest-power coefficients as a remembered shortcut. Do the division mentally instead. The shortcut is just the result of it, and students who only memorise it drop the minus sign in a case like 7/(−2).",
+   "Dividing only the numerator, or dividing only some terms by the highest power. Every term of the numerator and every term of the denominator gets divided by the same highest power of x. Then nothing shifts."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.7",
+  "title": "∞/∞ with Exponential Terms",
+  "id": "main-c0-k7",
+  "clip_s": 258,
+  "key_idea": "Put x = ∞ in (2·3ˣ + 5·2ˣ)/(7·3ˣ + 9·2ˣ) and you get ∞/∞ again. Same ∞/∞ story as the last section, only now the \"highest power\" is hiding in the base — and the answer falls out in one line.",
+  "one_line": "In an ∞/∞ limit with exponentials, divide top and bottom by the largest base raised to x — every leftover proper fraction to the power x dies to 0.",
+  "traps": [
+   "Dividing by the smaller exponential, 2ˣ instead of 3ˣ. Then you get (2·(3/2)ˣ + 5)/(7·(3/2)ˣ + 9) and 3/2 > 1, so those terms run to ∞ — you are stuck at ∞/∞ again. Always divide by the largest base raised to x.",
+   "Writing the ratio as (2 + 5)/(7 + 9) because \"the powers cancel\". 3ˣ and 2ˣ are different sizes; nothing cancels between them. Divide every term by 3ˣ, then let (2/3)ˣ → 0. The 5 and the 9 leave with it, they do not get added.",
+   "Leaving (2/3)ˣ as if it were some small constant, or treating it as 1. It is exactly 0 in the limit. A proper fraction to the power infinity is 0 — write that line down so the examiner sees why the terms disappeared."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.8",
+  "title": "When the Powers Are Unequal: Answer 0 or Infinity",
+  "id": "main-c0-k8",
+  "clip_s": 157,
+  "key_idea": "When the powers upstairs and downstairs are unequal, still divide by the highest power of x in sight. The answer falls out as 0 or ±∞ on its own, and the sign of the leftover denominator decides which.",
+  "one_line": "When the powers on top and bottom are unequal, still divide by the highest power of x you can see — the answer falls out as 0 or ±∞ on its own, and the sign of the leftover denominator decides which infinity.",
+  "traps": [
+   "Memorising a separate rule for unequal powers — 'power more below, answer 0; power more above, answer infinity' — and then blanking in the exam about which way round it was. Don't carry a second rule at all. Divide by the highest power of x and the answer appears. The rule is a consequence of the division, not an extra tool.",
+   "Panicking at 0/1 and treating it as an indeterminate form, then reaching for extra machinery. Only 0/0 and ∞/∞ are indeterminate. 0/1 is simply 0, and 0/(−2) is also simply 0. Write the answer and move on.",
+   "Answering '+∞' whenever the degree on top is bigger, without looking at signs. After dividing, look at what survives. In (3x³−7)/(−2x²+5) the top goes to 3 but the bottom creeps to 0 from the negative side, so the answer is −∞, not +∞."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.9",
+  "title": "Practice: Three ∞/∞ Limits",
+  "id": "main-c0-k9",
+  "clip_s": 201,
+  "key_idea": "Three questions, one minute. Same single move each time — and the three answers come out completely different.",
+  "one_line": "Three ∞/∞ limits in one minute: divide the whole fraction by the highest power on show, and the answer falls out as a ratio, as 0, or as infinity.",
+  "traps": [
+   "Taking x common from the top and a different power common from the bottom, then trying to cancel. Divide the whole fraction by one power — the highest one present. Same divisor top and bottom, so nothing changes in value and nothing gets dropped.",
+   "Comparing the constant terms, or the first terms you happen to read, instead of the highest powers. Only the highest power decides. Every lower term becomes something/x^k and dies to 0.",
+   "Writing 3/0 as the final answer and stopping there. Write that the limit tends to ∞, which means there is no finite limit. 3/0 is your reasoning, not an answer."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.10",
+  "title": "∞/∞ When the Polynomial Is Already Factored",
+  "id": "main-c0-k10",
+  "clip_s": 189,
+  "key_idea": "When the top and bottom are already factored, do not expand. Count the degree of each side, then split that power of n across the brackets.",
+  "one_line": "When the top and bottom are already factored, don't expand — count the degree, then split that power of n across the brackets: n(n+1)(2n+1)/((n²+2)(−3n+5)) → −2/3.",
+  "traps": [
+   "Multiplying out n(n+1)(2n+1) and (n²+2)(−3n+5) first, then dividing by n³. The answer is the same but you have burnt two minutes and invited a sign slip. Count degrees on the factored form and divide inside the brackets.",
+   "Splitting the powers carelessly — e.g. giving n to each of the two bottom brackets, so you divided the bottom by n² while the top got n³. Check the bookkeeping: the n's you hand out must multiply to the same power top and bottom. Here n·n·n = n³ above and n²·n = n³ below.",
+   "Losing the minus sign and answering 2/3. (−3n+5)/n becomes −3 + 5/n, which tends to −3, not 3. The leading coefficient carries its sign, so the answer is −2/3."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.11",
+  "title": "The ∞−∞ Form: Rationalize First",
+  "id": "main-c0-k11",
+  "clip_s": 400,
+  "key_idea": "Two roots, both running off to infinity, and their difference sitting there as ∞−∞. Nothing to cancel, nothing to substitute. One multiplication by the conjugate and the whole thing becomes a limit you already know how to kill.",
+  "one_line": "For ∞−∞ with square roots, multiply by the conjugate to turn it into ∞/∞, then divide by x — remembering that 1/x goes inside a root as 1/x².",
+  "traps": [
+   "Substituting straight away and writing the answer as 0 because ∞ − ∞ = 0. ∞−∞ is indeterminate. Rationalize with the conjugate first, convert it to ∞/∞, and only then divide and substitute. Here the honest answer is −3, not 0.",
+   "Seeing x² inside the root and dividing top and bottom by x². The root halves the power. The expression behaves like degree 1, so divide by x. Divide by x² and your limit collapses to 0 wrongly.",
+   "Taking 1/x inside the root as it is: √(1 − 1/x + 2/x) instead of squaring. A factor crossing into a root gets squared. 1/x inside becomes 1/x², so each term inside is divided by x²."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.12",
+  "title": "Limits as x → −∞: Substitute x = −t",
+  "id": "main-c0-k12",
+  "clip_s": 313,
+  "key_idea": null,
+  "one_line": "Whenever x → −∞, put x = −t so that t → +∞, solve the whole question in t, and the sign can never go wrong.",
+  "traps": [
+   "Solving the x → −∞ question directly by dividing by x and getting +1/√2. Substitute x = −t first. On the negative side √(x²) is −x, not x, which is exactly where the sign flips. After the substitution, there is nothing left to decide.",
+   "Substituting x = −t but still writing the limit as x → −∞. The question is now in t, so the limit must be t → +∞. Since t = −x, x → −∞ forces t → +∞. Change the limit along with the variable.",
+   "Changing the sign of a squared term after putting x = −t, like writing −2t² for 2x². Squaring removes the minus: 2(−t)² = 2t². Only the odd-power and plain x terms pick up the minus sign."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.13",
+  "title": "Existence of a Limit: (x²+1)/(x+1) − (ax+b)",
+  "id": "main-c0-k13",
+  "clip_s": 642,
+  "key_idea": "Both halves of this expression run away to infinity, so no shortcut will touch it. One LCM turns it into a question you fully control — and it is an actual IIT question.",
+  "one_line": "Take the LCM, write the top in systematic powers of x, and kill the x² coefficient — that is the only way this limit can be finite.",
+  "traps": [
+   "Hitting the 'divide by the highest power' shortcut straight away. This is ∞ − ∞, not ∞/∞. There is no single fraction yet. Take the LCM first and build the form yourself; then divide.",
+   "Writing the coefficient of x as a−b. There is a minus sitting outside the bracket. After distributing it, the x terms give −ax + bx, so the coefficient is b−a. Collect terms slowly in powers of x.",
+   "Using only 1−a = 0 when the limit is given as 0, and stopping there. a = 1 only removes the x² term; that leaves the limit as b−a. For a zero answer you need b−a = 0 as well, so a and b must be equal."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.14",
+  "title": "Practice: Limit Existence Quiz and Bonus Problems",
+  "id": "main-c0-k14",
+  "clip_s": 497,
+  "key_idea": "With the limit pinned to a finite value, kill the x² term first to fix a, then read the coefficient of x to fix b.",
+  "one_line": "Same existence question with the limit pinned at 4: kill the x² term to get a = 1, then read the x-coefficient b − a = 4 to get b = 5.",
+  "traps": [
+   "Jumping straight to the limit value without clearing the x² term. If the x² coefficient is non-zero, the limit does not exist at all. Set it to zero first, get a, and only then use the value 4.",
+   "Sign errors while multiplying the bracket by (x + 1). This is where the marks go, not in the concept. Write every one of the four products in a line before collecting terms.",
+   "Recalling the answer because you have seen this question in a paper. The numbers change in the exam, the concept doesn't. Catch the method — x² dies, then read the x-coefficient."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.15",
+  "title": "Limits of the Form (aⁿ + bⁿ)^(1/n): Take the Largest Term Common",
+  "id": "main-c0-k15",
+  "clip_s": 320,
+  "key_idea": "Three more indeterminate forms are waiting for you: 1^∞, ∞⁰ and 0⁰. And one trick kills the whole family of (3ⁿ + 5ⁿ) type questions in two lines.",
+  "one_line": "For a limit like (3ⁿ + 5ⁿ) to the power 1/n as n → ∞, take the largest base common — the answer is simply that largest base.",
+  "traps": [
+   "Calling 1⁰ an indeterminate form because 1^∞ is one. Only 1 to the power ∞ is indeterminate. 1⁰ is plain 1, and that is exactly the piece that lets you finish these questions.",
+   "Taking the smaller base common, say 3ⁿ out of 3ⁿ + 5ⁿ. Then you are left with (5/3)ⁿ, which blows up to ∞ and you are stuck. Always take the largest base out so every leftover ratio is a proper fraction and goes to 0.",
+   "Memorising the final answer of a solved question instead of the method. Catch the concept, not the answer. The paper changes the bases and the coefficients; only \"take the largest term common\" stays the same."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.16",
+  "title": "Road Map: Standard Limits and the Algebraic Limit Formula",
+  "id": "main-c0-k16",
+  "clip_s": 132,
+  "key_idea": null,
+  "one_line": "After the three basic techniques come the standard limits — direct formulas for algebraic, trigonometric, exponential and logarithmic limits — and the algebraic one, (xⁿ − aⁿ)/(x − a) = n·aⁿ⁻¹, is the first of them.",
+  "traps": [
+   "Using the formula when the two powers or the two bases do not match, like (x⁵ − a³)/(x − a). The formula needs the same power n on both terms and the same constant a as the one x is tending to. If they do not match, it is not this formula — go back to the basic techniques.",
+   "Thinking n has to be a whole number. n can be a fraction or negative too. n·aⁿ⁻¹ still holds, so (x^(1/2) − a^(1/2))/(x − a) gives ½·a^(−1/2).",
+   "Treating these formulas as optional extras and trying to force every limit through factorisation. Learn the standard cases as formulas. That is the whole point of this part — recognition, not labour."
+  ],
+  "solved_examples": 0,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.17",
+  "title": "L'Hôpital's Rule",
+  "id": "main-c0-k17",
+  "clip_s": 351,
+  "key_idea": "A limit sitting in 0/0 or ∞/∞ form yields to differentiating the top alone and the bottom alone, then substituting again — repeated until a finite number appears.",
+  "one_line": "If a limit sits in 0/0 or ∞/∞ form, differentiate the top alone and the bottom alone, put the value back in, and repeat until a finite number appears.",
+  "traps": [
+   "Using the quotient rule — writing g(x)² at the bottom and f′g − fg′ on top. LH rule is not a derivative of the whole fraction. Differentiate the numerator by itself, differentiate the denominator by itself, and divide.",
+   "Jumping straight to differentiation without checking the form. Substitute the value first. Only if you get 0/0 or ∞/∞ are you allowed to differentiate. Any other value means that value is already your answer.",
+   "Stopping after one round even though the answer is still 0/0 or ∞/∞. Repeat the step — differentiate top and bottom again and substitute again. You stop only when a finite number comes out."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.18",
+  "title": "Practice: Five L'Hôpital Questions",
+  "id": "main-c0-k18",
+  "clip_s": 597,
+  "key_idea": "Five algebraic 0/0 limits, each finished by differentiating top and bottom once. The point of L'Hôpital is that it is faster than factorising.",
+  "one_line": "Five algebraic 0/0 limits, each finished by differentiating top and bottom once — the whole point of L'Hôpital is that it is faster than factorising.",
+  "traps": [
+   "Trying to factorise or rationalise these five, and burning time on them. You gain nothing and you lose the clock. Confirm 0/0, differentiate once, put the value in — all five fit inside four minutes.",
+   "In the (x + 2)^(5/3) question, treating a as a variable and differentiating the (a + 2)^(5/3) term too. x is approaching a, so a is a fixed number. Its whole term is a constant and its derivative is 0. Differentiate with respect to x only, then substitute x = a at the end.",
+   "Being scared of the derivative, so you avoid the rule altogether. Look at these five: every derivative is the x to the power n rule. In a L'Hôpital question the differentiation is never going to be difficult — that is how the question is built."
+  ],
+  "solved_examples": 5,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.19",
+  "title": "The two trigonometric limit formulas",
+  "id": "main-c0-k19",
+  "clip_s": 157,
+  "key_idea": "Standard limits were just formula-feeding. Trigonometric limits are where limits actually begin — and the whole chapter rests on two lines.",
+  "one_line": "sin(something)/same something and tan(something)/same something both tend to 1, as long as that 'something' itself is going to 0.",
+  "traps": [
+   "Applying the formula without checking that the 'something' goes to 0. Put the value of x into the expression inside sin or tan first. Only if it becomes 0 is the limit 1. If it does not become 0, there is no 0/0 form and no formula — just substitute directly.",
+   "Treating a different expression on top and bottom as a match, like reading sin 3x / x as 1 straight away. The formula needs the identical something in both places. Adjust the denominator to match the angle, then the leftover factor comes outside.",
+   "Thinking a 0/0 form has to be solved by L'Hôpital. These two are standard results. In trigonometric limits, recognising the form is faster than differentiating, and in an exam that speed is marks."
+  ],
+  "solved_examples": 0,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.20",
+  "title": "Forcing 'something' to approach zero",
+  "id": "main-c0-k20",
+  "clip_s": 351,
+  "key_idea": "sin(x−3)/(x²−9) at x→3 looks nothing like the formula. In one line of factoring it becomes the formula. That one move handles almost every limit of this type.",
+  "one_line": "If the angle inside sine does not go to zero on its own, rewrite it — sin θ as sin(90° − other angle) or sin(180° − x) — until the angle does go to zero, then match the denominator to it.",
+  "traps": [
+   "Assuming cos x/x has a limit of 1 the way sin x/x does. There is no cos formula. At x → 0, cos 0 = 1 over something going to 0, so it blows up — it is not 1. Convert cos into sine with cos x = sin(90° − x) and then use the sine formula.",
+   "Confirming it is 0/0 form and firing the formula straight away. 0/0 is not enough. The angle inside sine must itself approach 0. In sin x/(π−x) at x → π the form is 0/0 but the angle goes to π, so you must rewrite sin x as sin(π − x) first.",
+   "Forgetting the constant you took out while matching the denominator. When you write 2x − π as −2(π/2 − x), that −2 does not vanish. The sine ratio gives 1, and the answer is the 1/(−2) you left outside."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.21",
+  "title": "Shortcut: the coefficient of x is the answer",
+  "id": "main-c0-k21",
+  "clip_s": 94,
+  "key_idea": "For lim(x→0) sin(ax)/x the answer is simply a, the coefficient of x inside the sine. Tan behaves identically.",
+  "one_line": "For lim(x→0) sin(ax)/x the answer is just a — the coefficient of x inside the sine is the answer, and the same works for tan.",
+  "traps": [
+   "Pushing an a into the denominator to make it ax and forgetting to put the same a in the numerator. If you force something in below, you must force the same thing on top. Otherwise you have changed the question, not rearranged it.",
+   "Writing the answer as 1 because you saw sin over x and stopped looking. The answer is 1 only when the angle and the denominator are the exact same something. Here the angle is ax and the bottom is x, so the answer is a."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.22",
+  "title": "Using the coefficient shortcut",
+  "id": "main-c0-k22",
+  "clip_s": 107,
+  "key_idea": null,
+  "one_line": "Divide top and bottom by x, read off the coefficient of x in each sin or tan, and the limit falls out — powers included.",
+  "traps": [
+   "Seeing 0/0 and starting a long expansion or a heavy method. First check: is it only sin and tan terms over powers of x? Then divide by x and read the coefficients. No big machinery needed.",
+   "Answering 2 for sin³2x/x³ because the coefficient is 2 — forgetting the cube. The coefficient gives you one bracket. The power applies to that value too: 2³ = 8.",
+   "Losing the minus sign and writing (a + b)/(c + d). Dividing by x does not change any sign. A minus in the question stays a minus in the answer: (a − b)/(c + d)."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.23",
+  "title": "The only two trig identities a limit needs",
+  "id": "main-c0-k23",
+  "clip_s": 93,
+  "key_idea": "Almost every trigonometric limit runs on two identities: 1 − cos2x = 2sin²x, and cos C − cos D = −2 sin((C+D)/2) sin((C−D)/2).",
+  "one_line": "Almost every trigonometric limit runs on just two identities — 1 − cos2x = 2sin²x and cos C − cos D = −2 sin((C+D)/2) sin((C−D)/2).",
+  "traps": [
+   "Dropping the minus sign in cos C − cos D. The formula is −2 sin((C+D)/2) sin((C−D)/2). The minus is inside the identity. Write it first, before the sines, so you cannot forget it.",
+   "Writing 1 − cos x = 2sin²x. The identity halves the angle. 1 − cos x = 2sin²(x/2). Only 1 − cos2x gives 2sin²x. Check which angle you actually have before you write the sine.",
+   "Reaching for cos²x − sin²x or 2cos²x − 1 inside a limit. Those are fine in trigonometry, useless here. In limits pick the form that leaves you with a pure sine, so sinθ/θ can be used."
+  ],
+  "solved_examples": 0,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.24",
+  "title": "Why splitting a limit by x is legal",
+  "id": "main-c0-k24",
+  "clip_s": 110,
+  "key_idea": "A limit splits across its pieces only once every piece has a finite limit and no 0/0 is left. That is the whole licence behind the divide-by-x shortcut.",
+  "one_line": "Once every piece has a finite limit and no 0/0 is left, the limit splits across the pieces — that is the whole licence behind the divide-by-x shortcut.",
+  "traps": [
+   "Splitting the limit while a piece is still 0/0. First remove the indeterminate form — divide by x, or factor — and only then take limits piece by piece.",
+   "Writing sin(x − 3)/(x² − 9) → 1 because 'sin by itself is 1'. The denominator must be the same expression as the one inside sin. Factor out (x − 3) first, keep 1/(x + 3) aside.",
+   "Treating a limit as some special new object with its own arithmetic. A limit is just the value the function is heading to. Once each piece is finite, ordinary addition and multiplication apply."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.25",
+  "title": "Standard 1 − cos questions",
+  "id": "main-c0-k25",
+  "clip_s": 330,
+  "key_idea": "Three questions, one line each. Once you see how 1 − cos turns into a sine square, you will stop multiplying and dividing by x and start writing the answer straight.",
+  "one_line": "Every 1 − cos limit becomes easy the moment you write 1 − cos θ = 2sin²(θ/2) and then read off the coefficient of x from each sine.",
+  "traps": [
+   "Writing 1 − cos mx = 2sin²(mx) and forgetting the half angle. The identity is 1 − cos θ = 2sin²(θ/2). With θ = mx the angle inside is mx/2, so the coefficient is m/2 — that half is where m²/2 comes from.",
+   "Forgetting that the bracket is squared, so taking the answer as 2 · (m/2) instead of 2 · (m/2)². sin² means the whole sin(mx/2)/x bracket is squared. Square the coefficient first, then multiply by the outside 2.",
+   "Losing the minus sign in cos mx − cos nx and writing (m² − n²)/2. The C − D formula starts with −2. Carry that minus right to the last line: the answer is −(m² − n²)/2."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.26",
+  "title": "Oral practice: degrees, and 1 − cos in one line",
+  "id": "main-c0-k26",
+  "clip_s": 142,
+  "key_idea": "Turn an angle in degrees into radians before anything else, so sin x°/x gives π/180. Any 1 − cos question then finishes in one line with a²/2.",
+  "one_line": "Oral trig limits: turn x degrees into radians first (so sin x° / x gives π/180), and finish any 1 − cos question in one line with a²/2.",
+  "traps": [
+   "Treating x° as plain x and answering 1 for sin x° / x. Degrees are not radians. Convert to x × π/180 first; the answer becomes π/180.",
+   "Writing 1 − cos 4x = 2 sin² 4x. The angle inside sine is half. 1 − cos 4x = 2 sin² 2x, which is why the answer is 8 and not 32.",
+   "Starting full working on an oral question and losing the minute. In these you only have to see the answer. Spot the coefficient, apply the pattern, write the number."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.27",
+  "title": "Oral practice: mixed sine and tan limits",
+  "id": "main-c0-k27",
+  "clip_s": 164,
+  "key_idea": "For a ratio of sines and tans at x → 0, divide every term by x and read off the coefficients. Nothing needs multiplying out.",
+  "one_line": "For a ratio of sines and tans at x → 0, divide every term by x and just read off the coefficients — 2/3 and 2 come out in seconds.",
+  "traps": [
+   "Starting to expand or multiply the sines and tans. Nothing needs multiplying. Divide numerator and denominator by x and the question becomes numbers.",
+   "Dividing only the numerator by x and leaving the denominator alone. Divide both by x, otherwise you have changed the value of the expression. Doing it to both keeps the ratio the same.",
+   "Reading tan x / x as 0 because there is no visible coefficient. A plain sin x or tan x has coefficient 1, so it reads as 1. In the second question that 1 in the denominator is what turns 5 − 3 into the answer 2."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.28",
+  "title": "How the trigonometric-limit toolkit fits together",
+  "id": "main-c0-k28",
+  "clip_s": 75,
+  "key_idea": "The whole toolkit reduces to one line — sin of something over that same something tends to 1 — and the divide-by-x shortcut is only that line applied faster.",
+  "one_line": "Everything in this chapter so far is one line — sin of something over that same something goes to 1 — and the divide-by-x shortcut is just that line used faster.",
+  "traps": [
+   "Writing sin 5x / sin x = 5x / x straight away as if sin cancels. sin is not a multiplier, you cannot cancel it. Divide both parts by x and use sin 5x/x → 5 and sin x/x → 1 separately.",
+   "Hunting for a fixed rule about which trigonometry identity to apply. There is no such rule. Those two identities are just the frequent ones — look at the expression, and pick the one that gets you to sin of something over that same something.",
+   "Jumping to the shortcut without checking that the form is 0/0. Substitute x = 0 first. If the value comes out directly, that is the answer; the shortcut is only for the 0/0 form."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.29",
+  "title": "sin of infinity, and the 0 × ∞ form",
+  "id": "main-c0-k29",
+  "clip_s": 381,
+  "key_idea": "Almost everyone writes 1 for sin(2^x)/2^x. The answer is 0 — and the reason behind it is the whole concept of this section.",
+  "one_line": "sin(∞) is just some unknown number between −1 and 1, so sin(2^x)/2^x → 0, while 2^x·sin(2^−x) is a 0 × ∞ form that you flip into sin(θ)/θ and get 1.",
+  "traps": [
+   "Writing sin(2^x)/2^x = 1 because the top and bottom look the same. Check where that something is going. Here 2^x → ∞, not 0, so the sin θ/θ result does not apply. Bounded top over ∞ bottom gives 0.",
+   "Treating sin(∞) as ∞, or panicking that it does not exist. sin(∞) is a finite oscillating value between −1 and 1. You never need its exact value — boundedness alone decides the limit.",
+   "Reading 2^x · sin(2^−x) as ∞ × 0 = 0. 0 × ∞ is indeterminate, not 0. Convert it to 0/0 first and then evaluate; here the real answer is 1."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.30",
+  "title": "Limits at infinity containing a sine",
+  "id": "main-c0-k30",
+  "clip_s": 91,
+  "key_idea": "Two limits that look like twins, and they land on completely different answers. One is 0, the other is 1 — and the only thing that tells them apart is the format you spot in the first three seconds.",
+  "one_line": "Check the format first: sin x/x as x → ∞ is a bounded number over infinity so it is 0, while x·sin(1/x) is a 0 × ∞ that rearranges into sin(something)/same something and gives 1.",
+  "traps": [
+   "Trying to find a number for sin ∞ or cos ∞, or writing it as 0 or 1. It has no value. It only has a range: −1 to +1. That range is all the question ever needs from you.",
+   "Using sin x/x = 1 for x → ∞ because the form looks familiar. That result needs the angle itself to go to 0. At x → ∞ the angle is blowing up, so you are in bounded/infinity instead, and the answer is 0.",
+   "Calling x·sin(1/x) as x → ∞ straightaway 0 because sin(1/x) → 0. It is 0 × ∞, an indeterminate form. Flip the x downstairs to make it sin(1/x) ÷ (1/x), then the answer comes out as 1."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.31",
+  "title": "sin x/x equals 1 only when x → 0",
+  "id": "main-c0-k31",
+  "clip_s": 153,
+  "key_idea": "sin x/x tends to 1 only when the angle itself tends to 0. Anywhere else you substitute directly, so at x → π/2 the value is 2/π.",
+  "one_line": "sin x/x goes to 1 only when the angle itself goes to 0 — anywhere else you just substitute, so at x → π/2 the value is 2/π.",
+  "traps": [
+   "Writing sin x/x = 1 at every limit, wherever x is going. It is 1 only as x → 0. Check where the angle is heading first; if it is not 0, substitute the value.",
+   "At x → π/2, saying sin x = 1 so the whole thing is 1. sin(π/2) is indeed 1, but you still have to divide by π/2. The answer is 2/π.",
+   "Not spotting the identity and trying to expand sin²x − sin²y term by term. Factor it straight away as sin(x+y)·sin(x−y) so that an (x−y) appears to cancel with the denominator."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.32",
+  "title": "When a side identity is needed",
+  "id": "main-c0-k32",
+  "clip_s": 100,
+  "key_idea": "Two identities cover most limits — 1 − cos2θ = 2sin²θ and cos C − cos D — but a side identity such as sin C − sin D appears often enough to be worth knowing.",
+  "one_line": "In limits only two identities come up again and again — 1 − cos2θ = 2sin²θ and cos C − cos D — but a side identity like sin C − sin D still shows up often enough that you must know it.",
+  "traps": [
+   "Writing sin C − sin D with sines outside and the cosine inside, i.e. mixing it up with cos C − cos D. Remember it by what survives: for sin C − sin D the cosine carries the sum, 2 cos((C+D)/2) sin((C−D)/2). For cos C − cos D both factors are sines. Check the pattern once before you cancel anything.",
+   "Deciding side identities are never asked, so skipping them completely. Fewer is not zero. Learn sin C − sin D and the sum forms once; one question in the paper is enough to pay for five minutes of revision.",
+   "Applying sin x/x = 1 after the identity without checking that the new angle goes to 0. After you split into a product, match each sine with the same angle below it. sin3x/x is not 1 — write it as 3 · (sin3x/3x)."
+  ],
+  "solved_examples": 0,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.33",
+  "title": "The classic (tan x − sin x)/x³",
+  "id": "main-c0-k33",
+  "clip_s": 254,
+  "key_idea": "Turn tan into sin/cos, take sin x out, replace 1 − cos x by 2sin²(x/2), and (tan x − sin x)/x³ comes out as ½.",
+  "one_line": "Turn tan into sin/cos, pull sin x out, replace 1 − cos x by 2sin²(x/2), and (tan x − sin x)/x³ gives ½.",
+  "traps": [
+   "Cancelling one x from top and bottom and hoping the 0/0 goes away. It does not. After one division you are at 0/0 again. The x³ only clears after you have created two sines from 1 − cos x and one from sin x.",
+   "Writing 1 − cos x = 2sin²x instead of 2sin²(x/2). The angle is halved. Write 2sin²(x/2), and that is exactly why you get ½ × ½ = ¼ and the final ½. Miss the half-angle and your answer becomes 2.",
+   "Dropping the 2 that comes out of 2sin²(x/2). Keep it in front from the step you write it. The final answer is 2 × ¼ = ½ — without that 2 you land on ¼."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.34",
+  "title": "Subjective IIT question with tan 2θ",
+  "id": "main-c0-k34",
+  "clip_s": 253,
+  "key_idea": "This is an old IIT subjective question, and the first look is scary — a tan 2x on top, a squared bracket below. But two identities and one division by x⁴ finish it in four lines.",
+  "one_line": "For (x·tan2x − 2x·tanx)/(1 − cos2x)², turn tan2x into 2tanx/(1 − tan²x) so the top collapses to 2tan³x, write (1 − cos2x)² as 4sin⁴x, divide both sides by x⁴ and read off 1/2.",
+  "traps": [
+   "Using 2tan θ/(1 + tan²θ) for tan 2θ. That one is sin 2θ. For tan 2θ the sign is minus: 2tan θ/(1 − tan²θ). Mixing these two turns the numerator into something that never collapses to 2tan³x.",
+   "Writing (1 − cos 2x)² as 2sin⁴x and losing the 4. Square the whole thing: (2sin²x)² = 2²·sin⁴x = 4sin⁴x. The 4 is exactly what makes the answer 1/2 instead of 2.",
+   "Cancelling one x and then applying standard limits in a hurry. x·tan³x is four powers of x, not one. Divide by x⁴ in a single stroke so that tan³x/x³ → 1 and sin⁴x/x⁴ → 1 together."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.35",
+  "title": "Two harder manipulations at π/2 and π/6",
+  "id": "main-c0-k35",
+  "clip_s": 477,
+  "key_idea": "Two questions that look nothing like sin θ/θ. One has cos 2x sitting on top of (π − 2x)², the other mixes √3 sin x with cos x. In two lines each, both collapse to the limit you already know.",
+  "one_line": "Both these limits are the same one trick dressed differently: force the question into sin(something)/(same something) with that something going to 0, and the constant left outside is your answer.",
+  "traps": [
+   "Out of habit putting x = 0 instead of the point the limit is actually approaching, then reporting 1. Read the limit. Here x → π/2 and x → π/6. Substitute that value to test 0/0, never 0.",
+   "Converting cos into sin(π/2 − x) but leaving the denominator as (π − 2x)². They must be the same bracket. Take 2 common: π − 2x = 2(π/2 − x). The 2² outside is exactly where the ½ comes from — skip it and your answer becomes 2 instead of ½.",
+   "In a sin x + b cos x, dividing by √(a² + b²) and forgetting to multiply it back. It is multiply and divide, not divide. The √(a² + b²) you pulled out stays outside, and here that 2 is the final answer."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.36",
+  "title": "Substituting x = a ± h to reach h → 0",
+  "id": "main-c0-k36",
+  "clip_s": 381,
+  "key_idea": "When nothing clicks at x → a, substitute x = a + h or x = a − h so that h → 0. Plus h gives the right-hand limit, minus h the left, and if the two agree the limit exists.",
+  "one_line": "When nothing clicks at x → a, put x = a + h or x = a − h so that h → 0: plus h gives the right-hand limit, minus h gives the left-hand limit, and if the two agree the limit exists.",
+  "traps": [
+   "Substituting a + h but still writing the limit as x → a, or writing h → a. The variable has changed. The moment you substitute, rewrite the whole thing as lim(h→0). That is the entire point of the substitution.",
+   "Replacing x in only the first term and leaving the other x's standing. Every x in the expression becomes a + h. Scan the line once more before you start expanding.",
+   "Doing only a + h in a question where the answer may be 'limit does not exist'. One side proves nothing about existence. Do a + h and a − h and compare them. Equal means the limit exists; different means it does not."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.37",
+  "title": "The π/2 ± h substitution in action",
+  "id": "main-c0-k37",
+  "clip_s": 181,
+  "key_idea": "At x → π/2 substitute x = π/2 ± h: (1 + cos2x)/sin2x becomes 2sin²h/sin2h, one division by h finishes it, and both sides give 0.",
+  "one_line": "At x → π/2 put x = π/2 ± h, turn (1 + cos2x)/sin2x into 2sin²h/sin2h, divide top and bottom by h once, and both sides give 0.",
+  "traps": [
+   "Forcing sin2θ/2θ = 1 straight onto 2sin²h/sin2h because it 'gives the answer'. The powers are different, so that step is luck, not method. Divide the top and the bottom by h, use sinh/h = 1, and keep the extra sinh honestly.",
+   "Writing sin(π + 2h) = sin2h and losing the minus sign on the right-hand side. Convert the allied angle every single time: sin(π − 2h) = sin2h but sin(π + 2h) = −sin2h. Here it ends as −0, still 0, but on other questions that sign decides whether the limit exists.",
+   "Doing only one side and declaring the answer. A limit at a point needs both x = π/2 − h and x = π/2 + h to give the same number. Do both, then write the answer."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.38",
+  "title": "Greatest integer with trigonometric limits",
+  "id": "main-c0-k38",
+  "clip_s": 313,
+  "key_idea": "Two limits, both equal to 1. Put a greatest integer on them and one gives 0, the other gives 1. This is the one place in trigonometric limits where \"approximately 1\" is not good enough.",
+  "one_line": "Near 0, sin x/x creeps up to 1 from below and tan x/x comes down to 1 from above — so a greatest integer sitting inside the limit gives 0 and 1, while one sitting outside the limit gives 1 and 1.",
+  "traps": [
+   "Writing lim x→0 [sin x/x] = 1 because \"the limit of sin x/x is 1\". The bracket is inside, so it acts on the value the function actually holds near 0, and that value is just short of 1. The answer is 0.",
+   "Writing a limit answer as 4 plus or 4 minus. A limit is a single number. For lim x→2 (x² − 4)/(x − 2) you say 4. The plus and minus talk only belongs to the function's value inside a greatest integer.",
+   "Mixing up which of sin x/x and tan x/x is above 1. Go back to the graph for one second: sin x is below the line y = x and tan x is above it. So sin x/x is below 1 and tan x/x is above 1."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.39",
+  "title": "Greatest integer questions solved",
+  "id": "main-c0-k39",
+  "clip_s": 194,
+  "key_idea": "Two questions look identical: [x/tan x] and [x/sin x] as x → 0. Both ratios go to 1, yet one answer is 0 and the other is 1. The whole game is which side of 1 you are standing on.",
+  "one_line": "For the greatest integer of a trig limit, never take the floor of the limit value — decide whether the expression sits just below or just above an integer, and floor that.",
+  "traps": [
+   "Finding the limit first, getting 1, and then putting the greatest integer on that 1. That is the careless move these questions are built to punish. The ratio never equals 1 — decide the side, then floor. That is why [x/tan x] is 0 and not 1.",
+   "Treating a reciprocal as if it keeps the same side of 1. Flipping flips the side. Just below 1 becomes just above 1, and just above 1 becomes just below 1.",
+   "Writing sin 2x/x as sin 2x/2x and forgetting the 2 outside. Multiply above and below by 2 so nothing is lost. Dropping the 2 gives you just below 1, so you would answer 0 instead of 1."
+  ],
+  "solved_examples": 4,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.40",
+  "title": "Logarithmic limits: ln(1 + something)/same something",
+  "id": "main-c0-k40",
+  "clip_s": 252,
+  "key_idea": "One formula. That is the whole of logarithmic limits. Learn it the way you learnt sin x/x, and questions that look frightening become one-line answers.",
+  "one_line": "ln(1 + something) divided by that same something tends to 1 as the something → 0, so in ln(1 + ax)/x the answer is just the coefficient a.",
+  "traps": [
+   "Treating the bracket in ln(1 + something) as a greatest integer bracket, because that is what we did in the previous part of class. It is a plain bracket here — just the argument of the log. Nothing is being rounded down.",
+   "In [ln(1 + ax) − ln(1 − bx)]/x, trying to merge the two logs into a single log of a quotient first. Break the fraction into two fractions instead. Each piece is the standard form, giving a and −b, so the answer drops out as a + b.",
+   "Writing the answer as 1 whenever you spot ln(1 + ax)/x, because the formula says the limit is 1. The formula needs the same quantity above and below. Below you only have x, not ax, so you must force the a in — and that a is your answer."
+  ],
+  "solved_examples": 4,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.41",
+  "title": "Base changing theorem for log limits",
+  "id": "main-c0-k41",
+  "clip_s": 101,
+  "key_idea": "The log limit formula holds only in base e, so convert any other base first with log_b a = ln a / ln b. A base 3 log leaves a clean 1/ln 3 outside.",
+  "one_line": "The log limit formula only works in base e, so convert any other base first with log_b a = ln a / ln b — a base 3 log leaves you a clean 1/ln 3 outside.",
+  "traps": [
+   "Writing lim(x→0) log₃(1 + x)/x = 1 straight away, because it looks like the standard form. The standard form is for base e only. Convert to ln(1 + x)/ln 3 first; the answer is 1/ln 3, not 1.",
+   "Flipping the base changing formula and writing log₃(1 + x) = ln 3/ln(1 + x). Input on top, base below: log_b a = ln a / ln b. So the input (1 + x) goes in the numerator and the base 3 goes in the denominator.",
+   "Leaving the ln 3 inside the limit and getting confused about what to apply the formula to. ln 3 is just a number. Pull it out as 1/ln 3 immediately, and the limit that remains is clean."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.42",
+  "title": "Log limits: forcing ln(1 + something) over the same something",
+  "id": "main-c0-k42",
+  "clip_s": 407,
+  "key_idea": "Every log limit must be forced into ln(1 + u)/u with the same u above and below. Divide and multiply by whatever that u is and the limit becomes 1.",
+  "one_line": "Every log limit must be forced into ln(1 + u)/u with the same u on top and bottom — divide and multiply by whatever that u is, and the limit becomes 1.",
+  "traps": [
+   "Using ln(1 + u)/u → 1 when the u on top and the one at the bottom are not the same thing. Force them equal. Put the exact u in the denominator and multiply back by the same u on top, then evaluate the leftover factor separately.",
+   "Forgetting that the something inside the log must approach 0. Substitute x = 0 into it before you use the result. For 2x/(5 − x) that gives 0/5 = 0, so you are safe.",
+   "Writing ln(1 − x/5)/x → 1/5 and losing the sign. Read it as 1 + (−x/5). The coefficient of x is −1/5, so the limit is −1/5, and the minus already sitting outside turns it into +1/5.",
+   "Taking sin(x/2)/x → 1/2 but forgetting to square it when the denominator is sin²(x/2). The whole bracket is squared, so the limit is (1/2)² = 1/4, not 1/2."
+  ],
+  "solved_examples": 4,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.43",
+  "title": "ln(cos 2x)/tan²3x: adding and subtracting 1 inside the log",
+  "id": "main-c0-k43",
+  "clip_s": 178,
+  "key_idea": "This one looks like it has nothing to do with yesterday's log trick. Put 0 and you get 0/0, and there is no 1 inside the log anywhere. Watch how adding 1 and taking 1 back makes the whole log disappear.",
+  "one_line": "For ln(cos 2x)/tan²3x, write cos 2x as 1 + (cos 2x − 1) so that ln(1+u)/u becomes 1, and what is left is an old trigonometric limit that gives −2/9.",
+  "traps": [
+   "Writing cos 2x − 1 below without compensating, as if it were free. If you bring (cos 2x − 1) into the denominator, you must bring the same (cos 2x − 1) into the numerator too. Multiply and divide — never just drop it in.",
+   "Using ln(1+u)/u = 1 without checking that u goes to 0. Put x = 0 in the something first. Here cos 2x − 1 → 0, so the result holds. If it does not go to 0, the formula is simply not applicable.",
+   "Sign slip: taking cos 2x − 1 = 2sin²x. The standard form is 1 − cos 2x = 2sin²x. So cos 2x − 1 = −2sin²x. That minus is the entire reason the answer is negative."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.44",
+  "title": "Quiz solutions: log limits mixed with 1 − cos x",
+  "id": "main-c0-k44",
+  "clip_s": 130,
+  "key_idea": "Three quiz questions, and all three answers turned out to be option C. Not luck — they are the same question wearing three different costumes, and once you see the costume you are done in two lines.",
+  "one_line": "Turn the log into ln(1 + something) and 1 − cos θ into 2sin²(θ/2), then divide top and bottom by x² — every mixed log limit falls in two lines.",
+  "traps": [
+   "Writing 1 − cos x = 2sin²x. It is 2sin²(x/2) — the angle is halved. For 1 − cos(x/2) it becomes 2sin²(x/4), and that 4 is exactly what makes the answer 8/3 instead of something else.",
+   "Saying ln(1 + x²/3)/x² → 1. The limit is 1 only when you divide by the exact thing inside, x²/3. Dividing by x² leaves the coefficient behind, so the value is 1/3.",
+   "Forgetting to square the constant from sin(x/4)/x. The sine is squared, so the whole bracket is squared: (1/4)² = 1/16, then times the 2 in front gives 1/8. Squaring only the sine and not the 1/4 is the most common slip here."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.45",
+  "title": "Why you cannot split a limit: the ∞ − ∞ trap",
+  "id": "main-c0-k45",
+  "clip_s": 191,
+  "key_idea": "Substitute h → 0 into the whole expression at once. Splitting ln(1+2h)/h² − 2ln(1+h)/h² produces an ∞ − ∞ form and the false answer 0.",
+  "one_line": "Substitute h → 0 into the whole expression at once; splitting ln(1+2h)/h² − 2ln(1+h)/h² gives an ∞ − ∞ form and the false answer 0.",
+  "traps": [
+   "Splitting ln(1+2h)/h² into [ln(1+2h)/h] × (1/h) and applying the standard limit to only the first factor. Apply the limit to the whole expression. If you want to use the standard log limits, first combine the two logs into a single expression whose limit is finite.",
+   "Cancelling 2/h − 2/h to get 0. Both terms are heading to ∞, so this is ∞ − ∞, not a cancellation. In an indeterminate form you must simplify the expression first, then substitute.",
+   "Thinking that substituting partially is fine because it worked in an earlier question. In the earlier question the split happened to be harmless, but the habit is unsafe. Even there, x² was divided by x² and the substitution done together — keep that habit everywhere."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.46",
+  "title": "IIT subjective problem: [ln(1+2h) − 2ln(1+h)]/h²",
+  "id": "main-c0-k46",
+  "clip_s": 248,
+  "key_idea": null,
+  "one_line": "Merge the two logs into one, add and subtract 1 inside it, then force the denominator to become the same 'something' — the limit is −1.",
+  "traps": [
+   "Splitting the limit into ln(1+2h)/h² minus 2ln(1+h)/h² and chasing each piece. Each piece blows up and you get ∞ − ∞, which means nothing. Merge the two logs into one log first, then take the limit.",
+   "Seeing ln(1 + something) and happily writing the answer as something/h². Two checks before you use it: is the something really going to 0, and is the denominator the same something? Only then is the ratio 1.",
+   "Writing (1+2h)/(1+2h+h²) as 1 + h²/(1+2h+h²). The numerator is smaller than the denominator, so the leftover is negative: 1 − h²/(1+2h+h²). That single sign is the difference between +1 and the correct −1."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.47",
+  "title": "Exponential limits: (aˣ − 1)/x → ln a",
+  "id": "main-c0-k47",
+  "clip_s": 303,
+  "key_idea": "Exponential limits scare people for no reason. There is only one formula in this whole topic — learn it today and every exponential limit after this is just balancing a coefficient.",
+  "one_line": "lim x→0 (aˣ − 1)/x = ln a, with base e it becomes 1, and in general (eᵘ − 1)/u → 1 whenever u → 0.",
+  "traps": [
+   "Writing the answer of (e³ˣ − 1)/x as 1 because you see e on top. The limit is 1 only when the power and the denominator are the same thing. Make 3x appear below first, then the leftover reciprocal gives 3.",
+   "Dropping the minus sign in e⁻⁵ˣ and answering 5. The something is −5x, not 5x. Balance with −1/5, so the answer is −5.",
+   "Treating the −1 as part of the power, as if it were e^(u−1). The −1 is subtracted after the exponential, not inside the power. Read it as (eᵘ) − 1."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.48",
+  "title": "Exponential limit problems: common base, sin² and factorisation",
+  "id": "main-c0-k48",
+  "clip_s": 392,
+  "key_idea": "Force the standard form: take bˣ common to make (a/b)ˣ − 1, give every e^u − 1 and ln(1 + u) exactly the same u below it, and factorise aˣbˣ − aˣ − bˣ + 1 into (aˣ − 1)(bˣ − 1) to reach ln a · ln b.",
+  "one_line": "Force the standard form: take bˣ common to make (a/b)ˣ − 1, give every e^u − 1 and ln(1 + u) exactly the same u below it, and factorise aˣbˣ − aˣ − bˣ + 1 into (aˣ − 1)(bˣ − 1) so the answer is ln a · ln b.",
+  "traps": [
+   "Writing the factorised answer as ln a + ln b, or as ln(ab). The two brackets are multiplied, so the two logs are multiplied: ln a · ln b. ln a + ln b would come from ln(ab), which is a different thing. Leave the product of logs as it is — manipulation needs a proper setting in the base, and there isn't one here.",
+   "Putting x² straight under e to the power sin²3x minus 1 and calling it 1. That form gives 1 only when the same something sits below. Pair it with sin²3x first, then handle sin²3x/x² as a separate limit worth 9.",
+   "Dividing a block by what it needed and forgetting to multiply it back. Every x² or sin²3x you push into the denominator must reappear in the numerator. Balance the question first, then start taking limits block by block."
+  ],
+  "solved_examples": 4,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.49",
+  "title": "(e^{cos 2x} − e)/tan²3x: taking e common first",
+  "id": "main-c0-k49",
+  "clip_s": 266,
+  "key_idea": "Exponential limits need one move: make e^something − 1. If the numerator is not already in that form, pull the constant e out first, then finish with trigonometric limits.",
+  "one_line": "If the numerator is not already e^something − 1, pull the constant e out first, then force the standard form and finish with trigonometric limits.",
+  "traps": [
+   "Seeing e^something − 1 and immediately writing the answer as 1. First check that the something goes to 0. Here cos 2x − 1 → 0 at x = 0, so it is allowed. If the power does not go to 0, the standard limit does not apply.",
+   "Trying to fix the numerator by adding and subtracting 1 (the plus 1 minus 1 trick). That logic fails in this question and leaves you arguing with yourself. Take the constant e common instead — that one step works everywhere.",
+   "Dropping the e you took common and answering −2/9. The e stays outside the whole limit and multiplies the final value. The answer is −2e/9."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.50",
+  "title": "The 1^∞ form: λ = lim (base − 1) × power, answer e^λ",
+  "id": "main-c0-k50",
+  "clip_s": 589,
+  "key_idea": "Of the seven indeterminate forms, this is the one most students have never been taught properly — and that is exactly why examiners love it. Learn one line and 1^∞ becomes free marks.",
+  "one_line": "For a 1^∞ limit, find λ = lim (base − 1) × power, and the answer is e^λ.",
+  "traps": [
+   "Writing λ as the final answer. In the first example students stop at 3/4. λ is only the exponent. Finish with e^λ — e^(3/4), e^(−32). Write the e before you even start computing λ, so you cannot forget it.",
+   "Jumping straight to the formula without confirming the form. Take the base limit alone and the power limit alone. Only if you get 1 and ∞ is this method legal.",
+   "Trying to \"bring the power down\" when it is already a denominator, like 4/x², and then mangling the multiplication. If it is already down, leave it there. Just multiply numerator with numerator and denominator with denominator."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.51",
+  "title": "Three 1^∞ problems solved",
+  "id": "main-c0-k51",
+  "clip_s": 161,
+  "key_idea": "Two lines of LCM and one ∞/∞ comparison, and ((x+3)/(x+1))^(x+2) is finished. No logs, no expansions, no mess.",
+  "one_line": "For a 1^∞ limit with a rational base, take LCM in (base − 1), multiply by the power, solve that ∞/∞ by comparing coefficients of x — that value is λ, and the answer is e^λ.",
+  "traps": [
+   "Writing the answer as λ and forgetting the e. λ is only the exponent. The limit is e^λ. Train your hand: the last line of a 1^∞ problem always starts with e.",
+   "Looking for some new trick for the leftover limit after multiplying by the power. There is nothing new there. It is the plain ∞/∞ form you already know — compare the coefficients of x and move on.",
+   "Computing lim (base − 1) and lim (power) separately and then multiplying 0 × ∞. Keep them together as one expression, simplify by LCM first, and only then take the limit of the whole thing."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.52",
+  "title": "Revision: the seven indeterminate forms and the technique for each",
+  "id": "main-c0-k52",
+  "clip_s": 207,
+  "key_idea": "Before we open the next topic, stop and look back at everything we have done. Every limit you will ever be asked is one of seven forms, and once you name the form, the tool is already decided for you.",
+  "one_line": "Seven indeterminate forms, and for each one a fixed tool: factorise or rationalise for 0/0, divide by the biggest infinity for ∞/∞, LCM for ∞ − ∞, the λ formula for 1^∞, and convert 0 × ∞ into one of the first two.",
+  "traps": [
+   "Hunting for a special trick for 0 × ∞. There isn't one. Send the 0 into the denominator or send the ∞ into the denominator, convert to 0/0 or ∞/∞, and solve with the usual tool.",
+   "Treating \"the answer of 0⁰ and ∞⁰ is 1\" as a rule. It is what mostly happens, not a rule. If such a question ever appears, solve it with the L'Hôpital rule.",
+   "In ∞/∞, dividing by whichever power you see first. Always divide by the biggest infinity in the expression, otherwise the limit blows up or collapses to 0."
+  ],
+  "solved_examples": 0,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.53",
+  "title": "Standard expansions you must memorise",
+  "id": "main-c0-k53",
+  "clip_s": 186,
+  "key_idea": "Expansion is the method that kills a 0/0 limit in one line instead of three applications of L'Hôpital. But it only works if the six series are sitting in your head, ready. Today you simply learn them.",
+  "one_line": "Six expansions — sin x, cos x, tan x, eˣ, ln(1+x) and (1+x)ⁿ — are the whole toolkit for expansion-based limits, and each one carries its own range of x where it is legal.",
+  "traps": [
+   "Assuming all six expansions are valid for every x, because the first three are. Only sin x, cos x and eˣ hold for all real x. tan x needs −π/2 < x < π/2, ln(1+x) needs −1 < x ≤ 1, and (1+x)ⁿ needs −1 < x < 1.",
+   "Writing ln(1+x) with factorials in the denominators, copying the pattern of sin x and eˣ. ln(1+x) = x − x²/2 + x³/3 − x⁴/4 + … The denominators are just 1, 2, 3, 4, and the signs alternate.",
+   "Leaving the binomial expansion out of your limits toolkit because it feels like a different chapter. Learn (1+x)ⁿ for any index right alongside the other five. A limit with a cube root or a negative power in it is a binomial expansion question."
+  ],
+  "solved_examples": 0,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.54",
+  "title": "Remembering the expansions, and rescaling them",
+  "id": "main-c0-k54",
+  "clip_s": 289,
+  "key_idea": "You do not have to memorise six expansions, and you certainly do not have to memorise sin 2x separately. Three small questions rebuild any of them on the spot, and one substitution turns the standard series into whatever the question put inside.",
+  "one_line": "Rebuild each standard expansion from three facts — odd or even, its value at x = 0, and the alternating factorial pattern — then get sin 2x, e^(−x) or ln(1 − 2x) by substituting into the standard series instead of memorising a new one.",
+  "traps": [
+   "Starting cos x with x, or slipping an odd power into it. cos is even, so no odd power can survive, and cos 0 = 1 forces the series to begin with 1. Check your first term against the value at x = 0 every time.",
+   "Writing sin 2x as 2x − x³/3! — replacing x in the first term only, or cubing just the x. The substitution applies to every term, and the whole thing is bracketed: (2x)³/3! = 8x³/6 = 4x³/3.",
+   "Hunting for a pattern in the tan x coefficients 1, 1/3, 2/15 and wasting time on the x⁷ term. There is no pattern worth your time. Keep tan x up to x⁵ and move on — in a JEE limit you almost never need more."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.55",
+  "title": "Expansion limits: match the minimum power, read off the coefficient",
+  "id": "main-c0-k55",
+  "clip_s": 424,
+  "key_idea": "Every expansion limit is a polynomial over a polynomial. For a non-zero limit the minimum power of x upstairs equals the one downstairs, and the answer is the ratio of those two coefficients.",
+  "one_line": "Every expansion limit is a polynomial over a polynomial — if the limit is non-zero, the minimum power of x upstairs equals the one downstairs, and the answer is the ratio of those two coefficients.",
+  "traps": [
+   "Writing out four or five terms of every expansion before you look at the question. Expand one term at a time and stop the moment the minimum power appears on top and bottom. Terms above the minimum power never affect a non-zero limit.",
+   "Assuming every expansion limit comes out to a nice non-zero number, so you force a match that is not there. Compare the minimum powers honestly first. Top power bigger → answer 0. Bottom power bigger → undefined. Only equal powers give you the coefficient ratio.",
+   "Rescaling an expansion wrongly — using the standard series of ln(1 + x) with just x when the bracket is −2x. Put the whole bracket in place of x, everywhere it appears. For ln(1 − 2x), the first term is −2x, and the square term uses (−2x)², not x²."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.56",
+  "title": "Four expansion problems done by coefficient-picking",
+  "id": "main-c0-k56",
+  "clip_s": 250,
+  "key_idea": "When two functions cannot be combined, expand each one, pick only the coefficient of the single power that matches the lowest power in the denominator, and that coefficient is the limit.",
+  "one_line": "When two functions cannot be combined, expand each one, pick only the coefficient of the single power that matches the lowest power in the denominator, and that coefficient is the limit.",
+  "traps": [
+   "Trying to take something common out of x cos x − sin x or e^(x²) − cos x. Accept that they are non-reactive. There is no algebra here — expand and pick the coefficient.",
+   "Writing the full expansion with five or six terms for each function. Write one term only, the one whose power matches the denominator. The rest never reaches your answer.",
+   "Seeing x² sin x in the denominator and giving up, or treating it as power 2. Split it: x² sin x = x³ · (sin x / x). The bracket tends to 1, so hunt the x³ coefficient."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.57",
+  "title": "When the coefficient vanishes: zero and undefined limits",
+  "id": "main-c0-k57",
+  "clip_s": 165,
+  "key_idea": "Compare the lowest surviving power upstairs with the power downstairs: bigger gives 0, equal gives the ratio of those coefficients, and smaller means no finite limit.",
+  "one_line": "Compare the lowest surviving power upstairs with the power downstairs: bigger gives 0, equal gives the ratio of those two coefficients, smaller means no finite limit — and the setter has already made sure it is one of the first two.",
+  "traps": [
+   "Treating a zero minimum-power coefficient as an error and starting the whole sum again. Zero coefficient is information, not a mistake. It means the minimum power upstairs moved up by one, so the answer is simply 0.",
+   "Expanding every series to four or five terms before looking at the denominator. Read the denominator's power first. Expand both sides only up to that power — the next terms get cancelled by x → 0 anyway.",
+   "Burning exam minutes arguing with yourself about whether the question itself is valid. Assume it is set properly and solve. If a paper ever is wrong, nobody's answer matches and everybody gets the bonus — that is not your problem to fix in the hall."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.58",
+  "title": "Finding a, b, c from a given expansion limit",
+  "id": "main-c0-k58",
+  "clip_s": 280,
+  "key_idea": "Three unknowns, one limit, and most of the class leaves it blank. These are the 4-markers of JEE Advanced, and they run on one single idea you already know.",
+  "one_line": "If the limit is finite, expand every term only up to the power sitting in the denominator, force all the lower-power coefficients to zero, and set the matching coefficient equal to the given limit.",
+  "traps": [
+   "Writing sin bx as bx − x³/6 and forgetting that b also gets cubed. Put bx wherever x sits in the original series. x³/3! becomes b³x³/3!, so the term is −b³x³/6. That one cube is the whole question here.",
+   "Expanding eˣ and cos x to x³ or x⁴ when the denominator is only x². Stop at the power in the denominator. Anything higher vanishes in the limit and only gives you room to make a sign error.",
+   "Trying to make the lower coefficients cancel later, or hoping they give ∞ − ∞. A finite limit leaves no choice: those coefficients are exactly 0. If the given limit is 0, the matching coefficient is 0 as well. Don't build a complicated story around it."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.59",
+  "title": "Expansion limits that need the binomial expansion",
+  "id": "main-c0-k59",
+  "clip_s": 115,
+  "key_idea": "When the denominator is x², expand the bracket and read off one number: the x² coefficient n(n−1)/2! times the square of the whole bracket term.",
+  "one_line": "When the denominator is x², expand the bracket and read off one number: the x² coefficient n(n−1)/2! times the square of the whole bracket term.",
+  "traps": [
+   "Taking the coefficient as n(n−1)/2! and forgetting to square the 2 in 2x — writing −1/9 instead of −4/9. Write the term as [n(n−1)/2!](2x)² in full before putting numbers. The 4 then cannot escape.",
+   "Expanding only up to the linear term, seeing 0/0 survive, and then starting over with some other method. The linear term was cancelled on purpose by the question setter. Go one term further — to x² — and the answer is sitting there.",
+   "Slipping on the sign of n − 1 when n is a fraction: taking 1/3 − 1 as 2/3. 1/3 − 1 = −2/3. A fractional n below 1 always makes n − 1 negative, so these answers usually come out negative."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.60",
+  "title": "L'Hôpital's rule: two limits nothing else cracks",
+  "id": "main-c0-k60",
+  "clip_s": 195,
+  "key_idea": "Two limits are coming. One would cost you two full long divisions; the other has no expansion in the world that fits it. Both fall in one line by LH rule.",
+  "one_line": "When a limit is 0/0 or ∞/∞, differentiate the top and the bottom separately and put the value back in — LH rule cracks limits that factorising and expansions cannot touch.",
+  "traps": [
+   "Differentiating the top and bottom without first checking the form. Always substitute the value first. Only if you get 0/0 or ∞/∞ do you have permission to differentiate. Otherwise your answer is wrong, and that is the only way LH rule goes wrong.",
+   "Using the quotient rule on f(x)/g(x). LH rule is not differentiating the fraction. Differentiate the numerator separately, differentiate the denominator separately, and write one over the other.",
+   "Stopping after one round when the form is still 0/0. Substitute again after each round. If it is still 0/0 or ∞/∞, apply the rule once more. Keep going until a finite value appears."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.61",
+  "title": "Quiz: four limits to do by LH rule",
+  "id": "main-c0-k61",
+  "clip_s": 167,
+  "key_idea": "Four limits that could each be done by expansion, but every one of them is to be done by L'Hôpital's rule.",
+  "one_line": "Four limits on the slide — three quiz and one bonus — all of which you could expand, but every one of them is to be done by L'Hôpital's rule.",
+  "traps": [
+   "Reaching for expansion because your hand knows it, especially on the sine-over-the-same-thing question. Today the instruction is the method, not the answer. Solve it by L'Hôpital's rule, and keep the expansion answer only to check yourself.",
+   "Rushing to tick an option in the first thirty seconds. Work steadily rather than fast: a right method with a wrong number is still a wrong answer."
+  ],
+  "solved_examples": 0,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.62",
+  "title": "Quiz solutions, and differentiating w.r.t. the right variable",
+  "id": "main-c0-k62",
+  "clip_s": 374,
+  "key_idea": "Whatever the arrow starts from is the variable and whatever it points to is a constant. Differentiate only with respect to that variable, and stop applying L'Hôpital the moment a standard limit appears.",
+  "one_line": "Whatever the arrow starts from is the variable and whatever it points to is a constant — differentiate only with respect to that variable, and stop LH the moment a standard limit shows up.",
+  "traps": [
+   "In α → β, treating β as the variable and differentiating sin²β to get something with a cos in it. β is the number α is heading towards, so it is a constant and its derivative is 0. Differentiate with respect to α only.",
+   "Differentiating a³ or sin a in the x → a question. x → a means a is fixed. d/dx(a³) = 0 and d/dx(sin a) = 0. Only x-terms survive.",
+   "Applying LH again after (eˣ − 1)/x has already appeared. The moment you see (eˣ − 1)/x or (sin x)/x, write 1 and finish the sum. Extra differentiation only costs you time in the paper."
+  ],
+  "solved_examples": 4,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.63",
+  "title": "Continuity at a point: LHL = RHL = f(a)",
+  "id": "main-c0-k63",
+  "clip_s": 321,
+  "key_idea": "If you know limits, you already know continuity. It is the same chapter wearing a new shirt — three numbers, one condition, and the whole graph decided in ten seconds.",
+  "one_line": "A function is continuous at x = a only when the left hand limit, the right hand limit and f(a) are all equal and all finite — any one of them missing or different makes it discontinuous.",
+  "traps": [
+   "Checking only LHL = RHL and declaring the function continuous. That is just the existence of the limit. A point x = α can have LHL = RHL = y₁ and still be discontinuous, because f(α) was never defined. Always fill the third box too.",
+   "Reading the height of a hollow circle as the value of the function there. A hollow circle means the graph has a gap at exactly that x. The circle tells you the limit, not f of that point. f there is either undefined or sitting somewhere else as a solid dot.",
+   "Letting one of the three be infinite and still calling it continuous. All three must be some finite number. If a side limit blows up, the point is discontinuous, no further checking needed."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.64",
+  "title": "Continuity of piecewise-defined functions",
+  "id": "main-c0-k64",
+  "clip_s": 254,
+  "key_idea": "These questions scare students only because the function is written in three lines instead of one. Once you can read which line owns which side of the point, a full continuity check takes fifteen seconds.",
+  "one_line": "At any point of a piecewise function, test three things — the rule just below, the rule just above and the rule exactly at the point — and call it continuous only if all three give the same number.",
+  "traps": [
+   "Substituting x = a into the piece that belongs to the other side — for example using the x > 0 rule while finding the LHL at 0. Choose the piece by the side you are standing on first, and only then take the limit. Write the piece down before you substitute.",
+   "Checking only LHL = RHL and declaring the function continuous. f(a) is a third, separate check. In the first worked example LHL ≠ RHL, but even when the two limits match, the point value can sit somewhere else and break continuity.",
+   "Trying to apply limit tricks when there is no indeterminate form. Look at the form first. In these questions x² + 2, 3x + 2 and 3x² + 2 are all well behaved at the point, so plain substitution is the whole limit."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.65",
+  "title": "1/x and e^(1/x) at x = 0: the LHL/RHL trap",
+  "id": "main-c0-k65",
+  "clip_s": 398,
+  "key_idea": "One innocent-looking function, 1/x, causes all the trouble at x = 0. Once you see what it does on each side separately, a whole family of JEE continuity traps becomes a ten-second question.",
+  "one_line": "At x = 0, 1/x runs to +∞ from the right and −∞ from the left, so e^(1/x) blows up on one side and dies on the other — which is why (e^(1/x)−1)/(e^(1/x)+1) has RHL +1 and LHL −1.",
+  "traps": [
+   "Taking one two-sided limit of 1/x or e^(1/x) at x = 0. At x = 0 these functions behave in opposite ways on the two sides. Always write LHL and RHL as two separate limits and only then compare.",
+   "Writing e^(−∞) = −∞ (or treating it as very large negative). e^(−∞) = 1/e^(∞) = 1/∞ → 0. The exponential is never negative; the minus sign in the power sends it to 0, not to −∞.",
+   "Cancelling the ∞/∞ form straight to 1, or putting ∞ into the expression as if it were a number. ∞/∞ is indeterminate. Divide top and bottom by e^(1/x) first, then substitute the limits of the small 1/e^(1/x) terms."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.66",
+  "title": "Quiz: continuity with e^(1/x), greatest integer, and a bonus k",
+  "id": "main-c0-k66",
+  "clip_s": 143,
+  "key_idea": "Three continuity questions to attempt unaided: another e^(1/x) function, a greatest-integer function, and one where the value of k must be found.",
+  "one_line": "Stop reading and attempt three continuity questions on your own: one more e^(1/x) function, one greatest-integer function, and a bonus where you must find the value of k.",
+  "traps": [
+   "Treating e^(1/x) the same from both sides of 0. Check the sign of 1/x first. On the left 1/x → −∞ so e^(1/x) → 0; on the right 1/x → +∞ so e^(1/x) → ∞. Two different answers, always.",
+   "On the greatest integer question, just substituting the value of x and declaring it continuous. At an integer, substitution only gives you f(a). You still need the left and right limits, and at an integer they are not equal.",
+   "Skipping the bonus because there are no options to choose from. Attempt it anyway. Build the equation LHL = RHL = f(a) and solve for k. Even a wrong attempt shows you exactly which side you mishandled."
+  ],
+  "solved_examples": 0,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.67",
+  "title": "Quiz solutions: finding k, the 0/∞ form, and [x] + [−x]",
+  "id": "main-c0-k67",
+  "clip_s": 278,
+  "key_idea": "Three questions, and not one of them needs new theory. The bonus is a limit in disguise, the e^(1/x) one is decided by a form most students call indeterminate when it is not, and the last one you can finish with two numbers you pick out of your own head.",
+  "one_line": "Every continuity question here is one of two things — a limit you set equal to f(a), or a function you build from both sides: k = 1 for (1 − cos4x)/8x², x/(1 + e^(1/x)) is continuous at 0, and [x] + [−x] breaks only at the integers.",
+  "traps": [
+   "Treating 0/∞ as an indeterminate form and starting L'Hôpital's rule on it. It is a determinate form. Write the answer as 0 immediately and move to the other side of the point.",
+   "Taking one limit for e^(1/x) and using it on both sides of 0. The two sides are opposite: 1/x → +∞ on the right so e^(1/x) → ∞, and 1/x → −∞ on the left so e^(1/x) → 0. Always evaluate f(0+) and f(0−) separately.",
+   "Saying the greatest integer graph is discontinuous everywhere. It is discontinuous only at the integers. Between two integers it is a flat, perfectly continuous line — so say \"discontinuous at integers\", never \"discontinuous everywhere\"."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.68",
+  "title": "Fixing constants by continuity: cot4x/cot2x and f(π/4)",
+  "id": "main-c0-k68",
+  "clip_s": 148,
+  "key_idea": "Two questions, two different weapons. One looks like a scary 1^∞ power but dies the moment you turn cot into tan; the other asks for f(π/4) and you can write −½ almost without putting pen to paper.",
+  "one_line": "A cot/cot ratio flips into tan and collapses to the ratio of angles, and when a function is continuous on an open interval its value at an inside point is forced to equal the limit there — found fastest by the LH rule.",
+  "traps": [
+   "Reading cot 4x / cot 2x as 4x/2x = 2. cot is the reciprocal of tan, so the ratio turns upside down: tan 2x / tan 4x → 2x/4x = ½. The angles swap places. Getting 2 instead of ½ changes b from √e to e².",
+   "Plugging x = 0 into the 1^∞ side and writing the answer as 1. 1^∞ is an indeterminate form, not 1. Convert it: the answer is e raised to the limit of (base − 1) × power.",
+   "Thinking f(π/4) can be anything because the formula says x ≠ π/4. You are told f is continuous on (0, π/2), and π/4 is inside that interval. Continuity leaves no choice — f(π/4) must equal the limit, so it is −½."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.69",
+  "title": "Only the change points can break continuity",
+  "id": "main-c0-k69",
+  "clip_s": 93,
+  "key_idea": "A function defined on 0 to π by three different formulas, and you are asked where it can be discontinuous. You do not have to test every point — there are only two suspects.",
+  "one_line": "A piecewise function can only break where its definition changes, so making the two values agree at each of those points — here π/4 and π/2 — makes it continuous on the whole interval.",
+  "traps": [
+   "Hunting for discontinuity all over 0 to π. Inside each piece the formula is a standard continuous function. Only the change points — π/4 and π/2 — need checking.",
+   "Clearing π/4 and declaring the function continuous. There are two change points here. π/2 needs its own equation. Continuity at one joint says nothing about the other.",
+   "Matching the left and right values but never comparing them with f at that point. The test is left limit = right limit = f(c). All three, every time."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.70",
+  "title": "Continuity of [x]·x²: define the function yourself",
+  "id": "main-c0-k70",
+  "clip_s": 264,
+  "key_idea": "This one looks heavier than the last question, but nothing new is happening. You just have to build the function yourself first — and once it is built, the answer falls out in three lines.",
+  "one_line": "For f(x) = [x]·x² on [−2, 1], write [x] as a constant on each unit interval, then test only the change points: the function breaks at x = −1 and x = 1 only.",
+  "traps": [
+   "Treating [x] as a variable and trying to take limits of [x]·x² directly. Never work with the greatest integer sign in place. Fix the interval first; then [x] is a constant and you are handling an ordinary polynomial.",
+   "Forgetting that x = 1 is a single point of the domain, and writing f(1) = 0 from the previous piece. At x = 1 exactly, [1] = 1, so f(1) = 1·1² = 1. That single value is what makes x = 1 a point of discontinuity.",
+   "Declaring x = 0 discontinuous just because the definition changes there. A change in definition is only a suspect, not a verdict. At x = 0 the left piece gives 0, the right piece gives 0 and f(0) = 0, so it is continuous."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.71",
+  "title": "End points: one-sided continuity",
+  "id": "main-c0-k71",
+  "clip_s": 236,
+  "key_idea": "Every student freezes at the end point of a domain. One side of it simply doesn't exist, so there is nothing to check there — and that makes end points the easiest points in the whole chapter.",
+  "one_line": "At the left end of the domain you only check right-continuity, at the right end only left-continuity — so an end point can never confuse you.",
+  "traps": [
+   "Hunting for a left hand limit at the left end point, or a right hand limit at the right end point, and then calling the point discontinuous because the limit 'does not exist'. That one sided limit is not required at all — the points behind a (or ahead of b) are not in the domain. Only the existing side is tested.",
+   "Using what happens just outside the domain to decide continuity at the end point. Outside the domain the function is not defined, so it carries no information. Test f(a) against the right hand limit only, f(b) against the left hand limit only.",
+   "Treating an end point as a special difficult case and skipping it in the answer. An end point is lighter work than an interior point: one comparison instead of two. Do it and state the conclusion."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.72",
+  "title": "A limit doesn't need an indeterminate form",
+  "id": "main-c0-k72",
+  "clip_s": 128,
+  "key_idea": "Most students believe a limit only \"happens\" when 0/0 shows up. If you carry that belief into a continuity question, you will stare at a perfectly easy sum and look for a trick that isn't there.",
+  "one_line": "Every continuity question is just a limit — either in a piecewise function or in one you define yourself — and a determinate form has a limit too: it is simply the value of the function.",
+  "traps": [
+   "Thinking a limit exists only when you get an indeterminate form, so a plain determinate question looks like a trap. A limit is defined at every point you approach, not only at 0/0. Substitute; if you get a clean finite value, that is the limit.",
+   "Jumping to L'Hôpital, expansion or rationalisation in a question that was determinate from the start. Always substitute before choosing a method. You will throw away half an hour on a sum that was one line long.",
+   "Assuming \"limit = value of the function\" always, and carrying that into a piecewise function. That shortcut is for a determinate form on one single expression. In a piecewise function the value of the function and the left hand limit can be unequal — that is exactly the case we just finished, and that is where discontinuity comes from."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.73",
+  "title": "Removable vs irremovable discontinuity — and why the names",
+  "id": "main-c0-k73",
+  "clip_s": 302,
+  "key_idea": "Two names that almost everyone memorises and nobody understands. Once you see why one of them is called removable, you will never mix the two up again.",
+  "one_line": "Removable means the limit at the point exists but is not equal to f(a), so one value can repair it; irremovable means the one-sided limits disagree, so no single value can.",
+  "traps": [
+   "Calling a jump removable because you found a clever way to patch it, like scaling one branch. Check the limit, not your creativity. If the left and right limits differ, the limit does not exist and the discontinuity is irremovable, however many tricks you try.",
+   "Reading the 2 written at x = 0 as the limit in f(x) = sin x / x, f(0) = 2. The 2 is only the value f(0). The limit comes from the sin x / x branch and it is 1. Limit 1, value 2 — that mismatch is exactly the discontinuity.",
+   "Starting with f(a) and never computing both one-sided limits. Always write the left-hand limit and the right-hand limit first. Only after they agree do you compare with f(a)."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.74",
+  "title": "Isolated-point and missing-point discontinuity",
+  "id": "main-c0-k74",
+  "clip_s": 180,
+  "key_idea": "Both of these graphs have a hole at x = a. One has an extra dark dot floating somewhere else, one has nothing — and that single dot decides which name you write in the exam.",
+  "one_line": "Removable discontinuity splits into two: isolated point, where f(a) exists but is not the limit, and missing point, where f(a) is not defined at all.",
+  "traps": [
+   "Thinking that in the missing point case the limit does not exist, because f(a) is not given. It is wrong. In both sub-types the limit exists — that is what makes them removable. f(a) being missing says nothing about the limit.",
+   "Drawing the dark circle sitting on x = a in the missing point graph. In missing point there is no dark circle on x = a at all. Only the hollow circle. Draw the graph correctly or the examiner reads it as isolated point.",
+   "Calling every hole in a graph just \"removable\" and stopping there. Removable is the family name. Write the sub-type: isolated point if f(a) is given but different, missing point if f(a) is not given."
+  ],
+  "solved_examples": 0,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.75",
+  "title": "Irremovable: jump and oscillating discontinuity",
+  "id": "main-c0-k75",
+  "clip_s": 150,
+  "key_idea": "A missing point you can patch with one number. But what if the left side walks up to 2 and the right side walks up to 5? No single number can sit in that gap — and that is exactly why this family is called irremovable.",
+  "one_line": "If both one-sided limits exist but are unequal you have a jump discontinuity; if the one-sided limits do not exist at all, as in sin(1/x) near 0, the discontinuity is essential — and neither can be repaired by redefining one point.",
+  "traps": [
+   "Trying to remove a jump by defining f(a) as the average of the two one-sided limits. No single value can make both sides agree. Redefining f(a) only changes one point; the gap between L₁ and L₂ stays. Jump is irremovable, full stop.",
+   "Writing the limit of sin(1/x) at x = 0 as \"some number between −1 and 1\". Bounded is not the same as convergent. Write clearly: the limit does not exist because the function oscillates.",
+   "Clubbing every \"limit does not exist\" case under one name. Separate them. Limits exist but differ → jump. Limits do not exist → essential. Both are irremovable, but the reason you write in the answer is different."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.76",
+  "title": "Type 1: continuity questions that are two limits in disguise",
+  "id": "main-c0-k76",
+  "clip_s": 330,
+  "key_idea": "Read the question and it says continuity. Solve it and you will find nothing about continuity happens at all — you just evaluate two limits and match them to f(0). Once you see that, these become free marks.",
+  "one_line": "Continuity at x = 0 only means LHL = RHL = f(0), so a three-piece \"continuity\" question like this is really two limit questions wearing one coat.",
+  "traps": [
+   "Dropping the 2 while writing 1 − cos mx = 2sin²(mx/2), so the top gives m²/4 instead of m²/2 and the answer comes out as m²/16. Write the identity with the 2 in front before you touch anything else. Or just use the ready result (1 − cos kx)/x² → k²/2, which already carries the 2.",
+   "Taking the limit of ln(1 − bx)/x as +b because you only look at the b and not at the minus sign. The limit equals the whole coefficient of x inside the log. Inside is (1 − bx), so the coefficient is −b, and the limit is −b.",
+   "Writing only m = 2√10 and losing the negative value. You solved m² = 40, not m = 40. A square gives you both signs, so m = ±2√10 unless the question itself restricts m."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.77",
+  "title": "Type 2 set-up: sum of points where [x²−x+3] is discontinuous",
+  "id": "main-c0-k77",
+  "clip_s": 155,
+  "key_idea": "This one looks like a joke played on you in the name of continuity: a quadratic locked inside a greatest integer bracket. In JEE this is called tough — but it cracks open the moment you stop staring at the bracket and start drawing.",
+  "one_line": "A hardcore-function continuity question gives you f(x) = [x² − x + 3] on a closed interval and asks for the sum of all x where f breaks — and the first move is always to graph the quadratic on that interval, never to touch the bracket.",
+  "traps": [
+   "Attacking the bracket straight away and trying to break the interval at x = −1, 0, 1, 2 because those are the integers you can see. The bracket cares about the output, not the input. Graph x² − x + 3 on [−1, 2] and find where the output becomes an integer.",
+   "Finding one or two break points, feeling happy and writing the sum. The question says sum of all x. Use the graph to count every crossing on the whole interval before you add anything.",
+   "Forgetting that x is caged inside [−1, 2] and collecting solutions that lie outside it. After solving each equation, check every root against the given interval and throw away whatever does not belong to it."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.78",
+  "title": "Graphing the quadratic on [−1, 2]: vertex and end values",
+  "id": "main-c0-k78",
+  "clip_s": 395,
+  "key_idea": "Before you touch the greatest integer bracket, you need the plain parabola on [−1, 2] — and for that you only need three points, not a table of twenty.",
+  "one_line": "For y = x² − x + 3 on [−1, 2], three numbers fix the whole graph: vertex (½, 11/4) from −b/2a and −D/4a, and the two end values f(−1) = 5, f(2) = 5.",
+  "traps": [
+   "Writing the vertex as x = −½ for x² − x + 3, because you see the minus sign in front of x. b is −1, so −b/2a = +1/2. Write b with its own sign first, then put it in the formula.",
+   "Writing the vertex y as D/4a and getting −11/4, a point below the x-axis. It is −D/4a. D = −11 here, so −D/4a = +11/4. For an upward parabola with D < 0 the vertex must be above the x-axis — use that as your sanity check.",
+   "Drawing the full parabola and then reading values off the whole curve. Cut the graph at x = −1 and x = 2 and work only with that piece. Outside the interval nothing exists for this question."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.79",
+  "title": "Greatest integer of the quadratic: building the step graph",
+  "id": "main-c0-k79",
+  "clip_s": 374,
+  "key_idea": "On [−1, 2] the curve x² − x + 3 falls 5 → 4 → 3 → 11/4 and climbs back, so its greatest integer is a staircase of flat steps, breaking wherever the curve crosses an integer level.",
+  "one_line": "On [−1, 2] the curve x² − x + 3 falls 5 → 4 → 3 → 11/4 and climbs back 3 → 4 → 5, so its greatest integer is a staircase of flat steps 5, 4, 3, 2, 3, 4, 5 with breaks at α₁, 0, 1, α₄ and x = 2.",
+  "traps": [
+   "Treating 11/4 as 3 because it looks close to 3, and starting a y = 3 step at the vertex. 11/4 = 2.75, so its greatest integer is 2. The vertex sits on the y = 2 step, and that step is the proof the curve never touched 2 exactly.",
+   "Putting a dark circle at both ends of the y = 2 step, at x = 0 and x = 1. At x = 0 and x = 1 the curve is exactly 3, so the greatest integer there is 3, not 2. Both ends of the y = 2 step are hollow — this is the one step with hollow circles on both sides.",
+   "Letting the last step run right up to x = 2 and closing it there. f(2) = 5 exactly, so the y = 4 step stops just short with a hollow circle, and (2, 5) is drawn as a separate isolated point."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.80",
+  "title": "The points of discontinuity and their sum",
+  "id": "main-c0-k80",
+  "clip_s": 148,
+  "key_idea": "Every jump of [x² − x + 3] on [−1, 2] sits at −1, α₁, 0, α₃, α₄ and 2, and the sum of roots gives α₁ + α₄ = 1 — so the total comes to 3 without ever finding the two irrational roots separately.",
+  "one_line": "Every jump of [x² − x + 3] on [−1, 2] sits at −1, α₁, 0, α₃, α₄ and 2, and sum of roots gives α₁ + α₄ = 1, α₂ = 0, α₃ = 1, so the total is 3.",
+  "traps": [
+   "Solving x² − x − 1 = 0 by the formula and carrying √5 through the whole answer. You were only asked for α₁ + α₄. Use sum of roots = 1 and the √5 disappears before it ever appears.",
+   "Counting only the interior jumps and forgetting x = −1 and x = 2. At both ends the quadratic is exactly 5, and 5 is an isolated value of the function, so both ends are discontinuity points. Always check the end points of the given interval.",
+   "Adding both roots of a level equation without checking they lie in the given interval. Sum of roots is valid only when both roots are inside the domain. Here both roots of x² − x − 1 = 0 sit inside [−1, 2], so it is safe — confirm that first, every time."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.81",
+  "title": "Why greatest-integer questions are really about range",
+  "id": "main-c0-k81",
+  "clip_s": 103,
+  "key_idea": "This problem was hard, and not for the reason you think. The continuity part was one line; everything else was the greatest integer function.",
+  "one_line": "A greatest-integer question is really a range question: find what the inside value ranges over, and each step of [x] reads off as 'integer included, next integer excluded'.",
+  "traps": [
+   "Treating it as a hard continuity problem and burning time on limits. Continuity is one line here. Spend your time getting the greatest integer values right, portion by portion.",
+   "Putting a filled circle at the right end of a step. Left integer is included (filled), right integer is never reached (hollow). Only the next step owns it.",
+   "Forgetting the exact integer point, like x = 5. At x = 5 the greatest integer is 5, not 4. The exact integer always belongs to the new step."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.82",
+  "title": "Final answer 3, and why the graph was essential",
+  "id": "main-c0-k82",
+  "clip_s": 140,
+  "key_idea": "The final answer is a one-line sum: 3. The interesting part is that you could not have written down a single term of that sum without the picture.",
+  "one_line": "The last step is pure addition — α₁+α₄+α₂+α₃+2−1 = 3 — but every α in it came from the graph, which alone showed that the quadratic runs from 2.75 up to 5 and so touches only 3, 4 and 5.",
+  "traps": [
+   "Looking at the final sum and concluding the graph was decorative. The sum itself needs no graph — but α₁, α₂, α₃, α₄ were all read off the picture. Draw the graph first, collect the α's, then add.",
+   "Reading only the two end values, 5 and 5, and assuming the function stays between them. A parabola can sit far below both ends. Compute the minimum; here it is 2.75, which pins the values to the stretch 2.75 to 5 and limits the integers to 3, 4 and 5.",
+   "Expecting the exam to hand you a wide interval like this one. In the paper the interval will be short, which actually makes it easier. The method does not change: range, then the integers inside it."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.83",
+  "title": "Continuity of a Composite Function f(g(x)) at a Point",
+  "id": "main-c0-k83",
+  "clip_s": 243,
+  "key_idea": "If you start simplifying f(g(x)) piece by piece, you will lose ten minutes and probably the question. There is a three-value route that finishes it in forty seconds.",
+  "one_line": "To test f(g(x)) at x = a, never build fog — find g(a⁺), g(a⁻) and g(a) as limits, feed those three into f, and compare the three answers.",
+  "traps": [
+   "Simplifying f(g(x)) into one big piecewise function before checking anything. Never build fog for a continuity-at-a-point question. Work only with g(a⁺), g(a⁻), g(a) and feed them to f.",
+   "Writing g(2⁺) = 2 and g(2⁻) = 1 as flat numbers, then plugging into f. Keep them as limits — slightly bigger than 2, slightly smaller than 1 — so f takes the correct branch at its own breakpoint.",
+   "Writing the final limit as 7⁺ or 7⁻. The plus/minus is only for inputs. A final limit answer is always a clean number: the right hand limit of f at 2 is 7, full stop."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.84",
+  "title": "Quiz: Continuity of fog with a Signum Function",
+  "id": "main-c0-k84",
+  "clip_s": 561,
+  "key_idea": "This quiz looks dangerous. It is not. Nothing new is needed — the same three-value method, applied honestly, kills it in thirty seconds.",
+  "one_line": "Even when g jumps at x = 1, fog can still be continuous there — check f(g(1⁻)), f(g(1)) and f(g(1⁺)), and if all three are +1, it is continuous.",
+  "traps": [
+   "Choosing \"cannot be determined\" because the question looks frightening. That is answering from the heart, not from the maths. You can always determine it here. Compute the three values. If they come out equal, say continuous and move on — nobody gets marks for a feeling.",
+   "Assuming that because g is discontinuous at x = 1, f(g(x)) must also be discontinuous there. Wrong logic. A discontinuous inner function can still give a continuous composite. Only the three values of f(g(x)) decide it.",
+   "Forgetting that signum 0 = 0, and writing signum of a value as +1 just because it looks small and positive-ish. Check exactly: signum is +1 only for x > 0, −1 only for x < 0, and 0 at x = 0. If any one of the three inner values is exactly 0, that branch gives 0 and the composite usually breaks."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.85",
+  "title": "Wherever the Denominator is Zero the Function is Discontinuous",
+  "id": "main-c0-k85",
+  "clip_s": 192,
+  "key_idea": "Some discontinuities you have to hunt for with left-hand and right-hand limits. This one hands itself to you — just look at the bottom of the fraction.",
+  "one_line": "Wherever the denominator of a function becomes zero (and the numerator does not), that point is outside the domain and the function is discontinuous there.",
+  "traps": [
+   "Calling 1/x² continuous at x = 0 because the left-hand and right-hand limits are the same. They are both +∞, and infinity is not a value. For continuity the common limit must be finite and equal to f(0) — and f(0) does not even exist here.",
+   "Hunting for left-hand and right-hand limits at a point where the denominator is zero. No need. Zero denominator with a non-zero numerator means an infinite limit, which already settles it as discontinuous.",
+   "Writing down the roots of the denominator without glancing at the numerator. Put the value into the numerator too. The rule as taught needs a non-zero number on top — that is what forces the limit to blow up."
+  ],
+  "solved_examples": 4,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.86",
+  "title": "Points of Discontinuity of fog — the Inner-Function Trap",
+  "id": "main-c0-k86",
+  "clip_s": 254,
+  "key_idea": "This question looks like a two-line job: simplify fog, set the denominator to zero, done. That is exactly how the trap catches you, and it costs you the whole question.",
+  "one_line": "For points of discontinuity of fog, the simplified denominator is only half the answer — you must also add every point where the inner g(x) itself blows up.",
+  "traps": [
+   "Simplifying fog, reading only its denominator, and writing just x = 3. That is the one point the paper-setter wants you to tick. Also list every point where the inner g(x) is undefined — here x = 2 — because fog cannot exist where g does not.",
+   "Thinking that once (x-2) cancels from top and bottom, the point x = 2 is fine. Cancelling changes the expression, not the domain. The original fog was never defined at x = 2, so it stays discontinuous there.",
+   "Getting the denominator as x + 3 instead of 3 - x and answering x = -3. 1 - (x-2) means the minus distributes over both terms: 1 - x + 2 = 3 - x. This is an easy sign to drop — slow down for one second on that bracket."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.87",
+  "title": "Discontinuity of f(f(x)) with f(x) = 1/(1-x)",
+  "id": "main-c0-k87",
+  "clip_s": 263,
+  "key_idea": "For f(f(x)) with f(x) = 1/(1 − x), both x = 1, where the inner f dies, and x = 0, where the simplified form dies, are points of discontinuity.",
+  "one_line": "For f(f(x)) with f(x) = 1/(1 − x), both x = 1 (where the inner f dies) and x = 0 (where the simplified form dies) are points of discontinuity.",
+  "traps": [
+   "Answering only x = 0, because the final form (x − 1)/x shows only that denominator. Cancellation hides the inner failure. x = 1 was lost the moment you wrote f(x), so it is still a point of discontinuity of f(f(x)).",
+   "Substituting into f wrongly — replacing x by 1 − x instead of by the whole 1/(1 − x). f(f(x)) means the entire inner output goes into the slot. Write f(input) = 1/(1 − input) and then paste 1/(1 − x) as the input.",
+   "Simplifying first and only then thinking about the domain. Domain first, algebra second. Fix the forbidden points of the inner function before any cancellation happens."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.88",
+  "title": "Slope of the Chord AB and What Happens as h → 0",
+  "id": "main-c0-k88",
+  "clip_s": 346,
+  "key_idea": "One small line joining two points on a curve. Push those two points together and that same line becomes the tangent — and that one picture is where the derivative comes from.",
+  "one_line": "The chord joining A(a, f(a)) and B(a+h, f(a+h)) has slope [f(a+h) − f(a)]/h, and as h → 0 that chord turns into the tangent at A.",
+  "traps": [
+   "Writing f(a+h) as f(a) + h. f is a machine, not a number you can split. Put the whole a+h inside the function: for f(x) = 2x + 5, f(a+h) = 2(a+h) + 5.",
+   "Subtracting in opposite order on top and bottom, like [f(a+h) − f(a)] ÷ [a − (a+h)]. Keep B first and A second in both rows. Top: f(a+h) − f(a). Bottom: (a+h) − a = h. Mixing the order flips the sign of your slope.",
+   "Putting h = 0 straight into the slope of the chord. At h = 0 the points A and B are the same point and there is no chord at all. We say h tends to 0 — B comes as close as you like but stays a separate point."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.89",
+  "title": "Derivative at a Point Means Slope of the Tangent (First Principle)",
+  "id": "main-c0-k89",
+  "clip_s": 220,
+  "key_idea": null,
+  "one_line": "The derivative at a point is nothing but the slope of the tangent there, and the limit f'(a) = lim(h→0) [f(a+h) − f(a)]/h is exactly that slope — the first principle.",
+  "traps": [
+   "Putting h = 0 straight into [f(a+h) − f(a)]/h. You get 0/0, which means nothing. h only approaches 0 — first simplify the expression with a formula or identity, then take the limit.",
+   "Treating the derivative as a property of the whole curve instead of a point. The slope changes from point to point. f'(x) is the rule; f'(a) is the actual slope of the tangent at that one point a.",
+   "Believing the familiar one-sided picture is the full definition. In that picture B always came towards A from the right. The approach from the left side has to be checked too — that is the gap we close next."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.90",
+  "title": "Right Hand Derivative and Left Hand Derivative",
+  "id": "main-c0-k90",
+  "clip_s": 224,
+  "key_idea": null,
+  "one_line": "Approaching the point from the right gives the right hand derivative f'(a+), and putting −h in place of h gives the left hand derivative f'(a−), with h positive in both.",
+  "traps": [
+   "Taking h negative for the left hand derivative. h stays positive in both. You write a − h and divide by −h; h itself never turns negative.",
+   "In the left hand derivative, writing [f(a − h) − f(a)]/h. The denominator also has to become −h. You replaced h by −h everywhere, so the h downstairs changes too.",
+   "Thinking the left and right derivatives are two different answers for every function. For every common differentiable function — sin x, cos x, tan x, eˣ, xⁿ, aˣ — both give the identical answer. The two differ only in the special cases we take up next."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.91",
+  "title": "Differentiability Means a Unique Tangent",
+  "id": "main-c0-k91",
+  "clip_s": 147,
+  "key_idea": "A graph is differentiable at a point only if exactly one tangent can be drawn there: one tangent means differentiable, two means not.",
+  "one_line": "A graph is differentiable at a point only if exactly one tangent can be drawn there — one tangent, differentiable; two tangents, not.",
+  "traps": [
+   "Reading \"unique tangent\" as some heavy technical condition and freezing on the word. Unique just means one. If only one tangent can be drawn at that point, the graph is differentiable there. That is the whole sentence.",
+   "Thinking a kink is fine because the graph is still joined there, with no break. Joined is not enough. At a kink the two branches pull the tangent in two different directions, so the tangent is not unique and the graph is non-differentiable at that point.",
+   "Assuming a sharp corner is the only way differentiability can fail. It is one reason. A break in the graph — discontinuity at that point — is another, and we take that up next."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.92",
+  "title": "The Two Conditions for Differentiability at a Point",
+  "id": "main-c0-k92",
+  "clip_s": 177,
+  "key_idea": "In the last part a sharp corner killed differentiability. Now look at a graph that simply breaks at the point — and watch how easily you can draw two different tangents there.",
+  "one_line": "A function is differentiable at x = a only if it is continuous at a and f'(a⁺) = f'(a⁻); if the graph breaks at a, it is 100% non-differentiable there.",
+  "traps": [
+   "Checking only f'(a⁺) = f'(a⁻) and declaring the function differentiable, without first checking continuity at a. Continuity is condition one and it is compulsory. Verify continuity at x = a first; if it fails, write non-differentiable and stop.",
+   "Thinking a graph can be differentiable at a point where it breaks, because you managed to draw a tangent there. At a break you can draw two tangents — one on each branch. Differentiability needs a unique tangent, so a break means non-differentiable, with no exceptions.",
+   "Assuming a continuous graph is automatically differentiable. Continuity is only the first condition. The sharp corner graph was perfectly continuous and still non-differentiable because f'(a⁺) ≠ f'(a⁻)."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.93",
+  "title": "Equal RHD and LHD Cannot Save a Discontinuous Graph",
+  "id": "main-c0-k93",
+  "clip_s": 129,
+  "key_idea": "If the graph breaks at x = a it is non-differentiable there, whatever the RHD and LHD turn out to be.",
+  "one_line": "If the graph breaks at x = a, it is non-differentiable there — no matter what RHD and LHD turn out to be.",
+  "traps": [
+   "Seeing RHD = LHD and immediately declaring the function differentiable. Equal slopes are only the second condition. If the function is not continuous at x = a, the answer is non-differentiable whatever the slopes are.",
+   "Believing that a discontinuous graph must have RHD ≠ LHD. It need not. You can easily draw a broken graph whose two tangents are parallel. The equality of slopes tells you nothing about the break.",
+   "Skipping the continuity check because the derivative work looks easier. Do continuity first. It is faster, and in these questions it finishes the problem by itself."
+  ],
+  "solved_examples": 0,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.94",
+  "title": "The Shortcut: Differentiate Each Piece and Put the Point In",
+  "id": "main-c0-k94",
+  "clip_s": 324,
+  "key_idea": "Check continuity first, then differentiate the x > a piece and put x = a into it for the RHD, and do the same with the x < a piece for the LHD.",
+  "one_line": "For almost every question: check continuity first, then differentiate the x > a piece and put x = a in it for RHD, differentiate the x < a piece and put x = a in it for LHD.",
+  "traps": [
+   "Jumping straight to the derivatives and skipping the continuity check. Write continuity first. A discontinuous point can never be differentiable, so that one line can finish the whole question.",
+   "Thinking that because both sides gave the same value, the function must be differentiable. That only proves continuity. Here both sides gave 3 and the function was still non-differentiable, because 0 ≠ 1.",
+   "Differentiating the wrong piece — using the x ≥ 0 definition to get the left hand derivative. RHD belongs to the piece valid for x > a only; LHD belongs to the piece valid for x < a only. Decide which definition applies before you differentiate."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.95",
+  "title": "Worked Example: A Piecewise Function That Is Differentiable at x = 1",
+  "id": "main-c0-k95",
+  "clip_s": 195,
+  "key_idea": "For f(x) = 2x² + x + 6 when x < 1 and x² + 3x + 5 when x ≥ 1, both sides give 9 at x = 1 and both derivatives give 5, so f is differentiable there.",
+  "one_line": "For f(x) = 2x² + x + 6 when x < 1 and x² + 3x + 5 when x ≥ 1, both sides give 9 at x = 1 and both derivatives give 5, so f is differentiable at x = 1.",
+  "traps": [
+   "Jumping straight to LHD and RHD without checking continuity. Continuity is the entry ticket. Match f(1⁻), f(1⁺) and f(1) first — here all three were 9 — and only then differentiate.",
+   "Taking the derivative of the wrong piece for the wrong side — using x² + 3x + 5 for the left hand derivative. x < 1 means left, so 2x² + x + 6 gives the LHD. x ≥ 1 means right, so x² + 3x + 5 gives the RHD. Decide the side before you differentiate.",
+   "Substituting x = 1 into the expression first and then trying to differentiate. Once you put the number in you only have a constant left. Differentiate while x is still there, and substitute at the very last step."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.96",
+  "title": "Same Derivatives but Discontinuous — Always Check Continuity First",
+  "id": "main-c0-k96",
+  "clip_s": 187,
+  "key_idea": "A discontinuity at a point settles the matter: the function is non-differentiable there, and equal LHD and RHD cannot rescue it.",
+  "one_line": "A discontinuity at a point settles it — the function is non-differentiable there, and equal LHD and RHD cannot rescue it.",
+  "traps": [
+   "Jumping straight into LHD and RHD without checking continuity. First compute the left-hand limit, the right-hand limit and f(a). If they are not all equal, the answer is non-differentiable and the derivatives are not required.",
+   "Seeing LHD = RHD and writing \"differentiable\" in a hurry. Equal one-sided derivatives mean nothing across a jump. Continuity is the gate; only after it is passed does LHD = RHD decide differentiability.",
+   "Assuming the constant term is harmless because it differentiates to 0. It is harmless for the derivative, but it decides continuity. Here 1 + 3 + 7 = 11 against 9 is the entire answer."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.97",
+  "title": "The Three Cases Side by Side",
+  "id": "main-c0-k97",
+  "clip_s": 196,
+  "key_idea": "Differentiability at a point needs one unique tangent, so check continuity first and equal one-sided derivatives second — failing either one kills it.",
+  "one_line": "Differentiability at a point needs one unique tangent, so check continuity first and equal one-sided derivatives second — failing either one kills it.",
+  "traps": [
+   "Jumping straight to LHD and RHD without checking continuity, and then getting stuck. Check continuity at the point first. Only if it passes do you go on to the one-sided derivatives.",
+   "Thinking LHD = RHD is enough to call a point differentiable. Equal one-sided derivatives with a discontinuity still means two tangents, so it is non-differentiable. Both conditions must hold.",
+   "Assuming that if the graph breaks, the two derivatives must automatically come out unequal. They can easily be equal — the two pieces can have the same slope. A break is about the value, not the slope."
+  ],
+  "solved_examples": 0,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.98",
+  "title": "Oral Practice: Checking Differentiability at x = −1",
+  "id": "main-c0-k98",
+  "clip_s": 81,
+  "key_idea": "This one is an oral problem. No long working, no left-hand-limit drama — two numbers to match, two more numbers to match, and you are done.",
+  "one_line": "At x = −1 the two pieces both give 0, and both derivatives give +2, so the function is continuous and differentiable there — value first, slope second.",
+  "traps": [
+   "Jumping straight to the derivatives because the question only asks about differentiability. Continuity is part of the same question. Spend five seconds putting x = −1 in both pieces first. Skipping it costs you the marks even when your final answer happens to be right.",
+   "Assuming a nice-looking piecewise function must be continuous. Do not trust the look of it. Polynomials are continuous on their own, but the two pieces can still disagree at the joining point. Only the matched values prove it.",
+   "Differentiating −x² and writing the slope as 2x instead of −2x, so the sign at x = −1 comes out wrong. Carry the minus sign through the differentiation, then substitute. −2x at x = −1 gives +2, not −2."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.99",
+  "title": "Practice Set: Finding Constants for Continuity and Differentiability",
+  "id": "main-c0-k99",
+  "clip_s": 589,
+  "key_idea": "Two unknown constants at a joining point need two equations: one from continuity, one from LHD = RHD.",
+  "one_line": "Two unknown constants at a joining point need two equations: one from continuity, one from LHD = RHD.",
+  "traps": [
+   "Assuming the function is automatically continuous because the question says differentiable. Differentiable at a point forces continuity at that point. So write the continuity equation yourself — it is one of your two relations.",
+   "Equating the two pieces' values and calling that the derivative condition. Values matching is continuity. Slopes matching is differentiability. They are two separate equations and you need both.",
+   "Stopping after finding one constant. Solve the pair of equations together, then substitute both values back and check value and slope at the joining point."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.100",
+  "title": "Quiz Solutions: Shortest Route and the Time-Waster",
+  "id": "main-c0-k100",
+  "clip_s": 92,
+  "key_idea": "Matching the derivatives of the two pieces at the junction drops one constant out immediately; and once LHL ≠ RHL, stop — there is nothing left to differentiate.",
+  "one_line": "Match the derivatives of the two pieces at the junction and one constant drops out instantly — and once LHL ≠ RHL, stop: there is nothing left to differentiate.",
+  "traps": [
+   "Going into first principles to find the derivative of each piece when the pieces are simple polynomials. Just differentiate them normally and equate at the junction. Same marks, one line.",
+   "Computing LHD and RHD after you have already found LHL ≠ RHL. Stop at the limits. Discontinuous means non-differentiable — write that and move on.",
+   "Concluding \"differentiable\" because LHD came out equal to RHD, while the function was discontinuous there. Continuity is the entry ticket. If it fails, equal one-sided derivatives prove nothing."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.101",
+  "title": "Type 2: Defining the Function Piecewise Yourself (Modulus)",
+  "id": "main-c0-k101",
+  "clip_s": 172,
+  "key_idea": null,
+  "one_line": "When the function is not handed to you piecewise — like f(x) = |x − 2026| — you open the modulus yourself, and then Type 2 becomes Type 1.",
+  "traps": [
+   "Seeing that it is continuous and concluding it must be differentiable. Continuous does not mean differentiable. |x − 2026| is continuous at 2026 and still fails there. Always check the two derivatives separately.",
+   "Opening the mod for x < 2026 as x − 2026, forgetting the extra negative. Below 2026 the inside is a negative number, so the mod must flip its sign: −(x − 2026) = 2026 − x. Test with one number — at x = 2025, |2025 − 2026| = 1, and 2026 − 2025 = 1. It matches.",
+   "Trying to differentiate |x − 2026| in one shot, without splitting. A modulus has a corner. You cannot differentiate across it. Break it into two pieces first, then differentiate each piece on its own side."
+  ],
+  "solved_examples": 1,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.102",
+  "title": "The Three Types of Continuity–Differentiability Questions",
+  "id": "main-c0-k102",
+  "clip_s": 52,
+  "key_idea": "Every continuity–differentiability question in JEE is one of three types: the piecewise function is given, it has to be made piecewise, or the LHD/RHD definition must be used.",
+  "one_line": "Every continuity–differentiability question in JEE is one of three types: the piecewise function is given, you have to make it piecewise yourself, or you must go back to the LHD/RHD definition.",
+  "traps": [
+   "Writing out the LHD/RHD limit for every question because it feels safer. If each piece is a normal differentiable expression, just differentiate the pieces and match them at the breakpoint. Save the limit definition for the small Type 3 variety.",
+   "Starting to differentiate a modulus or greatest-integer function without splitting it. That is a Type 2 question. Split it piecewise first, note the breakpoints, then check continuity and differentiability at those points only."
+  ],
+  "solved_examples": 0,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.103",
+  "title": "Category 2 problems: define the function, then find LHD and RHD",
+  "id": "main-c0-k103",
+  "clip_s": 373,
+  "key_idea": "Six questions, ten minutes, and not one of them needs a new formula. They only check one thing: can you open the function before you differentiate it?",
+  "one_line": "Category 2 is the define-the-function type: expand the mod, greatest integer or fractional part around the point first, and only then take RHD and LHD.",
+  "traps": [
+   "Reading sin|x| as |sin x|, or |x² − 4| as x² − 4. The modulus sign is placed where it is on purpose. Read what is inside the bracket before you expand anything.",
+   "Writing \"non-differentiable\" and stopping there. A non-differentiable point still has a right hand derivative and a left hand derivative. Find both; they simply will not match.",
+   "Differentiating while the mod or the bracket is still sitting inside. First define the function in two pieces around the point, then differentiate each piece. Never the other way round."
+  ],
+  "solved_examples": 6,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.104",
+  "title": "RHD and LHD of e^|x|, |x|+sin|x| and |x|+cos|x| at x = 0",
+  "id": "main-c0-k104",
+  "clip_s": 237,
+  "key_idea": "Three functions, three mods, and all three break at the same point. Once you see how little work each one needs, you will stop fearing this type forever.",
+  "one_line": "Split the mod into its two definitions, differentiate each branch, and compare f'(0+) with f'(0-) — for e^|x|, |x|+sin|x| and |x|+cos|x| they come out 1 and −1, 2 and −2, 1 and −1, so all three are continuous but non-differentiable at 0.",
+  "traps": [
+   "Splitting cos|x| into two different formulas and wasting time. cos is even, so cos|x| = cos x for all x. Write that in one line and move on.",
+   "Differentiating e^(−x) as e^(−x) and losing the minus sign. Chain rule: d/dx e^(−x) = −e^(−x). That minus is exactly what makes f'(0−) = −1 instead of 1.",
+   "Assuming that because the graph has no break, the function must be differentiable. All three here are continuous at 0 and still non-differentiable. Continuity only needs the value to match; differentiability needs LHD = RHD."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.105",
+  "title": "(x−2)|x²−4|: differentiable at 2 but not at −2",
+  "id": "main-c0-k105",
+  "clip_s": 265,
+  "key_idea": "One function, two points where the mod dies, two opposite answers. Differentiable at x = 2, non-differentiable at x = −2 — and the only reason is a repeated factor.",
+  "one_line": "For f(x) = (x−2)|x²−4|, the factor (x−2) is repeated at x = 2 so both one-sided derivatives are 0 and f is differentiable there, while at x = −2 the two branches give +16 and −16, so f is continuous but not differentiable.",
+  "traps": [
+   "Opening |x² − 4| as x² − 4 everywhere and differentiating one single formula. Write the interval-wise definition first: positive for x ≤ −2 and x ≥ 2, negative for −2 < x < 2. Without that split both answers come out wrong.",
+   "Taking the wrong branch for the left and right side at x = −2. Slightly bigger than −2 means you are inside (−2, 2), so use the branch with the minus sign. Slightly smaller than −2 means you are in (−∞, −2), so use the plain branch. Read off the interval, do not guess.",
+   "Assuming a mod is automatically non-differentiable wherever the inside becomes 0. A zero of the inside is only a suspect point. Here x = 2 passes the test and x = −2 fails it, in the very same function. Always check LHD and RHD."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.106",
+  "title": "x²[x]: one-sided derivatives at x = −1, 0, 1 and 2",
+  "id": "main-c0-k106",
+  "clip_s": 485,
+  "key_idea": null,
+  "one_line": "On each side of an integer replace [x] by its constant value, then differentiate: x²[x] breaks at every integer except x = 0, where the x² switches off the jump and it is both continuous and differentiable.",
+  "traps": [
+   "Writing \"discontinuous, non-differentiable\" at x = 0 out of habit, because that is what greatest integer functions always do. This is the exact trap in this question. Do the process at 0 like anywhere else: right side gives 0, left side gives −x², both limits are 0 and both derivatives are 0. It is continuous and differentiable there.",
+   "Treating [x] as a varying thing and trying to differentiate it along with x². On one side of an integer, [x] does not move at all — it is a fixed number. Only x² varies, so differentiate just the x² and carry the constant along.",
+   "Jumping straight to LHD and RHD and never checking continuity. Check continuity first. If the two side limits differ, the point is already non-differentiable and you are done. Continuity never leaves the differentiability chapter."
+  ],
+  "solved_examples": 4,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.107",
+  "title": "Greatest integer with fractional part: 2[x]+3{x}−7x² at x = 0 and 1",
+  "id": "main-c0-k107",
+  "clip_s": 731,
+  "key_idea": null,
+  "one_line": "On every interval replace [x] by its constant value and {x} by x − [x]; for f(x) = 2[x] + 3{x} − 7x² the two one-sided derivatives come out equal at x = 0 and x = 1, yet the function is non-differentiable there because continuity itself fails.",
+  "traps": [
+   "Treating LHD = RHD as proof that the function is differentiable at that point. Equal one-sided derivatives mean nothing if the function is not continuous there. Here both sides give −11 at x = 1 and the answer is still non-differentiable. Always test continuity first.",
+   "Carrying [x] = 1 across to the left side of x = 1. On x slightly smaller than 1 you are in (0, 1), so [x] = 0 and {x} = x. The constant changes the moment you cross an integer, so write the interval down before substituting.",
+   "Freezing because [x] and {x} look like new, special functions. They are not. Convert them into a constant and a linear piece on each interval and the question becomes a polynomial question you have solved a hundred times."
+  ],
+  "solved_examples": 4,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.108",
+  "title": "Algebra of continuity and differentiability for f ± g, fg and f/g",
+  "id": "main-c0-k108",
+  "clip_s": 587,
+  "key_idea": "Two broken functions can add up to a perfectly smooth one. Once you see why, this whole topic becomes two numbers in your head instead of a theorem you memorise.",
+  "one_line": "Continuous ± continuous stays continuous (and f/g too, as long as g ≠ 0), continuous ± discontinuous is always discontinuous, continuous × discontinuous is discontinuous only when the continuous limit is non-zero, and when both are discontinuous nothing can be said.",
+  "traps": [
+   "Writing 'continuous × discontinuous = discontinuous' as a flat rule. Attach the condition. It is discontinuous provided the limit of the continuous function is not zero. Check that limit first — if it is 0, the product is continuous.",
+   "Assuming discontinuous + discontinuous must be discontinuous. It need not be. 5 + 7 = 12 and 8 + 4 = 12 gives a continuous sum from two discontinuous functions. In this case nothing can be said, so test with numbers every time.",
+   "Quoting f/g as continuous or differentiable with no condition. Always add g ≠ 0. Where g = 0 the quotient is discontinuous, and since differentiating a quotient puts g² in the denominator, it is non-differentiable there too."
+  ],
+  "solved_examples": 3,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.109",
+  "title": "Old IIT MCQ: which function is differentiable at x = 0, decided by inspection",
+  "id": "main-c0-k109",
+  "clip_s": 365,
+  "key_idea": "Four options, one question: which one is differentiable at x = 0? You can kill two of them in five seconds flat, without defining a single function piecewise.",
+  "one_line": "cos|x| is just cos x, so in this old IIT MCQ only the sin|x| options need real work — and the difference sin|x| − |x| is the one that is differentiable at x = 0.",
+  "traps": [
+   "Seeing a mod sign inside cos and declaring cos|x| non-differentiable at 0. cos is even, so cos|x| = cos x exactly. There is no corner. Only an odd function like sin keeps the damage: sin|x| really does have a kink at 0.",
+   "Assuming non-differentiable + non-differentiable must be non-differentiable, so both (C) and (D) are rejected. There is no such rule. Two corners can cancel. Compute the left and right derivatives: (C) gives −2 and +2, (D) gives 0 and 0.",
+   "Writing out a full piecewise definition or reaching for the printed solution. Reaching for the printed solution costs you the time this question was meant to save. Just differentiate the x > 0 form and the x < 0 form directly and compare the two numbers at 0."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.110",
+  "title": "Category 3: derivative-looking limits solved by L'Hôpital, not by definition",
+  "id": "main-c0-k110",
+  "clip_s": 609,
+  "key_idea": "When a limit looks like a derivative but is plain 0/0, check the form instead of reaching for first principles: differentiate with respect to h, and remember f(a) is a constant whose derivative is 0, not f'(a).",
+  "one_line": "When a limit looks like a derivative but is plain 0/0, don't reach for the first-principles definition — check the form, differentiate with respect to h, and remember f(a) is a constant whose derivative is 0, not f'(a).",
+  "traps": [
+   "Differentiating f(a) as f'(a). f(a) is just a number — 10, 50, 200, whatever f gives at a. The derivative of a number with respect to h is 0. Write 0.",
+   "Writing f'(a+2h²) and forgetting the chain-rule factor 4h, or forgetting the minus sign inside f(2−h²). Always multiply by the derivative of the inside bracket. 2h² gives +4h; 2−h² gives −2h, and that minus turns the −5 into +10h f'(2−h²).",
+   "Forcing the first-principles definition on these because the shape looks like a derivative. Keep the definition for genuine helplessness. If it is 0/0 and you can differentiate, differentiate. Here there was no helplessness at all."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.111",
+  "title": "Quiz: [f(5+t)−f(5−t)]/2t and the chain-rule sign trap",
+  "id": "main-c0-k111",
+  "clip_s": 320,
+  "key_idea": "The derivative of f(5−t) with respect to t is −f'(5−t), so [f(5+t) − f(5−t)]/2t tends to f'(5) rather than 0; and [f(x) − f(2)]/(x − 2) is simply f'(2).",
+  "one_line": "The derivative of f(5−t) with respect to t is −f'(5−t), so limit [f(5+t)−f(5−t)]/2t comes out as 2f'(5)/2 = f'(5), not 0 — and limit [f(x)−f(2)]/(x−2) is simply f'(2).",
+  "traps": [
+   "Differentiating f(5−t) as f'(5−t) and getting f'(5) − f'(5) = 0. The inside 5−t has derivative −1, so you get +f'(5−t). The two terms add: 2f'(5)/2 = f'(5).",
+   "Differentiating f(2) as f'(2) while differentiating with respect to x. f(2) is a constant. Its derivative is 0, so the answer of [f(x) − f(2)]/(x − 2) as x → 2 is f'(2) from the f(x) term alone.",
+   "Differentiating top and bottom straight away, without checking the form. Substitute the value first. Only when it is 0/0 are you allowed to differentiate — that is why f(5) − f(5) = 0 is written out before anything else is touched."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.112",
+  "title": "Why the first-principles definition has not been needed so far",
+  "id": "main-c0-k112",
+  "clip_s": 84,
+  "key_idea": "You have differentiated hundreds of functions this year without once writing a limit. Did you ever ask why the definition never showed up?",
+  "one_line": "Every formula you have been using — sin x, cos x, x² — was itself built from the LHD/RHD definition, which is why direct differentiation has been enough so far.",
+  "traps": [
+   "Treating the formula list and the definition as two unrelated things, so the definition feels useless. They are the same thing. The formulas came out of the definition — so using a formula is using the definition in compressed form.",
+   "Not knowing the LHD and RHD statement by heart, because \"we never use it\". Write both from memory today. The questions that actually carry weight are the ones where only the definition works.",
+   "Mixing up the denominator sign in LHD — writing f(a−h) − f(a) over h. If you step to a − h, the step size is −h. Keep the denominator −h in LHD and h in RHD."
+  ],
+  "solved_examples": 0,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.113",
+  "title": "x² sin(1/x) at x = 0: when you must go back to the definition",
+  "id": "main-c0-k113",
+  "clip_s": 410,
+  "key_idea": null,
+  "one_line": "For f(x) = x² sin(1/x) with f(0) = 0, the direct derivative collapses into cos(1/x) at 0, so you go back to the first-principles definition and get RHD = LHD = 0 — continuous and differentiable.",
+  "traps": [
+   "Calling the function non-differentiable because 2x sin(1/x) − cos(1/x) has no value at x = 0. That formula is only valid for x ≠ 0. The failure of the formula proves nothing — check with the definition, and here the answer comes out to a clean 0.",
+   "Giving sin(1/x) or cos(1/x) some value at x → 0, or treating it as a limit that exists. Write it as an oscillating number with no fixed value, but always finite between −1 and +1. That is all you need, and it is all you can honestly say.",
+   "Forgetting to subtract f(0) in the definition, or using x² sin(1/x) instead of the given f(0) = 0. f(0) comes from the second line of the definition of the function: f(0) = 0. Put f(h) = h² sin(1/h) and f(0) = 0, then the quotient reduces to h sin(1/h).",
+   "Doing the whole left hand derivative again from scratch. Put −h in place of h: one negative appears on top and one in the denominator, they cancel, and you already had 0. So LHD = RHD = 0 with no extra work."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ },
+ {
+  "no": "1.114",
+  "title": "Contrast: x sin(1/x) is continuous but non-differentiable at 0",
+  "id": "main-c0-k114",
+  "clip_s": 87,
+  "key_idea": "x sin(1/x) with f(0) = 0 is continuous at 0 but not differentiable there: the difference quotient collapses to sin(1/h), which merely oscillates between −1 and 1.",
+  "one_line": "x sin(1/x) with f(0) = 0 is continuous at 0 but not differentiable there, because the difference quotient collapses to sin(1/h), which just oscillates between −1 and 1.",
+  "traps": [
+   "Assuming that because it is continuous at 0, it must be differentiable at 0. Continuity is a weaker condition. x sin(1/x) is the clean counter-example — continuous at 0, derivative at 0 missing. Always test the derivative separately from the definition.",
+   "Writing lim(h→0) sin(1/h) = 0 because 'sin of something small is small'. 1/h is not small when h → 0, it is huge. sin(1/h) oscillates in [−1, 1] and has no limit. Only a factor of h in front can save it, by the squeeze.",
+   "Differentiating x sin(1/x) by product rule and putting x = 0 in the answer. That formula is valid only for x ≠ 0. At the single point x = 0 the function is defined piecewise, so f′(0) must come from the first-principle limit."
+  ],
+  "solved_examples": 2,
+  "quick_checks": 3
+ }
+]

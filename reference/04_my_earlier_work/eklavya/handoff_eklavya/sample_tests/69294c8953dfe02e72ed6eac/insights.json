@@ -1,0 +1,137 @@
+{
+ "insights": {
+  "creationTime": 1791718549538,
+  "createdBy": "SYSTEM",
+  "lastUpdated": 1791718549538,
+  "lastUpdatedBy": "SYSTEM",
+  "entityState": "ACTIVE",
+  "adminTags": [],
+  "id": "6acb7495dd66060cb08e6fc8",
+  "attemptId": "6acb748e87c5d009cfcaa627",
+  "totalMarks": 300,
+  "marksScored": 10,
+  "examType": "JEE_MAINS",
+  "insightMetricsId": "692c9b68de845f68af08e172",
+  "testAttemptInsightsSummary": {
+   "predictedRank": 770001,
+   "possibleBestRank": 14500,
+   "possibleMarksGain": 160,
+   "attemptPercentile": 80,
+   "attemptAccuracy": 23,
+   "totalImprovePercentile": 53,
+   "predictedPercentile": 23
+  },
+  "hshwTopicsInsight": {
+   "topicIds": [
+    "67c6e408254dd91d821edf01",
+    "67c6e569254dd91d821ee116",
+    "67c6e57a254dd91d821ee132",
+    "67c6e57d254dd91d821ee138",
+    "67c6e02d019845d41917b6a7",
+    "67c6e03a019845d41917b6bb",
+    "67c6e049019845d41917b6cf"
+   ],
+   "accuracy": 18,
+   "missedQuestionCount": 1,
+   "incorrectQuestionCount": 9,
+   "totalQuestionCount": 12,
+   "possibleMarksGain": 40
+  },
+  "eaqInsight": {
+   "topicIds": [
+    "67c6e02c019845d41917b6a5",
+    "67c6e40c254dd91d821edf08",
+    "67c6e407254dd91d821edf00",
+    "67c6e409254dd91d821edf02",
+    "67c6e40b254dd91d821edf06",
+    "67c6e03b019845d41917b6bc",
+    "67c6e065019845d41917b6f2",
+    "67c6e408254dd91d821edf01",
+    "67c6e57f254dd91d821ee13a",
+    "67c6e3de254dd91d821edeba",
+    "67c6e061019845d41917b6ee",
+    "67c6e037019845d41917b6b6",
+    "67c6e533254dd91d821ee0c6",
+    "67c6e40d254dd91d821edf09"
+   ],
+   "attemptPercentile": 85,
+   "accuracyPercentile": 27,
+   "possibleMarksGain": 64,
+   "totalQuestionCount": 21,
+   "attemptQuestionCount": 18,
+   "missedQuestionCount": 3,
+   "incorrectQuestionCount": 13,
+   "correctQuestionCount": 5,
+   "averageEAQCohortAccuracy": 83
+  },
+  "pyqInsight": {
+   "topicIds": [
+    "67c6e409254dd91d821edf02",
+    "67c6e57e254dd91d821ee139",
+    "67c6e408254dd91d821edf01",
+    "67c6e40c254dd91d821edf08",
+    "67c6e407254dd91d821edf00",
+    "67c6e40a254dd91d821edf04",
+    "67c6e533254dd91d821ee0c6",
+    "67c6e40d254dd91d821edf09"
+   ],
+   "totalQuestionCount": 6,
+   "attemptQuestionCount": 6,
+   "incorrectQuestionCount": 5,
+   "missedQuestionCount": 0,
+   "correctQuestionCount": 1,
+   "possibleMarksGain": 20,
+   "accuracy": 16,
+   "attemptPercentage": 100,
+   "examYears": [
+    2019,
+    2021
+   ]
+  },
+  "insightVersion": "V1"
+ },
+ "hshwTopicDetails": [
+  {
+   "topicId": "67c6e02d019845d41917b6a7",
+   "topicName": "Three standard equation of motion",
+   "chapterName": "Motion in a Straight Line",
+   "subjectName": "Physics"
+  },
+  {
+   "topicId": "67c6e03a019845d41917b6bb",
+   "topicName": "Introduction to projectile motion",
+   "chapterName": "Motion in a Plane",
+   "subjectName": "Physics"
+  },
+  {
+   "topicId": "67c6e049019845d41917b6cf",
+   "topicName": "Relative motion in one dimension",
+   "chapterName": "Relative Motion",
+   "subjectName": "Physics"
+  },
+  {
+   "topicId": "67c6e408254dd91d821edf01",
+   "topicName": "Bohr's Model of Atom",
+   "chapterName": "Structure of Atom",
+   "subjectName": "Chemistry"
+  },
+  {
+   "topicId": "67c6e569254dd91d821ee116",
+   "topicName": "Relations between roots and coefficient",
+   "chapterName": "Quadratic Equations",
+   "subjectName": "Math"
+  },
+  {
+   "topicId": "67c6e57a254dd91d821ee132",
+   "topicName": "Trigonometric Ratios and Identities",
+   "chapterName": "Trigonometry",
+   "subjectName": "Math"
+  },
+  {
+   "topicId": "67c6e57d254dd91d821ee138",
+   "topicName": "Trigonometric series",
+   "chapterName": "Trigonometry",
+   "subjectName": "Math"
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+You are receiving a handoff pack about an online JEE Main mock-test product that was
+studied and documented in detail. You have not seen any of this work before, and the
+person sending it will not re-explain it.
+
+READ FIRST, IN THIS ORDER:
+  1. 09_RIGHTS_AND_USE.md   (five lines, and it governs everything else)
+  2. 00_START_HERE.md       (what the product is, the file map, the verified numbers)
+  3. 01_PRODUCT_SPEC.md     (test types, exact paper pattern, all 105 papers)
+  4. 02_SCREEN_BY_SCREEN.md (every screen, its labels and controls)
+  5. 03_INSIGHTS_CATALOG.md (the post-test analytics and what each one needs)
+  6. 07_GAPS_AND_UNKNOWNS.md (what was NOT captured — read before planning)
+  7. 04_DATA_DICTIONARY.md and 05_API_AND_FLOW_NOTES.md (when you start building)
+  8. 06_BUGS.md             (15 defects — the list of things NOT to copy)
+  9. 08_DISCREPANCIES.md    (where older notes disagree with the files)
+
+HOW TO WORK WITH THIS:
+
+- Do not ask me to re-explain the product. It is all in the pack. If you cannot find
+  something, say which file you looked in.
+- If the pack marks something "NOT CAPTURED", say so plainly. Do not invent it, do not
+  fill the gap with a plausible guess, and do not quietly assume a value. A large part
+  of the pack's purpose is recording what we do not know.
+- Every number in the pack was counted from files on disk. If you need a number that
+  is not there, say it is not there.
+- The pack is INTERNAL and contains Vedantu's content. Use it as a specification.
+  Write original questions. Never copy Vedantu question text, options, solutions or
+  figures into anything that ships.
+- The large data (105 test folders, a 23,447-row question bank, 7,621 images) stays on
+  disk and is listed in handoff_eklavya_full_manifest.md. If you cannot see those
+  files, work from the documentation and say what you would need.
+
+WHAT I WANT YOU TO BUILD:
+
+--------------------------------------------------------------------------
+[ WRITE WHAT YOU WANT BUILT HERE — e.g. "a working copy of the test player
+  and result page for one subject", or "just a build plan, no code yet" ]
+--------------------------------------------------------------------------
+
+Start by telling me, in plain English, what you understood the product to be and what
+you plan to do. Then wait for me to confirm before building anything.

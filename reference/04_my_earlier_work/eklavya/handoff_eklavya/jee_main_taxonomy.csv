@@ -1,0 +1,1289 @@
+subject,class,chapter,chapter_order,concept_id,concept_name,exam_status,figure_likely,source,confidence,source_note
+Maths,11,Relations and Functions,1,1.1,"Cartesian product, relations, domain and range",jee_main,no,textbook_edition,high,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Relations and Functions,1,1.2,Types of relations,jee_main,no,textbook_edition,high,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Relations and Functions,1,1.3,When a relation is a function; one-one and onto,jee_main,no,textbook_edition,high,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Relations and Functions,1,1.4,"Finding the domain: roots, denominators and logarithms",jee_main,no,textbook_edition,high,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Relations and Functions,1,1.5,"The modulus function, its inequalities and its cases",jee_main,no,textbook_edition,high,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Relations and Functions,1,1.6,Greatest integer and fractional part,jee_main,no,textbook_edition,high,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Relations and Functions,1,1.7,"Exponential and logarithmic functions, and log inequalities",jee_main,no,textbook_edition,high,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Relations and Functions,1,1.8,Finding the range,jee_main,no,textbook_edition,high,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Relations and Functions,1,1.9,"Transforming graphs: shift, stretch, reflect",jee_main,yes,textbook_edition,high,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Relations and Functions,1,1.10,"Proving equivalence, one-one and onto — the 5-mark write-up",jee_main,no,textbook_edition,high,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Relations and Functions,1,1.11,Counting relations and functions,jee_main,no,textbook_edition,high,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Relations and Functions,1,1.12,Sets: the language underneath relations and functions,jee_main,no,textbook_edition,high,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Limits,2,2.1,"What a limit is: the value it tends to, not the value at the point",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.2,"One-sided limits, and when the limit exists",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.3,"Reading one-sided limits: [x], {x} and sample values",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.4,The h-form,cbse_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.5,Substitute first — and the functions where you may not,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.6,The seven indeterminate forms,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.7,"Factorisation, and why a vanishing denominator forces a vanishing numerator",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.8,Rationalisation,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.9,x → ∞: divide by the lowest power,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.10,Finding a and b from a given limit,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.11,"Exponential bases, ∞ − ∞, and roots at infinity",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.12,"When you must take sides: |x|, [x] and a^(1/x)",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.13,(xⁿ − aⁿ)/(x − a) = n·aⁿ⁻¹,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.14,Several terms upstairs: split the constant into ones,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.15,sin x/x and tan x/x — and how to read them,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.16,"(tan x − sin x)/sin³x, and limits at π/2",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.17,Logarithmic standard limits,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.18,Exponential standard limits,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.19,The 1^∞ form,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.20,Series expansion,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.21,L'Hôpital's rule,jee_advanced_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,11,Limits,2,2.22,The sandwich theorem,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Continuity and Differentiability,3,3.1,"Continuity: never lift the pen, and LHL = RHL = f(a)",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Continuity and Differentiability,3,3.2,"Continuity on an interval, and where standard functions break",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Continuity and Differentiability,3,3.3,Finding the constant that makes f continuous,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Continuity and Differentiability,3,3.4,"Suspicious points, and functions continuous at only a few points",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Continuity and Differentiability,3,3.5,"Composite functions, inside out",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Continuity and Differentiability,3,3.6,Continuity of a composite,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Continuity and Differentiability,3,3.7,Signum and the greatest integer function,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Continuity and Differentiability,3,3.8a,Removable and irremovable discontinuities,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Continuity and Differentiability,3,3.8b,"Jump discontinuity — first kind, and the easiest to spot",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Continuity and Differentiability,3,3.9,The Intermediate Value Theorem,jee_advanced_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.1,"What a derivative means, and the first-principle definition",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.2,"RHD and LHD, and why they can disagree",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.3,"Differentiability, and its link with continuity",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.4,The other form of the derivative,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.5,"The branch shortcut, and the two cases where it fails",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.6,"Modulus functions, and hunting the non-differentiable points",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.7,Two unknowns for differentiability,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.8,Product and quotient rules,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.9,The chain rule,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.10,Even and odd functions and their derivatives,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.11,The derivative of an inverse function,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.12,Implicit differentiation,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.13,Derivatives of the inverse trigonometric functions,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.14,"Parametric differentiation, and its second derivative",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.15,Logarithmic differentiation,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.16,Towers and nested radicals: y = x^y,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.17,Differentiating one function with respect to another,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.18,sin⁻¹(sin x) and its branches,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.19,"Substitute, simplify, then differentiate — and check the interval",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.20,Higher-order derivatives,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Differentiation,4,4.21,Newton–Leibniz: differentiating an integral,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.1,dy/dx as a rate,cbse_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.2,Related rates: turn two variables into one,cbse_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.3,Approximations and errors,untagged_in_book,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.4,Tangent and normal at a point,jee_advanced_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.5,"Tangents from an outside point, and where a tangent meets the curve again",jee_advanced_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.6,Intercepts made by a tangent,jee_advanced_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.7,"The angle between two curves, and orthogonal curves",jee_advanced_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.8,Shortest distance along the common normal,jee_advanced_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.9,"Lengths of tangent, normal, subtangent and subnormal",untagged_in_book,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.10,Rolle's theorem,jee_advanced_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.11,"Rolle for roots: build the function, and auxiliary functions",jee_advanced_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.12,Lagrange's Mean Value Theorem,jee_advanced_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.13,Increasing and decreasing: the definitions,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.14,The derivative test for monotonicity,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.15,"Critical points, end behaviour and concavity, for sketching",jee_main,yes,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.16,"Where is f increasing, and the least k that makes it so",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.17a,Monotonicity of products and composites,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.17b,"Composite functions: is sin(tan x) monotonic on (0, π/2)?",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.18a,Proving inequalities by monotonicity,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.18b,Which is bigger: e^(1/e) or π^(1/π)?,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.19,Local and global: the area don and the international don,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.20,"Critical points: the shortlist, and why it must be written as one fraction",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.22,The first derivative test: the sign of f′ on each side,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.23,The second derivative test — and the two cases where it says nothing,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.24,Jensen's inequality: the chord of a cup lies above the cup,jee_advanced_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.25,"Word problems: the four-step recipe, and the 50% checkpoint",cbse_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.26,"Word problems with solids: the NCERT set, and the 2026 board questions",cbse_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.27,Distance and trigonometric extrema: parametrise the curve,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.28,Global extrema on a closed interval — and what one open bracket does,jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.29,"Cubics: shape, roots, and the three-real-roots condition",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.30,"Rebuilding a cubic, and points of inflection",jee_main,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Applications of Derivatives,5,5.31,Marginal cost and marginal revenue,cbse_only,no,textbook_edition,high,"adda247_secondary: Limits, Continuity and Differentiability"
+Maths,12,Indefinite Integration,6,6.1,"Integration is differentiation backwards, and + C",jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Indefinite Integration,6,6.2,The standard integrals,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Indefinite Integration,6,6.3,Substitution,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Indefinite Integration,6,6.4,Manufacturing the numerator in trig denominators,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Indefinite Integration,6,6.5,"Choosing t: powers, whole denominators and radicals",jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Indefinite Integration,6,6.6,The trigonometric substitutions and the standard forms,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Indefinite Integration,6,6.7,Completing the square; linear over quadratic,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Indefinite Integration,6,6.8,"Quadratic over quadratic, long division and even powers",jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Indefinite Integration,6,6.9,Partial fractions,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Indefinite Integration,6,6.10,Integration by parts and ILATE,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Indefinite Integration,6,6.11,"When the integral comes back, and eˣ(f + f′)",jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Indefinite Integration,6,6.12,Inverse functions and conjugates,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Indefinite Integration,6,6.13,"Products of tangents, and writing an angle as a difference",jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Indefinite Integration,6,6.14,Powers of sine and cosine,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Indefinite Integration,6,6.15,The t = tan(x/2) and t = tan x substitutions,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Indefinite Integration,6,6.16,"The square-root family: √(a² − x²), √(x² + a²), √(x² − a²)",jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.1,What a definite integral is,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.2,The definite integral as a limit of a sum,jee_advanced_only,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.3,"The fundamental theorem, and the first properties",jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.4,[x] and modulus integrands: split at every break,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.5,Substitution and by parts with limits,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.6,"Properties 1–3, and manufacturing an integral you were given",jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.7,King's rule: ∫f(x) = ∫f(a + b − x),jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.8,King's rule removes the x,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.9,When f(x) + f(a + b − x) = 1,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.10,Odd and even integrands,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.11,The 0-to-2a rule,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.12,∫₀^(π/2) ln(sin x) dx,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.13,Periodic functions,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.14,Reduction formulas,jee_advanced_only,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.15,"Other reduction pairings, and Wallis",jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.16,Differentiating an integral: Newton–Leibniz,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.17,Integral equations,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.18,Bounds of an integral,jee_advanced_only,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Definite Integration,7,7.19,A series as an integral,jee_main,no,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Area Under Curves,8,8.1,"Area: upper minus lower, with vertical strips",jee_main,yes,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Area Under Curves,8,8.2,Horizontal strips,jee_main,yes,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Area Under Curves,8,8.3,Curves below and across the axis,jee_main,yes,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Area Under Curves,8,8.4,A parabola and a line,jee_main,yes,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Area Under Curves,8,8.5,When the upper function swaps,jee_main,yes,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Area Under Curves,8,8.6,"A circle and a parabola, and the extraneous root",jee_main,yes,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Area Under Curves,8,8.7,"Two parabolas, and a parabola and a line",jee_main,yes,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Area Under Curves,8,8.8,"The ellipse, and the standard area results",jee_main,yes,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Area Under Curves,8,8.9,Sketching a graph you have never seen,jee_main,yes,textbook_edition,high,adda247_secondary: Integral Calculus
+Maths,12,Differential Equations,9,9.1,What a differential equation is; order and degree,jee_main,no,textbook_edition,high,adda247_secondary: Differential Equations
+Maths,12,Differential Equations,9,9.2,Degree hidden by manipulation,jee_main,no,textbook_edition,high,adda247_secondary: Differential Equations
+Maths,12,Differential Equations,9,9.3a,Forming a differential equation by eliminating constants,jee_advanced_only,no,textbook_edition,high,adda247_secondary: Differential Equations
+Maths,12,Differential Equations,9,9.3b,"The algorithm, and how to count arbitrary constants",jee_advanced_only,no,textbook_edition,high,adda247_secondary: Differential Equations
+Maths,12,Differential Equations,9,9.4,What it means to solve a differential equation,jee_main,no,textbook_edition,high,adda247_secondary: Differential Equations
+Maths,12,Differential Equations,9,9.5,"The six methods, and which exam needs which",jee_main,no,textbook_edition,high,adda247_secondary: Differential Equations
+Maths,12,Differential Equations,9,9.6,Variable separable,jee_main,no,textbook_edition,high,adda247_secondary: Differential Equations
+Maths,12,Differential Equations,9,9.7,Reducible to variable separable,jee_main,no,textbook_edition,high,adda247_secondary: Differential Equations
+Maths,12,Differential Equations,9,9.8,Homogeneous expressions and equations,jee_main,no,textbook_edition,high,adda247_secondary: Differential Equations
+Maths,12,Differential Equations,9,9.9,Solving a homogeneous equation: put y = vx,jee_main,no,textbook_edition,high,adda247_secondary: Differential Equations
+Maths,12,Differential Equations,9,9.10,"Rearranging first, particular solutions, and x = vy",jee_main,no,textbook_edition,high,adda247_secondary: Differential Equations
+Maths,12,Differential Equations,9,9.11,Linear equations and the integrating factor,jee_main,no,textbook_edition,high,adda247_secondary: Differential Equations
+Maths,12,Differential Equations,9,9.12,Linear in x: dx/dy + Px = Q,jee_main,no,textbook_edition,high,adda247_secondary: Differential Equations
+Maths,12,Differential Equations,9,9.13,"Verifying a solution, and the NCERT word problems",jee_main,no,textbook_edition,high,adda247_secondary: Differential Equations
+Maths,12,Differential Equations,9,9.14,Bernoulli's equation,jee_main,no,textbook_edition,high,adda247_secondary: Differential Equations
+Maths,11,Complex Numbers,10,10.1,i and its powers,jee_main,no,textbook_edition,high,adda247_secondary: Complex Numbers and Quadratics
+Maths,11,Complex Numbers,10,10.2,"Writing, adding and multiplying complex numbers",jee_main,no,textbook_edition,high,adda247_secondary: Complex Numbers and Quadratics
+Maths,11,Complex Numbers,10,10.3,The conjugate and division,jee_main,no,textbook_edition,high,adda247_secondary: Complex Numbers and Quadratics
+Maths,11,Complex Numbers,10,10.4,"A polynomial at a complex number, and square roots",jee_main,no,textbook_edition,high,adda247_secondary: Complex Numbers and Quadratics
+Maths,11,Complex Numbers,10,10.5,"The Argand plane, modulus and argument",jee_main,yes,textbook_edition,high,adda247_secondary: Complex Numbers and Quadratics
+Maths,11,Complex Numbers,10,10.6,"Polar and Euler forms, and De Moivre's theorem",jee_main,no,textbook_edition,high,adda247_secondary: Complex Numbers and Quadratics
+Maths,11,Complex Numbers,10,10.7,Modulus properties and the triangle inequality,jee_main,no,textbook_edition,high,adda247_secondary: Complex Numbers and Quadratics
+Maths,11,Complex Numbers,10,10.8,The cube roots of unity,jee_main,no,textbook_edition,high,adda247_secondary: Complex Numbers and Quadratics
+Maths,11,Complex Numbers,10,10.9,Loci in the Argand plane,jee_main,yes,textbook_edition,high,adda247_secondary: Complex Numbers and Quadratics
+Maths,11,Complex Numbers,10,10.10,"Quadratic equations: roots, coefficients and the nature of roots",jee_main,no,textbook_edition,high,adda247_secondary: Complex Numbers and Quadratics
+Maths,12,Inverse Trigonometric Functions,11,11.1,"Why an inverse needs a branch, and the principal-value table",jee_main,no,textbook_edition,high,adda247_secondary: Trigonometry
+Maths,12,Inverse Trigonometric Functions,11,11.2,"The graphs, and reading domain and range from them",cbse_only,yes,textbook_edition,high,adda247_secondary: Trigonometry
+Maths,12,Inverse Trigonometric Functions,11,11.3,"Principal values, and the negative-argument rules",jee_main,no,textbook_edition,high,adda247_secondary: Trigonometry
+Maths,12,Inverse Trigonometric Functions,11,11.4,sin⁻¹(sin x) is not always x — bring the angle into the branch,jee_main,no,textbook_edition,high,adda247_secondary: Trigonometry
+Maths,12,Inverse Trigonometric Functions,11,11.5,"Complementary pairs, and adding two tan⁻¹s",jee_main,no,textbook_edition,high,adda247_secondary: Trigonometry
+Maths,12,Inverse Trigonometric Functions,11,11.6,Simplifying by substitution,jee_main,no,textbook_edition,high,adda247_secondary: Trigonometry
+Maths,12,Inverse Trigonometric Functions,11,11.7,"Domains through inverse trig, and telescoping sums",jee_main,no,textbook_edition,high,adda247_secondary: Trigonometry
+Maths,11,Sets,12,12.1,Sets and their representations: roster and set-builder form,jee_main,no,ncert_toc,medium,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Sets,12,12.2,"The empty set, and finite versus infinite sets",jee_main,no,ncert_toc,medium,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Sets,12,12.3,Equal sets and equivalent sets,jee_main,no,ncert_toc,medium,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Sets,12,12.4,"Subsets, proper subsets and the power set",jee_main,no,ncert_toc,medium,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Sets,12,12.5,Intervals as subsets of the real line,jee_main,no,ncert_toc,medium,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Sets,12,12.6,The universal set,jee_main,no,ncert_toc,medium,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Sets,12,12.7,Venn diagrams,jee_main,yes,ncert_toc,medium,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Sets,12,12.8,"Union of sets, and its properties",jee_main,no,ncert_toc,medium,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Sets,12,12.9,"Intersection of sets, and disjoint sets",jee_main,no,ncert_toc,medium,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Sets,12,12.10,"Difference of two sets, and symmetric difference",jee_main,no,ncert_toc,medium,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Sets,12,12.11,"Complement of a set, and De Morgan’s laws",jee_main,no,ncert_toc,medium,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Sets,12,12.12,Counting with two sets: n(A ∪ B),jee_main,no,ncert_toc,low,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Sets,12,12.13,Counting with three sets: n(A ∪ B ∪ C),jee_main,no,ncert_toc,low,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Sets,12,12.14,Survey word problems on two or three sets,jee_main,no,ncert_toc,low,"adda247_secondary: Sets, Relations, Functions"
+Maths,11,Trigonometric Functions,13,13.1,"Angles: degree and radian measure, and converting between them",jee_main,no,ncert_toc,medium,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.2,"The unit circle, and the sign of each function by quadrant",jee_main,yes,ncert_toc,medium,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.3,Domains and ranges of the six trigonometric functions,jee_main,no,ncert_toc,medium,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.4,"Periodicity, and the period of a combined function",jee_main,no,ncert_toc,medium,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.5,"Graphs of sine, cosine and tangent",jee_main,yes,ncert_toc,medium,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.6,"Allied angles, and the standard values",jee_main,no,ncert_toc,medium,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.7,Sum and difference formulae for sine and cosine,jee_main,no,ncert_toc,medium,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.8,Sum and difference formulae for tangent and cotangent,jee_main,no,ncert_toc,medium,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.9,Converting products into sums and sums into products,jee_main,no,ncert_toc,medium,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.10,Double angle formulae,jee_main,no,ncert_toc,medium,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.11,Triple angle formulae,jee_main,no,ncert_toc,medium,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.12,"Half angle formulae, and the tan(x/2) substitution",jee_main,no,ncert_toc,medium,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.13,Maximum and minimum of a sin x + b cos x,jee_main,no,ncert_toc,medium,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.14,"General solution of sin x = k, cos x = k and tan x = k",jee_main,no,ncert_toc,low,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.15,Solving trigonometric equations by factorisation and by squaring,jee_main,no,ncert_toc,low,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.16,Trigonometric equations restricted to a given interval,jee_main,no,ncert_toc,low,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.17,"The sine rule, the cosine rule and the projection formulae",jee_main,no,ncert_toc,low,adda247_secondary: Trigonometry
+Maths,11,Trigonometric Functions,13,13.18,Conditional identities for the angles of a triangle,jee_main,no,ncert_toc,low,adda247_secondary: Trigonometry
+Maths,11,Linear Inequalities,14,14.1,"Inequalities: notation, and the rules for manipulating them",not_in_secondary_source,no,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,11,Linear Inequalities,14,14.2,Algebraic solution of a linear inequality in one variable,not_in_secondary_source,no,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,11,Linear Inequalities,14,14.3,The solution of a one-variable inequality on the number line,not_in_secondary_source,yes,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,11,Linear Inequalities,14,14.4,Systems of linear inequalities in one variable,not_in_secondary_source,no,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,11,Linear Inequalities,14,14.5,Graph of a linear inequality in two variables,not_in_secondary_source,yes,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,11,Linear Inequalities,14,14.6,Solution region of a system of inequalities in two variables,not_in_secondary_source,yes,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,11,Linear Inequalities,14,14.7,Inequalities involving a modulus,not_in_secondary_source,no,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,11,Linear Inequalities,14,14.8,"Quadratic inequalities, and the sign scheme",not_in_secondary_source,no,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,11,Linear Inequalities,14,14.9,"Rational inequalities, and the wavy curve method",not_in_secondary_source,no,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,11,Linear Inequalities,14,14.10,Inequalities carrying a parameter,not_in_secondary_source,no,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,11,Permutations and Combinations,15,15.1,The fundamental principle of counting,jee_main,no,ncert_toc,medium,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.2,"Factorial notation, and its basic identities",jee_main,no,ncert_toc,medium,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.3,Permutations of n distinct objects taken r at a time,jee_main,no,ncert_toc,medium,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.4,Permutations when all the objects are taken together,jee_main,no,ncert_toc,medium,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.5,Permutations when repetition is allowed,jee_main,no,ncert_toc,medium,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.6,Permutations of objects that are not all distinct,jee_main,no,ncert_toc,medium,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.7,Circular permutations,jee_main,no,ncert_toc,medium,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.8,Combinations: choosing r objects from n,jee_main,no,ncert_toc,medium,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.9,The relation between nPr and nCr,jee_main,no,ncert_toc,medium,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.10,"Identities for nCr, including nCr = nC(n−r)",jee_main,no,ncert_toc,medium,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.11,Selections under at-least and at-most conditions,jee_main,no,ncert_toc,medium,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.12,Dividing objects into groups of given sizes,jee_main,no,ncert_toc,medium,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.13,"Arrangements with restrictions: always together, never together",jee_main,no,ncert_toc,low,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.14,Complementary counting,jee_main,no,ncert_toc,low,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.15,Rank of a word in dictionary order,jee_main,no,ncert_toc,low,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.16,Counting the non-negative integer solutions of an equation,jee_main,no,ncert_toc,low,adda247_secondary: Permutations and Combinations
+Maths,11,Permutations and Combinations,15,15.17,The inclusion–exclusion principle in counting,jee_main,no,ncert_toc,low,adda247_secondary: Permutations and Combinations
+Maths,11,Binomial Theorem,16,16.1,"Pascal’s triangle, and the binomial coefficients",jee_main,yes,ncert_toc,medium,adda247_secondary: Binomial Theorem
+Maths,11,Binomial Theorem,16,16.2,The binomial theorem for a positive integral index,jee_main,no,ncert_toc,medium,adda247_secondary: Binomial Theorem
+Maths,11,Binomial Theorem,16,16.3,The general term of a binomial expansion,jee_main,no,ncert_toc,medium,adda247_secondary: Binomial Theorem
+Maths,11,Binomial Theorem,16,16.4,"The middle term, or terms, of an expansion",jee_main,no,ncert_toc,low,adda247_secondary: Binomial Theorem
+Maths,11,Binomial Theorem,16,16.5,Finding the coefficient of a stated power,jee_main,no,ncert_toc,low,adda247_secondary: Binomial Theorem
+Maths,11,Binomial Theorem,16,16.6,The term independent of x,jee_main,no,ncert_toc,low,adda247_secondary: Binomial Theorem
+Maths,11,Binomial Theorem,16,16.7,"The greatest binomial coefficient, and the numerically greatest term",jee_main,no,ncert_toc,low,adda247_secondary: Binomial Theorem
+Maths,11,Binomial Theorem,16,16.8,"Sum of all the binomial coefficients, and of the odd and even places",jee_main,no,ncert_toc,low,adda247_secondary: Binomial Theorem
+Maths,11,Binomial Theorem,16,16.9,Binomial series weighted by r,jee_main,no,ncert_toc,low,adda247_secondary: Binomial Theorem
+Maths,11,Binomial Theorem,16,16.10,Binomial series weighted by 1/(r+1),jee_main,no,ncert_toc,low,adda247_secondary: Binomial Theorem
+Maths,11,Binomial Theorem,16,16.11,"Products of two expansions, and Vandermonde’s identity",jee_main,no,ncert_toc,low,adda247_secondary: Binomial Theorem
+Maths,11,Binomial Theorem,16,16.12,Divisibility and remainder problems using the expansion,jee_main,no,ncert_toc,low,adda247_secondary: Binomial Theorem
+Maths,11,Binomial Theorem,16,16.13,Finding the last digits of a large power,jee_main,no,ncert_toc,low,adda247_secondary: Binomial Theorem
+Maths,11,Binomial Theorem,16,16.14,"Multinomial expansions, and the number of terms",jee_main,no,ncert_toc,low,adda247_secondary: Binomial Theorem
+Maths,11,Binomial Theorem,16,16.15,The binomial theorem for a negative or fractional index,jee_main,no,ncert_toc,low,adda247_secondary: Binomial Theorem
+Maths,11,Binomial Theorem,16,16.16,Approximations from the first few terms,jee_main,no,ncert_toc,low,adda247_secondary: Binomial Theorem
+Maths,11,Sequences and Series,17,17.1,"Sequences and series: notation, and the nth term",jee_main,no,ncert_toc,medium,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.2,Arithmetic progressions: the nth term,jee_main,no,ncert_toc,medium,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.3,Sum to n terms of an arithmetic progression,jee_main,no,ncert_toc,medium,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.4,"Arithmetic mean, and inserting arithmetic means",jee_main,no,ncert_toc,medium,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.5,Geometric progressions: the nth term,jee_main,no,ncert_toc,medium,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.6,Sum to n terms of a geometric progression,jee_main,no,ncert_toc,medium,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.7,Sum of an infinite geometric progression,jee_main,no,ncert_toc,medium,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.8,"Geometric mean, and inserting geometric means",jee_main,no,ncert_toc,medium,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.9,The relationship between the arithmetic and geometric means,jee_main,no,ncert_toc,medium,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.10,"Harmonic progressions, and the harmonic mean",jee_main,no,ncert_toc,low,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.11,Arithmetico-geometric progressions,jee_main,no,ncert_toc,low,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.12,"Sums of the first n natural numbers, their squares and their cubes",jee_main,no,ncert_toc,low,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.13,Summation by the method of differences,jee_main,no,ncert_toc,low,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.14,"Telescoping sums, and partial fractions in a series",jee_main,no,ncert_toc,low,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.15,Choosing symmetric terms in an AP or a GP,jee_main,no,ncert_toc,low,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.16,"Three numbers in AP, GP or HP, and the AM–GM–HM inequality",jee_main,no,ncert_toc,low,adda247_secondary: Sequence and Series
+Maths,11,Sequences and Series,17,17.17,Series that mix an AP with a GP,jee_main,no,ncert_toc,low,adda247_secondary: Sequence and Series
+Maths,11,Straight Lines,18,18.1,"Distance between two points, and the section formulae",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.2,"Area of a triangle from its vertices, and collinearity",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.3,"Slope of a line, and the angle between two lines",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.4,Conditions for two lines to be parallel or perpendicular,jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.5,Equation of a line: point-slope and two-point form,jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.6,Equation of a line: slope-intercept and intercept form,jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.7,Normal form of the equation of a line,jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.8,"General form, and reducing it to the standard forms",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.9,Distance of a point from a line,jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.10,Distance between two parallel lines,jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.11,"Angle bisectors of two lines, and telling them apart",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.12,"Point of intersection, and concurrency of three lines",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.13,Family of lines through the intersection of two given lines,jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.14,"Image of a point in a line, and the foot of the perpendicular",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.15,Position of two points relative to a line,jee_main,no,ncert_toc,low,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.16,Locus problems that reduce to a straight line,jee_main,no,ncert_toc,low,adda247_secondary: Coordinate Geometry
+Maths,11,Straight Lines,18,18.17,"Shifting the origin, and rotation of the axes",jee_main,no,ncert_toc,low,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.1,"Sections of a cone, and which conic each cut gives",jee_main,yes,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.2,"Circle: standard and general equation, centre and radius",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.3,"Circle through three points, and the diameter form",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.4,Position of a point and of a line relative to a circle,jee_main,yes,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.5,"Tangent to a circle, and the condition of tangency",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.6,"Two circles: touching, intersecting, and the common chord",jee_main,yes,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.7,Parabola: the four standard forms and their orientation,jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.8,"Parabola: focus, directrix, axis, vertex and latus rectum",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.9,"Parabola: tangent, normal and the parametric point",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.10,"Ellipse: standard equation, major and minor axes",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.11,"Ellipse: foci, eccentricity, directrices and latus rectum",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.12,Ellipse: the auxiliary circle and the parametric point,jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.13,Hyperbola: standard equation and the transverse axis,jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.14,"Hyperbola: foci, eccentricity and latus rectum",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.15,"Hyperbola: asymptotes, and the conjugate hyperbola",jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.16,The rectangular hyperbola xy = c²,jee_main,no,ncert_toc,medium,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.17,Tangent and normal to an ellipse and to a hyperbola,jee_main,no,ncert_toc,low,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.18,"Chord of contact, and the pair of tangents from a point",jee_main,no,ncert_toc,low,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.19,"Director circle, and the locus of perpendicular tangents",jee_main,no,ncert_toc,low,adda247_secondary: Coordinate Geometry
+Maths,11,Conic Sections,19,19.20,Identifying a conic from a general second-degree equation,jee_main,no,ncert_toc,low,adda247_secondary: Coordinate Geometry
+Maths,12,Three Dimensional Geometry,20,20.1,"Coordinate axes and planes in space, and the eight octants",jee_main,yes,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.2,"Coordinates of a point in space, and the distance formula",jee_main,no,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.3,Section formula in three dimensions,jee_main,no,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.4,Direction cosines and direction ratios of a line,jee_main,no,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.5,Angle between two lines from their direction ratios,jee_main,no,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.6,Equation of a line: vector and Cartesian form,jee_main,no,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.7,Equation of a line through two given points,jee_main,no,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.8,Condition for two lines to be perpendicular or parallel,jee_main,no,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.9,Shortest distance between two skew lines,jee_main,yes,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.10,Shortest distance between two parallel lines,jee_main,no,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.11,Equation of a plane in normal form,jee_main,no,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.12,Equation of a plane through three given points,jee_main,no,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.13,"Intercept form, and the general equation of a plane",jee_main,no,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.14,Angle between two planes,jee_main,no,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.15,Distance of a point from a plane,jee_main,no,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.16,Angle between a line and a plane,jee_main,no,ncert_toc,medium,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.17,Family of planes through the intersection of two planes,jee_main,no,ncert_toc,low,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.18,"Image of a point in a plane, and the foot of the perpendicular",jee_main,no,ncert_toc,low,adda247_secondary: 3D Geometry
+Maths,12,Three Dimensional Geometry,20,20.19,Coplanarity of two lines,jee_main,no,ncert_toc,low,adda247_secondary: 3D Geometry
+Maths,12,Matrices,21,21.1,"Matrices: order, and the types of matrix",jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Matrices,21,21.2,Equality of two matrices,jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Matrices,21,21.3,"Addition of matrices, and multiplication by a scalar",jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Matrices,21,21.4,"Multiplication of matrices, and why it does not commute",jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Matrices,21,21.5,Properties of matrix multiplication,jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Matrices,21,21.6,"Transpose of a matrix, and its properties",jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Matrices,21,21.7,Symmetric and skew-symmetric matrices,jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Matrices,21,21.8,Writing a square matrix as symmetric plus skew-symmetric,jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Matrices,21,21.9,Elementary row and column operations,jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Matrices,21,21.10,"Invertible matrices, and uniqueness of the inverse",jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Matrices,21,21.11,Finding the inverse by elementary operations,jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Matrices,21,21.12,"Powers of a matrix, and spotting the pattern",jee_main,no,ncert_toc,low,adda247_secondary: Matrices and Determinants
+Maths,12,Matrices,21,21.13,"Idempotent, involutory, nilpotent and orthogonal matrices",jee_main,no,ncert_toc,low,adda247_secondary: Matrices and Determinants
+Maths,12,Matrices,21,21.14,"Trace of a matrix, and its properties",jee_main,no,ncert_toc,low,adda247_secondary: Matrices and Determinants
+Maths,12,Matrices,21,21.15,Matrix polynomial equations,jee_main,no,ncert_toc,low,adda247_secondary: Matrices and Determinants
+Maths,12,Matrices,21,21.16,Transpose and inverse of a product,jee_main,no,ncert_toc,low,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.1,Determinant of a 2×2 and of a 3×3 matrix,jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.2,Expansion by minors and cofactors,jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.3,"Properties of determinants, and row and column operations",jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.4,"Determinant of a product, and of a transpose",jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.5,Area of a triangle as a determinant,jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.6,"Adjoint of a matrix, and A(adj A) = |A| I",jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.7,Inverse of a matrix using the adjoint,jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.8,Singular and non-singular matrices,jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.9,Solving a linear system by the matrix method,jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.10,"Consistency: unique solution, no solution, infinitely many",jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.11,Cramer’s rule,jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.12,"Homogeneous systems, and the condition for a non-trivial solution",jee_main,no,ncert_toc,medium,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.13,Determinants of skew-symmetric and other special matrices,jee_main,no,ncert_toc,low,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.14,Factorising a determinant,jee_main,no,ncert_toc,low,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.15,Differentiating a determinant,jee_main,no,ncert_toc,low,adda247_secondary: Matrices and Determinants
+Maths,12,Determinants,22,22.16,"Determinants carrying a parameter, and finding its values",jee_main,no,ncert_toc,low,adda247_secondary: Matrices and Determinants
+Maths,12,Vector Algebra,23,23.1,"Scalars and vectors, and the types of vector",jee_main,no,ncert_toc,medium,adda247_secondary: Vectors
+Maths,12,Vector Algebra,23,23.2,Addition of vectors: the triangle and parallelogram laws,jee_main,yes,ncert_toc,medium,adda247_secondary: Vectors
+Maths,12,Vector Algebra,23,23.3,"Components of a vector, and the unit vector",jee_main,no,ncert_toc,medium,adda247_secondary: Vectors
+Maths,12,Vector Algebra,23,23.4,Multiplication of a vector by a scalar,jee_main,no,ncert_toc,medium,adda247_secondary: Vectors
+Maths,12,Vector Algebra,23,23.5,"Position vector, and the section formula for vectors",jee_main,no,ncert_toc,medium,adda247_secondary: Vectors
+Maths,12,Vector Algebra,23,23.6,"Collinear vectors, and the condition for collinearity",jee_main,no,ncert_toc,medium,adda247_secondary: Vectors
+Maths,12,Vector Algebra,23,23.7,"Scalar (dot) product, and its properties",jee_main,no,ncert_toc,medium,adda247_secondary: Vectors
+Maths,12,Vector Algebra,23,23.8,Projection of one vector on another,jee_main,yes,ncert_toc,medium,adda247_secondary: Vectors
+Maths,12,Vector Algebra,23,23.9,Angle between two vectors from the dot product,jee_main,no,ncert_toc,medium,adda247_secondary: Vectors
+Maths,12,Vector Algebra,23,23.10,"Vector (cross) product, and its properties",jee_main,no,ncert_toc,medium,adda247_secondary: Vectors
+Maths,12,Vector Algebra,23,23.11,Area of a triangle and of a parallelogram by the cross product,jee_main,no,ncert_toc,medium,adda247_secondary: Vectors
+Maths,12,Vector Algebra,23,23.12,"Scalar triple product, and what it measures",jee_main,no,ncert_toc,low,adda247_secondary: Vectors
+Maths,12,Vector Algebra,23,23.13,Volume of a parallelepiped and of a tetrahedron,jee_main,no,ncert_toc,low,adda247_secondary: Vectors
+Maths,12,Vector Algebra,23,23.14,Coplanarity tested by the scalar triple product,jee_main,no,ncert_toc,low,adda247_secondary: Vectors
+Maths,12,Vector Algebra,23,23.15,Vector triple product,jee_main,no,ncert_toc,low,adda247_secondary: Vectors
+Maths,12,Vector Algebra,23,23.16,Linear dependence and independence of vectors,jee_main,no,ncert_toc,low,adda247_secondary: Vectors
+Maths,11,Statistics,24,24.1,"Measures of central tendency: mean, median and mode",jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,11,Statistics,24,24.2,Mean of ungrouped and of grouped data,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,11,Statistics,24,24.3,Range as a measure of dispersion,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,11,Statistics,24,24.4,Mean deviation about the mean,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,11,Statistics,24,24.5,Mean deviation about the median,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,11,Statistics,24,24.6,Variance of ungrouped data,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,11,Statistics,24,24.7,Standard deviation of ungrouped data,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,11,Statistics,24,24.8,Variance and standard deviation of grouped data,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,11,Statistics,24,24.9,The step-deviation shortcut for variance,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,11,Statistics,24,24.10,Effect of a change of origin and scale on mean and variance,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,11,Statistics,24,24.11,Combined mean and combined variance of two groups,jee_main,no,ncert_toc,low,adda247_secondary: Statistics and Probability
+Maths,11,Statistics,24,24.12,"Coefficient of variation, and comparing two data sets",jee_main,no,ncert_toc,low,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.1,"Random experiments, sample space and events",jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.2,"Types of event, and mutually exclusive and exhaustive events",jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.3,The axiomatic definition of probability,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.4,Probability of an event with equally likely outcomes,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.5,Addition theorem for two events,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.6,Addition theorem for three events,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.7,"Complement of an event, and odds for and against",jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.8,Conditional probability,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.9,Multiplication theorem for probability,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.10,"Independent events, and pairwise versus mutual independence",jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.11,The law of total probability,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.12,Bayes’ theorem,jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.13,"Random variables, and their probability distribution",jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.14,"Mean, or expectation, of a random variable",jee_main,no,ncert_toc,medium,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.15,Variance of a random variable,jee_main,no,ncert_toc,low,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.16,Bernoulli trials and the binomial distribution,jee_main,no,ncert_toc,low,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.17,Mean and variance of a binomial distribution,jee_main,no,ncert_toc,low,adda247_secondary: Statistics and Probability
+Maths,12,Probability,25,25.18,Probability problems that need permutations and combinations,jee_main,no,ncert_toc,low,adda247_secondary: Statistics and Probability
+Maths,12,Linear Programming,26,26.1,Formulating a linear programming problem,not_in_secondary_source,no,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,12,Linear Programming,26,26.2,The objective function and the constraints,not_in_secondary_source,no,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,12,Linear Programming,26,26.3,"Graphing the constraints, and the feasible region",not_in_secondary_source,yes,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,12,Linear Programming,26,26.4,Bounded and unbounded feasible regions,not_in_secondary_source,no,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,12,Linear Programming,26,26.5,The corner point method,not_in_secondary_source,yes,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,12,Linear Programming,26,26.6,Problems with no feasible solution,not_in_secondary_source,no,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,12,Linear Programming,26,26.7,Problems with more than one optimal solution,not_in_secondary_source,no,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,12,Linear Programming,26,26.8,Manufacturing and diet problems,not_in_secondary_source,yes,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,12,Linear Programming,26,26.9,Transportation problems,not_in_secondary_source,yes,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Maths,12,Linear Programming,26,26.10,Reading the optimum off an unbounded region,not_in_secondary_source,no,ncert_toc,low,no match in adda247 list; previously assessed as cbse_only
+Physics,11,Units and Measurement,1,1.1,"Physical quantities, and the need for units",jee_main,no,ncert_toc,medium,adda247_secondary: Units and Measurement
+Physics,11,Units and Measurement,1,1.2,The SI system: base and derived units,jee_main,no,ncert_toc,medium,adda247_secondary: Units and Measurement
+Physics,11,Units and Measurement,1,1.3,"Significant figures, and the rules for counting them",jee_main,no,ncert_toc,medium,adda247_secondary: Units and Measurement
+Physics,11,Units and Measurement,1,1.4,"Rounding off, and significant figures in a calculation",jee_main,no,ncert_toc,medium,adda247_secondary: Units and Measurement
+Physics,11,Units and Measurement,1,1.5,Dimensions of physical quantities,jee_main,no,ncert_toc,medium,adda247_secondary: Units and Measurement
+Physics,11,Units and Measurement,1,1.6,Dimensional formulae and dimensional equations,jee_main,no,ncert_toc,medium,adda247_secondary: Units and Measurement
+Physics,11,Units and Measurement,1,1.7,Checking an equation by dimensional consistency,jee_main,no,ncert_toc,medium,adda247_secondary: Units and Measurement
+Physics,11,Units and Measurement,1,1.8,"Deriving a relation by dimensional analysis, and its limits",jee_main,no,ncert_toc,medium,adda247_secondary: Units and Measurement
+Physics,11,Units and Measurement,1,1.9,Converting a unit from one system to another,jee_main,no,ncert_toc,medium,adda247_secondary: Units and Measurement
+Physics,11,Units and Measurement,1,1.10,"Absolute, relative and percentage error",jee_main,no,ncert_toc,medium,adda247_secondary: Units and Measurement
+Physics,11,Units and Measurement,1,1.11,Propagation of error in a sum and a difference,jee_main,no,ncert_toc,medium,adda247_secondary: Units and Measurement
+Physics,11,Units and Measurement,1,1.12,Propagation of error in a product and a quotient,jee_main,no,ncert_toc,medium,adda247_secondary: Units and Measurement
+Physics,11,Units and Measurement,1,1.13,Error in a quantity raised to a power,jee_main,no,ncert_toc,medium,adda247_secondary: Units and Measurement
+Physics,11,Units and Measurement,1,1.14,Accuracy versus precision,jee_main,no,ncert_toc,medium,adda247_secondary: Units and Measurement
+Physics,11,Units and Measurement,1,1.15,Least count of the vernier callipers and the screw gauge,jee_main,yes,ncert_toc,medium,adda247_secondary: Units and Measurement
+Physics,11,Units and Measurement,1,1.16,Order-of-magnitude and estimation problems,jee_main,no,ncert_toc,low,adda247_secondary: Units and Measurement
+Physics,11,Motion in a Straight Line,2,2.1,"Position, path length and displacement",jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Straight Line,2,2.2,Average speed and average velocity,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Straight Line,2,2.3,Instantaneous velocity as a derivative,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Straight Line,2,2.4,Acceleration: average and instantaneous,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Straight Line,2,2.5,Reading a position–time graph,jee_main,yes,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Straight Line,2,2.6,"Reading a velocity–time graph, and area as displacement",jee_main,yes,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Straight Line,2,2.7,Kinematic equations for uniformly accelerated motion,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Straight Line,2,2.8,Displacement in the nth second,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Straight Line,2,2.9,Motion under gravity: free fall,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Straight Line,2,2.10,A body thrown vertically upwards,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Straight Line,2,2.11,Relative velocity in one dimension,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Straight Line,2,2.12,Relative motion problems: overtaking and meeting,jee_main,yes,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Straight Line,2,2.13,Stopping distance and reaction time,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Straight Line,2,2.14,Motion with non-uniform acceleration given as a function of t,jee_main,no,ncert_toc,low,adda247_secondary: Kinematics
+Physics,11,Motion in a Straight Line,2,2.15,Motion with acceleration given as a function of x or v,jee_main,no,ncert_toc,low,adda247_secondary: Kinematics
+Physics,11,Motion in a Straight Line,2,2.16,"Graphical problems mixing displacement, velocity and acceleration",jee_main,no,ncert_toc,low,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.1,Scalars and vectors in two dimensions,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.2,"Addition of vectors: triangle, parallelogram and polygon laws",jee_main,yes,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.3,Multiplication of a vector by a real number,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.4,Subtraction of vectors,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.5,Resolution of a vector into components,jee_main,yes,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.6,"Analytical addition of vectors, and the resultant",jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.7,Unit vectors and the rectangular components,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.8,"Position vector, displacement, velocity and acceleration in a plane",jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.9,Motion in a plane with constant acceleration,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.10,"Projectile motion: time of flight, range and maximum height",jee_main,yes,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.11,Equation of the trajectory of a projectile,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.12,"Projectile launched from a height, and horizontal projection",jee_main,yes,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.13,Projectile on an inclined plane,jee_main,yes,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.14,Uniform circular motion: angular velocity and period,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.15,Centripetal acceleration,jee_main,no,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.16,Relative velocity in two dimensions: river and rain problems,jee_main,yes,ncert_toc,medium,adda247_secondary: Kinematics
+Physics,11,Motion in a Plane,3,3.17,"Non-uniform circular motion, and tangential acceleration",jee_main,no,ncert_toc,low,adda247_secondary: Kinematics
+Physics,11,Laws of Motion,4,4.1,"Aristotle’s fallacy, and the law of inertia",jee_main,no,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.2,Newton’s first law of motion,jee_main,no,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.3,"Linear momentum, and Newton’s second law",jee_main,no,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.4,"Impulse, and the impulse–momentum theorem",jee_main,no,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.5,Newton’s third law of motion,jee_main,no,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.6,Conservation of linear momentum,jee_main,no,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.7,"Free-body diagrams, and how to draw one",jee_main,yes,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.8,Equilibrium of a particle under concurrent forces,jee_main,yes,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.9,Lami’s theorem,jee_main,no,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.10,"Normal reaction, tension, and the spring force",jee_main,yes,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.11,"Connected bodies, and motion over a pulley",jee_main,yes,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.12,"Bodies in contact, and the contact force",jee_main,yes,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.13,"Static friction, and the limiting value",jee_main,no,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.14,"Kinetic friction, and the coefficient of friction",jee_main,no,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.15,"A block on an inclined plane, with and without friction",jee_main,yes,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.16,Angle of repose and angle of friction,jee_main,no,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.17,Circular motion on a level road and on a banked road,jee_main,yes,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.18,"Motion in a lift, and apparent weight",jee_main,yes,ncert_toc,medium,adda247_secondary: Laws of Motion
+Physics,11,Laws of Motion,4,4.19,Pseudo force in a non-inertial frame,jee_main,no,ncert_toc,low,adda247_secondary: Laws of Motion
+Physics,11,"Work, Energy and Power",5,5.1,Work done by a constant force,jee_main,no,ncert_toc,medium,"adda247_secondary: Work, Energy and Power"
+Physics,11,"Work, Energy and Power",5,5.2,"Work done by a variable force, as an area or an integral",jee_main,no,ncert_toc,medium,"adda247_secondary: Work, Energy and Power"
+Physics,11,"Work, Energy and Power",5,5.3,"Kinetic energy, and the work–energy theorem",jee_main,no,ncert_toc,medium,"adda247_secondary: Work, Energy and Power"
+Physics,11,"Work, Energy and Power",5,5.4,The work–energy theorem for a variable force,jee_main,no,ncert_toc,medium,"adda247_secondary: Work, Energy and Power"
+Physics,11,"Work, Energy and Power",5,5.5,"Potential energy, and conservative forces",jee_main,no,ncert_toc,medium,"adda247_secondary: Work, Energy and Power"
+Physics,11,"Work, Energy and Power",5,5.6,Gravitational potential energy near the earth,jee_main,no,ncert_toc,medium,"adda247_secondary: Work, Energy and Power"
+Physics,11,"Work, Energy and Power",5,5.7,"Potential energy of a spring, and the force law",jee_main,no,ncert_toc,medium,"adda247_secondary: Work, Energy and Power"
+Physics,11,"Work, Energy and Power",5,5.8,Conservation of mechanical energy,jee_main,no,ncert_toc,medium,"adda247_secondary: Work, Energy and Power"
+Physics,11,"Work, Energy and Power",5,5.9,"Work done against friction, and energy lost",jee_main,no,ncert_toc,medium,"adda247_secondary: Work, Energy and Power"
+Physics,11,"Work, Energy and Power",5,5.10,Power: average and instantaneous,jee_main,no,ncert_toc,medium,"adda247_secondary: Work, Energy and Power"
+Physics,11,"Work, Energy and Power",5,5.11,Elastic collision in one dimension,jee_main,no,ncert_toc,medium,"adda247_secondary: Work, Energy and Power"
+Physics,11,"Work, Energy and Power",5,5.12,"Inelastic collision in one dimension, and the coefficient of restitution",jee_main,no,ncert_toc,medium,"adda247_secondary: Work, Energy and Power"
+Physics,11,"Work, Energy and Power",5,5.13,"Perfectly inelastic collision, and energy lost",jee_main,no,ncert_toc,medium,"adda247_secondary: Work, Energy and Power"
+Physics,11,"Work, Energy and Power",5,5.14,Elastic collision in two dimensions,jee_main,yes,ncert_toc,medium,"adda247_secondary: Work, Energy and Power"
+Physics,11,"Work, Energy and Power",5,5.15,The vertical circle: tension and the critical speed,jee_main,yes,ncert_toc,medium,"adda247_secondary: Work, Energy and Power"
+Physics,11,"Work, Energy and Power",5,5.16,"Potential energy curves, and stable and unstable equilibrium",jee_main,no,ncert_toc,low,"adda247_secondary: Work, Energy and Power"
+Physics,11,System of Particles and Rotational Motion,6,6.1,Centre of mass of a two-particle system,jee_main,no,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.2,"Centre of mass of a rigid body, and of a composite body",jee_main,yes,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.3,Motion of the centre of mass,jee_main,no,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.4,Linear momentum of a system of particles,jee_main,no,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.5,"Vector product of two vectors, revisited for torque",jee_main,no,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.6,"Angular velocity, and its relation to linear velocity",jee_main,no,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.7,"Torque, or moment of a force",jee_main,yes,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.8,Angular momentum of a particle and of a system,jee_main,no,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.9,Relation between torque and angular momentum,jee_main,no,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.10,Conservation of angular momentum,jee_main,no,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.11,"Equilibrium of a rigid body, and the couple",jee_main,yes,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.12,"Centre of gravity, and how it differs from the centre of mass",jee_main,no,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.13,"Moment of inertia, and the radius of gyration",jee_main,no,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.14,Moment of inertia of standard bodies,jee_main,yes,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.15,The theorem of parallel axes,jee_main,no,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.16,The theorem of perpendicular axes,jee_main,no,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.17,Kinematics of rotation about a fixed axis,jee_main,no,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.18,"Dynamics of rotation, and rotational kinetic energy",jee_main,no,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.19,"Rolling motion, and rolling without slipping",jee_main,yes,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,System of Particles and Rotational Motion,6,6.20,A body rolling down an inclined plane,jee_main,yes,ncert_toc,medium,adda247_secondary: Rotational Motion
+Physics,11,Gravitation,7,7.1,Kepler’s three laws of planetary motion,jee_main,no,ncert_toc,medium,adda247_secondary: Gravitation
+Physics,11,Gravitation,7,7.2,Newton’s universal law of gravitation,jee_main,no,ncert_toc,medium,adda247_secondary: Gravitation
+Physics,11,Gravitation,7,7.3,"The gravitational constant, and its measurement",jee_main,no,ncert_toc,medium,adda247_secondary: Gravitation
+Physics,11,Gravitation,7,7.4,Acceleration due to gravity on the earth’s surface,jee_main,no,ncert_toc,medium,adda247_secondary: Gravitation
+Physics,11,Gravitation,7,7.5,Variation of g with height above the surface,jee_main,no,ncert_toc,medium,adda247_secondary: Gravitation
+Physics,11,Gravitation,7,7.6,Variation of g with depth below the surface,jee_main,no,ncert_toc,medium,adda247_secondary: Gravitation
+Physics,11,Gravitation,7,7.7,"Variation of g with latitude, and the earth’s rotation",jee_main,no,ncert_toc,medium,adda247_secondary: Gravitation
+Physics,11,Gravitation,7,7.8,"Gravitational field, and the field of a shell and a sphere",jee_main,no,ncert_toc,medium,adda247_secondary: Gravitation
+Physics,11,Gravitation,7,7.9,Gravitational potential energy of two masses,jee_main,no,ncert_toc,medium,adda247_secondary: Gravitation
+Physics,11,Gravitation,7,7.10,Gravitational potential,jee_main,no,ncert_toc,medium,adda247_secondary: Gravitation
+Physics,11,Gravitation,7,7.11,"Escape speed, and escape energy",jee_main,no,ncert_toc,medium,adda247_secondary: Gravitation
+Physics,11,Gravitation,7,7.12,Orbital speed of a satellite,jee_main,no,ncert_toc,medium,adda247_secondary: Gravitation
+Physics,11,Gravitation,7,7.13,"Period of a satellite, and the geostationary orbit",jee_main,no,ncert_toc,medium,adda247_secondary: Gravitation
+Physics,11,Gravitation,7,7.14,"Energy of an orbiting satellite, and binding energy",jee_main,no,ncert_toc,medium,adda247_secondary: Gravitation
+Physics,11,Gravitation,7,7.15,Weightlessness in orbit,jee_main,no,ncert_toc,medium,adda247_secondary: Gravitation
+Physics,11,Gravitation,7,7.16,Motion of a satellite in an elliptical orbit,jee_main,no,ncert_toc,low,adda247_secondary: Gravitation
+Physics,11,Mechanical Properties of Solids,8,8.1,"Deforming force, elasticity and plasticity",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Solids,8,8.2,"Stress: tensile, compressive and shearing",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Solids,8,8.3,"Strain: longitudinal, shearing and volume",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Solids,8,8.4,"Hooke’s law, and the elastic limit",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Solids,8,8.5,"The stress–strain curve, and its landmarks",jee_main,yes,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Solids,8,8.6,Young’s modulus,jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Solids,8,8.7,"Shear modulus, or modulus of rigidity",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Solids,8,8.8,"Bulk modulus, and compressibility",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Solids,8,8.9,Poisson’s ratio,jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Solids,8,8.10,Elastic potential energy in a stretched wire,jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Solids,8,8.11,Elongation of a wire under its own weight,jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Solids,8,8.12,"Work done in stretching, and energy density",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Solids,8,8.13,Thermal stress in a clamped rod,jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Solids,8,8.14,Wires in series and in parallel,jee_main,no,ncert_toc,low,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Solids,8,8.15,"Applications: the cantilever, beams and columns",jee_main,no,ncert_toc,low,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.1,Thrust and pressure in a fluid,jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.2,"Pascal’s law, and the hydraulic lift",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.3,Variation of pressure with depth,jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.4,"Atmospheric pressure, gauge pressure and the barometer",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.5,"Archimedes’ principle, and buoyant force",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.6,"Floating bodies, and the condition for floating",jee_main,yes,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.7,"Streamline and turbulent flow, and the Reynolds number",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.8,Equation of continuity,jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.9,Bernoulli’s principle,jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.10,"Applications of Bernoulli: venturimeter, atomiser and lift on a wing",jee_main,yes,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.11,"Torricelli’s law, and the speed of efflux",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.12,"Viscosity, and the coefficient of viscosity",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.13,"Stokes’ law, and terminal velocity",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.14,"Surface tension, and surface energy",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.15,Excess pressure inside a drop and a bubble,jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Mechanical Properties of Fluids,9,9.16,"Capillary rise, and the angle of contact",jee_main,yes,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.1,"Temperature, heat, and the thermometric scales",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.2,"The ideal gas equation, and absolute zero",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.3,"Thermal expansion of solids: linear, areal and cubical",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.4,Relations between the coefficients of expansion,jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.5,"Thermal expansion of liquids, and apparent expansion",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.6,Anomalous expansion of water,jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.7,"Specific heat capacity, and molar specific heat",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.8,"Calorimetry, and the principle of mixtures",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.9,Latent heat of fusion and of vaporisation,jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.10,"Change of state, and the temperature–time graph",jee_main,yes,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.11,"Conduction, and thermal conductivity",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.12,Rods in series and in parallel,jee_main,yes,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.13,Convection,jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.14,"Radiation, and the Stefan–Boltzmann law",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.15,"Black body radiation, and Wien’s displacement law",jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.16,Newton’s law of cooling,jee_main,no,ncert_toc,medium,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermal Properties of Matter,10,10.17,"Thermal resistance, and the electrical analogy",jee_main,no,ncert_toc,low,adda247_secondary: Properties of Solids and Liquids
+Physics,11,Thermodynamics,11,11.1,"Thermal equilibrium, and the zeroth law",jee_main,no,ncert_toc,medium,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.2,"Heat, internal energy and work",jee_main,no,ncert_toc,medium,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.3,The first law of thermodynamics,jee_main,no,ncert_toc,medium,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.4,"Specific heat capacities Cp and Cv, and Mayer’s relation",jee_main,no,ncert_toc,medium,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.5,Quasi-static processes,jee_main,no,ncert_toc,medium,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.6,"Isothermal process, and the work done",jee_main,no,ncert_toc,medium,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.7,"Adiabatic process, and the work done",jee_main,no,ncert_toc,medium,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.8,Isochoric and isobaric processes,jee_main,no,ncert_toc,medium,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.9,"Reading a P–V diagram, and work as an area",jee_main,yes,ncert_toc,medium,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.10,"Cyclic processes, and the work in a cycle",jee_main,no,ncert_toc,medium,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.11,"The second law of thermodynamics, and its two statements",jee_main,no,ncert_toc,medium,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.12,Reversible and irreversible processes,jee_main,no,ncert_toc,medium,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.13,"The Carnot cycle, and Carnot efficiency",jee_main,yes,ncert_toc,medium,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.14,"Heat engines, and efficiency",jee_main,no,ncert_toc,medium,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.15,"Refrigerators and heat pumps, and the coefficient of performance",jee_main,no,ncert_toc,medium,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.16,"Entropy, and the direction of a spontaneous change",jee_main,no,ncert_toc,low,adda247_secondary: Thermodynamics
+Physics,11,Thermodynamics,11,11.17,"Mixed processes, and polytropic paths",jee_main,no,ncert_toc,low,adda247_secondary: Thermodynamics
+Physics,11,Kinetic Theory,12,12.1,The molecular model of an ideal gas,jee_main,no,ncert_toc,medium,adda247_secondary: Kinetic Theory of Gases
+Physics,11,Kinetic Theory,12,12.2,"Behaviour of gases, and the gas laws from kinetic theory",jee_main,no,ncert_toc,medium,adda247_secondary: Kinetic Theory of Gases
+Physics,11,Kinetic Theory,12,12.3,Kinetic interpretation of pressure,jee_main,no,ncert_toc,medium,adda247_secondary: Kinetic Theory of Gases
+Physics,11,Kinetic Theory,12,12.4,Kinetic interpretation of temperature,jee_main,no,ncert_toc,medium,adda247_secondary: Kinetic Theory of Gases
+Physics,11,Kinetic Theory,12,12.5,"Root mean square, average and most probable speed",jee_main,no,ncert_toc,medium,adda247_secondary: Kinetic Theory of Gases
+Physics,11,Kinetic Theory,12,12.6,The law of equipartition of energy,jee_main,no,ncert_toc,medium,adda247_secondary: Kinetic Theory of Gases
+Physics,11,Kinetic Theory,12,12.7,"Degrees of freedom of a monatomic, diatomic and polyatomic gas",jee_main,no,ncert_toc,medium,adda247_secondary: Kinetic Theory of Gases
+Physics,11,Kinetic Theory,12,12.8,Specific heat capacity of gases from equipartition,jee_main,no,ncert_toc,medium,adda247_secondary: Kinetic Theory of Gases
+Physics,11,Kinetic Theory,12,12.9,"Ratio of specific heats, and its value for each type of gas",jee_main,no,ncert_toc,medium,adda247_secondary: Kinetic Theory of Gases
+Physics,11,Kinetic Theory,12,12.10,"Specific heat capacity of solids, and Dulong–Petit",jee_main,no,ncert_toc,medium,adda247_secondary: Kinetic Theory of Gases
+Physics,11,Kinetic Theory,12,12.11,Mean free path,jee_main,no,ncert_toc,medium,adda247_secondary: Kinetic Theory of Gases
+Physics,11,Kinetic Theory,12,12.12,Dalton’s law of partial pressures,jee_main,no,ncert_toc,medium,adda247_secondary: Kinetic Theory of Gases
+Physics,11,Kinetic Theory,12,12.13,Maxwell’s distribution of molecular speeds,jee_main,yes,ncert_toc,medium,adda247_secondary: Kinetic Theory of Gases
+Physics,11,Kinetic Theory,12,12.14,"Mixture of two gases, and the effective ratio of specific heats",jee_main,no,ncert_toc,low,adda247_secondary: Kinetic Theory of Gases
+Physics,11,Kinetic Theory,12,12.15,Internal energy of a gas mixture,jee_main,no,ncert_toc,low,adda247_secondary: Kinetic Theory of Gases
+Physics,11,Oscillations,13,13.1,"Periodic and oscillatory motion, and the period",jee_main,no,ncert_toc,medium,adda247_secondary: Oscillations
+Physics,11,Oscillations,13,13.2,"Simple harmonic motion, and its defining equation",jee_main,no,ncert_toc,medium,adda247_secondary: Oscillations
+Physics,11,Oscillations,13,13.3,"Displacement, amplitude, phase and the phase constant",jee_main,no,ncert_toc,medium,adda247_secondary: Oscillations
+Physics,11,Oscillations,13,13.4,Velocity and acceleration in simple harmonic motion,jee_main,no,ncert_toc,medium,adda247_secondary: Oscillations
+Physics,11,Oscillations,13,13.5,SHM as the projection of uniform circular motion,jee_main,yes,ncert_toc,medium,adda247_secondary: Oscillations
+Physics,11,Oscillations,13,13.6,Force law for simple harmonic motion,jee_main,no,ncert_toc,medium,adda247_secondary: Oscillations
+Physics,11,Oscillations,13,13.7,"Kinetic, potential and total energy in SHM",jee_main,no,ncert_toc,medium,adda247_secondary: Oscillations
+Physics,11,Oscillations,13,13.8,"The simple pendulum, and its period",jee_main,no,ncert_toc,medium,adda247_secondary: Oscillations
+Physics,11,Oscillations,13,13.9,"Oscillations of a spring, and the spring constant",jee_main,no,ncert_toc,medium,adda247_secondary: Oscillations
+Physics,11,Oscillations,13,13.10,Springs in series and in parallel,jee_main,yes,ncert_toc,medium,adda247_secondary: Oscillations
+Physics,11,Oscillations,13,13.11,The loaded spring in a vertical position,jee_main,no,ncert_toc,medium,adda247_secondary: Oscillations
+Physics,11,Oscillations,13,13.12,"Angular SHM, and the physical pendulum",jee_main,no,ncert_toc,medium,adda247_secondary: Oscillations
+Physics,11,Oscillations,13,13.13,Superposition of two simple harmonic motions,jee_main,no,ncert_toc,medium,adda247_secondary: Oscillations
+Physics,11,Oscillations,13,13.14,"Damped oscillations, and the damping constant",jee_main,no,ncert_toc,low,adda247_secondary: Oscillations
+Physics,11,Oscillations,13,13.15,Forced oscillations and resonance,jee_main,no,ncert_toc,low,adda247_secondary: Oscillations
+Physics,11,Oscillations,13,13.16,"Oscillations of a liquid column, and of a floating body",jee_main,no,ncert_toc,low,adda247_secondary: Oscillations
+Physics,11,Waves,14,14.1,Transverse and longitudinal waves,jee_main,no,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.2,"The wave equation, and the travelling wave",jee_main,no,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.3,"Wavelength, frequency, period and wave number",jee_main,no,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.4,Speed of a travelling wave,jee_main,no,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.5,Speed of a transverse wave on a string,jee_main,no,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.6,"Speed of a longitudinal wave in a gas, and Laplace’s correction",jee_main,no,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.7,The principle of superposition of waves,jee_main,no,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.8,"Reflection of waves, and the phase change at a boundary",jee_main,no,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.9,"Standing waves on a string, and the normal modes",jee_main,yes,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.10,Standing waves in an open and a closed organ pipe,jee_main,yes,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.11,Harmonics and overtones,jee_main,no,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.12,"Beats, and the beat frequency",jee_main,no,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.13,The Doppler effect: moving source,jee_main,no,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.14,The Doppler effect: moving observer,jee_main,no,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.15,"The Doppler effect: both moving, and the general formula",jee_main,no,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.16,"Intensity of a wave, and its dependence on amplitude",jee_main,no,ncert_toc,medium,adda247_secondary: Waves
+Physics,11,Waves,14,14.17,End correction in a resonance tube,jee_main,no,ncert_toc,low,adda247_secondary: Waves
+Physics,11,Waves,14,14.18,Energy transported by a wave,jee_main,no,ncert_toc,low,adda247_secondary: Waves
+Physics,12,Electric Charges and Fields,15,15.1,"Electric charge, and its basic properties",jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.2,"Conductors, insulators and charging by induction",jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.3,Quantisation and conservation of charge,jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.4,"Coulomb’s law, and the permittivity of the medium",jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.5,"Forces between multiple charges, and superposition",jee_main,yes,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.6,"Electric field, and the field of a point charge",jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.7,"Electric field lines, and how to read them",jee_main,yes,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.8,Electric field of a system of charges,jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.9,"Electric dipole, and the dipole moment",jee_main,yes,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.10,Electric field of a dipole on the axial and equatorial line,jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.11,"Dipole in a uniform external field, and the torque on it",jee_main,yes,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.12,"Continuous charge distributions: linear, surface and volume density",jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.13,Electric flux,jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.14,Gauss’s law,jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.15,Field of an infinite line charge by Gauss’s law,jee_main,yes,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.16,Field of an infinite plane sheet by Gauss’s law,jee_main,yes,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.17,"Field of a uniformly charged spherical shell, inside and outside",jee_main,yes,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electric Charges and Fields,15,15.18,Field of a uniformly charged solid sphere,jee_main,no,ncert_toc,low,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.1,"Electrostatic potential, and potential difference",jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.2,Potential due to a point charge,jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.3,Potential due to a system of charges,jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.4,Potential due to an electric dipole,jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.5,"Equipotential surfaces, and their relation to field lines",jee_main,yes,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.6,Relation between field and potential gradient,jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.7,Potential energy of a system of two and of three charges,jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.8,Potential energy of a dipole in an external field,jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.9,"Electrostatics of conductors, and the field inside a conductor",jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.10,Electrostatic shielding,jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.11,"Dielectrics, polarisation and the dielectric constant",jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.12,"Capacitance, and the capacitance of an isolated sphere",jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.13,The parallel plate capacitor,jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.14,Effect of a dielectric slab on capacitance,jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.15,Capacitors in series,jee_main,yes,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.16,Capacitors in parallel,jee_main,yes,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.17,"Energy stored in a capacitor, and energy density",jee_main,no,ncert_toc,medium,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.18,"Redistribution of charge, and the loss of energy on connecting two capacitors",jee_main,no,ncert_toc,low,adda247_secondary: Electrostatics
+Physics,12,Electrostatic Potential and Capacitance,16,16.19,Capacitor with a partially inserted dielectric,jee_main,no,ncert_toc,low,adda247_secondary: Electrostatics
+Physics,12,Current Electricity,17,17.1,"Electric current, and current density",jee_main,no,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.2,"Drift velocity, mobility and relaxation time",jee_main,no,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.3,"Ohm’s law, and its microscopic origin",jee_main,no,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.4,"Resistance, resistivity and conductivity",jee_main,no,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.5,Variation of resistivity with temperature,jee_main,no,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.6,Ohmic and non-ohmic conductors,jee_main,no,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.7,"Electrical energy and power, and the maximum power transfer",jee_main,no,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.8,Resistors in series,jee_main,yes,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.9,Resistors in parallel,jee_main,yes,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.10,"Cells: electromotive force, internal resistance and terminal voltage",jee_main,no,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.11,Cells in series and in parallel,jee_main,yes,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.12,Kirchhoff’s junction rule,jee_main,no,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.13,Kirchhoff’s loop rule,jee_main,no,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.14,"The Wheatstone bridge, and the balance condition",jee_main,yes,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.15,The metre bridge,jee_main,yes,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.16,"The potentiometer, and comparing two emfs",jee_main,yes,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.17,Measuring internal resistance with a potentiometer,jee_main,no,ncert_toc,medium,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.18,Converting a galvanometer to an ammeter and a voltmeter,jee_main,no,ncert_toc,low,adda247_secondary: Current Electricity
+Physics,12,Current Electricity,17,17.19,Symmetry and balanced-bridge shortcuts in resistor networks,jee_main,no,ncert_toc,low,adda247_secondary: Current Electricity
+Physics,12,Moving Charges and Magnetism,18,18.1,"Magnetic force on a moving charge, and the Lorentz force",jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.2,Magnetic force on a current-carrying conductor,jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.3,"Motion of a charge in a uniform magnetic field, and the radius",jee_main,yes,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.4,"Cyclotron frequency, and the cyclotron",jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.5,"Velocity selector, and crossed electric and magnetic fields",jee_main,yes,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.6,Biot–Savart law,jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.7,Magnetic field on the axis of a circular current loop,jee_main,yes,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.8,Magnetic field at the centre of a loop and of an arc,jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.9,Ampere’s circuital law,jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.10,Magnetic field of a long straight wire,jee_main,yes,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.11,Magnetic field of a solenoid and of a toroid,jee_main,yes,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.12,Force between two parallel current-carrying wires,jee_main,yes,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.13,Torque on a current loop in a magnetic field,jee_main,yes,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.14,Magnetic dipole moment of a current loop,jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.15,"The moving coil galvanometer, and its sensitivity",jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.16,Helical motion of a charge in a magnetic field,jee_main,no,ncert_toc,low,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Moving Charges and Magnetism,18,18.17,Magnetic moment of a rotating charged body,jee_main,no,ncert_toc,low,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Magnetism and Matter,19,19.1,"The bar magnet, and its magnetic field lines",jee_main,yes,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Magnetism and Matter,19,19.2,"Magnetic dipole moment, and the torque on a dipole",jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Magnetism and Matter,19,19.3,Potential energy of a magnetic dipole,jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Magnetism and Matter,19,19.4,The magnetic field of a bar magnet on the axial and equatorial line,jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Magnetism and Matter,19,19.5,"Gauss’s law for magnetism, and the absence of monopoles",jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Magnetism and Matter,19,19.6,"The earth’s magnetism: declination, dip and horizontal component",jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Magnetism and Matter,19,19.7,"Magnetising field, magnetisation and magnetic intensity",jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Magnetism and Matter,19,19.8,Magnetic permeability and susceptibility,jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Magnetism and Matter,19,19.9,Diamagnetic materials,jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Magnetism and Matter,19,19.10,"Paramagnetic materials, and Curie’s law",jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Magnetism and Matter,19,19.11,"Ferromagnetic materials, and domains",jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Magnetism and Matter,19,19.12,"The hysteresis loop, retentivity and coercivity",jee_main,yes,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Magnetism and Matter,19,19.13,"Permanent magnets and electromagnets, and choosing a material",jee_main,no,ncert_toc,medium,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Magnetism and Matter,19,19.14,Oscillations of a magnet in a magnetic field,jee_main,no,ncert_toc,low,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Magnetism and Matter,19,19.15,Tangent galvanometer and the tangent law,jee_main,no,ncert_toc,low,adda247_secondary: Magnetic Effects of Current and Magnetism
+Physics,12,Electromagnetic Induction,20,20.1,Magnetic flux,jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Electromagnetic Induction,20,20.2,"Faraday’s experiments, and the laws of induction",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Electromagnetic Induction,20,20.3,"Lenz’s law, and the sign of the induced emf",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Electromagnetic Induction,20,20.4,Motional emf from a rod moving in a magnetic field,jee_main,yes,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Electromagnetic Induction,20,20.5,"Energy consideration, and the force needed to keep the rod moving",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Electromagnetic Induction,20,20.6,"Eddy currents, and where they help and hurt",jee_main,yes,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Electromagnetic Induction,20,20.7,"Self-inductance, and the inductance of a solenoid",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Electromagnetic Induction,20,20.8,"Mutual inductance, and the coefficient of coupling",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Electromagnetic Induction,20,20.9,Energy stored in an inductor,jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Electromagnetic Induction,20,20.10,Growth and decay of current in an LR circuit,jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Electromagnetic Induction,20,20.11,"The AC generator, and the emf it produces",jee_main,yes,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Electromagnetic Induction,20,20.12,Induced emf in a rotating coil and a rotating disc,jee_main,no,ncert_toc,low,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Electromagnetic Induction,20,20.13,Inductors in series and in parallel,jee_main,no,ncert_toc,low,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Electromagnetic Induction,20,20.14,"Induced charge, and flux change independent of time",jee_main,no,ncert_toc,low,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.1,"Alternating current and voltage, and the waveform",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.2,Mean and root mean square value of an alternating quantity,jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.3,AC through a pure resistor,jee_main,yes,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.4,"AC through a pure inductor, and inductive reactance",jee_main,yes,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.5,"AC through a pure capacitor, and capacitive reactance",jee_main,yes,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.6,"Phasor diagrams, and reading the phase difference",jee_main,yes,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.7,"The series LCR circuit, and impedance",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.8,"Resonance in a series LCR circuit, and the resonant frequency",jee_main,yes,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.9,"Quality factor, sharpness of resonance and bandwidth",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.10,"Power in an AC circuit, and the power factor",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.11,Wattless current,jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.12,"The transformer, and the turns ratio",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.13,Energy losses in a transformer,jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.14,LC oscillations,jee_main,yes,ncert_toc,medium,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.15,Parallel LCR circuits,jee_main,no,ncert_toc,low,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Alternating Current,21,21.16,"Choke coil, and power control without loss",jee_main,no,ncert_toc,low,adda247_secondary: Electromagnetic Induction and AC
+Physics,12,Electromagnetic Waves,22,22.1,"Displacement current, and Ampere–Maxwell law",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Waves
+Physics,12,Electromagnetic Waves,22,22.2,"Maxwell’s equations, and the prediction of electromagnetic waves",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Waves
+Physics,12,Electromagnetic Waves,22,22.3,"Nature of electromagnetic waves, and their transverse character",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Waves
+Physics,12,Electromagnetic Waves,22,22.4,"Speed of an electromagnetic wave, and its relation to the medium",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Waves
+Physics,12,Electromagnetic Waves,22,22.5,Relation between the electric and magnetic field amplitudes,jee_main,yes,ncert_toc,medium,adda247_secondary: Electromagnetic Waves
+Physics,12,Electromagnetic Waves,22,22.6,Energy density and intensity of an electromagnetic wave,jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Waves
+Physics,12,Electromagnetic Waves,22,22.7,Momentum and radiation pressure,jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Waves
+Physics,12,Electromagnetic Waves,22,22.8,"The electromagnetic spectrum, and the order of the bands",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Waves
+Physics,12,Electromagnetic Waves,22,22.9,"Radio waves and microwaves, and their uses",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Waves
+Physics,12,Electromagnetic Waves,22,22.10,"Infrared, visible and ultraviolet radiation, and their uses",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Waves
+Physics,12,Electromagnetic Waves,22,22.11,"X-rays and gamma rays, and their uses",jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Waves
+Physics,12,Electromagnetic Waves,22,22.12,Sources of each band of the spectrum,jee_main,no,ncert_toc,medium,adda247_secondary: Electromagnetic Waves
+Physics,12,Electromagnetic Waves,22,22.13,Electromagnetic waves in a dielectric medium,jee_main,no,ncert_toc,low,adda247_secondary: Electromagnetic Waves
+Physics,12,Electromagnetic Waves,22,22.14,"Poynting vector, and the direction of energy flow",jee_main,no,ncert_toc,low,adda247_secondary: Electromagnetic Waves
+Physics,12,Ray Optics and Optical Instruments,23,23.1,"Reflection of light, and the laws of reflection",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.2,"Image formed by a plane mirror, and the number of images",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.3,"Spherical mirrors: pole, centre of curvature and focal length",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.4,"The mirror formula, and the sign convention",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.5,Magnification by a spherical mirror,jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.6,"Refraction of light, and Snell’s law",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.7,Refractive index: absolute and relative,jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.8,"Apparent depth, and normal shift through a slab",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.9,"Total internal reflection, and the critical angle",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.10,Applications of total internal reflection: optical fibre and mirage,jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.11,Refraction at a single spherical surface,jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.12,The lens maker’s formula,jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.13,"The thin lens formula, and magnification",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.14,"Power of a lens, and lenses in contact",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.15,"Refraction through a prism, and the deviation",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.16,"Minimum deviation, and the prism formula",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.17,"Dispersion by a prism, and the angular dispersion",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.18,"The simple microscope, and its magnifying power",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.19,"The compound microscope, and its magnifying power",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.20,"The astronomical telescope, and its magnifying power",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.21,Deviation by a mirror and by a thin prism,jee_main,yes,ncert_toc,low,adda247_secondary: Optics
+Physics,12,Ray Optics and Optical Instruments,23,23.22,"Defects of vision, and the corrective lens",jee_main,yes,ncert_toc,low,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.1,"Huygens’ principle, and the wavefront",jee_main,no,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.2,Reflection of a plane wave by Huygens’ construction,jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.3,Refraction of a plane wave by Huygens’ construction,jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.4,Coherent and incoherent sources,jee_main,no,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.5,"Superposition, and the condition for interference",jee_main,no,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.6,"Young’s double slit experiment, and the path difference",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.7,"Fringe width, and what changes it",jee_main,no,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.8,Intensity distribution in double slit interference,jee_main,no,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.9,"Interference with a thin film, and the extra half-wave",jee_main,no,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.10,"Single slit diffraction, and the central maximum",jee_main,yes,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.11,"Width of the central maximum, and the positions of the minima",jee_main,no,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.12,Comparing interference and diffraction,jee_main,no,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.13,Resolving power of a microscope and a telescope,jee_main,no,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.14,"Polarisation, and plane polarised light",jee_main,no,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.15,"Polarisation by a polaroid, and Malus’ law",jee_main,no,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.16,"Brewster’s law, and polarisation by reflection",jee_main,no,ncert_toc,medium,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.17,"Fresnel distance, and the ray-optics limit",jee_main,no,ncert_toc,low,adda247_secondary: Optics
+Physics,12,Wave Optics,24,24.18,Double slit with a slab in one path,jee_main,no,ncert_toc,low,adda247_secondary: Optics
+Physics,12,Dual Nature of Radiation and Matter,25,25.1,"Electron emission, and the work function",jee_main,no,ncert_toc,medium,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Dual Nature of Radiation and Matter,25,25.2,"Thermionic, photoelectric, field and secondary emission",jee_main,no,ncert_toc,medium,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Dual Nature of Radiation and Matter,25,25.3,"The photoelectric effect, and Hertz’s and Lenard’s observations",jee_main,no,ncert_toc,medium,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Dual Nature of Radiation and Matter,25,25.4,Effect of intensity on photoelectric current,jee_main,no,ncert_toc,medium,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Dual Nature of Radiation and Matter,25,25.5,Effect of potential: stopping potential and saturation current,jee_main,yes,ncert_toc,medium,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Dual Nature of Radiation and Matter,25,25.6,"Effect of frequency, and the threshold frequency",jee_main,no,ncert_toc,medium,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Dual Nature of Radiation and Matter,25,25.7,Failure of the wave theory to explain the photoelectric effect,jee_main,no,ncert_toc,medium,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Dual Nature of Radiation and Matter,25,25.8,Einstein’s photoelectric equation,jee_main,no,ncert_toc,medium,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Dual Nature of Radiation and Matter,25,25.9,"The stopping potential versus frequency graph, and finding h",jee_main,yes,ncert_toc,medium,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Dual Nature of Radiation and Matter,25,25.10,"The photon, and its energy and momentum",jee_main,no,ncert_toc,medium,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Dual Nature of Radiation and Matter,25,25.11,"Number of photons, and the intensity of a beam",jee_main,no,ncert_toc,medium,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Dual Nature of Radiation and Matter,25,25.12,"De Broglie hypothesis, and the matter wave",jee_main,no,ncert_toc,medium,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Dual Nature of Radiation and Matter,25,25.13,De Broglie wavelength of an accelerated electron,jee_main,no,ncert_toc,medium,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Dual Nature of Radiation and Matter,25,25.14,Davisson–Germer experiment,jee_main,no,ncert_toc,medium,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Dual Nature of Radiation and Matter,25,25.15,De Broglie wavelength and the kinetic energy of a particle,jee_main,no,ncert_toc,low,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Dual Nature of Radiation and Matter,25,25.16,"Radiation pressure, and photon flux on a surface",jee_main,no,ncert_toc,low,adda247_secondary: Dual Nature of Matter and Radiation (blog row unreliable)
+Physics,12,Atoms,26,26.1,"Alpha-particle scattering, and Rutherford’s model",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Atoms,26,26.2,"Impact parameter, and the distance of closest approach",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Atoms,26,26.3,Size of the nucleus from the scattering data,jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Atoms,26,26.4,"Failure of Rutherford’s model, and the stability problem",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Atoms,26,26.5,Bohr’s postulates for the hydrogen atom,jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Atoms,26,26.6,Radius of the nth Bohr orbit,jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Atoms,26,26.7,Velocity and time period of the electron in the nth orbit,jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Atoms,26,26.8,"Energy of the nth level, and the ionisation energy",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Atoms,26,26.9,The energy level diagram of hydrogen,jee_main,yes,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Atoms,26,26.10,"Spectral series of hydrogen: Lyman, Balmer and the rest",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Atoms,26,26.11,"Wavelength of an emitted line, and the Rydberg constant",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Atoms,26,26.12,Excitation and ionisation potential,jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Atoms,26,26.13,De Broglie’s explanation of Bohr’s quantisation,jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Atoms,26,26.14,"Hydrogen-like ions, and the effect of Z",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Atoms,26,26.15,Number of spectral lines from a given excited state,jee_main,no,ncert_toc,low,adda247_secondary: Atoms and Nuclei
+Physics,12,Atoms,26,26.16,Recoil of the atom on emission,jee_main,no,ncert_toc,low,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.1,"Composition of the nucleus, and the atomic mass unit",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.2,"Size of the nucleus, and the nuclear radius formula",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.3,"Nuclear density, and why it is constant",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.4,"Isotopes, isobars and isotones",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.5,Mass defect,jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.6,"Binding energy, and binding energy per nucleon",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.7,"The binding energy curve, and what it explains",jee_main,yes,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.8,"Nuclear forces, and their properties",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.9,"Radioactivity, and the three kinds of decay",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.10,"Alpha decay, and the Q value",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.11,"Beta decay, and the neutrino",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.12,"Gamma decay, and nuclear energy levels",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.13,"The law of radioactive decay, and the decay constant",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.14,Half-life and mean life,jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.15,"Activity, and its units",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.16,"Nuclear fission, and the energy released",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.17,"Nuclear fusion, and energy in the sun",jee_main,no,ncert_toc,medium,adda247_secondary: Atoms and Nuclei
+Physics,12,Nuclei,27,27.18,"Successive decay, and radioactive equilibrium",jee_main,no,ncert_toc,low,adda247_secondary: Atoms and Nuclei
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.1,"Energy bands in conductors, insulators and semiconductors",jee_main,yes,ncert_toc,medium,adda247_secondary: Electronic Devices
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.2,"Intrinsic semiconductors, and electrons and holes",jee_main,no,ncert_toc,medium,adda247_secondary: Electronic Devices
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.3,Extrinsic semiconductors: n-type and p-type doping,jee_main,no,ncert_toc,medium,adda247_secondary: Electronic Devices
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.4,Effect of temperature on the conductivity of a semiconductor,jee_main,no,ncert_toc,medium,adda247_secondary: Electronic Devices
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.5,"The p-n junction, and the depletion region and barrier potential",jee_main,yes,ncert_toc,medium,adda247_secondary: Electronic Devices
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.6,"Forward and reverse bias, and the I–V characteristic",jee_main,yes,ncert_toc,medium,adda247_secondary: Electronic Devices
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.7,The p-n junction diode as a rectifier,jee_main,no,ncert_toc,medium,adda247_secondary: Electronic Devices
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.8,Half-wave rectifier,jee_main,yes,ncert_toc,medium,adda247_secondary: Electronic Devices
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.9,"Full-wave rectifier, and the ripple",jee_main,yes,ncert_toc,medium,adda247_secondary: Electronic Devices
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.10,"Special purpose diodes: Zener, photodiode, LED and solar cell",jee_main,no,ncert_toc,medium,adda247_secondary: Electronic Devices
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.11,Zener diode as a voltage regulator,jee_main,yes,ncert_toc,medium,adda247_secondary: Electronic Devices
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.12,"Logic gates: OR, AND and NOT",jee_main,no,ncert_toc,medium,adda247_secondary: Electronic Devices
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.13,Logic gates: NAND and NOR as universal gates,jee_main,no,ncert_toc,medium,adda247_secondary: Electronic Devices
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.14,"Truth tables, and combining gates",jee_main,yes,ncert_toc,medium,adda247_secondary: Electronic Devices
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.15,"Diode circuits, and deciding which diode conducts",jee_main,no,ncert_toc,low,adda247_secondary: Electronic Devices
+Physics,12,"Semiconductor Electronics: Materials, Devices and Simple Circuits",28,28.16,Dynamic resistance of a diode,jee_main,no,ncert_toc,low,adda247_secondary: Electronic Devices
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.1,"Matter, and its classification into mixtures and pure substances",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.2,Laws of chemical combination,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.3,Dalton’s atomic theory,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.4,"Atomic and molecular mass, and the atomic mass unit",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.5,"The mole concept, and Avogadro’s number",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.6,"Molar mass, and moles from mass and from number of particles",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.7,Molar volume of a gas at STP,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.8,Percentage composition by mass,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.9,Empirical and molecular formula from percentage composition,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.10,"Stoichiometry, and mole ratios from a balanced equation",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.11,Limiting reagent,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.12,"Theoretical, actual and percentage yield",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.13,Concentration: molarity,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.14,"Concentration: molality, and why it is temperature independent",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.15,"Concentration: mole fraction, mass percent and ppm",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.16,Interconverting the concentration units,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.17,Significant figures and dimensional analysis in chemical calculation,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Some Basic Concepts of Chemistry,1,1.18,Equivalent mass and normality,jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.1,"Discovery of the electron, proton and neutron",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.2,"Thomson’s model, and its failure",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.3,"Rutherford’s nuclear model, and its limitations",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.4,"Atomic number, mass number, isotopes and isobars",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.5,"Electromagnetic radiation, and its characteristics",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.6,Black body radiation and the photoelectric effect in the atomic context,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.7,Planck’s quantum theory,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.8,"Line spectrum of hydrogen, and the spectral series",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.9,"Bohr’s model of the hydrogen atom, and the energy of a level",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.10,Limitations of Bohr’s model,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.11,"Dual behaviour of matter, and the de Broglie relation",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.12,Heisenberg’s uncertainty principle,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.13,"Quantum mechanical model, and the orbital",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.14,"Quantum numbers: principal, azimuthal, magnetic and spin",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.15,"Shapes of the s, p and d orbitals",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.16,Radial and angular nodes,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.17,"Energies of orbitals, and the (n + l) rule",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.18,"Aufbau principle, Pauli exclusion principle and Hund’s rule",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.19,Electronic configuration of atoms and ions,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Structure of Atom,2,2.20,Stability of half-filled and fully-filled configurations,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.1,"Genesis of periodic classification, and Mendeleev’s table",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.2,"The modern periodic law, and the long form of the table",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.3,Nomenclature of elements with atomic number above 100,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.4,"s-, p-, d- and f-block elements, and the shape of the table",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.5,"Periods and groups, and locating an element from its configuration",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.6,Electronic configuration and the position in the periodic table,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.7,"Atomic radius, and its trend across a period and down a group",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.8,"Ionic radius, and isoelectronic species",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.9,"Ionisation enthalpy, and the trends and the exceptions",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.10,Successive ionisation enthalpies,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.11,"Electron gain enthalpy, and its trends and exceptions",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.12,"Electronegativity, and the scales used",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.13,Valence and oxidation state across the table,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.14,Periodic trends in chemical reactivity,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.15,Nature of the oxides across a period,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.16,Anomalous properties of the second period elements,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.17,Diagonal relationship,jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,11,Classification of Elements and Periodicity in Properties,3,3.18,Trends in metallic and non-metallic character,jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.1,"Kossel–Lewis approach, and the octet rule",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.2,"Lewis dot structures, and how to draw them",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.3,Formal charge,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.4,Limitations of the octet rule,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.5,"Ionic bonding, and lattice enthalpy",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.6,"Bond length, bond angle and bond enthalpy",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.7,"Bond order, and resonance structures",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.8,"Polarity of bonds, and the dipole moment of a molecule",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.9,"Fajans’ rules, and the covalent character of an ionic bond",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.10,"VSEPR theory, and predicting the shape",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.11,Effect of lone pairs on bond angle,jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.12,"Valence bond theory, and orbital overlap",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.13,"Hybridisation: sp, sp² and sp³",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.14,"Hybridisation involving d orbitals: sp³d, sp³d² and sp³d³",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.15,"Molecular orbital theory, and bonding and antibonding orbitals",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.16,Molecular orbital diagrams of homonuclear diatomic molecules,jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.17,Bond order and magnetic behaviour from molecular orbital theory,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.18,Hydrogen bonding: intermolecular and intramolecular,jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.19,Back bonding,jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,11,Chemical Bonding and Molecular Structure,4,4.20,Metallic bonding,jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.1,"System and surroundings, and the types of system",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.2,State functions and path functions,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.3,Extensive and intensive properties,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.4,"Internal energy, and its change",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.5,"Work, and the work of expansion",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.6,"Heat, and the first law of thermodynamics",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.7,"Enthalpy, and the relation between ΔH and ΔU",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.8,"Heat capacity, and Cp and Cv for an ideal gas",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.9,Calorimetry at constant volume and constant pressure,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.10,"Enthalpy of formation, and the standard state",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.11,Hess’s law of constant heat summation,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.12,"Enthalpy of combustion, and of neutralisation",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.13,"Enthalpy of atomisation, and bond enthalpy",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.14,"Lattice enthalpy, and the Born–Haber cycle",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.15,"Enthalpy of solution, and of dilution",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.16,"Spontaneity, and the limitations of enthalpy alone",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.17,"Entropy, and the second law of thermodynamics",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.18,"Gibbs energy, and the criterion for spontaneity",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.19,Gibbs energy and the equilibrium constant,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Thermodynamics,5,5.20,The third law of thermodynamics,jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,11,Equilibrium,6,6.1,Equilibrium in physical processes,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.2,"Equilibrium in chemical processes, and dynamic equilibrium",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.3,"The law of chemical equilibrium, and the equilibrium constant",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.4,"Kp and Kc, and the relation between them",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.5,Homogeneous equilibria,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.6,Heterogeneous equilibria,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.7,"Reaction quotient, and predicting the direction of a reaction",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.8,Relation between the equilibrium constant and Gibbs energy,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.9,Le Chatelier’s principle: effect of concentration,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.10,Le Chatelier’s principle: effect of pressure and temperature,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.11,Effect of a catalyst and of an inert gas on equilibrium,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.12,"Arrhenius, Bronsted–Lowry and Lewis acids and bases",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.13,"Ionisation of acids and bases, and Ka and Kb",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.14,"The ionic product of water, and the pH scale",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.15,pH of a strong acid and a strong base,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.16,"pH of a weak acid and a weak base, and the degree of ionisation",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.17,Ostwald’s dilution law,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.18,Common ion effect,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.19,"Hydrolysis of salts, and the pH of a salt solution",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.20,"Buffer solutions, and the Henderson equation",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.21,"Solubility product, and solubility from Ksp",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.22,Effect of the common ion on solubility,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Equilibrium,6,6.23,"Polyprotic acids, and stepwise dissociation",jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,11,Redox Reactions,7,7.1,"Oxidation and reduction, classical and electronic definitions",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Redox Reactions,7,7.2,"Oxidation number, and the rules for assigning it",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Redox Reactions,7,7.3,Oxidation number of an element in a compound or ion,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Redox Reactions,7,7.4,Types of redox reaction: combination and decomposition,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Redox Reactions,7,7.5,"Displacement reactions, and the reactivity series",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Redox Reactions,7,7.6,Disproportionation reactions,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Redox Reactions,7,7.7,Identifying the oxidising and the reducing agent,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Redox Reactions,7,7.8,Balancing a redox equation by the oxidation number method,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Redox Reactions,7,7.9,Balancing a redox equation by the half-reaction method,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Redox Reactions,7,7.10,Balancing redox equations in acidic and in basic medium,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Redox Reactions,7,7.11,"Redox titrations, and the stoichiometry involved",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Redox Reactions,7,7.12,Redox reactions and electrode processes,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Redox Reactions,7,7.13,Equivalent mass in a redox reaction,jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,11,Redox Reactions,7,7.14,"Standard electrode potential, and predicting a redox reaction",jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.1,"Tetravalence of carbon, and the shapes of organic molecules",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.2,"Structural representation: complete, condensed and bond-line formulae",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.3,"Classification of organic compounds, and the functional group",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.4,Homologous series,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.5,"IUPAC nomenclature of alkanes, alkenes and alkynes",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.6,IUPAC nomenclature of compounds with a functional group,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.7,IUPAC nomenclature of substituted benzene and polyfunctional compounds,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.8,"Structural isomerism: chain, position, functional and metamerism",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.9,Stereoisomerism: geometrical isomerism,jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.10,Stereoisomerism: optical isomerism and chirality,jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.11,Fission of a covalent bond: homolytic and heterolytic,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.12,"Carbocations, carbanions and free radicals, and their stability",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.13,Electrophiles and nucleophiles,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.14,Inductive effect,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.15,"Resonance, and resonance effect",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.16,Hyperconjugation,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.17,Electromeric effect,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.18,"Types of organic reaction: substitution, addition, elimination and rearrangement",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.19,"Purification: crystallisation, distillation and chromatography",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Organic Chemistry: Some Basic Principles and Techniques,8,8.20,Qualitative and quantitative analysis of organic compounds,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.1,Classification of hydrocarbons,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.2,Alkanes: nomenclature and isomerism,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.3,"Preparation of alkanes, and the Wurtz reaction",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.4,"Conformations of ethane, and Newman projections",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.5,"Halogenation of alkanes, and the free radical mechanism",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.6,"Combustion, pyrolysis and isomerisation of alkanes",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.7,"Alkenes: nomenclature, structure and isomerism",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.8,Preparation of alkenes by elimination,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.9,Addition of hydrogen and of halogens to alkenes,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.10,"Addition of hydrogen halides, and Markovnikov’s rule",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.11,"Peroxide effect, and anti-Markovnikov addition",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.12,"Addition of water, and hydration of alkenes",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.13,Oxidation and ozonolysis of alkenes,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.14,"Alkynes: nomenclature, structure and acidic character",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.15,Preparation and addition reactions of alkynes,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.16,Polymerisation of alkynes,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.17,"Aromaticity, and Huckel’s rule",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.18,Benzene: structure and resonance,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.19,Electrophilic substitution in benzene: nitration and sulphonation,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.20,"Halogenation, and Friedel–Crafts alkylation and acylation",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.21,"Directive influence of a substituent, and ortho-para versus meta",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,11,Hydrocarbons,9,9.22,Carcinogenicity and toxicity of aromatic hydrocarbons,jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,12,Solutions,10,10.1,"Types of solution, and the solute and solvent",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.2,"Expressing concentration: mass percent, ppm and mole fraction",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.3,Expressing concentration: molarity and molality,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.4,"Solubility of a solid in a liquid, and the effect of temperature",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.5,"Solubility of a gas in a liquid, and Henry’s law",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.6,"Vapour pressure of a liquid solution, and Raoult’s law",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.7,Raoult’s law for a solution of two volatile liquids,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.8,Ideal and non-ideal solutions,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.9,Positive and negative deviation from Raoult’s law,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.10,Azeotropes,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.11,Colligative properties: relative lowering of vapour pressure,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.12,Colligative properties: elevation of boiling point,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.13,Colligative properties: depression of freezing point,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.14,Colligative properties: osmotic pressure and osmosis,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.15,"Reverse osmosis, and isotonic solutions",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.16,Determining molar mass from a colligative property,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.17,"Abnormal molar mass, and the van’t Hoff factor",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Solutions,10,10.18,"Association and dissociation, and the degree from the van’t Hoff factor",jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.1,"Electrochemical cells, and the galvanic cell",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.2,Half cells and electrode potential,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.3,The standard hydrogen electrode,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.4,"Standard electrode potential, and the electrochemical series",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.5,"Cell potential, and the cell representation",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.6,Gibbs energy of a cell reaction,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.7,The Nernst equation for an electrode and for a cell,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.8,Equilibrium constant from the standard cell potential,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.9,"Conductance, conductivity and molar conductivity",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.10,Variation of conductivity and molar conductivity with concentration,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.11,"Kohlrausch’s law, and its applications",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.12,"Measuring conductivity, and the cell constant",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.13,"Electrolysis, and the products at each electrode",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.14,Faraday’s laws of electrolysis,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.15,Primary cells: the dry cell and the mercury cell,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.16,Secondary cells: the lead storage battery and the nickel-cadmium cell,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.17,Fuel cells,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Electrochemistry,11,11.18,"Corrosion, and its electrochemical explanation",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.1,Rate of a reaction: average and instantaneous,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.2,Rate of reaction in terms of each reactant and product,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.3,Factors affecting the rate of a reaction,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.4,"Rate law, and the rate constant",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.5,"Order of a reaction, and how it differs from stoichiometry",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.6,"Molecularity, and elementary versus complex reactions",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.7,Units of the rate constant for each order,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.8,Integrated rate equation for a zero order reaction,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.9,Integrated rate equation for a first order reaction,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.10,Half-life of a zero and a first order reaction,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.11,Pseudo first order reactions,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.12,Graphical determination of order and rate constant,jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.13,"Temperature dependence, and the Arrhenius equation",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.14,"Activation energy, and finding it from two rate constants",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.15,"The potential energy profile, and the activated complex",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.16,Collision theory of bimolecular reactions,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.17,Effect of a catalyst on activation energy,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Chemical Kinetics,12,12.18,Rate-determining step in a multi-step mechanism,jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.1,Position of the d-block in the periodic table,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.2,"Electronic configuration of the first, second and third transition series",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.3,General properties of the transition elements,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.4,Atomic and ionic radii across a transition series,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.5,Ionisation enthalpy of the transition elements,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.6,"Oxidation states, and their variability",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.7,"Standard electrode potentials, and the trends",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.8,"Magnetic properties, and the spin-only magnetic moment",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.9,"Formation of coloured ions, and d–d transitions",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.10,Formation of complex compounds,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.11,Catalytic properties of the transition elements,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.12,Formation of interstitial compounds and of alloys,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.13,Preparation and properties of potassium dichromate,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.14,Preparation and properties of potassium permanganate,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.15,"The lanthanoids, and lanthanoid contraction",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.16,Oxidation states and chemistry of the lanthanoids,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.17,"The actinoids, and how they differ from the lanthanoids",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,The d- and f-Block Elements,13,13.18,"Comparison of the 3d, 4d and 5d series",jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.1,"Werner’s theory, and the primary and secondary valence",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.2,"Ligands, and the coordination number and sphere",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.3,"Classification of ligands: mono-, bi- and polydentate, and chelating",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.4,Oxidation number of the central metal in a complex,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.5,IUPAC nomenclature of mononuclear coordination compounds,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.6,Valence bond theory of coordination compounds,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.7,Hybridisation and geometry of a complex,jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.8,"Inner and outer orbital complexes, and magnetic behaviour",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.9,Limitations of valence bond theory,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.10,"Crystal field theory, and the splitting in an octahedral field",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.11,Crystal field splitting in a tetrahedral field,jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.12,"Crystal field splitting energy, and strong and weak field ligands",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.13,High spin and low spin complexes,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.14,"Colour of a complex, and the spectrochemical series",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.15,"Structural isomerism: ionisation, hydrate, linkage and coordination",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.16,Stereoisomerism: geometrical isomerism in complexes,jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.17,Stereoisomerism: optical isomerism in complexes,jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.18,"Stability of coordination compounds, and the formation constant",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.19,"Importance of coordination compounds, and their applications",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Coordination Compounds,14,14.20,"Organometallic compounds, and the 18-electron rule",jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.1,Classification and nomenclature of haloalkanes and haloarenes,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.2,"Nature of the carbon–halogen bond, and its polarity",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.3,Preparation of haloalkanes from alcohols,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.4,Preparation of haloalkanes by halogenation and by addition,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.5,Preparation of haloalkanes by halogen exchange,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.6,"Preparation of haloarenes, and the Sandmeyer reaction",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.7,"Physical properties: boiling point, density and solubility",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.8,Nucleophilic substitution: the SN1 mechanism,jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.9,Nucleophilic substitution: the SN2 mechanism,jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.10,"SN1 versus SN2, and the effect of substrate and solvent",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.11,Stereochemistry of substitution: inversion and racemisation,jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.12,"Elimination reactions, and Saytzeff’s rule",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.13,"Reaction with metals, and the Grignard reagent",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.14,"Reactions of haloarenes, and why they resist substitution",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.15,Electrophilic substitution in haloarenes,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.16,The Wurtz and Fittig reactions,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.17,"Polyhalogen compounds, and their uses",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Haloalkanes and Haloarenes,15,15.18,"Ambident nucleophiles, and the competing products",jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.1,"Classification and nomenclature of alcohols, phenols and ethers",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.2,Preparation of alcohols from alkenes: hydration and hydroboration,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.3,Preparation of alcohols from carbonyl compounds,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.4,Preparation of alcohols from the Grignard reagent,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.5,"Preparation of phenols from haloarenes, cumene and diazonium salts",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.6,"Physical properties, and the effect of hydrogen bonding",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.7,"Acidity of alcohols and phenols, and the effect of substituents",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.8,Reactions of alcohols: esterification and reaction with hydrogen halides,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.9,"Dehydration of alcohols, and the order of ease",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.10,"Oxidation of primary, secondary and tertiary alcohols",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.11,Distinguishing the three classes: the Lucas and Victor Meyer tests,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.12,Electrophilic substitution in phenol: nitration and sulphonation,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.13,"Kolbe’s reaction, and the Reimer–Tiemann reaction",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.14,"Oxidation of phenol, and the reaction with ferric chloride",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.15,Preparation of ethers by dehydration and by Williamson synthesis,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.16,"Reactions of ethers, and cleavage of the C–O bond",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.17,Electrophilic substitution in aromatic ethers,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Alcohols, Phenols and Ethers",16,16.18,Pinacol–pinacolone rearrangement,jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.1,"Nomenclature of aldehydes, ketones and carboxylic acids",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.2,"Structure of the carbonyl group, and its reactivity",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.3,Preparation of aldehydes and ketones from alcohols and hydrocarbons,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.4,Preparation of aldehydes from acid chlorides and nitriles,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.5,Preparation of aromatic aldehydes and ketones,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.6,Physical properties of carbonyl compounds,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.7,"Nucleophilic addition to the carbonyl group, and the mechanism",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.8,"Addition of hydrogen cyanide, bisulphite and alcohols",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.9,Addition of ammonia derivatives,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.10,Reduction to alcohols and to hydrocarbons,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.11,"Oxidation of aldehydes, and the Tollens and Fehling tests",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.12,"The haloform reaction, and the iodoform test",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.13,The aldol condensation,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.14,The Cannizzaro reaction,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.15,Electrophilic substitution in aromatic aldehydes and ketones,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.16,"Preparation of carboxylic acids, and their acidic strength",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.17,Effect of substituents on the acidity of carboxylic acids,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.18,Reactions of carboxylic acids involving the O–H and the C–OH bond,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.19,"Decarboxylation, and the Hunsdiecker reaction",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.20,"Substitution in the hydrocarbon part, and the HVZ reaction",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,"Aldehydes, Ketones and Carboxylic Acids",17,17.21,"Distinguishing tests among aldehydes, ketones and acids",jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,12,Amines,18,18.1,Classification and nomenclature of amines,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.2,"Structure of the amino group, and the hybridisation of nitrogen",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.3,Preparation of amines by reduction of nitro compounds and nitriles,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.4,Preparation of amines by ammonolysis of alkyl halides,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.5,Gabriel phthalimide synthesis,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.6,Hoffmann bromamide degradation,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.7,"Physical properties of amines, and hydrogen bonding",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.8,Basic strength of amines in the gas phase and in water,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.9,Comparing the basicity of aliphatic and aromatic amines,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.10,Effect of substituents on the basicity of aniline,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.11,Alkylation and acylation of amines,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.12,"Carbylamine reaction, and the Hinsberg test",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.13,"Reaction with nitrous acid, and distinguishing the three classes",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.14,"Electrophilic substitution in aniline, and why it needs protection",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.15,"Preparation of diazonium salts, and their stability",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.16,"Coupling reactions of diazonium salts, and azo dyes",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.17,"Replacement of the diazonium group by halide, cyanide and hydroxyl",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Amines,18,18.18,"Separation of a mixture of primary, secondary and tertiary amines",jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,12,Amines,18,18.19,Cyanides: nomenclature and preparation from alkyl halides,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,12,Amines,18,18.20,"Cyanides: hydrolysis, reduction and reaction with Grignard reagents",jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,12,Amines,18,18.21,"Isocyanides: preparation, and the carbylamine reaction",jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,12,Amines,18,18.22,"Isocyanides: hydrolysis and reduction, and how they differ from cyanides",jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.1,"Carbohydrates: classification into mono-, di- and polysaccharides",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.2,"Structure of glucose, open chain and cyclic",jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.3,"Reactions of glucose, and the proof of its structure",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.4,"Fructose, and the difference from glucose",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.5,"Disaccharides: sucrose, maltose and lactose",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.6,Reducing and non-reducing sugars,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.7,"Polysaccharides: starch, cellulose and glycogen",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.8,"Amino acids: classification, and essential and non-essential",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.9,"Zwitterion, and the isoelectric point",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.10,"Peptide bond, and the formation of a polypeptide",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.11,"Proteins: primary, secondary, tertiary and quaternary structure",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.12,Denaturation of proteins,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.13,"Enzymes, and the specificity of enzyme catalysis",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.14,Vitamins: classification and deficiency diseases,jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.15,Nucleic acids: structure of DNA and RNA,jee_main,yes,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.16,"Difference between DNA and RNA, and their biological functions",jee_main,no,ncert_toc,medium,adda247_secondary
+Chemistry,12,Biomolecules,19,19.17,"Hormones, and their classification",jee_main,no,ncert_toc,low,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.1,Group 13: general trends in properties down the group,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.2,Anomalous behaviour of boron,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.3,"Diborane: structure, and the banana bonds",jee_main,yes,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.4,"Borax: structure, the borax bead test and hydrolysis",jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.5,Boric acid and boron trifluoride,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.6,"Group 14: general trends, and the inert pair effect",jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.7,"Anomalous behaviour of carbon, and catenation",jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.8,"Allotropes of carbon: diamond, graphite and fullerene",jee_main,yes,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.9,Oxides of carbon: carbon monoxide and carbon dioxide,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.10,Group 15: general trends down the group,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.11,"Ammonia: preparation, structure and properties",jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.12,"Nitric acid: the Ostwald process, and its oxidising action",jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.13,"Oxides of nitrogen: the series, and their structures",jee_main,yes,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.14,Group 16: general trends down the group,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.15,"Ozone: preparation, structure and oxidising action",jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.16,Sulphur dioxide: preparation and properties,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.17,"Sulphuric acid: the contact process, and its properties",jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.18,Oxoacids of sulphur: structures and comparison,jee_main,yes,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.19,Group 17: general trends of the halogens,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.20,"Interhalogen compounds: preparation, structure and reactivity",jee_main,yes,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.21,"Oxoacids of the halogens, and their relative strengths",jee_main,yes,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.22,"Group 18: the noble gases, and their general trends",jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,p-Block Elements (Groups 13-18),20,20.23,"Xenon compounds: fluorides and oxides, and their structures",jee_main,yes,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.1,"Crystallisation, and choosing the solvent",jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.2,Sublimation,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.3,Simple distillation,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.4,Fractional distillation,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.5,Distillation under reduced pressure,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.6,Steam distillation,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.7,"Differential extraction, and the partition coefficient",jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.8,"Adsorption chromatography, and column chromatography",jee_main,yes,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.9,"Thin layer chromatography, and the retention factor",jee_main,yes,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.10,Partition chromatography,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.11,Qualitative detection of carbon and of hydrogen,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.12,"Lassaigne’s test for nitrogen, sulphur and the halogens",jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.13,Detection of phosphorus,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.14,Estimation of carbon and hydrogen by the Liebig method,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.15,Estimation of nitrogen by the Dumas method,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.16,Estimation of nitrogen by the Kjeldahl method,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.17,Estimation of halogens by the Carius method,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.18,Estimation of sulphur and of phosphorus,jee_main,no,adda247_secondary,medium,adda247_secondary
+Chemistry,11,Purification and Characterisation of Organic Compounds,21,21.19,Empirical and molecular formula from the estimation data,jee_main,no,adda247_secondary,medium,adda247_secondary
+Physics,11,Experimental Skills,29,29.1,Placeholder: concept list not yet written,not_in_secondary_source,yes,claude_memory_unverified,low,"unverified, from my memory of NTA, check against official PDF"
+Chemistry,11,Principles Related to Practical Chemistry,22,22.1,Placeholder: concept list not yet written,not_in_secondary_source,yes,claude_memory_unverified,low,"unverified, from my memory of NTA, check against official PDF"

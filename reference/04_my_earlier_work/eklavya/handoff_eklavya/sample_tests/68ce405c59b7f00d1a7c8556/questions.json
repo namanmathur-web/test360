@@ -1,0 +1,1440 @@
+{
+ "categories": [
+  {
+   "category": "MATH SEC 1",
+   "questions": [
+    {
+     "questionId": "68ca969448941b2c13d7cb86",
+     "questionText": "<b> </b>The ratio of the sum of the first $n$ terms of two different A.P.s is given by $\\frac{S_n}{S'_n} = \\frac{3n+8}{7n+15}$. The ratio of their $9^{th}$ terms is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " $\\frac{59}{134}$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " $\\frac{7}{16}$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " $\\frac{35}{97}$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " $\\frac{61}{135}$"
+      }
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 1,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb87",
+     "questionText": "<b> </b>Three distinct numbers are in G.P. If the middle term is doubled, the new numbers are in A.P. The common ratio of the G.P. can be:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " $2 + \\sqrt{3}$"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " $2 - \\sqrt{2}$"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " $3 + \\sqrt{2}$"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " $3 - \\sqrt{3}$"
+      }
+     ],
+     "topics": [
+      "Geometric progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 2,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Geometric progression"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb88",
+     "questionText": "<b> </b>A function $f: \\mathbb{N} \\to \\mathbb{R}$ satisfies $f(xy) = f(x)+f(y)$ for all $x,y \\in \\mathbb{N}$ and $f(2)=1$. The terms $a_k = f(2^k)$ form an A.P. The sum of the first 20 terms of this A.P. is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 190"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 200"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 210"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 400"
+      }
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 3,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb89",
+     "questionText": "<b> </b>The roots of the cubic equation $x^3 - 12x^2 + kx - 48 = 0$ are in A.P. The value of $k$ is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 36"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 40"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 44"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 48"
+      }
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 4,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb8a",
+     "questionText": "<b> </b>If the sum of the first $2n$ terms of the A.P. $2, 5, 8, \\dots$ is equal to the sum of the first $n$ terms of the A.P. $57, 59, 61, \\dots$, then $n$ is equal to:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 10"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 11"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 12"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 13"
+      }
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 5,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb8b",
+     "questionText": "<b> </b>The sum of four consecutive numbers in an A.P. is 32 and the ratio of the product of the first and the last term to the product of the two middle terms is 7:15. The smallest of these numbers is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 2"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 4"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 6"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 8"
+      }
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 6,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb8c",
+     "questionText": "<b> </b>Let $a_n$ be an A.P. of positive terms. Let $A_k = a_1^2 - a_2^2 + a_3^2 - a_4^2 + \\dots + a_{2k-1}^2 - a_{2k}^2$. If the common difference is $d=3$ and $A_4 = -300$, find the first term $a_1$.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 1"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 2"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 3"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 4"
+      }
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 7,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb8d",
+     "questionText": "<b> </b>The sum of the first 20 terms of an A.P. is equal to the sum of the first 30 terms. The sum of the first 50 terms is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 0"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 100"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " -100"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 50"
+      }
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 8,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb8e",
+     "questionText": "<b> </b>Let $a_1, a_2, \\dots$ be an A.P. If $a_1+a_5+a_{10}+a_{15}+a_{20}+a_{24} = 225$, find the sum of the first 24 terms of the A.P.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 600"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 900"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 1200"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 1800"
+      }
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 9,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb8f",
+     "questionText": "<b> </b>Let $a, b, c, d, e$ be five numbers in A.P. such that their sum is 25 and their product is 2520. If the common difference is positive, find the value of the largest term, $e$.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 5"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 7"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 9"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 11"
+      }
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 10,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb90",
+     "questionText": "<b> </b>Three numbers whose sum is 21 are in A.P. If 2, 3, and 9 are added to them respectively, the resulting numbers are in G.P. The product of the original increasing A.P. numbers is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 231"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 105"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 315"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " -504"
+      }
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 11,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb91",
+     "questionText": "<b> </b>Between two numbers whose sum is $\\frac{13}{6}$, an even number of arithmetic means are inserted. If the sum of these means exceeds their number by unity, find the number of means inserted.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 8"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 10"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 12"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 14"
+      }
+     ],
+     "topics": [
+      "Arithmetic mean"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 12,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic mean"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb92",
+     "questionText": "<b> </b>The sum of the first 4 terms of an A.P. is 56. The sum of the last 4 terms is 112. If the first term is 11, the number of terms is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 10"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 11"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 12"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 13"
+      }
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 13,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb93",
+     "questionText": "<b> </b>Let $a_1, a_2, ..., a_{16}$ be in A.P. If $a_1+a_4+a_7+a_{10}+a_{13}+a_{16} = 147$, then the value of $a_1+a_6+a_{11}+a_{16}$ is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 98"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 102"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 112"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 147"
+      }
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 14,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb94",
+     "questionText": "<b> </b>Consider two sets A and B, each containing three numbers in A.P. The sum of elements for each set is 36. Let the products of their elements be $p$ and $q$ respectively. Let their common differences be $d$ and $D$, where $D=d+3$ and $d>0$. If $\\frac{p+q}{p-q}=\\frac{19}{5}$, then $p-q$ is equal to:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 540"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 600"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 630"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 450"
+      }
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 15,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb95",
+     "questionText": "<b> </b>In an A.P. of 10 terms, the sum of terms at odd positions is 25 and the sum of terms at even positions is 35. Find the value of $\\sum_{1 \\le i < j \\le 10} a_i a_j$.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 1455"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 1245"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 2910"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 3600"
+      }
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 16,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb96",
+     "questionText": "<b> </b>Let $a_n$ be the $n^{th}$ term of an A.P. If the sum of its first $n$ terms is 700, its $6^{th}$ term is 7, and the sum of its first 7 terms is 7, find the value of $a_n$.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 56"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 64"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 68"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 72"
+      }
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 17,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb97",
+     "questionText": "<b> </b>The side lengths of a right-angled triangle are in an A.P. If its area is 54, find the length of the hypotenuse.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 12"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 15"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 18"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 21"
+      }
+     ],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 18,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb98",
+     "questionText": "<b> </b>Let $S_n$ denote the sum of the first $n$ terms of an A.P. with first term 5 and common difference 8. A sequence $T_n$ is defined for $n \\ge 1$ as $T_n = \\frac{S_{n+1}}{n+1} - \\frac{S_n}{n}$. The value of $T_{20}$ is:",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 4"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 5"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 8"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 20"
+      }
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 19,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb99",
+     "questionText": "<b> </b>The ratio of the sum of the first 10 terms of an A.P. to the sum of the first 20 terms is $1/4$. If the $5^{th}$ term is 9, find the $10^{th}$ term.",
+     "options": [
+      {
+       "index": "1",
+       "label": "a",
+       "text": " 17"
+      },
+      {
+       "index": "2",
+       "label": "b",
+       "text": " 19"
+      },
+      {
+       "index": "3",
+       "label": "c",
+       "text": " 21"
+      },
+      {
+       "index": "4",
+       "label": "d",
+       "text": " 23"
+      }
+     ],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 20,
+     "questionType": "SCQ",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ]
+    }
+   ]
+  },
+  {
+   "category": "MATH SEC 2",
+   "questions": [
+    {
+     "questionId": "68ca969448941b2c13d7cb9a",
+     "questionText": "<b> </b>Let $S_n$ be the sum of first n terms of an A.P. with $a=2, d=4$. If $\\frac{1}{n(n+1)(n+2)} \\sum_{k=1}^{n} \\frac{S_k}{k} = \\frac{1}{12}$, find the value of $n$.",
+     "options": [],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 1,
+     "questionType": "NUMERIC",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb9b",
+     "questionText": "<b> </b>Two arithmetic progressions are $a_n=2n+3$ and $b_n=3n+2$. If the sum of their first $k$ common terms is 1776, find the value of $k$.",
+     "options": [],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 2,
+     "questionType": "NUMERIC",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb9c",
+     "questionText": "<b> </b>The natural numbers are grouped as follows: $(1), (2,3,4), (5,6,7,8,9), \\dots$, where the $k^{th}$ group has $2k-1$ terms. Find the sum of all numbers in the $12^{th}$ group.",
+     "options": [],
+     "topics": [
+      "Sum of terms in A.P."
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 3,
+     "questionType": "NUMERIC",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Sum of terms in A.P."
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb9d",
+     "questionText": "<b> </b>The terms of an A.P. are distinct integers. The sum of the first four terms is 20, and their product is 384. Find the sum of the first 10 terms of the increasing A.P.",
+     "options": [],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 4,
+     "questionType": "NUMERIC",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    },
+    {
+     "questionId": "68ca969448941b2c13d7cb9e",
+     "questionText": "<b> </b>An A.P. with first term 1 and common difference 2 is arranged in a $5 \\times 5$ grid, filling rows sequentially. Find the sum of elements on the main diagonal.",
+     "options": [],
+     "topics": [
+      "Arithmetic progression"
+     ],
+     "mainTags": [
+      "11",
+      "Maths",
+      "Algebra",
+      "Arithmetic progression",
+      "JEE_Main-11",
+      "JEE_Main",
+      "Sequences and series"
+     ],
+     "difficulty": "MODERATE",
+     "questionIndex": 5,
+     "questionType": "NUMERIC",
+     "marks": {
+      "positive": 4,
+      "negative": 1
+     },
+     "duration": 0,
+     "analysisTags": [
+      "Arithmetic progression"
+     ]
+    }
+   ]
+  }
+ ],
+ "imageDetails": [],
+ "resultEntries": [
+  {
+   "questionId": "68ca969448941b2c13d7cb86",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 1,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb87",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 2,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb88",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 3,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb89",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 4,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb8a",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 5,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb8b",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 6,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb8c",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 7,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb8d",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 8,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb8e",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 9,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb8f",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 10,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb90",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 11,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb91",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 12,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb92",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 13,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb93",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 14,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb94",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 15,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb95",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 16,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb96",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 17,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb97",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 18,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb98",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 19,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb99",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 20,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb9a",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 1,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb9b",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 2,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb9c",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 3,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb9d",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 4,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  },
+  {
+   "questionId": "68ca969448941b2c13d7cb9e",
+   "duration": 0,
+   "correctness": "UNKNOWN",
+   "questionAttemptState": "NOT_EVALUATED",
+   "maxMarks": 4,
+   "questionIndex": 5,
+   "answerChangeRecords": [],
+   "questionChangeRecords": [],
+   "noMarks": false,
+   "questionType": "SCQ"
+  }
+ ],
+ "totalMarks": 100,
+ "testName": "Maths Highweightage Test-1",
+ "duration": 3600000
+}

@@ -1,0 +1,82 @@
+{
+ "insights": {
+  "creationTime": 1791719902110,
+  "createdBy": "SYSTEM",
+  "lastUpdated": 1791719902110,
+  "lastUpdatedBy": "SYSTEM",
+  "entityState": "ACTIVE",
+  "adminTags": [],
+  "id": "6acb79ded2152942b164565d",
+  "attemptId": "6acb79d74bd32f698a38c3d5",
+  "totalMarks": 100,
+  "marksScored": 5,
+  "examType": "JEE_MAINS",
+  "insightMetricsId": "691b6454f587d9196e83c10a",
+  "testAttemptInsightsSummary": {
+   "possibleMarksGain": 64,
+   "attemptPercentile": 80,
+   "attemptAccuracy": 25,
+   "totalImprovePercentile": 64
+  },
+  "hshwTopicsInsight": {
+   "topicIds": [
+    "67c6e02b019845d41917b6a4",
+    "67c6e02d019845d41917b6a7"
+   ],
+   "accuracy": 0,
+   "missedQuestionCount": 2,
+   "incorrectQuestionCount": 7,
+   "totalQuestionCount": 9,
+   "possibleMarksGain": 36
+  },
+  "eaqInsight": {
+   "topicIds": [
+    "67c6e02c019845d41917b6a6",
+    "67c6e402254dd91d821edef7",
+    "67c6e032019845d41917b6ae",
+    "67c6e02b019845d41917b6a4",
+    "67c6e02d019845d41917b6a7",
+    "67c6e02e019845d41917b6a9"
+   ],
+   "attemptPercentile": 75,
+   "accuracyPercentile": 16,
+   "possibleMarksGain": 28,
+   "totalQuestionCount": 8,
+   "attemptQuestionCount": 6,
+   "missedQuestionCount": 2,
+   "incorrectQuestionCount": 5,
+   "correctQuestionCount": 1,
+   "averageEAQCohortAccuracy": 81
+  },
+  "pyqInsight": {
+   "topicIds": [
+    "67c6e402254dd91d821edef7",
+    "67c6e02d019845d41917b6a7",
+    "67c6e02c019845d41917b6a5",
+    "67c6e032019845d41917b6ae",
+    "67c6e049019845d41917b6cf",
+    "67c6e02c019845d41917b6a6",
+    "67c6e037019845d41917b6b6",
+    "67c6e02e019845d41917b6a9",
+    "67c6e036019845d41917b6b5",
+    "67c6e02b019845d41917b6a4",
+    "67c6e02d019845d41917b6a8"
+   ]
+  },
+  "insightVersion": "V1"
+ },
+ "hshwTopicDetails": [
+  {
+   "topicId": "67c6e02b019845d41917b6a4",
+   "topicName": "Average and instantaneous velocity",
+   "chapterName": "Motion in a Straight Line",
+   "subjectName": "Physics"
+  },
+  {
+   "topicId": "67c6e02d019845d41917b6a7",
+   "topicName": "Three standard equation of motion",
+   "chapterName": "Motion in a Straight Line",
+   "subjectName": "Physics"
+  }
+ ]
+}
