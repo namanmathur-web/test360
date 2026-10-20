@@ -58,10 +58,12 @@ def book():
             if 'secband' in (el.get('class') or []):
                 band=txt(el);topics.append(band)
             elif el.name=='h2' and el.get('data-tbno'):
-                c={'no':el['data-tbno'],'id':el.get('id'),'title':el.get('data-tbtitle'),'topic':band,'quote':'','clip':None,'oneLine':'','notes':[],'quickChecks':[]}
+                c={'no':el['data-tbno'],'id':el.get('id'),'title':el.get('data-tbtitle'),'topic':band,'quote':'','clip':None,'oneLine':'','notes':[],'quickChecks':[],'formulas':[]}
                 concepts.append(c);cur=c
             elif concepts:
                 c=cur
+                tr=el if 'trap' in (el.get('class') or []) else el.select_one('.trap')
+                if tr is not None:c.setdefault('slip',txt(tr))
                 if 'tv' in (el.get('class') or []) and el.find(class_='tv-quote'):
                     c['quote']=txt(el.find(class_='tv-quote'));c['teacher']=txt(el.select_one('.tv-id b'))
                 elif 'vid' in (el.get('class') or []):c['clip']={'slug':el.get('data-clip')}
@@ -69,6 +71,10 @@ def book():
                     c['clip']['label']=txt(el);c['clip']['seconds']=clipdur(txt(el))
                 elif 'defn' in (el.get('class') or []):c['oneLine']=txt(el.select_one('.hl'))
                 elif el.name=='p':c['notes'].append(inner(el))
+                elif el.select_one('.fcard') or 'fcard' in (el.get('class') or []):
+                    fc=el if 'fcard' in (el.get('class') or []) else el.select_one('.fcard')
+                    c.setdefault('formulas',[]).extend(inner(d) for d in fc.find_all('div',recursive=False))
+
                 elif 'tb-yt' in (el.get('class') or []):
                     for li in el.select('li'):
                         q=li.select_one('.tb-q');st=[txt(x) for x in li.select('.tb-a .step')]
